@@ -1,0 +1,373 @@
+= Modding\... Modding never changes, vol. 2
+Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
+v0.1, 11/12/2016
+:stylesheet: Modding-never-changes-vol-2.css
+:icons: font
+:linkcss:
+:toc:
+:toclevels: 4
+:sectlinks:
+:experimental:
+:docinfo:
+:stylesdir: ./styles
+
+////
+The following block ensures that GitHub shows proper icons in admonition blocks.
+It also points the images path to the repo, instead of using the build.
+
+@see http://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/
+////
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+
+:imagesdir: ../resources/images
+endif::[]
+
+////
+If we are *NOT* on GitHub, the images path points to the final product path.
+////
+ifndef::env-github[]
+:imagesdir: ./images
+endif::[]
+
+
+
+
+////
+	Introductory chapters.
+////
+
+== Metacrap
+
+== Acknowledgments
+
+== Introduction
+
+== Conventions used in this guide
+
+== Why Mod Organizer?
+
+== Functional vs. Technical
+
+== The tools we need
+
+
+////
+	DEFCON 00 (Vanilla) chapter.
+////
+
+== DEFCON 00 (Vanilla)
+
+=== Installing the game
+
+=== Installing the tools
+
+=== Setting up the environment
+
+
+////
+	DEFCON 01 (Bug Fixes and Performance) chapter.
+////
+
+== DEFCON 01 (Bug Fixes and Performance)
+
+=== Disable Games for Windows Live
+
+=== Enabling access to 4 GB+ of memory
+
+=== Cleaning up the master files
+
+=== Tweaking the INI files
+
+=== Patching the game
+
+=== Setting up the foundation for our modding
+
+=== Crash Test Dummies will have a hard time here
+
+=== Fake full-screen mode
+
+=== Saving games the right way
+
+=== Getting rid of stutter
+
+=== A bunch of unrelated fixes
+
+=== Indulging your Diogenes Syndrome
+
+=== I can see clearly now
+
+=== Adopt an useless rock today!
+
+=== Punxsutawney Phil is not alive anymore
+
+=== Creating a merged patch
+
+=== Bashing all together
+
+
+////
+	DEFCON 02 (User Interface) chapter.
+////
+
+== DEFCON 02 (User Interface)
+
+=== Face-washing the HUD
+
+=== Deadshot would be proud of you
+
+=== Rearranging your HUD
+
+=== A better feeling of immersion
+
+=== Cooperate, or else!
+
+=== Bashing and merging all together (again)
+
+
+////
+	DEFCON 03 (Refined User Interface) chapter.
+////
+
+== DEFCON 03 (Refined User Interface)
+
+=== Let there be light!
+
+=== For the achievement junkie in you
+
+=== Everything depends on the point of view
+
+=== Cleaning up your faithful companion
+
+=== You don't want to ask for directions
+
+=== If you are the kind of person who reads patient's leaflets...
+
+=== When burglary becomes a way of life
+
+=== Be your own Visual FX technician
+
+=== Yeah, you guessed, bashing and merging all together
+
+
+////
+	DEFCON 04 (Sounds and Music) chapter.
+////
+
+== DEFCON 04 (Sounds and Music)
+
+=== Lend me your ears
+
+=== Those crickets are driving me mad!
+
+=== A soundtrack for your lonely Wasteland nights
+
+=== A sound for Chekhov’s gun
+
+=== Bash... Bah, you know
+
+
+////
+	DEFCON 05 (Gameplay Overhauls) chapter.
+////
+
+== DEFCON 05 (Gameplay Overhauls)
+
+=== _Ad astra per aspera_
+
+=== Fraternizing with the neighborhood
+
+=== This is where we start to patch like Hell
+
+=== The usual deal
+
+
+////
+	DEFCON 06 (New and Improved Weapons) chapter.
+////
+
+== DEFCON 06 (New and Improved Weapons)
+
+=== Lead-shaped love
+
+=== Don't you think you are taking this DIY thing too far?
+
+=== I do not aim with my hand; he who aims with his hand has forgotten the face of his father
+
+=== At least you will be torn apart in a beam of fancy colors
+
+=== Your weapon is screaming-red, sir
+
+=== We need more needle and thread, of course
+
+=== Did I say we need new merged and bashed patches in each profile?
+
+
+////
+	DEFCON 07 (New Playstyles) chapter.
+////
+
+== DEFCON 07 (New Playstyles)
+
+=== Nerds will take over the world
+
+=== Nobody loves me
+
+=== There is nothing like a good headshot
+
+=== Guess what? Yeah, more patches
+
+=== One of the most difficult parts of this guide is figuring out the titles about merged and bashed patches
+
+
+////
+	DEFCON 08 (New and Improved Places) chapter.
+////
+
+== DEFCON 08 (New and Improved Places)
+
+This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
+
+---
+
+=== There is no place like Metaton
+
+=== Those who cannot remember the past are condemned to repeat it
+
+=== Now you can go Black Friday in Washington D.C.
+
+=== Outcasts are not known by their house-cleaning abilities
+
+=== You know what to do, right?
+
+
+////
+	DEFCON 09 (Quests) chapter.
+////
+
+== DEFCON 09 (Quests)
+
+This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
+
+---
+
+=== Have you ever seen a puce moose?
+
+=== These weird folks look better than ever
+
+=== Going back to your irradiated roots
+
+=== Evil corporations have their place in the Wasteland
+
+=== Kicking asses the alien way
+
+=== Miles Davis echoes in the Wasteland
+
+=== Don't you ever stop patching!
+
+=== WWVhaCwgaW4gQmFzZTY0LCBzbyBsb3cgSSBoYXZlIGZhbGxlbg==
+
+
+////
+	DEFCON 10 (Ambient and Weather) chapter.
+////
+
+== DEFCON 10 (Ambient and Weather)
+
+This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
+
+---
+
+=== She walks in beauty, like the night of cloudless climes and starry skies
+
+=== Night and day the river flows, and irradiated there it goes
+
+=== I love the sound of non-existent leaves in the wind
+
+=== I REALLY hate that green tint
+
+=== The usual suspects
+
+
+////
+	DEFCON 11 (Lighting) chapter.
+////
+
+== DEFCON 11 (Lighting)
+
+=== I guess the electric towers around D.C. are strong enough to withstand a nuclear blast
+
+=== I truly don't know what's gonna happen when the lights go out, Carolyn
+
+=== Your trustworthy merged and bashed patches
+
+
+////
+	DEFCON 12 (People) chapter.
+////
+
+== DEFCON 12 (People)
+
+=== Master of puppets, I'm pulling your strings
+
+=== I don't like your face
+
+=== Sewing up some scars
+
+=== Mashing and berging, or something like that
+
+
+////
+	DEFCON 13 (Terrain and DLC Textures) chapter.
+////
+
+== DEFCON 13 (Terrain and DLC Textures)
+
+=== I will give your descendants all these land in high resolution
+
+=== Real estate leaflets will look much more appealing
+
+=== DLCs have also their little low-resolution hearts
+
+
+////
+	DEFCON 14 (Clutter, Furniture and Particle Textures) chapter.
+////
+
+== DEFCON 14 (Clutter, Furniture and Particle Textures)
+
+=== The Devil is in the details
+
+=== All that junk need a bit of glue
+
+=== These will be the last ones, I promise!
+
+
+////
+	DEFCON 15 (Weapon Textures) chapter.
+////
+
+== DEFCON 15 (Weapon Textures)
+
+=== Killing with style
+
+=== I know I said that the last one was the last one, but it was **NOT** the last one; this one will be **THE LAST ONE**; really; I promise
+
+
+////
+	Final chapters.
+////
+
+== Resources
+
+=== Tools
+
+=== Guides
+
+=== Mods
+
+=== Videos

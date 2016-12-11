@@ -1,0 +1,132 @@
+// Modding-never-changes-vol-2.scss
+//
+// Explicit customizations for the _Modding never changes vol. 2_ theme.
+
+
+@import "settings/Modding-never-changes-vol-2";
+@import "components/asciidoc";
+@import "components/awesome-icons";
+
+
+//
+// Body.
+//
+
+body {
+	font-family: $body_base_font;
+	background: $whitetail;
+}
+
+
+//
+// Document header.
+//
+
+.details {
+	visibility: hidden;
+}
+
+body {
+	background: url(../images/Fallout%203%20header.jpg) no-repeat;
+	background-size: 100%;
+}
+
+#header h1 {
+	font-size: 3em;
+	padding-top: 6em;
+	padding-bottom: 8em;
+	text-align: center;
+}
+
+#header h1::first-letter {
+	font-size: 4em;
+}
+
+#header h1:first-child {
+	color: $sensible_hue;
+}
+
+
+//
+// Table of contents.
+//
+
+// Getting rid of the separator after the TOC.
+#toc {
+	border-bottom: 0;
+}
+
+#toctitle {
+	font-size: 2.5em;
+}
+
+
+//
+// Headings.
+//
+
+h1, h2, h3, h4 {
+	font-family: $headings_font;
+}
+
+h2 {
+	background-color: $sensible_hue;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	padding-left: 0.5em;
+	padding-top: 0.8em;
+	padding-right: 0.5em;
+	padding-bottom: 3em;
+}
+
+h2::first-letter {
+	font-size: 4em;
+}
+
+h3 {
+	margin-top: 2em;
+	border-bottom: 2px solid $sensible_hue;
+}
+
+
+//
+// Images.
+//
+
+.imageblock {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 2em;
+	background-color: #B6B5AB;
+	border-radius: 1em;
+}
+
+.imageblock .title {
+	font-size: .8em;
+	padding-top: 1em;
+	font-style: italic;
+	color: #454B40;
+	border-bottom: 1px solid #454B40;
+}
+
+
+//
+// Info notes.
+//
+
+.note {
+	border: 1px solid $sensible_hue;
+	border-radius: 1em;
+	padding: 0;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+//
+// Misc adjustments.
+//
+
+// Getting rid of the separator between sections.
+.sect1 + .sect1 {
+	border-top: 0;
+}

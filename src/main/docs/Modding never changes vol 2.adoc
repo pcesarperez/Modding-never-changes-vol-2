@@ -1,15 +1,15 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.1, 11/12/2016
-:stylesheet: Modding-never-changes-vol-2.css
+v0.11, 11/12/2016
+//:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
-:linkcss:
+//:linkcss:
 :toc:
 :toclevels: 4
 :sectlinks:
 :experimental:
 :docinfo:
-:stylesdir: ./styles
+//:stylesdir: ./styles
 
 ////
 The following block ensures that GitHub shows proper icons in admonition blocks.

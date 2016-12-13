@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.11, 11/12/2016
+v0.2, 13/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -59,7 +59,7 @@ endif::[]
 ////
 	DEFCON 00 (Vanilla) chapter.
 ////
-
+////
 == DEFCON 00 (Vanilla)
 
 === Installing the game
@@ -67,12 +67,12 @@ endif::[]
 === Installing the tools
 
 === Setting up the environment
-
+////
 
 ////
 	DEFCON 01 (Bug Fixes and Performance) chapter.
 ////
-
+////
 == DEFCON 01 (Bug Fixes and Performance)
 
 === Disable Games for Windows Live
@@ -108,12 +108,12 @@ endif::[]
 === Creating a merged patch
 
 === Bashing all together
-
+////
 
 ////
 	DEFCON 02 (User Interface) chapter.
 ////
-
+////
 == DEFCON 02 (User Interface)
 
 === Face-washing the HUD
@@ -127,12 +127,12 @@ endif::[]
 === Cooperate, or else!
 
 === Bashing and merging all together (again)
-
+////
 
 ////
 	DEFCON 03 (Refined User Interface) chapter.
 ////
-
+////
 == DEFCON 03 (Refined User Interface)
 
 === Let there be light!
@@ -152,12 +152,12 @@ endif::[]
 === Be your own Visual FX technician
 
 === Yeah, you guessed, bashing and merging all together
-
+////
 
 ////
 	DEFCON 04 (Sounds and Music) chapter.
 ////
-
+////
 == DEFCON 04 (Sounds and Music)
 
 === Lend me your ears
@@ -169,12 +169,12 @@ endif::[]
 === A sound for Chekhov’s gun
 
 === Bash... Bah, you know
-
+////
 
 ////
 	DEFCON 05 (Gameplay Overhauls) chapter.
 ////
-
+////
 == DEFCON 05 (Gameplay Overhauls)
 
 === _Ad astra per aspera_
@@ -184,12 +184,12 @@ endif::[]
 === This is where we start to patch like Hell
 
 === The usual deal
-
+////
 
 ////
 	DEFCON 06 (New and Improved Weapons) chapter.
 ////
-
+////
 == DEFCON 06 (New and Improved Weapons)
 
 === Lead-shaped love
@@ -205,12 +205,12 @@ endif::[]
 === We need more needle and thread, of course
 
 === Did I say we need new merged and bashed patches in each profile?
-
+////
 
 ////
 	DEFCON 07 (New Playstyles) chapter.
 ////
-
+////
 == DEFCON 07 (New Playstyles)
 
 === Nerds will take over the world
@@ -222,12 +222,12 @@ endif::[]
 === Guess what? Yeah, more patches
 
 === One of the most difficult parts of this guide is figuring out the titles about merged and bashed patches
-
+////
 
 ////
 	DEFCON 08 (New and Improved Places) chapter.
 ////
-
+////
 == DEFCON 08 (New and Improved Places)
 
 This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
@@ -243,17 +243,13 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === Outcasts are not known by their house-cleaning abilities
 
 === You know what to do, right?
-
+////
 
 ////
 	DEFCON 09 (Quests) chapter.
 ////
-
+////
 == DEFCON 09 (Quests)
-
-This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
-
----
 
 === Have you ever seen a puce moose?
 
@@ -270,17 +266,13 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === Don't you ever stop patching!
 
 === WWVhaCwgaW4gQmFzZTY0LCBzbyBsb3cgSSBoYXZlIGZhbGxlbg==
-
+////
 
 ////
 	DEFCON 10 (Ambient and Weather) chapter.
 ////
-
+////
 == DEFCON 10 (Ambient and Weather)
-
-This is the rundown of the chapter, pointing out the mods used in each sub-chapter:
-
----
 
 === She walks in beauty, like the night of cloudless climes and starry skies
 
@@ -291,12 +283,12 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === I REALLY hate that green tint
 
 === The usual suspects
-
+////
 
 ////
 	DEFCON 11 (Lighting) chapter.
 ////
-
+////
 == DEFCON 11 (Lighting)
 
 === I guess the electric towers around D.C. are strong enough to withstand a nuclear blast
@@ -304,12 +296,12 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === I truly don't know what's gonna happen when the lights go out, Carolyn
 
 === Your trustworthy merged and bashed patches
-
+////
 
 ////
 	DEFCON 12 (People) chapter.
 ////
-
+////
 == DEFCON 12 (People)
 
 === Master of puppets, I'm pulling your strings
@@ -319,12 +311,12 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === Sewing up some scars
 
 === Mashing and berging, or something like that
-
+////
 
 ////
 	DEFCON 13 (Terrain and DLC Textures) chapter.
 ////
-
+////
 == DEFCON 13 (Terrain and DLC Textures)
 
 === I will give your descendants all these land in high resolution
@@ -332,12 +324,12 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === Real estate leaflets will look much more appealing
 
 === DLCs have also their little low-resolution hearts
-
+////
 
 ////
 	DEFCON 14 (Clutter, Furniture and Particle Textures) chapter.
 ////
-
+////
 == DEFCON 14 (Clutter, Furniture and Particle Textures)
 
 === The Devil is in the details
@@ -345,23 +337,23 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === All that junk need a bit of glue
 
 === These will be the last ones, I promise!
-
+////
 
 ////
 	DEFCON 15 (Weapon Textures) chapter.
 ////
-
+////
 == DEFCON 15 (Weapon Textures)
 
 === Killing with style
 
 === I know I said that the last one was the last one, but it was **NOT** the last one; this one will be **THE LAST ONE**; really; I promise
-
+////
 
 ////
 	Final chapters.
 ////
-
+////
 == Resources
 
 === Tools
@@ -371,3 +363,4 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 === Mods
 
 === Videos
+////

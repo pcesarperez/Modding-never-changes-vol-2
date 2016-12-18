@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.2, 13/12/2016
+v0.23, 18/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -103,7 +103,9 @@ I love post-apocalyptic games, and I love tinkering with things, so the recipe _
 
 Slushes apart, _Fallout 3_ is an old game, and what it is more important, it is a Bethesda Softworks' game, and it means a lot of bugs out-of-the-box. The mods we are going to install address these bugs to fix the game, but they also greatly improve the game in every aspect, from playability to graphics, going through sounds and music.
 
-If you are in a rush of excitement and you cannot wait to start modding the hell out of _Fallout 3_, jump ahead to chapter <<DEFCON 00 (Vanilla)>>. Otherwise, read the rest of the introductory chapters to know <<A quick note about the first volume, why the first volume should be considered obsolete>>, <<Conventions used in this guide, which are the conventions used in writing this guide>>, <<Why Mod Organizer?, why are we choosing Mod Organizer as our modding tools>>, <<Functional vs. Technical, how is the guide organized and why>> and <<The tools we need, which are the tools we need to get the job done>>.
+So that is what we want to achieve with this guide: having a step-by-step process to get a fully modded _Fallout 3_ game, with no flaws (almost), with a serious performance boost and with visuals, audio and game mechanics enhanced.
+
+If you are in a rush of excitement and you cannot wait to start modding the hell out of _Fallout 3_, jump ahead to chapter <<DEFCON 00 (Vanilla)>>. Otherwise, read the rest of the introductory chapters to know <<Why Mod Organizer?, why are we choosing Mod Organizer as our modding tool>>, <<Functional vs. Technical, how is the guide organized and why>>, <<The tools we need, which are the tools we need to get the job done>>, and <<Conventions used in this guide, which are the conventions used in writing this guide>>.
 
 == Why Mod Organizer?
 

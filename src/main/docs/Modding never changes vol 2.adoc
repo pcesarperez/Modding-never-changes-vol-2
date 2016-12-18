@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.23, 18/12/2016
+v0.24, 18/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -89,7 +89,7 @@ I have read and viewed a lot of resources before writing a single line of this g
 * *https://www.youtube.com/user/MrXuul[Xuul]* is a youtuber with a lot of quality and up-to-date videos about modding. His is https://www.youtube.com/playlist?list=PL4turVkHE168Yyj8g9k_s9GCCvW0f_apX[a complete guide to mod _Fallout 3_ with Mod Organizer].
 * *https://www.youtube.com/user/gamerpoets[Michael, from GamerPoets]* is a modder and youtuber that I have recently discovered through Gopher's series about Mod Organizer. He and his team has *A FUCKIN' LOT* of tutorials about modding, all of them very thorough and detailed. I have used several resources from GamerPoets, like https://www.youtube.com/watch?v=CqFCLrYn30c[a guide about LOOT] and a https://www.youtube.com/watch?v=2F19Do8HAl4[guide about xEdit].
 * *http://wiki.step-project.com/Main_Page[The people behind S.T.E.P. Project]* have the best guides out there about modding _Skyrim_, and in that context they have published http://wiki.step-project.com/Guide:Mod_Organizer[the official guide for Mod Organizer].
-* Kelmych has written http://wiki.step-project.com/User:Kelmych/Fallout3[THE GUIDE] about modding _Fallout 3_. This guide has been on my bedside table for weeks, and its detailed explanations are invaluable.
+* Kelmych has written http://wiki.step-project.com/User:Kelmych/Fallout3[_Clear and Present Danger_], *THE GUIDE* about modding _Fallout 3_. This guide has been on my bedside table for weeks, and its detailed explanations are invaluable.
 
 == Introduction
 

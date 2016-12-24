@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.25, 18/12/2016
+v0.26, 24/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -88,7 +88,7 @@ In the modding scene, you cannot even think about writing a guide like this with
 I have read and viewed a lot of resources before writing a single line of this guide. These are the authors of such resources:
 
 * *https://www.youtube.com/user/GophersVids[Gopher]* is one of my favourite modders and youtubers out there. I have been watching his videos since my interest in modding bloomed. His is the https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer video series], albeit he uses _Skyrim_ to show the tool capabilities.
-* *https://www.youtube.com/user/ar15nurse[Cal, from Dirty Weasel Media]* is one of my late additions to my subscription list. He has created a fantastic https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[guide about Modding _Fallout 3_ with Mod Organizer] which has been very helpful.
+* *https://www.youtube.com/user/ar15nurse[Cal, from Dirty Weasel Media]* is one of my latest additions to my subscription list. He has created a fantastic https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[guide about Modding _Fallout 3_ with Mod Organizer] which has been very helpful.
 * *https://www.youtube.com/user/MrXuul[Xuul]* is a youtuber with a lot of quality and up-to-date videos about modding. His is https://www.youtube.com/playlist?list=PL4turVkHE168Yyj8g9k_s9GCCvW0f_apX[a complete guide to mod _Fallout 3_ with Mod Organizer].
 * *https://www.youtube.com/user/gamerpoets[Michael, from GamerPoets]* is a modder and youtuber that I have recently discovered through Gopher's series about Mod Organizer. He and his team has *A FUCKIN' LOT* of tutorials about modding, all of them very thorough and detailed. I have used several resources from GamerPoets, like https://www.youtube.com/watch?v=CqFCLrYn30c[a guide about LOOT] and a https://www.youtube.com/watch?v=2F19Do8HAl4[guide about xEdit].
 * *http://wiki.step-project.com/Main_Page[The people behind S.T.E.P. Project]* have the best guides out there about modding _Skyrim_, and in that context they have published http://wiki.step-project.com/Guide:Mod_Organizer[the official guide for Mod Organizer].
@@ -147,7 +147,7 @@ Once you start using MO, there's no turning back to NMM. Ever. Even though both 
 
 There are a lot of _Fallout 3_ modding guides out there. This is just another one, but I'd like to think that my approach to the matter is slightly different, because it's a functional one.
 
-What the hell do I mean by "functional"? Well, at the end of each main chapter (called *DEFCON*), you will have a version of the game with certain features: a fixed game, a game with new sounds, a game with new animations, etc. Chapters are cumulative, this is, each chapter is built on top of the previous one. Thus, this guide is intended to be followed from cover to cover, although you can skip any chapter you wish, taking into account that, from that point on, you are in _Terra Incognita_, all by yourself.
+What the hell do I mean by "functional"? Well, at the end of each main chapter (called *DEFCON*), you will have a version of the game with certain features: bugfixes, new sounds, new animations, etc. Chapters are cumulative, this is, each chapter is built on top of the previous one. Thus, this guide is intended to be followed from cover to cover, although you can skip any chapter you wish, taking into account that, from that point on, you are in _Terra Incognita_, all by yourself.
 
 This approach has its advantages and disadvantages. I think it's more understandable for the reader, albeit more complex to perform under the hood.
 
@@ -160,12 +160,28 @@ However, there is something you need to understand besides load order, and it is
 
 Data files are bound by load order, whereas assets are bound by stacking order. Gopher has a very good video explaining everything about https://www.youtube.com/watch?v=jVSy_5M3NTc[conflicts and priorities] in MO, and the Official Guide has http://wiki.step-project.com/Guide:Mod_Organizer#Priorities[an entire chapter devoted to priorities].
 
-To keep this short and straight, we are going to carefully place each mod in its proper place, taking into account the priorities. This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo" down in the priority list (with a higher priority), "B" version of "foo" will overwrite "A" version of "foo", although you can easily rearrange the stacking order if you find it's not correct. But that's something I have to worry about, not you, at least regarding this guide.
+To keep this short and straight, we are going to carefully place each mod in its proper place, taking into account the priorities. This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo" down in the priority list (with a higher priority), "B" version of "foo" will overwrite "A" version of "foo", although you can easily rearrange the stacking order if you find out it's not correct. But that's something I have to worry about, not you, at least regarding this guide.
 
 
 
 
 == The tools we need
+
+These are the tools we are going to use throughout this guide. Don't worry about installing them yet; their setup will be addressed in the proper chapters. However, you can save precious time by downloading them right now.
+
+Mod Organizer::
+http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer] is an advanced modding tool. It is not as wide-scoped as Nexus Mod Manager, because it only supports _Fallout 3_, _Fallout New Vegas_, _The Elder Scrolls IV: Oblivion_ and _The Elder Scrolls V: Skyrim_ (not the _Special Edition_, though). However, is way more powerful than NMM. Once you start modding with it, you wonder where the fuck was this tool your whole life.
+
+xEdit::
+http://www.nexusmods.com/fallout4/mods/2737/[xEdit] comprises, in fact, several tools, each oriented to a specific game. Each version takes its name from the game it is aimed to, so the latest version is, in fact, called FO4Edit, because it has been developed for _Fallout 4_. Nevertheless, each version works with any game in the _Fallout_ or _The Elder Scrolls_ series, from _Fallout 3_ and _Oblivion_ on. This tool allows us to fiddle with data files (`.esm` or `.esp`), cleaning them and modifying them if there is some kind of error. It also allows to clean data files, which have often duplicated or undeleted entries. Finally, it will help us to create a http://wiki.step-project.com/Guide:Merging_Plugins#xEdit_Merge_Patch[_Merged Patch_] to ensure a better game stability. More on that later on.
+
+LOOT::
+https://loot.github.io/[LOOT] is the best tool out there to keep your load order in check. It relies on an artifact called _the masterlist_, which is a list of mod's metadata to calculate the right load order for your mod stack.
+
+Wrye Flash::
+http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash] is a modding tool akin to Mod Organizer it is scope, but very different for what we are going to use it. It will help us to create a http://wiki.step-project.com/Bashed_Patch[_Bashed Patch_] to further improve our game stability.
+
+Don't worry if the ultimate purpose of each tool is a bit vague. All of this will be thoroughly explained in time.
 
 
 

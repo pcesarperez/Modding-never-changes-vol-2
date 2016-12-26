@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.26, 24/12/2016
+v0.27, 26/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -173,7 +173,7 @@ Mod Organizer::
 http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer] is an advanced modding tool. It is not as wide-scoped as Nexus Mod Manager, because it only supports _Fallout 3_, _Fallout New Vegas_, _The Elder Scrolls IV: Oblivion_ and _The Elder Scrolls V: Skyrim_ (not the _Special Edition_, though). However, is way more powerful than NMM. Once you start modding with it, you wonder where the fuck was this tool your whole life.
 
 xEdit::
-http://www.nexusmods.com/fallout4/mods/2737/[xEdit] comprises, in fact, several tools, each oriented to a specific game. Each version takes its name from the game it is aimed to, so the latest version is, in fact, called FO4Edit, because it has been developed for _Fallout 4_. Nevertheless, each version works with any game in the _Fallout_ or _The Elder Scrolls_ series, from _Fallout 3_ and _Oblivion_ on. This tool allows us to fiddle with data files (`.esm` or `.esp`), cleaning them and modifying them if there is some kind of error. It also allows to clean data files, which have often duplicated or undeleted entries. Finally, it will help us to create a http://wiki.step-project.com/Guide:Merging_Plugins#xEdit_Merge_Patch[_Merged Patch_] to ensure a better game stability. More on that later on.
+http://www.nexusmods.com/fallout4/mods/2737/[xEdit] comprises, in fact, several tools, each oriented to a specific game. Each version takes its name from the game it is aimed to, so the latest version is called FO4Edit, because it has been developed for _Fallout 4_. Nevertheless, each version works with any game in the _Fallout_ or _The Elder Scrolls_ series, from _Fallout 3_ and _Oblivion_ on. This tool allows us to fiddle with data files (`.esm` or `.esp`), cleaning them and modifying them if there is some kind of error. It also allows to clean data files, which have often duplicated or undeleted entries. Finally, it will help us to create a http://wiki.step-project.com/Guide:Merging_Plugins#xEdit_Merge_Patch[_Merged Patch_] to ensure a better game stability. More on that later on.
 
 LOOT::
 https://loot.github.io/[LOOT] is the best tool out there to keep your load order in check. It relies on an artifact called _the masterlist_, which is a list of mod's metadata to calculate the right load order for your mod stack.
@@ -181,12 +181,39 @@ https://loot.github.io/[LOOT] is the best tool out there to keep your load order
 Wrye Flash::
 http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash] is a modding tool akin to Mod Organizer it is scope, but very different for what we are going to use it. It will help us to create a http://wiki.step-project.com/Bashed_Patch[_Bashed Patch_] to further improve our game stability.
 
-Don't worry if the ultimate purpose of each tool is a bit vague. All of this will be thoroughly explained in time.
+Don't worry if the ultimate purpose of each tool seems a bit vague. All of this will be thoroughly explained in time.
 
 
 
 
 == Conventions used in this guide
+
+The following conventions are used within this guide.
+
+Game titles::
+Game titles are shown in italicized text, like _Fallout 3_ or _The Elder Scrolls V: Skyrim_.
+
+Mod names::
+Any mod used in this guide is shown using an italicized link to the mod's original page. For example, http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] or http://www.nexusmods.com/fallout3/mods/2761/[_FWE - FO3 Wanderers Edition_]. The name is shown as is, with the title given by its author, no matter how many grammar or orthographic rules have been murdered in the process.
+
+Filenames and paths::
+Any filename or path, complete or partial, is shown using monospaced text, like `[%USERPROFILE%\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
+
+Files within Nexus::
+A mod hosted in Nexus will usually have several files (for example, the http://www.nexusmods.com/fallout3/mods/2761/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Ffallout3%2Fajax%2Fmodfiles%2F%3Fid%3D2761&pUp=1[multiple files which belong to FWE]). Sometimes is difficult to know exactly which files have to be downloaded, thus they are shown using a green, bold text, mimicking Nexus own style, like [NexusFile]*FWE 6-03a HOTFIX PATCH* or [NexusFile]*MMM-6_2-update*.
+
+Info blocks::
+Info blocks are used at the beginning of each chapter to show the list of mods which are going to be installed. For example:
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/3388/[_Weapon Mod Kits_]
+* http://www.nexusmods.com/fallout3/mods/8340/[_EVE - Energy Visuals Enhanced_]
+* http://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights - FOSE_]
+* http://www.nexusmods.com/fallout3/mods/16787/[_Paradox Ignition presents The Mergers_]
+====
 
 
 

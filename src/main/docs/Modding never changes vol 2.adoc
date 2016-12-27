@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.3, 27/12/2016
+v0.31, 27/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -285,6 +285,58 @@ image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about runn
 
 
 === Installing the tools
+
+[NOTE]
+====
+These are the tools installed in this chapter.
+
+* http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer].
+* http://www.nexusmods.com/fallout4/mods/2737/[xEdit].
+* http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash].
+* https://loot.github.io/[LOOT].
+* https://github.com/fireundubh/xedit[Generate Tags for Wrye Bash].
+====
+
+In this chapter we are going to install the tools we need to mod _Fallout 3 Game of the Year Edition_. We are going to install them, but we are not going to test them; not yet, at least. Their integration will be addressed in the next chapter.
+
+
+
+
+==== LOOT
+
+https://loot.github.io/[Load Order Optimisation Tool] (LOOT) is a tool used to take care of the load order in _The Elder Scrolls IV: Oblivion_, _The Elder Scrolls V: Skyrim_, _The Elder Scrolls V: Skyrim Special Edition_, _Fallout 3_, _Fallout New Vegas_ and _Fallout 4_. Mod Organizer comes with an integrated version of LOOT, but it is outdated, so we are going to need the standalone version installed.
+
+. Download and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[%LOOT_HOME%]`.
+. Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
++
+.LOOT first run
+image::DEFCON-00-LOOT-first-run.png[LOOT first run]
+. LOOT usually does a good job detecting the installed games which it considers manageable, so there is a good chance that _Fallout 3_ would be automatically detected.
++
+.LOOT with Vanilla game
+image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game]
+. *DON'T DO ANYTHING BUT EXIT LOOT!* We are going to manage the load order through Mod Organizer, so this will be the last time we run LOOT standalone.
+
+
+
+
+==== xEdit
+
+
+
+
+==== Wrye Flash
+
+
+
+
+==== Generate Tags for Wrye Bash
+
+
+
+
+==== Mod Organizer
+
 
 
 

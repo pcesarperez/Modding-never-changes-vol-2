@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.27, 26/12/2016
+v0.3, 27/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -221,15 +221,77 @@ Mods used in this chapter:
 ////
 	DEFCON 00 (Vanilla) chapter.
 ////
-////
+
 == DEFCON 00 (Vanilla)
+
+In this chapter we are going to build the foundation for the modding process, installing the game and the necessary tools. Thus, no real modding will be done here.
+
+At the end of the chapter we will be ready to start with the modding, with all the tools in place. We will have our first profile, although it will contain the Vanilla version of the game.
+
+
+
 
 === Installing the game
 
+I am assuming we are using the Steam edition of _Fallout 3 Game of the Year Edition_, with all 5 DLCs. This is what you have to do first and foremost.
+
+. Install Steam outside UAC-controlled space. In other words, *DO NOT* install Steam in the default location, under `[C:\Program Files]`. Install it instead in `[C:\Games]` or any other location of your choice. If you have Steam already installed in UAC-controlled space, check this guide about https://support.steampowered.com/kb_article.php?ref=7418-YUBN-8129[moving a Steam installation and games]. We will refer to the final Steam location as `[%STEAM_HOME%]`.
+. Install _Fallout 3 Game of the Year Edition_ through Steam. The game will be located at `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`, which we will refer to as `[%FO3_HOME%]` from now on.
+. You *MUST* run the game at least once to create the configuration files the game needs, so double-click on the launcher icon you should have in your desktop.
++
+._Fallout 3_ launcher icon
+image::DEFCON-00-Fallout-3-launcher-icon.png[_Fallout 3_ launcher icon]
+. The launcher dutifully informs you that video hardware is about to be detected, thus setting up the configuration for you.
++
+.Video hardware detection message
+image::DEFCON-00-Video-hardware-detection-message.png[Video hardware detection message]
+. After a brief moment, the launcher shows a message with the quality settings it has detected for your box (my rig is a crap, but the game is rather old, so...).
++
+.Video hardware settings detected
+image::DEFCON-00-Video-hardware-settings-detected.png[Video hardware settings detected]
+. And here we go! This is the launcher in all its greenish glory.
++
+._Fallout 3_ launcher
+image::DEFCON-00-Fallout-3-launcher.png[_Fallout 3_ launcher]
+. Click on *Options* to adjust the video resolution. Don't bother changing anything else right now.
++
+._Fallout 3_ settings
+image::DEFCON-00-Video-resolution-adjustment.png[_Fallout 3_ settings]
+. Click on *Play* in the launcher to launch the game with the preferred settings. The game will show the main menu.
++
+._Fallout 3_ main menu
+image::DEFCON-00-Fallout-3-main-menu.png[_Fallout 3_ main menu]
++
+[WARNING]
+====
+You may run into an error like this one when trying to run the game for the first time:
+
+.Error about absent Games for Windows Live
+image::DEFCON-00-Games-for-Windows-Live-absent.png[Error about absent Games for Windows Live]
+
+To fix this, download and install the http://www.xbox.com/en-US/Live/PC/DownloadClient[Games for Windows Marketplace Client] and try again.
+====
+. You can either click on *Play* or *Quit* in the main menu screen. If you are running the game under Windows 7 or Windows 8, odds are you won't be able to go beyond this screen. In Windows 10 you may run the game, although an annoying warning appears every time you run the launcher.
++
+.Windows 10 warning about running _Fallout 3_
+image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about running _Fallout 3_]
+. However, this is all we need, for now. Just click on *Quit* and check this files and folders under `[%USERPROFILE%\Documents\My Games\Fallout3]` (`[%USERPROFILE%\My Documents\My Games\Fallout3]`, if you are using Windows 7):
+* `[Saves]`
+* `FALLOUT3.INI`
+* `FalloutPrefs.ini`
+* `RendererInfo.txt`
+
+
+
+
 === Installing the tools
 
+
+
 === Setting up the environment
-////
+
+
+
 
 ////
 	DEFCON 01 (Bug Fixes and Performance) chapter.

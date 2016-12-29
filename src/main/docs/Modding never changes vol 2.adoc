@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.31, 27/12/2016
+v0.32, 29/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -288,13 +288,13 @@ image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about runn
 
 [NOTE]
 ====
-These are the tools installed in this chapter.
+These are the tools installed in this chapter, in alphabetical order.
 
-* http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer].
-* http://www.nexusmods.com/fallout4/mods/2737/[xEdit].
-* http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash].
-* https://loot.github.io/[LOOT].
 * https://github.com/fireundubh/xedit[Generate Tags for Wrye Bash].
+* https://loot.github.io/[LOOT].
+* http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer].
+* http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash].
+* http://www.nexusmods.com/fallout4/mods/2737/[xEdit].
 ====
 
 In this chapter we are going to install the tools we need to mod _Fallout 3 Game of the Year Edition_. We are going to install them, but we are not going to test them; not yet, at least. Their integration will be addressed in the next chapter.
@@ -306,7 +306,7 @@ In this chapter we are going to install the tools we need to mod _Fallout 3 Game
 
 https://loot.github.io/[Load Order Optimisation Tool] (LOOT) is a tool used to take care of the load order in _The Elder Scrolls IV: Oblivion_, _The Elder Scrolls V: Skyrim_, _The Elder Scrolls V: Skyrim Special Edition_, _Fallout 3_, _Fallout New Vegas_ and _Fallout 4_. Mod Organizer comes with an integrated version of LOOT, but it is outdated, so we are going to need the standalone version installed.
 
-. Download and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[%LOOT_HOME%]`.
+. https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[%LOOT_HOME%]`.
 . Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
 +
 .LOOT first run
@@ -322,15 +322,33 @@ image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game]
 
 ==== xEdit
 
+http://www.nexusmods.com/fallout4/mods/2737/[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There is a version of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
 
+The version you have to use will always be the last one, and in this case, it is the _Fallout 4_ version, called FO4Edit, of course.
 
+So, why the renaming? Why xEdit instead of FO4Edit? It is because we are planning for the future. We would like to use xEdit to manipulate not only _Fallout 3_ plugins, but also plugins from any other Bethesda's (or Obsidian's) game which the tool would be able to manage.
 
-==== Wrye Flash
+. http://www.nexusmods.com/fallout4/mods/2737/[Download] and install FO4Edit outside UAC-controlled space, using the name "xEdit" (for example, `[C:\Games\Tools\xEdit]`). We will refer to the installation folder as `[%XEDIT_HOME%]`. The tool is packed in a ZIP file, so the only thing you have to do is unpack it into the desired location.
+. Rename the file `FO4Edit.exe` inside `[%XEDIT_HOME%]` to `xEdit.exe`.
+. If you try to run xEdit, an error is shown because the tool has not been instructed about which game is about to fiddle with.
++
+.xEdit error when running standalone
+image::DEFCON-00-xEdit-first-time-run-error.png[xEdit error when running standalone]
+. However, the tool launches with no plugins loaded.
++
+.xEdit with no plugins loaded
+image::DEFCON-00-xEdit-first-time-run.png[xEdit with no plugins loaded]
+. Just exit xEdit. We are going to use this tool through Mod Organizer also.
 
 
 
 
 ==== Generate Tags for Wrye Bash
+
+
+
+
+==== Wrye Flash
 
 
 

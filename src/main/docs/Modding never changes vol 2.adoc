@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.32, 29/12/2016
+v0.33, 29/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -109,7 +109,7 @@ I love post-apocalyptic games, and I love tinkering with things, so the recipe _
 
 Slushes apart, _Fallout 3_ is an old game, and what it is more important, it is a Bethesda Softworks' game, and it means a lot of bugs out-of-the-box. The mods we are going to install address these bugs to fix the game, but they also greatly improve the game in every aspect, from playability to graphics, going through sounds and music.
 
-So that is what we want to achieve with this guide: having a step-by-step process to get a fully modded _Fallout 3_ game, with no flaws (almost), with a serious performance boost and with visuals, audio and game mechanics enhanced.
+So that is what we want to achieve with this guide: having a step-by-step process to get a fully modded _Fallout 3_ game, with no flaws (almost), with a serious performance boost and with visuals, audio and game mechanics enhanced, and all of this having a clean, pristine game data folder.
 
 If you are in a rush of excitement and you cannot wait to start modding the hell out of _Fallout 3_, jump ahead to chapter <<DEFCON 00 (Vanilla)>>. Otherwise, read the rest of the introductory chapters to know <<Why Mod Organizer?, why are we choosing Mod Organizer as our modding tool>>, <<Functional vs. Technical, how is the guide organized and why>>, <<The tools we need, which are the tools we need to get the job done>>, and <<Conventions used in this guide, which are the conventions used in writing this guide>>.
 
@@ -322,7 +322,7 @@ image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game]
 
 ==== xEdit
 
-http://www.nexusmods.com/fallout4/mods/2737/[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There is a version of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
+http://www.nexusmods.com/fallout4/mods/2737/[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There are versions of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
 
 The version you have to use will always be the last one, and in this case, it is the _Fallout 4_ version, called FO4Edit, of course.
 
@@ -343,13 +343,37 @@ image::DEFCON-00-xEdit-first-time-run.png[xEdit with no plugins loaded]
 
 
 
-==== Generate Tags for Wrye Bash
-
-
-
-
 ==== Wrye Flash
 
+I'll try to keep it simple... http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash] is a modding utility roughly equivalent to Mod Organizer or Nexus Mod Manager. However, it comes out-of-the-box with a feature that makes it most valuable: the management of bash tags and, hence, the creation of bashed patches. In fact, it is the only feature we are going to use here.
+
+Besides, what is a bash tag or, for that matter, a bashed patch?
+
+Bash tag::
+It is an element that points out which http://geck.bethsoft.com/index.php?title=Category:Leveled_Lists[leveled lists] are modified by a mod. Items belonging to a leveled list are presented to the player according to her level in the game.
+
+Bashed patch::
+It is a sort of compatibility patch between mods, but it revolves around leveled lists, using the bash tags included in these mods.
+
+. http://www.nexusmods.com/fallout3/mods/11336/[Download] Wrye Flash, using the [NexusFile]*Wrye Flash 31.6 - Standalone Executable* file.
+. Unzip the file in a location of your choice. The ZIP file contains two folders, `[Data]` and `[Mopy]`.
+. Copy the two folders to `[%FO3_HOME%]` (remember: your _Fallout 3_ installation folder).
+. A warning will appear, because we are trying to overwrite the data folder with additional content. Yeah, I know I said that we would keep our data folder clean, but this is the only way Wrye Flash would work, so you have to overwrite the game data folder when asked to. This will be the last time, I swear.
++
+.Wrye Flash data folder replacement
+image::DEFCON-00-Wrye-Flash-data-folder-replacement.png[Wrye Flash data folder replacement]
+. Run `Wrye Flash.exe` from `[%FO3_HOME%\Mopy]`.
++
+.Wrye Flash executable
+image::DEFCON-00-Wrye-Flash-executable.png[Wrye Flash executable]
+. Wrye Flash will show an initial error. Just ignore it.
++
+.Wrye Flash initial error
+image::DEFCON-00-Wrye-Flash-initial-error.png[Wrye Flash initial error]
+. After a brief moment, Wrye Flash will be loaded, showing your actual mod list (only official DLCs for the moment). Don't worry about what you see, and *DON'T TOUCH ANYTHING!* Just exit the tool.
++
+.Wrye Flash first run
+image::DEFCON-00-Wrye-Flash-first-run.png[Wrye Flash first run]
 
 
 

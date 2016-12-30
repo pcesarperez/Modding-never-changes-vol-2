@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.34, 30/12/2016
+v0.35, 30/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -374,6 +374,11 @@ image::DEFCON-00-Wrye-Flash-initial-error.png[Wrye Flash initial error]
 +
 .Wrye Flash first run
 image::DEFCON-00-Wrye-Flash-first-run.png[Wrye Flash first run]
+. We have unintentionally left a small detritus in the data folder: a bashed patch template. This is a mock `.esp` file called `Bashed Patch, 0.esp` which Wrye Flash places in the data folder when run in standalone mode.
++
+.Wrye Flash spurious template bashed patch
+image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png[Wrye Flash spurious template bashed patch]
+. Navigate to `[%FO3_HOME\Data%]` and delete the file `Bashed Patch, 0.esp`.
 
 
 

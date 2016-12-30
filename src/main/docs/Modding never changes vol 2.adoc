@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.35, 30/12/2016
+v0.36, 30/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -215,6 +215,14 @@ Mods used in this chapter:
 * http://www.nexusmods.com/fallout3/mods/16787/[_Paradox Ignition presents The Mergers_]
 ====
 
+Tip blocks::
+Tip blocks are used to give hints of links to further resources which expand the knowledge about specific topics. For example:
+
+[TIP]
+====
+There is a complete https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[playlist about modding _Fallout 3_ with Mod Organizer], by Dirty Weasel Media.
+====
+
 
 
 
@@ -306,6 +314,11 @@ In this chapter we are going to install the tools we need to mod _Fallout 3 Game
 
 https://loot.github.io/[Load Order Optimisation Tool] (LOOT) is a tool used to take care of the load order in _The Elder Scrolls IV: Oblivion_, _The Elder Scrolls V: Skyrim_, _The Elder Scrolls V: Skyrim Special Edition_, _Fallout 3_, _Fallout New Vegas_ and _Fallout 4_. Mod Organizer comes with an integrated version of LOOT, but it is outdated, so we are going to need the standalone version installed.
 
+[TIP]
+====
+If you want to have an in-depth look to LOOT and what it can do, just watch the https://www.youtube.com/watch?v=CqFCLrYn30c[Start to Finish tutorial about LOOT], by GamerPoets.
+====
+
 . https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[%LOOT_HOME%]`.
 . Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
 +
@@ -323,6 +336,11 @@ image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game]
 ==== xEdit
 
 http://www.nexusmods.com/fallout4/mods/2737/[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There are versions of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
+
+[TIP]
+====
+Although we are going to use a limited set of features in xEdit, it's worth checking the https://www.youtube.com/watch?v=2F19Do8HAl4[Start to Finish tutorial about xEdit], by GamerPoets.
+====
 
 The version you have to use will always be the last one, and in this case, it is the _Fallout 4_ version, called FO4Edit, of course.
 
@@ -387,6 +405,14 @@ image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png[Wrye Flash spurio
 
 Finally, our touchstone: http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer]. We are just going to install MO in this sub-chapter, taking care about the integration between all the tools in the <<Setting up the environment, next chapter>>.
 
+[TIP]
+====
+We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what it is and how to install it in these two videos, by Gopher, both part of a https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[larger playlist about MO]:
+
+* https://www.youtube.com/watch?v=j4ZQpzf_iAE[Mod Organizer: Introduction].
+* https://www.youtube.com/watch?v=PYY1OV2_ZTk[Mod Organizer #1 - Installation and Initial Setup.]
+====
+
 . http://www.nexusmods.com/skyrim/mods/1334/[Download] the last version of Mod Organizer using the [NexusFile]*Mod Organizer v1_3_11 installer* file, as of this writing.
 . Run the installer, which shows an assistant to guide you through the installation. Advance to the screen in which you should choose the components to install. Make sure you have the *Handle Nexus Links* option checked in order to download Nexus mod files right from MO.
 +
@@ -413,6 +439,7 @@ image::DEFCON-00-Mod-Organizer-show-tutorial.png[Mod Organizer show tutorial off
 .Mod Organizer first run
 image::DEFCON-00-Mod-Organizer-first-run.png[Mod Organizer first run]
 . Don't do anything right now, but leave MO open.
+
 
 
 

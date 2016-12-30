@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.36, 30/12/2016
+v0.37, 30/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -409,8 +409,8 @@ Finally, our touchstone: http://www.nexusmods.com/skyrim/mods/1334/[Mod Organize
 ====
 We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what it is and how to install it in these two videos, by Gopher, both part of a https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[larger playlist about MO]:
 
-* https://www.youtube.com/watch?v=j4ZQpzf_iAE[Mod Organizer: Introduction].
-* https://www.youtube.com/watch?v=PYY1OV2_ZTk[Mod Organizer #1 - Installation and Initial Setup.]
+* https://www.youtube.com/watch?v=j4ZQpzf_iAE&index=1&list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer: Introduction].
+* https://www.youtube.com/watch?v=PYY1OV2_ZTk&index=2&list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer #1 - Installation and Initial Setup.]
 ====
 
 . http://www.nexusmods.com/skyrim/mods/1334/[Download] the last version of Mod Organizer using the [NexusFile]*Mod Organizer v1_3_11 installer* file, as of this writing.
@@ -444,6 +444,80 @@ image::DEFCON-00-Mod-Organizer-first-run.png[Mod Organizer first run]
 
 
 === Setting up the environment
+
+We have installed all the tools we need so far, but they are just bits and pieces left fending for themselves. What we are going to do in this chapter is to glue them together so that they work seamlessly in a solid, stable modding environment.
+
+[TIP]
+====
+There is a great video about https://www.youtube.com/watch?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&v=GeEz564qCpc[installing and stitching together all the tools], by Dirty Weasel Media. It is part of a https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[larger playlist about modding _Fallout 3_ with Mod Organizer].
+====
+
+The setup has been divided in several parts to make it easier to follow.
+
+
+
+
+==== Creating a proper shortcut
+
+We need a shortcut to MO to run the tool with ease, because we are going to launch the game using MO, _with no exceptions_. It may seem a bit overkill at first, at least when you have the game fully modded, but trust me, you would like to know exactly which profile, and therefore which mods, are you going to load.
+
+. Navigate with windows Explorer to `[%FO3_HOME%\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
++
+.Creating a shortcut to Mod Organizer
+image::DEFCON-00-Mod-Organizer-create-shortcut.png[Creating a shortcut to Mod Organizer]
+. Rename the shortcut to something meaningful, like "FO3-MO", for example. We are planning for the future again, because we are going to use Mod Organizer for _Fallout New Vegas_ and _The Elder Scrolls IV: Oblivion_.
++
+.Mod Organizer renamed shortcut
+image::DEFCON-00-Mod-Organizer-renamed-shortcut.png[Mod Organizer renamed shortcut]
+. The default icon for MO is not that bad, but now we are customizing our environment, why stop here? Let's change the icon to show the game we are dealing with. Download the http://www.iconarchive.com/download/i297/3xhumed/mega-games-pack-23/Fallout-3-new-1.ico[ICO version] of http://www.iconarchive.com/show/mega-games-pack-23-icons-by-3xhumed/Fallout-3-new-1-icon.html[this icon] from http://www.iconarchive.com/tag/fallout[the Icon Archive].
+. Right-click on the MO icon and select *Properties*. Don't pay attention to the shitload of options I have in my contextual menu. Your mileage may vary.
++
+.Context menu for the MO icon
+image::DEFCON-00-Mod-Organizer-shortcut-context-menu.png[Context menu for the MO icon]
+. In the properties window, click on *Change Icon...*.
++
+.Mod Organizer shortcut properties
+image::DEFCON-00-Mod-Organizer-shortcut-properties.png[Mod Organizer shortcut properties]
+. In the dialog to choose an icon, select *Browse...*.
++
+.Mod Organizer icon selection dialog
+image::DEFCON-00-Mod-Organizer-browse-icon.png[Mod Organizer icon selection dialog]
+. Navigate to the folder where you downloaded the new icon and select it.
++
+.Selecting a new icon for the FO3-MO shortcut
+image::DEFCON-00-Mod-Organizer-new-icon-selection.png[Selecting a new icon for the FO3-MO shortcut]
+. Back to the icon selection dialog, just click *Ok*.
++
+.Mod Organizer icon confirmation
+image::DEFCON-00-Mod-Organizer-new-icon-confirmation.png[Mod Organizer icon confirmation]
+. Finally, click *Ok* on the shortcut properties dialog to confirm the changes.
++
+.Confirming the changes made to the FO3-MO shortcut
+image::DEFCON-00-Mod-Organizer-shortcut-properties-confirmation.png[Confirming the changes made to the FO3-MO shortcut]
+. This is it! We have now a neat and meaningful icon to launch the MO environment tailored to _Fallout 3_.
++
+.Mod Organizer customized shortcut
+image::DEFCON-00-Mod-Organizer-customized-shortcut.png[Mod Organizer customized shortcut]
+
+
+
+
+==== Mod Organizer basic setup
+
+
+
+
+==== Integrating LOOT with Mod Organizer
+
+
+
+
+==== Integrating xEdit with Mod Organizer
+
+
+
+
+==== Integrating Wrye Flash with Mod Organizer
 
 
 

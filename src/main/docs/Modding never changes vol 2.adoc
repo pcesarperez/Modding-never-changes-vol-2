@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.37, 30/12/2016
+v0.38, 30/12/2016
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -503,6 +503,118 @@ image::DEFCON-00-Mod-Organizer-customized-shortcut.png[Mod Organizer customized 
 
 
 ==== Mod Organizer basic setup
+
+By now, we have everything in place, but we have not started with the real deal yet. Let's begin now.
+
+[TIP]
+====
+Check this video about https://www.youtube.com/watch?v=kdZffZnYvL4&list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&index=1[installing and setting up Mod Organizer], by Dirty Weasel Media.
+====
+
+. Launch MO with the shortcut we have just created. You can see the http://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[left pane] and the http://wiki.step-project.com/Guide:Mod_Organizer#Right_Pane[right pane]. The left pane contains our mod stack, sorted by priority (the higher the number, the higher the priority), while the right pane contains our load order, also sorted by priority, with just the `.esm` and `.esp` files.
++
+.Mod Organizer panes
+image::DEFCON-00-Mod-Organizer-panes.png[Mod Organizer panes]
+. There is something a bit off with the information shown in both panes: the order is not right. Somehow, MO does not know how to sort the main file and official DLCs right off the hook. Let's start by correcting the priority order in the left pane by dragging and dropping the official mods until you have this:
+* Unmanaged: Fallout3
+* Unmanaged: Anchorage
+* Unmanaged: ThePitt
+* Unmanaged: BrokenSteel
+* Unmanaged: PointLookout
+* Unmanaged: Zeta
++
+.Corrected priority order in MO
+image::DEFCON-00-Mod-Organizer-corrected-priority-order.png[Corrected priority order in MO]
+. Do the same with the load order in the left pane, dragging and dropping the plugins. You should have this:
+* `Fallout3.esm` (you cannot move this, anyway)
+* `Anchorage.esm`
+* `ThePitt.esm`
+* `BrokenSteel.esm`
+* `PointLookout.esm`
+* `Zeta.esm`
++
+.Corrected load order in MO
+image::DEFCON-00-Mod-Organizer-corrected-load-order.png[Corrected load order in MO]
+. We are working with the default profile, so we are going to rename it to show we are working with the Vanilla, unmodded game. Click on the profiles button which lies in the left-hand side of the toolbar.
++
+.Mod Organizer profiles button
+image::DEFCON-00-Mod-Organizer-profiles-button.png[Mod Organizer profiles button]
+. In the profiles management window, select the "Default" profile and click on *Rename*.
++
+.Mod Organizer profiles management window
+image::DEFCON-00-Mod-Organizer-profiles-management-window.png[Mod Organizer profiles management window]
+. Rename the profile to "DEFCON 00 (Vanilla)" and click *Ok*.
++
+.Renamed Vanilla profile in MO
+image::DEFCON-00-Mod-Organizer-renamed-Vanilla-profile.png[Renamed Vanilla profile in MO]
+. Back to the profiles management window, activate the option *Automatic Archive Invalidation*. Otherwise, you won't be able to install any mod! Finally, click on *Close*.
++
+.Mod Organizer automatic archive invalidation
+image::DEFCON-00-Mod-Organizer-automatic-archive-invalidation.png[Mod Organizer automatic archive invalidation]
+. You can see the renamed profile in the dropdown just below the toolbar, above the priority list.
++
+.Mod Organizer Vanilla profile
+image::DEFCON-00-Mod-Organizer-Vanilla-profile.png[Mod Organizer Vanilla profile]
+. Switch to the *Archives* tab in the right pane and make sure the option *Have MO manage archives* is activated and the file `Fallout - Invalidation.bsa` is at the top (if it is not, don't worry, we'll fix that in a moment).
++
+.Archive management activated in Mod Organizer
+image::DEFCON-00-Mod-Organizer-archive-management-activated.png[Archive management activated in Mod Organizer]
+. Let's sift through the options we need to change. Click on the settings button at the toolbar.
++
+.Mod Organizer settings button
+image::DEFCON-00-Mod-Organizer-settings-button.png[Mod Organizer settings button]
+. In the *General* tab adjust at least the following settings:
+* Activate the *Advanced* option.
+* If possible, select a download directory in an alternate location, outside your `[%FO3_HOME%]` folder.
+* Activate *Download Meta Information*.
++
+.Mod Organizer general settings
+image::DEFCON-00-Mod-Organizer-general-settings.png[Mod Organizer general settings]
+. In the *Nexus* tab, adjust at least the following settings:
+* Activate the *Automatic Log-In to Nexus* option.
+* Use your username and password from Nexus to authenticate.
+* Click on the *Associate with "Download with manager" links* button.
++
+.Mod Organizer Nexus settings
+image::DEFCON-00-Mod-Organizer-Nexus-settings.png[Mod Organizer Nexus settings]
+. In the *Plugins* tab, select the plugin "BSA Extractor" and, in the right pane, swith the "enabled" status from "False" to "True".
++
+.Mod Organizer plugins settings
+image::DEFCON-00-Mod-Organizer-plugins-settings.png[Mod Organizer plugins settings]
+. In the *Workarounds* tab, adjust at least the following settings and click *Ok*.
+* Change the NMM version to the latest available (you can find out the latest version in the http://www.nexusmods.com/games/[Nexus main page], at the topmost bar, in the http://www.nexusmods.com/games/mods/modmanager/[Install NMM] link).
+* Disable the option *Force-enable game files*.
++
+.Nexus Mod Manager latest version
+image::DEFCON-00-NMM-version.png[Nexus Mod Manager latest version]
++
+.Mod Organizer workarounds settings
+image::DEFCON-00-Mod-Organizer-workarounds-settings.png[Mod Organizer workarounds settings]
+. Back to the MO main window, click on the options dropdown and select *Refresh*.
++
+.Mod Organizer refresh settings
+image::DEFCON-00-Mod-Organizer-refresh-settings.png[Mod Organizer refresh settings]
+. After refreshing, you may notice a subtle change. In the *Plugins* tab of the right pane, the file `Fallout3.esm` is no longer grayed out (because we disabled the *Force-enable game files* option in the workaround settings), therefore we can drag and drop it like the rest of the files (don't do that, though).
++
+.Mod Organizer main _Fallout 3_ file active
+image::DEFCON-00-Mod-Organizer-main-Fallout-3-file-active.png[Mod Organizer main _Fallout 3_ file active]
+. Remember the `Fallout - Invalidation.bsa` we mentioned before? If it was out of place, it shouldn't be grayed out now, so you can move it around.
++
+.Mod Organizer invalidation file active
+image::DEFCON-00-Mod-Organizer-invalidation-file-active.png[Mod Organizer invalidation file active]
+. Let's check everything is alright by running the Vanilla game through MO. With the game selected in the big dropdown above the right pane (it should be selected by default), just click on the *Run* button.
++
+.Mod Organizer internal program launcher
+image::DEFCON-00-Mod-Organizer-internal-program-launcher.png[Mod Organizer internal program launcher]
+. Mod Organizer may show a dialog about elevated privileges, although we have installed everything outside UAC-controlled space. If so, just click on *Yes* and go on.
++
+.Mod Organizer elevated privileges dialog
+image::DEFCON-00-Mod-Organizer-elevated-privileges.png[Mod Organizer elevated privileges dialog]
+. Finally, here it is: _Fallout 3_ running through MO!
++
+._Fallout 3_ Vanilla running through Mod Organizer
+image::DEFCON-00-Fallout-3-Vanilla-through-Mod-Organizer.png[_Fallout 3_ Vanilla running through Mod Organizer]
+. Click on *Quit* to move on to the following chapters, where we are going to integrate our toolset with MO.
 
 
 

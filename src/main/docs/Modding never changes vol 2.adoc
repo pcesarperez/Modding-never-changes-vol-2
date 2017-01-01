@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.38, 30/12/2016
+v0.39, 01/01/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -248,41 +248,41 @@ I am assuming we are using the Steam edition of _Fallout 3 Game of the Year Edit
 . You *MUST* run the game at least once to create the configuration files the game needs, so double-click on the launcher icon you should have in your desktop.
 +
 ._Fallout 3_ launcher icon
-image::DEFCON-00-Fallout-3-launcher-icon.png[_Fallout 3_ launcher icon]
+image::DEFCON-00-Fallout-3-launcher-icon.png[Fallout 3 launcher icon, title="Fallout 3 launcher icon"]
 . The launcher dutifully informs you that video hardware is about to be detected, thus setting up the configuration for you.
 +
 .Video hardware detection message
-image::DEFCON-00-Video-hardware-detection-message.png[Video hardware detection message]
+image::DEFCON-00-Video-hardware-detection-message.png[Video hardware detection message, title="Video hardware detection message"]
 . After a brief moment, the launcher shows a message with the quality settings it has detected for your box (my rig is a crap, but the game is rather old, so...).
 +
 .Video hardware settings detected
-image::DEFCON-00-Video-hardware-settings-detected.png[Video hardware settings detected]
+image::DEFCON-00-Video-hardware-settings-detected.png[Video hardware settings detected, title="Video hardware settings detected"]
 . And here we go! This is the launcher in all its greenish glory.
 +
 ._Fallout 3_ launcher
-image::DEFCON-00-Fallout-3-launcher.png[_Fallout 3_ launcher]
+image::DEFCON-00-Fallout-3-launcher.png[Fallout 3 launcher, title="Fallout 3 launcher"]
 . Click on *Options* to adjust the video resolution. Don't bother changing anything else right now.
 +
 ._Fallout 3_ settings
-image::DEFCON-00-Video-resolution-adjustment.png[_Fallout 3_ settings]
+image::DEFCON-00-Video-resolution-adjustment.png[Fallout 3 settings, title="Fallout 3 settings"]
 . Click on *Play* in the launcher to launch the game with the preferred settings. The game will show the main menu.
 +
 ._Fallout 3_ main menu
-image::DEFCON-00-Fallout-3-main-menu.png[_Fallout 3_ main menu]
+image::DEFCON-00-Fallout-3-main-menu.png[Fallout 3 main menu, title="Fallout 3 main menu"]
 +
 [WARNING]
 ====
 You may run into an error like this one when trying to run the game for the first time:
 
 .Error about absent Games for Windows Live
-image::DEFCON-00-Games-for-Windows-Live-absent.png[Error about absent Games for Windows Live]
+image::DEFCON-00-Games-for-Windows-Live-absent.png[Error about absent Games for Windows Live, title="Error about absent Games for Windows Live"]
 
 To fix this, download and install the http://www.xbox.com/en-US/Live/PC/DownloadClient[Games for Windows Marketplace Client] and try again.
 ====
 . You can either click on *Play* or *Quit* in the main menu screen. If you are running the game under Windows 7 or Windows 8, odds are you won't be able to go beyond this screen. In Windows 10 you may run the game, although an annoying warning appears every time you run the launcher.
 +
 .Windows 10 warning about running _Fallout 3_
-image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about running _Fallout 3_]
+image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about running Fallout 3, title="Windows 10 warning about running Fallout 3"]
 . However, this is all we need, for now. Just click on *Quit* and check this files and folders under `[%USERPROFILE%\Documents\My Games\Fallout3]` (`[%USERPROFILE%\My Documents\My Games\Fallout3]`, if you are using Windows 7):
 * `[Saves]`
 * `FALLOUT3.INI`
@@ -323,11 +323,11 @@ If you want to have an in-depth look to LOOT and what it can do, just watch the 
 . Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
 +
 .LOOT first run
-image::DEFCON-00-LOOT-first-run.png[LOOT first run]
+image::DEFCON-00-LOOT-first-run.png[LOOT first run, title="LOOT first run"]
 . LOOT usually does a good job detecting the installed games which it considers manageable, so there is a good chance that _Fallout 3_ would be automatically detected.
 +
 .LOOT with Vanilla game
-image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game]
+image::DEFCON-00-LOOT-with-Vanilla-game.png[LOOT with Vanilla game, title="LOOT with Vanilla game"]
 . *DON'T DO ANYTHING BUT EXIT LOOT!* We are going to manage the load order through Mod Organizer, so this will be the last time we run LOOT standalone.
 
 
@@ -351,11 +351,11 @@ So, why the renaming? Why xEdit instead of FO4Edit? It is because we are plannin
 . If you try to run xEdit, an error is shown because the tool has not been instructed about which game is about to fiddle with.
 +
 .xEdit error when running standalone
-image::DEFCON-00-xEdit-first-time-run-error.png[xEdit error when running standalone]
+image::DEFCON-00-xEdit-first-time-run-error.png[xEdit error when running standalone, title="xEdit error when running standalone"]
 . However, the tool launches with no plugins loaded.
 +
 .xEdit with no plugins loaded
-image::DEFCON-00-xEdit-first-time-run.png[xEdit with no plugins loaded]
+image::DEFCON-00-xEdit-first-time-run.png[xEdit with no plugins loaded, title="xEdit with no plugins loaded"]
 . Just exit xEdit. We are going to use this tool through Mod Organizer also.
 
 
@@ -373,29 +373,31 @@ It is an element that points out which http://geck.bethsoft.com/index.php?title=
 Bashed patch::
 It is a sort of compatibility patch between mods, but it revolves around leveled lists, using the bash tags included in these mods.
 
+//^
+
 . http://www.nexusmods.com/fallout3/mods/11336/[Download] Wrye Flash, using the [NexusFile]*Wrye Flash 31.6 - Standalone Executable* file, as of this writing.
 . Unzip the file in a location of your choice. The ZIP file contains two folders, `[Data]` and `[Mopy]`.
 . Copy the two folders to `[%FO3_HOME%]` (remember: your _Fallout 3_ installation folder).
 . A warning will appear, because we are trying to overwrite the data folder with additional content. Yeah, I know I said that we would keep our data folder clean, but this is the only way Wrye Flash would work, so you have to overwrite the game data folder when asked to. This will be the last time, I swear.
 +
 .Wrye Flash data folder replacement
-image::DEFCON-00-Wrye-Flash-data-folder-replacement.png[Wrye Flash data folder replacement]
+image::DEFCON-00-Wrye-Flash-data-folder-replacement.png[Wrye Flash data folder replacement, title="Wrye Flash data folder replacement"]
 . Run `Wrye Flash.exe` from `[%FO3_HOME%\Mopy]`.
 +
 .Wrye Flash executable
-image::DEFCON-00-Wrye-Flash-executable.png[Wrye Flash executable]
+image::DEFCON-00-Wrye-Flash-executable.png[Wrye Flash executable, title="Wrye Flash executable"]
 . Wrye Flash will show an initial error. Just ignore it.
 +
 .Wrye Flash initial error
-image::DEFCON-00-Wrye-Flash-initial-error.png[Wrye Flash initial error]
+image::DEFCON-00-Wrye-Flash-initial-error.png[Wrye Flash initial error, title="Wrye Flash initial error"]
 . After a brief moment, Wrye Flash will be loaded, showing your actual mod list (only official DLCs for the moment). Don't worry about what you see, and *DON'T TOUCH ANYTHING!* Just exit the tool.
 +
 .Wrye Flash first run
-image::DEFCON-00-Wrye-Flash-first-run.png[Wrye Flash first run]
+image::DEFCON-00-Wrye-Flash-first-run.png[Wrye Flash first run, title="Wrye Flash first run"]
 . We have unintentionally left a small detritus in the data folder: a bashed patch template. This is a mock `.esp` file called `Bashed Patch, 0.esp` which Wrye Flash places in the data folder when run in standalone mode.
 +
 .Wrye Flash spurious template bashed patch
-image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png[Wrye Flash spurious template bashed patch]
+image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png[Wrye Flash spurious template bashed patch, title="Wrye Flash spurious template bashed patch"]
 . Navigate to `[%FO3_HOME\Data%]` and delete the file `Bashed Patch, 0.esp`.
 
 
@@ -417,27 +419,27 @@ We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what
 . Run the installer, which shows an assistant to guide you through the installation. Advance to the screen in which you should choose the components to install. Make sure you have the *Handle Nexus Links* option checked in order to download Nexus mod files right from MO.
 +
 .Mod Organizer components
-image::DEFCON-00-Mod-Organizer-components.png[Mod Organizer components]
+image::DEFCON-00-Mod-Organizer-components.png[Mod Organizer components, title="Mod Organizer components"]
 . In the next screen, select `[%FO3_HOME%\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
 +
 .Mod Organizer installation folder
-image::DEFCON-00-Mod-Organizer-installation-folder.png[Mod Organizer installation folder]
+image::DEFCON-00-Mod-Organizer-installation-folder.png[Mod Organizer installation folder, title="Mod Organizer installation folder"]
 . Once the tool is in place, run Mod Organizer. The application will ask you to select the game version you have. You should choose _Game Of The Year_.
 +
 .Mod Organizer game version selection
-image::DEFCON-00-Mod-Organizer-game-version-selection.png[Mod Organizer game version selection]
+image::DEFCON-00-Mod-Organizer-game-version-selection.png[Mod Organizer game version selection, title="Mod Organizer game version selection"]
 . A window with the message of the day will appear. Just click *Ok*.
 +
 .Mod Organizer message of the day
-image::DEFCON-00-Mod-Organizer-message-of-the-day.png[Mod Organizer message of the day]
+image::DEFCON-00-Mod-Organizer-message-of-the-day.png[Mod Organizer message of the day, title="Mod Organizer message of the day"]
 . After that, MO offers to show a tutorial. It's your choice, but if you want to cut to the chase, just click *No*.
 +
 .Mod Organizer show tutorial offering
-image::DEFCON-00-Mod-Organizer-show-tutorial.png[Mod Organizer show tutorial offering]
+image::DEFCON-00-Mod-Organizer-show-tutorial.png[Mod Organizer show tutorial offering, title="Mod Organizer show tutorial offering"]
 . Lo and behold! Here it is, at last! Mod Organizer is loaded with the main file and official DLCs loaded.
 +
 .Mod Organizer first run
-image::DEFCON-00-Mod-Organizer-first-run.png[Mod Organizer first run]
+image::DEFCON-00-Mod-Organizer-first-run.png[Mod Organizer first run, title="Mod Organizer first run"]
 . Don't do anything right now, but leave MO open.
 
 
@@ -464,40 +466,40 @@ We need a shortcut to MO to run the tool with ease, because we are going to laun
 . Navigate with windows Explorer to `[%FO3_HOME%\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
 +
 .Creating a shortcut to Mod Organizer
-image::DEFCON-00-Mod-Organizer-create-shortcut.png[Creating a shortcut to Mod Organizer]
+image::DEFCON-00-Mod-Organizer-create-shortcut.png[Creating a shortcut to Mod Organizer, title="Creating a shortcut to Mod Organizer"]
 . Rename the shortcut to something meaningful, like "FO3-MO", for example. We are planning for the future again, because we are going to use Mod Organizer for _Fallout New Vegas_ and _The Elder Scrolls IV: Oblivion_.
 +
 .Mod Organizer renamed shortcut
-image::DEFCON-00-Mod-Organizer-renamed-shortcut.png[Mod Organizer renamed shortcut]
+image::DEFCON-00-Mod-Organizer-renamed-shortcut.png[Mod Organizer renamed shortcut, title="Mod Organizer renamed shortcut"]
 . The default icon for MO is not that bad, but now we are customizing our environment, why stop here? Let's change the icon to show the game we are dealing with. Download the http://www.iconarchive.com/download/i297/3xhumed/mega-games-pack-23/Fallout-3-new-1.ico[ICO version] of http://www.iconarchive.com/show/mega-games-pack-23-icons-by-3xhumed/Fallout-3-new-1-icon.html[this icon] from http://www.iconarchive.com/tag/fallout[the Icon Archive].
 . Right-click on the MO icon and select *Properties*. Don't pay attention to the shitload of options I have in my contextual menu. Your mileage may vary.
 +
-.Context menu for the MO icon
-image::DEFCON-00-Mod-Organizer-shortcut-context-menu.png[Context menu for the MO icon]
+.Context menu for the Mod Organizer icon
+image::DEFCON-00-Mod-Organizer-shortcut-context-menu.png[Context menu for the Mod Organizer icon, title="Context menu for the Mod Organizer icon"]
 . In the properties window, click on *Change Icon...*.
 +
 .Mod Organizer shortcut properties
-image::DEFCON-00-Mod-Organizer-shortcut-properties.png[Mod Organizer shortcut properties]
+image::DEFCON-00-Mod-Organizer-shortcut-properties.png[Mod Organizer shortcut properties, title="Mod Organizer shortcut properties"]
 . In the dialog to choose an icon, select *Browse...*.
 +
 .Mod Organizer icon selection dialog
-image::DEFCON-00-Mod-Organizer-browse-icon.png[Mod Organizer icon selection dialog]
+image::DEFCON-00-Mod-Organizer-browse-icon.png[Mod Organizer icon selection dialog, title="Mod Organizer icon selection dialog"]
 . Navigate to the folder where you downloaded the new icon and select it.
 +
 .Selecting a new icon for the FO3-MO shortcut
-image::DEFCON-00-Mod-Organizer-new-icon-selection.png[Selecting a new icon for the FO3-MO shortcut]
+image::DEFCON-00-Mod-Organizer-new-icon-selection.png[Selecting a new icon for the FO3-MO shortcut, title="Selecting a new icon for the FO3-MO shortcut"]
 . Back to the icon selection dialog, just click *Ok*.
 +
 .Mod Organizer icon confirmation
-image::DEFCON-00-Mod-Organizer-new-icon-confirmation.png[Mod Organizer icon confirmation]
+image::DEFCON-00-Mod-Organizer-new-icon-confirmation.png[Mod Organizer icon confirmation, title="Mod Organizer icon confirmation"]
 . Finally, click *Ok* on the shortcut properties dialog to confirm the changes.
 +
 .Confirming the changes made to the FO3-MO shortcut
-image::DEFCON-00-Mod-Organizer-shortcut-properties-confirmation.png[Confirming the changes made to the FO3-MO shortcut]
+image::DEFCON-00-Mod-Organizer-shortcut-properties-confirmation.png[Confirming the changes made to the FO3-MO shortcut, title="Confirming the changes made to the FO3-MO shortcut"]
 . This is it! We have now a neat and meaningful icon to launch the MO environment tailored to _Fallout 3_.
 +
 .Mod Organizer customized shortcut
-image::DEFCON-00-Mod-Organizer-customized-shortcut.png[Mod Organizer customized shortcut]
+image::DEFCON-00-Mod-Organizer-customized-shortcut.png[Mod Organizer customized shortcut, title="Mod Organizer customized shortcut"]
 
 
 
@@ -514,7 +516,7 @@ Check this video about https://www.youtube.com/watch?v=kdZffZnYvL4&list=PLWMvEg2
 . Launch MO with the shortcut we have just created. You can see the http://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[left pane] and the http://wiki.step-project.com/Guide:Mod_Organizer#Right_Pane[right pane]. The left pane contains our mod stack, sorted by priority (the higher the number, the higher the priority), while the right pane contains our load order, also sorted by priority, with just the `.esm` and `.esp` files.
 +
 .Mod Organizer panes
-image::DEFCON-00-Mod-Organizer-panes.png[Mod Organizer panes]
+image::DEFCON-00-Mod-Organizer-panes.png[Mod Organizer panes, title="Mod Organizer panes"]
 . There is something a bit off with the information shown in both panes: the order is not right. Somehow, MO does not know how to sort the main file and official DLCs right off the hook. Let's start by correcting the priority order in the left pane by dragging and dropping the official mods until you have this:
 * Unmanaged: Fallout3
 * Unmanaged: Anchorage
@@ -523,8 +525,8 @@ image::DEFCON-00-Mod-Organizer-panes.png[Mod Organizer panes]
 * Unmanaged: PointLookout
 * Unmanaged: Zeta
 +
-.Corrected priority order in MO
-image::DEFCON-00-Mod-Organizer-corrected-priority-order.png[Corrected priority order in MO]
+.Corrected priority order in Mod Organizer
+image::DEFCON-00-Mod-Organizer-corrected-priority-order.png[Corrected priority order in Mod Organizer, title="Corrected priority order in Mod Organizer"]
 . Do the same with the load order in the left pane, dragging and dropping the plugins. You should have this:
 * `Fallout3.esm` (you cannot move this, anyway)
 * `Anchorage.esm`
@@ -534,92 +536,149 @@ image::DEFCON-00-Mod-Organizer-corrected-priority-order.png[Corrected priority o
 * `Zeta.esm`
 +
 .Corrected load order in MO
-image::DEFCON-00-Mod-Organizer-corrected-load-order.png[Corrected load order in MO]
+image::DEFCON-00-Mod-Organizer-corrected-load-order.png[Corrected load order in Mod Organizer, title="Corrected load order in Mod Organizer"]
 . We are working with the default profile, so we are going to rename it to show we are working with the Vanilla, unmodded game. Click on the profiles button which lies in the left-hand side of the toolbar.
 +
 .Mod Organizer profiles button
-image::DEFCON-00-Mod-Organizer-profiles-button.png[Mod Organizer profiles button]
+image::DEFCON-00-Mod-Organizer-profiles-button.png[Mod Organizer profiles button, title="Mod Organizer profiles button"]
 . In the profiles management window, select the "Default" profile and click on *Rename*.
 +
 .Mod Organizer profiles management window
-image::DEFCON-00-Mod-Organizer-profiles-management-window.png[Mod Organizer profiles management window]
+image::DEFCON-00-Mod-Organizer-profiles-management-window.png[Mod Organizer profiles management window, title="Mod Organizer profiles management window"]
 . Rename the profile to "DEFCON 00 (Vanilla)" and click *Ok*.
 +
-.Renamed Vanilla profile in MO
-image::DEFCON-00-Mod-Organizer-renamed-Vanilla-profile.png[Renamed Vanilla profile in MO]
+.Renamed Vanilla profile in Mod Organizer
+image::DEFCON-00-Mod-Organizer-renamed-Vanilla-profile.png[Renamed Vanilla profile in Mod Organizer, title="Renamed Vanilla profile in Mod Organizer"]
 . Back to the profiles management window, activate the option *Automatic Archive Invalidation*. Otherwise, you won't be able to install any mod! Finally, click on *Close*.
 +
 .Mod Organizer automatic archive invalidation
-image::DEFCON-00-Mod-Organizer-automatic-archive-invalidation.png[Mod Organizer automatic archive invalidation]
+image::DEFCON-00-Mod-Organizer-automatic-archive-invalidation.png[Mod Organizer automatic archive invalidation, title="Mod Organizer automatic archive invalidation"]
 . You can see the renamed profile in the dropdown just below the toolbar, above the priority list.
 +
 .Mod Organizer Vanilla profile
-image::DEFCON-00-Mod-Organizer-Vanilla-profile.png[Mod Organizer Vanilla profile]
+image::DEFCON-00-Mod-Organizer-Vanilla-profile.png[Mod Organizer Vanilla profile, title="Mod Organizer Vanilla profile"]
 . Switch to the *Archives* tab in the right pane and make sure the option *Have MO manage archives* is activated and the file `Fallout - Invalidation.bsa` is at the top (if it is not, don't worry, we'll fix that in a moment).
 +
 .Archive management activated in Mod Organizer
-image::DEFCON-00-Mod-Organizer-archive-management-activated.png[Archive management activated in Mod Organizer]
+image::DEFCON-00-Mod-Organizer-archive-management-activated.png[Archive management activated in Mod Organizer, title="Archive management activated in Mod Organizer"]
 . Let's sift through the options we need to change. Click on the settings button at the toolbar.
 +
 .Mod Organizer settings button
-image::DEFCON-00-Mod-Organizer-settings-button.png[Mod Organizer settings button]
+image::DEFCON-00-Mod-Organizer-settings-button.png[Mod Organizer settings button, title="Mod Organizer settings button"]
 . In the *General* tab adjust at least the following settings:
 * Activate the *Advanced* option.
 * If possible, select a download directory in an alternate location, outside your `[%FO3_HOME%]` folder.
 * Activate *Download Meta Information*.
 +
 .Mod Organizer general settings
-image::DEFCON-00-Mod-Organizer-general-settings.png[Mod Organizer general settings]
+image::DEFCON-00-Mod-Organizer-general-settings.png[Mod Organizer general settings, title="Mod Organizer general settings"]
 . In the *Nexus* tab, adjust at least the following settings:
 * Activate the *Automatic Log-In to Nexus* option.
 * Use your username and password from Nexus to authenticate.
 * Click on the *Associate with "Download with manager" links* button.
 +
 .Mod Organizer Nexus settings
-image::DEFCON-00-Mod-Organizer-Nexus-settings.png[Mod Organizer Nexus settings]
+image::DEFCON-00-Mod-Organizer-Nexus-settings.png[Mod Organizer Nexus settings, title="Mod Organizer Nexus settings"]
 . In the *Plugins* tab, select the plugin "BSA Extractor" and, in the right pane, swith the "enabled" status from "False" to "True".
 +
 .Mod Organizer plugins settings
-image::DEFCON-00-Mod-Organizer-plugins-settings.png[Mod Organizer plugins settings]
+image::DEFCON-00-Mod-Organizer-plugins-settings.png[Mod Organizer plugins settings, title="Mod Organizer plugins settings"]
 . In the *Workarounds* tab, adjust at least the following settings and click *Ok*.
 * Change the NMM version to the latest available (you can find out the latest version in the http://www.nexusmods.com/games/[Nexus main page], at the topmost bar, in the http://www.nexusmods.com/games/mods/modmanager/[Install NMM] link).
 * Disable the option *Force-enable game files*.
 +
 .Nexus Mod Manager latest version
-image::DEFCON-00-NMM-version.png[Nexus Mod Manager latest version]
+image::DEFCON-00-NMM-version.png[Nexus Mod Manager latest version, title="Nexus Mod Manager latest version"]
 +
 .Mod Organizer workarounds settings
-image::DEFCON-00-Mod-Organizer-workarounds-settings.png[Mod Organizer workarounds settings]
+image::DEFCON-00-Mod-Organizer-workarounds-settings.png[Mod Organizer workarounds settings, title="Mod Organizer workarounds settings"]
 . Back to the MO main window, click on the options dropdown and select *Refresh*.
 +
 .Mod Organizer refresh settings
-image::DEFCON-00-Mod-Organizer-refresh-settings.png[Mod Organizer refresh settings]
+image::DEFCON-00-Mod-Organizer-refresh-settings.png[Mod Organizer refresh settings, title="Mod Organizer refresh settings"]
 . After refreshing, you may notice a subtle change. In the *Plugins* tab of the right pane, the file `Fallout3.esm` is no longer grayed out (because we disabled the *Force-enable game files* option in the workaround settings), therefore we can drag and drop it like the rest of the files (don't do that, though).
 +
 .Mod Organizer main _Fallout 3_ file active
-image::DEFCON-00-Mod-Organizer-main-Fallout-3-file-active.png[Mod Organizer main _Fallout 3_ file active]
+image::DEFCON-00-Mod-Organizer-main-Fallout-3-file-active.png[Mod Organizer main Fallout 3 file active, title="Mod Organizer main Fallout 3 file active"]
 . Remember the `Fallout - Invalidation.bsa` we mentioned before? If it was out of place, it shouldn't be grayed out now, so you can move it around.
 +
 .Mod Organizer invalidation file active
-image::DEFCON-00-Mod-Organizer-invalidation-file-active.png[Mod Organizer invalidation file active]
+image::DEFCON-00-Mod-Organizer-invalidation-file-active.png[Mod Organizer invalidation file active, title="Mod Organizer invalidation file active"]
 . Let's check everything is alright by running the Vanilla game through MO. With the game selected in the big dropdown above the right pane (it should be selected by default), just click on the *Run* button.
 +
 .Mod Organizer internal program launcher
-image::DEFCON-00-Mod-Organizer-internal-program-launcher.png[Mod Organizer internal program launcher]
+image::DEFCON-00-Mod-Organizer-internal-program-launcher.png[Mod Organizer internal program launcher, title="Mod Organizer internal program launcher"]
 . Mod Organizer may show a dialog about elevated privileges, although we have installed everything outside UAC-controlled space. If so, just click on *Yes* and go on.
 +
 .Mod Organizer elevated privileges dialog
-image::DEFCON-00-Mod-Organizer-elevated-privileges.png[Mod Organizer elevated privileges dialog]
+image::DEFCON-00-Mod-Organizer-elevated-privileges.png[Mod Organizer elevated privileges dialog, title="Mod Organizer elevated privileges dialog"]
 . Finally, here it is: _Fallout 3_ running through MO!
 +
 ._Fallout 3_ Vanilla running through Mod Organizer
-image::DEFCON-00-Fallout-3-Vanilla-through-Mod-Organizer.png[_Fallout 3_ Vanilla running through Mod Organizer]
+image::DEFCON-00-Fallout-3-Vanilla-through-Mod-Organizer.png[Fallout 3 Vanilla running through Mod Organizer, title="Fallout 3 Vanilla running through Mod Organizer"]
 . Click on *Quit* to move on to the following chapters, where we are going to integrate our toolset with MO.
 
 
 
 
 ==== Integrating LOOT with Mod Organizer
+
+We have a viable modding environment through MO so far, but we need to add the installed tools to the mix in order to have a full-fledged environment. The first piece will be LOOT.
+
+. Mod Organizer does a good job detecting the previously installed LOOT, as you can see in the executables dropdown just above the right pane.
++
+.LOOT has already been detected by Mod Organizer
+image::DEFCON-00-Mod-Organizer-detected-LOOT.png[LOOT has already been detected by Mod Organizer, title="LOOT has already been detected by Mod Organizer"]
+. However, we have installed just one copy of LOOT, so that we can use it to manage the load order in several games. We need to instruct MO to use _Fallout 3_ in this case. Click on the executables settings button in the top bar.
++
+.Mod Organizer executables settings button
+image::DEFCON-00-Mod-Organizer-executables-settings-button.png[Mod Organizer executables settings button, title="Mod Organizer executables settings button"]
+. There should be only two entries in the list, one for the game itself and the other for LOOT. Select the LOOT entry and write in the *Arguments* field "--game=Fallout3", without quotations; then, click on *Modify*.
++
+.LOOT launch arguments within Mod Organizer
+image::DEFCON-00-Mod-Organizer-LOOT-launch-arguments.png[LOOT launch arguments within Mod Organizer, title="LOOT launch arguments within Mod Organizer"]
+. The executables management window won't close, so click on *Close* to dismiss it.
++
+.Mod Organizer executables management
+image::DEFCON-00-Mod-Organizer-LOOT-executable-properties-modified.png[Mod Organizer executables management, title="Mod Organizer executables management"]
+. Back to the main window, select LOOT in the executables dropdown menu and click on *Run*.
++
+.Select LOOT to run through Mod Organizer
+image::DEFCON-00-Mod-Organizer-select-LOOT-and-run.png[Select LOOT to run through Mod Organizer, title="Select LOOT to run through Mod Organizer"]
+. When LOOT finishes launching, notice the game tag at the top, which shoud say "Fallout 3". Also, notice the message "N/A: No masterlist present" in both *Masterlist Revision* and *Masterlist Date*, meaning we have yet to run the tool. Let's fix that by clicking on the sorting icon (image:DEFCON-00-LOOT-sorting-icon.png[LOOT sorting icon, title="LOOT sorting icon"]), at the top bar.
++
+.LOOT running throug Mod Organizer
+image::DEFCON-00-Mod-Organizer-running-LOOT.png[LOOT running throug Mod Organizer, title="LOOT running throug Mod Organizer"]
+. Several things happen _very fast_.
+* A floating message appears, showing that LOOT is updating and using the masterlist to sort your plugins.
++
+.LOOT updating and parsing masterlist
+image::DEFCON-00-LOOT-updating-and-parsing-masterlist.png[LOOT updating and parsing masterlist, title="LOOT updating and parsing masterlist"]
+* If you sorted the game plugins in the MO right pane like <<Mod Organizer basic setup, you have been instructed to>>, LOOT should show a message pointing out that your load order is untouched.
++
+.LOOT made no changes to your load order (as it should be)
+image::DEFCON-00-LOOT-no-changes-to-load-order.png[LOOT made no changes to your load order (as it should be), title="LOOT made no changes to your load order (as it should be)"]
+* In the general information pane, both entries regarding the masterlist should show updated information.
++
+.Masterlist information has been updated in LOOT
+image::DEFCON-00-LOOT-masterlist-updated.png[Masterlist information has been updated in LOOT, title="Masterlist information has been updated in LOOT"]
+* All your plugins, except the main `Fallout3.esm` file, should show a warning message about dirty things FO3Edit has found and need to be cleaned up. Don't worry about them, for now. We are going to address that in the chapter about <<Cleaning up the master files, cleaning up the master files>>.
++
+.LOOT shows the official DLC plugins are dirty
+image::DEFCON-00-LOOT-dirty-plugin-message.png[LOOT shows the official DLC plugins are dirty, title="LOOT shows the official DLC plugins are dirty"]
+. Close LOOT to go back to the MO main window. We are going to put a shortcut in the top-right toolbar to launch LOOT effortlessly. With LOOT selected in the executables dropdown, select *Toolbar* in the *Shortcut* dropdown below the *Run* button.
++
+.Option to create a LOOT shortcut in the Mod Organizer toolbar
+image::DEFCON-00-Mod-Organizer-creating-LOOT-shortcut.png[Option to create a LOOT shortcut in the Mod Organizer toolbar, title="Option to create a LOOT shortcut in the Mod Organizer toolbar"]
+. Notice the LOOT icon we have just created in the top-right toolbar. We will use this shortcut to launch LOOT from now on, leaving the executables dropdown with the game selected.
++
+.LOOT shortcut in Mod Organizer
+image::DEFCON-00-Mod-Organizer-LOOT-shortcut.png[LOOT shortcut in Mod Organizer, title="LOOT shortcut in Mod Organizer"]
+
+
+
+
+==== Disabling the "Sort" button
 
 
 

@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.39, 01/01/2017
+v0.39.1, 02/01/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -679,6 +679,21 @@ image::DEFCON-00-Mod-Organizer-LOOT-shortcut.png[LOOT shortcut in Mod Organizer,
 
 
 ==== Disabling the "Sort" button
+
+You may have noticed a button named *Sort* just above the right pane in MO (image:DEFCON-00-Mod-Organizer-sort-button.png[Mod Organizer sort button, title="Mod Organizer sort button"]). This button launches a built-in feature that sorts your plugins using an outdated version of the LOOT API. We don't want to inadvertently spoil our load order using the wrong tool, because we have the full version of LOOT just to do that, so let's disable this button.
+
+. Navigate to the `[%FO3_HOME%\Mod Organizer]` folder, and rename or delete the folder `[loot]` which is under that path.
++
+.Mod Organizer built-in LOOT folder
+image::DEFCON-00-Mod-Organizer-built-in-LOOT-folder.png[Mod Organizer built-in LOOT folder]
+. After deleting or renaming the folder, click on the *Sort* button in MO. The application should show an error.
++
+.Error launching Mod Organizer built-in LOOT
+image::DEFCON-00-Mod-Organizer-error-launching-built-in-LOOT.png[Error launching Mod Organizer built-in LOOT]
+. MO shows another dialog pointing out that the built-in LOOT couldn't be launched. Just what we wanted.
++
+.Mod Organizer failed to launch the built-in LOOT, as expected
+image::DEFCON-00-Mod-Organizer-failed-to-start-LOOT.png[Mod Organizer failed to launch the built-in LOOT, as expected]
 
 
 

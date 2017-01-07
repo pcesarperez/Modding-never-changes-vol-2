@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.1, 07/01/2017
+v0.4.2, 07/01/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -881,6 +881,38 @@ image::DEFCON-01-Mod-Organizer-profile-selected.png[DEFCON 01 profile selected, 
 
 
 === Disable Games for Windows Live
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/1086/[_Games for Windows LIVE Disabler_]
+====
+
+We are using the Steam version of _Fallout 3 Game of the Year Edition_, so there's no need to use Games for Windows Live (or GfWL). Besides, GfWL may cause problems with our game, so it's better to get rid of it.
+
+. Manually download [NexusFile]*Games for Windows LIVE Disable* from http://www.nexusmods.com/fallout3/mods/1086/[_Games for Windows LIVE disabler_].
++
+*DO NOT* use MO to download this tool. Download it manually instead.
+. Unzip the contents of the downloaded file in a location of your choice.
+. Run the file `Games for Windows LIVE Disabler.exe`.
+. In the following window, just click on *Disable G4WL*.
++
+.GfWL Disabler in action
+image::DEFCON-01-Games-for-Windows-Live-disabler.png[GfWL Disabler in action, title="GfWL Disabler in action"]
+. When the disabler asks for removing the "LIVE" button, click on *Yes*.
++
+.Of course, we want to remove the "LIVE" button
+image::DEFCON-01-Games-for-Windows-Live-disabler-button-removal.png[Of course, we want to remove the "LIVE" button, title="Of course, we want to remove the 'LIVE' button"]
+. The disabler informs us everything went as expected. Click on *Ok*.
++
+.GfWL disabler success
+image::DEFCON-01-Games-for-Windows-Live-disabler-success.png[GfWL disabler success, title="GfWL disabler success"]
+. Exit GfWL.
+. Launch _Fallout 3_ through MO using the *DEFCON 01* profile (you should be able to do that by now). Notice the absent *LIVE* option in the main menu screen.
++
+._Fallout 3_ main menu with no LIVE option
+image::DEFCON-01-Fallout-3-main-menu-no-LIVE-option.png[Fallout 3 main menu with no LIVE option, title="Fallout 3 main menu with no LIVE option"]
 
 
 

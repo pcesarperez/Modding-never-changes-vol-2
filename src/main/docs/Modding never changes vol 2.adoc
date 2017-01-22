@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.3, 22/01/2017
+v0.4.4, 22/01/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -938,19 +938,19 @@ We don't want to clutter our system with unnecessary tools, so we are sticking w
 . Run `START.BAT` in the aforementioned folder. A console window will appear, reporting that the patching is about to start. Press any key.
 +
 .LAA Enabler reminder
-image::DEFCON-01-LAA-enabler-reminder.png[LAA Enabler reminder]
+image::DEFCON-01-LAA-enabler-reminder.png[LAA Enabler reminder, title="LAA Enabler reminder"]
 . Several options are shown. We want to press kbd:[A] to add the LAA feature to _Fallout 3_ executable.
 +
 .LAA Enabler options
-image::DEFCON-01-LAA-enabler-options.png[LAA Enabler options]
+image::DEFCON-01-LAA-enabler-options.png[LAA Enabler options, title="LAA Enabler options"]
 . LAA Enabler patches the executable and happily informs us about it. Press any key.
 +
 .LAA Enabler successful
-image::DEFCON-01-LAA-enabler-successful.png[LAA Enabler successful]
+image::DEFCON-01-LAA-enabler-successful.png[LAA Enabler successful, title="LAA Enabler successful"]
 . The program goes back to the options window. Press kbd:[E] to exit.
 +
 .LAA Enabler finished
-image::DEFCON-01-LAA-enabler-finished.png[LAA Enabler finished]
+image::DEFCON-01-LAA-enabler-finished.png[LAA Enabler finished, title="LAA Enabler finished"]
 . Copy back `Fallout3.exe` to its original location in `[%FO3_HOME%]`.
 . Delete the folder where you extracted the LAA Enabler and its contents. Delete the ZIP file also. You won't need them anymore.
 
@@ -960,6 +960,161 @@ And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, 
 
 
 === Cleaning up the master files
+
+Remember when we said that we would address the problem of the dirty master files in <<Integrating LOOT with Mod Organizer, an earlier chapter>>? Well, it's time to fix that.
+
+Master files in _Fallout 3_ are somewhat dirty. This is what LOOT said about them:
+
+* `Anchorage.esm`: Contains 54 ITM records and 10 deleted references.
+* `ThePitt.esm`: Contains 40 ITM records and 5 deleted navmeshes.
+* `BrokenSteel.esm`: Contains 275 ITM records, 34 deleted references and 12 deleted navmeshes.
+* `PointLookout.esm`: Contains 21 ITM records.
+* `Zeta.esm`: Contains 15 ITM records.
+
+ITM records are items which are identical to elements in other master files. They can be considered mostly harmless. Just a bit of redundancy.
+
+On the contrary, deleted references can (and will) fuck up your game, because they are references to objects that _are supposed to be in the game_, but they no longer are, _and no one has marked them as disabled_. So, any mod using a deleted but not disabled reference is going to eventually crash your system. We are talking serious shit here.
+
+However, we are going to cleanse the master files so that they shine as they were intended to.
+
+We are going to use xEdit through MO to clean the master files, but the process is not so straightforward as it is with NMM, albeit it is more polished at the end. I know it does not make any fucking sense. Just bear with me.
+
+. Launch MO, making sure you are using the DEFCON 01 profile.
++
+.We need to have the right profile selected
+image::DEFCON-01-Mod-Organizer-making-sure-correct-profile-selected.png[We need to have the right profile selected, title="We need to have the right profile selected"]
+. Launch xEdit using the toolbar icon, like we did before.
+. Right-click on the Master/Plugin selection window and select _Select none_. We are going to choose the files to clean, one by one.
++
+.Deselecting all master files in xEdit
+image::DEFCON-01-xEdit-deselecting-all-master-files.png[Deselecting all master files in xEdit, title="Deselecting all master files in xEdit"]
+. We need to select the master file every other master file depends on (`Fallout3.esm`) and the master file we are going to clean first (`Anchorage.esm`). Click *Ok* when ready:
++
+.Selecting the file to clean in xEdit
+image::DEFCON-01-xEdit-selecting-file-to-clean.png[Selecting the file to clean in xEdit, title="Selecting the file to clean in xEdit"]
+. xEdit takes a while to load the data contained in these files. Wait for the message "Background Loader: finished" to appear in the *Messages* panel.
++
+.Master files to clean successfully loaded in xEdit
+image::DEFCON-01-xEdit-master-files-loaded.png[Master files to clean successfully loaded in xEdit, title="Master files to clean successfully loaded in xEdit"]
+. Right-click on the `Anchorage.esm` node in the left panel tree and select *Apply filter for cleaning*.
++
+.Applying filter for cleaning in xEdit
+image::DEFCON-01-xEdit-apply-filter-for-cleaning.png[Applying filter for cleaning in xEdit, title="Applying filter for cleaning in xEdit"]
+. The filtering may take a little while, depending on how big and dirty the file is. When the filtering is completed, a line with the heading "[Filtering done]" appears in the *Messages* panel. The tree in the left panel shows the files with fancy colors which you don't have to give a fuck, unless you want to delve deeper into the inner workings of the mods.
++
+.Filtering done in xEdit
+image::DEFCON-01-xEdit-filtering-done.png[Filtering done in xEdit, title="Filtering done in xEdit"]
+. First, we are going to remove ITM (_Identical to Master_) records. They are not going to crash the game, but they take up space, and trust me, when you get the I-am-going-to-install-every-fancy-mod-that-crosses-in-my-path spree, you will need as much space as you can get. Right-click on the `Anchorage.esm` node in the left panel tree and select *Remove "Identical to Master" records*.
++
+.Removing ITM records in xEdit
+image::DEFCON-01-xEdit-removing-ITM-records.png[Removing ITM records in xEdit, title="Removing ITM records in xEdit"]
+. Every time you try to change a data file, a big warning appears. But, as seasoned hard-ass mod installers, we are sure as hell of what we are doing. Aren't we?
++
+.Modification warning in xEdit
+image::DEFCON-01-xEdit-modification-warning.png[Modification warning in xEdit, title="Modification warning in xEdit"]
+. After a little while, a message shows up in the *Messages* panel, reporting 43696 records processed and 54 records removed (don't worry if the numbers don't match; your setup may be slightly different, although it's very unlikely).
++
+.ITM records deleted in xEdit
+image::DEFCON-01-xEdit-ITM-records-deleted.png[ITM records deleted in xEdit, title="ITM records deleted in xEdit"]
+. Next, we are going to undelete and disable deleted references... To get rid of these nasty sons of a bitch, right click on the `Anchorage.esm` node in the left panel tree and select *Undelete and Disable References*.
++
+.Undeleting and disabling deleted references in xEdit
+image::DEFCON-01-xEdit-undeleting-deleted-references.png[Undeleting and disabling deleted references in xEdit, title="Undeleting and disabling deleted references in xEdit"]
+. A bit of processing again, and we have another message in the right panel, reporting 43642 records processed and 10 undeleted records.
++
+.Undeleted and disabled references in xEdit
+image::DEFCON-01-xEdit-undeleted-references.png[Undeleted and disabled references in xEdit, title="Undeleted and disabled references in xEdit"]
+. Job done! We just need to save the modified data file. To do that, just click on the close button of the tool window. A pop-up window should appear with _just one file_, the one you have been tinkering with (`Anchorage.esm`, in this case). If more than one file is shown, press kbd:[ESC] or click on the close button and start over again, because you surely screwed up at some point in the process. Anyway, make sure that the option *Backup plugins* is selected before clicking *Ok*.
++
+.Saving the modified master file in xEdit
+image::DEFCON-01-xEdit-saving-master-file.png[Saving the modified master file in xEdit, title="Saving the modified master file in xEdit"]
+. Repeat the process for the rest of the master files: `ThePitt.esm`, `BrokenSteel.esm`, `PointLookout.esm` and `Zeta.esm`.
+. When you are done cleaning all the files, take a look at the toolbar in MO. Notice the warning that shows up.
++
+.Warning after cleaning up the master files
+image::DEFCON-01-Mod-Organizer-warning.png[Warning after cleaning up the master files, title="Warning after cleaning up the master files"]
+. Things are getting interesting here. MO is warning us that xEdit has put contents in the overwrite folder, like <<Integrating xEdit with Mod Organizer, we saw before>>. We are going to deal with it, but first right-click on any empty part in the left pane and select *Refresh*.
++
+.Refreshing the plugins list
+image::DEFCON-01-Mod-Organizer-refreshing-plugins-list.png[Refreshing the plugins list, title="Refreshing the plugins list"]
+. Ooooops! What the fuck happened here? Where are our plugins?
++
+.The official DLCs have gone AWOL
+image::DEFCON-01-Mod-Organizer-missing-plugins.png[The official DLCs have gone AWOL, title="The official DLCs have gone AWOL"]
+. Well, they have gone to the overwrite mod folder of MO. Double-click at the bottom of your now derisory plugins list to take a look at the contents of that folder.
++
+.Missing master files in the overwrite folder
+image::DEFCON-01-Mod-Organizer-master-files-in-overwrite.png[Missing master files in the overwrite folder, title="Missing master files in the overwrite folder"]
+. The master files you see are the _cleaned ones_. Click on the folder `FO3Edit Backups` to see the original, dirty master files.
++
+.Original master files in the overwrite folder
+image::DEFCON-01-Mod-Organizer-original-master-files-in-overwrite.png[Original master files in the overwrite folder, title="Original master files in the overwrite folder"]
+. What we need to do now involves some tinkering _outside_ MO, so click on *Close* and then exit MO.
+. Remember that our cornerstone in modding the game is the very concept of consecration of the data folder, meaning its contents should not be altered. Thus, we are going to _restore_ the original master files, creating a special mod with the cleaned version of these master files. Open the overwrite mod folder, located in `[%FO3_HOME%\Mod Organizer\overwrite]`.
++
+.The contents of the overwrite mod folder
+image::DEFCON-01-Mod-Organizer-overwrite-folder-contents.png[The contents of the overwrite mod folder, title="The contents of the overwrite mod folder"]
+. Now open the `FO3Edit Backups` folder.
++
+.The backup of the master files
+image::DEFCON-01-Mod-Organizer-overwrite-folder-backups.png[The backup of the master files, title="The backup of the master files"]
+. _Rename_ all the files, stripping out the part after `.esm`. Thus, `Anchorage.esm.backup.2017_01_22_10_45_09` would become `Anchorage.esm`, and so on. Your filenames will be different because the part we are wiping out is sort of a timestamp of the moment the backup was created.
++
+.Renamed master files in the overwrite mod folder
+image::DEFCON-01-Mod-Organizer-renamed-master-files.png[Renamed master files in the overwrite mod folder, title="Renamed master files in the overwrite mod folder"]
+. _Move back_ the `.esm` files we just renamed to the `[%FO3_HOME%\Data]` folder, where they belong. Remember, we are restoring the original, dirty files in its original location.
++
+.Original master files restored in its location
+image::DEFCON-01-Mod-Organizer-original-master-files-restores.png[Original master files restored in its location, title="Original master files restored in its location"]
+. Let's go back to the overwrite mod folder (`[%FO3_HOME%\Mod Organizer\overwrite]`). We need to get rid of the backup folder. Delete it. Burn it to the ground and make sure the only contents of the folder are the cleaned master files.
++
+.Cleaned master files, ready to be packed
+image::DEFCON-01-Mod-Organizer-master-files-ready-to-pack.png[Cleaned master files, ready to be packed, title="Cleaned master files, ready to be packed"]
+. Launch MO again. The stacking order is scrambled again, but don't worry about it now. We'll deal with this issue in a moment.
++
+.Our stacking order is scrambled again
+image::DEFCON-01-Mod-Organizer-scrambled-stacking-order.png[Our stacking order is scrambled again, title="Our stacking order is scrambled again"]
+. Right-click on the *Overwrite* stripe at the bottom of the left pane and select *Create mod...*.
++
+.Creating a mod with the cleaned master files
+image::DEFCON-01-Mod-Organizer-creating-mod-overwrite.png[Creating a mod with the cleaned master files, title="Creating a mod with the cleaned master files"]
+. In the following dialog, write a meaningful name for the mod (for example, "Cleaned Master Files"), and click *Ok*.
++
+.Giving a meaningful name to the cleaned master files mod
+image::DEFCON-01-Mod-Organizer-overwrite-mod-name.png[Giving a meaningful name to the cleaned master files mod, title="Giving a meaningful name to the cleaned master files mod"]
+. _Et voilà!_ You can notice two things immediately:
+  * There is a new mod at the bottom of the stack with the name we just gave, although it has not been activated yet.
+  * The warning sign in the top-right toolbar is grayed out again.
++
+.This is our first mod! Really!
+image::DEFCON-01-Mod-Organizer-cleaned-master-files-inactive.png[This is our first mod! Really!, title="This is our first mod! Really!"]
++
+.We can breathe with relief now
+image::DEFCON-01-Mod-Organizer-grayed-out-warning-sign.png[We can breathe with relief now, title="We can breathe with relief now"]
+. Nevertheless, we are not done yet. Rearrange the stacking order in the left pane to match the load order in the right pane, by means of dragging and dropping the plugins.
++
+.Rearranged master files
+image::DEFCON-01-Mod-Organizer-rearranged-master-files.png[Rearranged master files, title="Rearranged master files"]
+. Finally, activate the *Cleaned Master Files* plugin in the left pane. You will notice http://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[a bunch of icons] to the right of each plugin (they were there right from the start, but this is the ideal moment for an explanation), meaning:
+  * A lightning with a plus sign (image:DEFCON-01-Mod-Organizer-lightning-plus.png[Lightning with a plus sign, title="Lightning with a plus sign"]) means the plugin overwrites files from other plugins, but its files are not overwritten by anything (what I call a "winner plugin").
+  * A lightning with a minus sign (image:DEFCON-01-Mod-Organizer-lightning-minus.png[Lightning with a minus sign, title="Lightning with a minus sign"]) means some of the files in the plugin are overwritten by files from other plugin, and it does not overwrite files from other plugins (what I call a "loser plugin").
+  * A lightning with both a plus and a minus sign (image:DEFCON-01-Mod-Organizer-lightning-plus-minus.png[Lightning with both a plus and a minus sign, title="Lightning with both a plus and a minus sign"]) means a combination of the two previous states; some of the plugin files are overwritten, and it overwrites some files from other plugins (what I call a "average plugin").
+  * A lightning with no additional signs (image:DEFCON-01-Mod-Organizer-lightning.png[Lightning with no sign, title="Lightning with no sign"]) means the plugin has all its files overwritten by other plugins, and it does not overwrite any file from other plugins, actually rendering it useless (what I call a "disposable plugin"). There should be no disposable plugins in our stack.
+  * If the plugin does not have any sign, it means its files are untouched (what I call an "isolated plugin").
++
+.Cleaned master files plugin activated
+image::DEFCON-01-Mod-Organizer-cleaned-master-files-activated.png[Cleaned master files plugin activated, title="Cleaned master files plugin activated"]
+. Let's check what is being overwritten by our brand-new mod. Double-click on it and navigate to the *Conflicts* tab where you can see:
+  * In the upper pane there is a list of the files overwritten by this mod. In this case, each of the original master files.
+  * In the lower pane there is a list of the mod files overwritten by other mods. There are none, in this case.
++
+.Original master files overwritten by the first mod
+image::DEFCON-01-Mod-Organizer-overwritten-files-cleaned-master-files.png[Original master files overwritten by the first mod, title="Original master files overwritten by the first mod"]
+. Just click on *Close* and we are good to go. Launch LOOT from MO to check our master files are not dirty anymore. As you can see, the warnings about dirt in our master files have gone.
++
+.Our master files are spotless now
+image::DEFCON-01-LOOT-cleaned-master-files.png[Our master files are spotless now, title="Our master files are spotless now"]
+. Close LOOT and let's head to the next step.
 
 
 

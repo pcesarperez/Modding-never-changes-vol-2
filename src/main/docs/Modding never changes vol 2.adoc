@@ -265,25 +265,35 @@ image::DEFCON-00-Fallout-3-launcher.png[Fallout 3 launcher, title="Fallout 3 lau
 +
 ._Fallout 3_ settings
 image::DEFCON-00-Video-resolution-adjustment.png[Fallout 3 settings, title="Fallout 3 settings"]
-. Click on *Play* in the launcher to launch the game with the preferred settings. The game will show the main menu.
+. Click on *Play* in the launcher to launch the game with the preferred settings.
++
+._Fallout 3_ launcher, ready for action
+image::DEFCON-00-Fallout-3-launcher-ready.png[Fallout 3 launcher, ready for action, title="Fallout 3 launcher, ready for action"]
+. You will probably run into an error like this one when trying to run the game for the first time, at least under Windows 10 Creators Update. To fix this, click on *Learn more* to open a browser window and download the Games for Windows Live client from Microsoft.
++
+.Error about absent Games for Windows Live
+image::DEFCON-00-Compatibility-Assistant.png[Error about absent Games for Windows Live, title="Error about absent Games for Windows Live"]
+. Install the client running the `gfwlivesetup.exe` file you just downloaded. The installation will be brief.
++
+.Games for Windows Live installation
+image::DEFCON-00-Games-for-Windows-Live-installation.png[Games for Windows Live installation, title="Games for Windows Live installation"]
+. When finished, just click on *Close*.
++
+.Games for Windows Live installation finished
+image::DEFCON-00-Games-for-Windows-Live-installation-finished.png[Games for Windows Live installation finished, title="Games for Windows Live installation finished"]
+. Try to run the game again. The dreaded compatibility assistant shows itself again. However, this time tick the option *Don't show this message again* and then click on *Close*.
++
+.The compatibility assistant, again
+image::DEFCON-00-Compatibility-Assistant-again.png[The compatibility assistant, again, title="The compatibility assistant, again"]
+. Now, click on *Play* in the launcher.
++
+._Fallout 3_ launcher, ready for action
+image::DEFCON-00-Fallout-3-launcher-ready.png[Fallout 3 launcher, ready for action, title="Fallout 3 launcher, ready for action"]
+. Success! The first step in our modding journey is over.
 +
 ._Fallout 3_ main menu
 image::DEFCON-00-Fallout-3-main-menu.png[Fallout 3 main menu, title="Fallout 3 main menu"]
-+
-[WARNING]
-====
-You may run into an error like this one when trying to run the game for the first time:
-
-.Error about absent Games for Windows Live
-image::DEFCON-00-Games-for-Windows-Live-absent.png[Error about absent Games for Windows Live, title="Error about absent Games for Windows Live"]
-
-To fix this, download and install the http://www.xbox.com/en-US/Live/PC/DownloadClient[Games for Windows Marketplace Client] and try again.
-====
-. You can either click on *Play* or *Quit* in the main menu screen. If you are running the game under Windows 7 or Windows 8, odds are you won't be able to go beyond this screen. In Windows 10 you may run the game, although an annoying warning appears every time you run the launcher.
-+
-.Windows 10 warning about running _Fallout 3_
-image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about running Fallout 3, title="Windows 10 warning about running Fallout 3"]
-. However, this is all we need, for now. Just click on *Quit* and check this files and folders under `[$USERPROFILE\Documents\My Games\Fallout3]` (`[$USERPROFILE\My Documents\My Games\Fallout3]`, if you are using Windows 7):
+. This is all we need, for now. Just click on *Quit* and check this files and folders under `[$USERPROFILE\Documents\My Games\Fallout3]` (`[$USERPROFILE\My Documents\My Games\Fallout3]`, if you are using Windows 7):
 * `[Saves]`
 * `FALLOUT3.INI`
 * `FalloutPrefs.ini`

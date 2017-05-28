@@ -1108,7 +1108,7 @@ image::DEFCON-01-Mod-Organizer-rearranged-master-files.png[Rearranged master fil
 . Finally, activate the *Cleaned Master Files* plugin in the left pane. You will notice http://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[a bunch of icons] to the right of each plugin (they were there right from the start, but this is the ideal moment for an explanation), meaning:
   * A lightning with a plus sign (image:DEFCON-01-Mod-Organizer-lightning-plus.png[Lightning with a plus sign, title="Lightning with a plus sign"]) means the plugin overwrites files from other plugins, but its files are not overwritten by anything (what I call a "winner plugin").
   * A lightning with a minus sign (image:DEFCON-01-Mod-Organizer-lightning-minus.png[Lightning with a minus sign, title="Lightning with a minus sign"]) means some of the files in the plugin are overwritten by files from other plugin, and it does not overwrite files from other plugins (what I call a "loser plugin").
-  * A lightning with both a plus and a minus sign (image:DEFCON-01-Mod-Organizer-lightning-plus-minus.png[Lightning with both a plus and a minus sign, title="Lightning with both a plus and a minus sign"]) means a combination of the two previous states; some of the plugin files are overwritten, and it overwrites some files from other plugins (what I call a "average plugin").
+  * A lightning with both a plus and a minus sign (image:DEFCON-01-Mod-Organizer-lightning-plus-minus.png[Lightning with both a plus and a minus sign, title="Lightning with both a plus and a minus sign"]) means a combination of the two previous states; some of the plugin files are overwritten, and it overwrites some files from other plugins (what I call an "average plugin").
   * A lightning with no additional signs (image:DEFCON-01-Mod-Organizer-lightning.png[Lightning with no sign, title="Lightning with no sign"]) means the plugin has all its files overwritten by other plugins, and it does not overwrite any file from other plugins, actually rendering it useless (what I call a "disposable plugin"). There should be no disposable plugins in our stack.
   * If the plugin does not have any sign, it means its files are untouched (what I call an "isolated plugin").
 +
@@ -1120,7 +1120,7 @@ image::DEFCON-01-Mod-Organizer-cleaned-master-files-activated.png[Cleaned master
 +
 .Original master files overwritten by the first mod
 image::DEFCON-01-Mod-Organizer-overwritten-files-cleaned-master-files.png[Original master files overwritten by the first mod, title="Original master files overwritten by the first mod"]
-. Just click on *Close* and we are good to go. Launch LOOT from MO to check our master files are not dirty anymore. As you can see, the warnings about dirt in our master files have gone.
+. Just click on *Close* and we are good to go. Launch LOOT from MO to check our master files are not dirty anymore. As you can see, the warnings about filth in our master files have gone.
 +
 .Our master files are spotless now
 image::DEFCON-01-LOOT-cleaned-master-files.png[Our master files are spotless now, title="Our master files are spotless now"]

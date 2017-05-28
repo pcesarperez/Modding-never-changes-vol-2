@@ -1131,6 +1131,127 @@ image::DEFCON-01-LOOT-cleaned-master-files.png[Our master files are spotless now
 
 === Tweaking the INI files
 
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/skyrim/mods/69787/[_BethINI_]
+====
+
+_Fallout 3_ has two INI configuration files located in `[$USERPROFILE\Documents\My Games\Fallout3]`:
+
+* `FALLOUT.INI`
+* `FalloutPrefs.ini`
+
+These files are the core of the game, and adjusting an option there could mean the difference between a smooth playthrough and a CTD-plagued nightmare.
+
+MO keeps a copy of these two files for each profile, therefore enabling different options for different profiles. Right now, there are two sets of these INI files, one for each profile, located in:
+
+* `[$FO3_HOME\Mod Organizer\Profiles\DEFCON 00 (Vanilla)]`
+* `[$FO3_HOME\Mod Organizer\Profiles\DEFCON 01 (Bug Fixes and Performance)]`
+
+We are going to fix the default INI files using _BethINI_, and then create a new mod exclusively intended for tweaking certain options using MO. If you want to know how INI Tweaks work, take a look at the box titled "Some context on Ini Tweaks" in the http://wiki.step-project.com/Guide:Mod_Organizer[Official Mod Organizer Guide].
+
+. Make sure MO is closed until further notice.
+. Open the folder `[$USERPROFILE\Documents\My Games\Fallout3]` and create a backup of `FALLOUT.ini` and `FalloutPrefs.ini`.
+. Download manually the [NexusFile]*BethINI* file from http://www.nexusmods.com/skyrim/mods/69787/[_BethINI_]. You will get a file named `BethINI-69787-2-5.zip` or something like that, depending on the version you have downloaded.
+. Unzip the file in a location of your choice. _BethINI_ is a portable program, so there is no need to install anything.
+. Run `BethINI.exe`. The first thing you have to do is to select the game you are working with. BethINI handles a good bunch of Bethesda's games. Select _Fallout 3_, of course.
++
+.Selecting the game in BethINI
+image::DEFCON-01-BethINI-game-selection.png[Selecting the game in BethINI, title="Selecting the game in BethINI"]
+. After a moment, the program opens in the *Basic* tab. However, switch to the *Setup* tab to do things in an orderly fashion.
++
+.BethINI opens in the "Basic" tab by default
+image::DEFCON-01-BethINI-default-Basic-tab.png[BethINI opens in the Basic tab by default, title="BethINI opens in the Basic tab by default"]
+. In the *Setup* tab we are going to correct the path to MO and make sure the INI files won't be altered once finished with our tinkering. Select the path to MO in the third dropdown, starting from the top, and check *Make INIs Read-Only* option.
++
+.Options in the "Setup" tab of BethINI
+image::DEFCON-01-BethINI-Setup-tab.png[Options in the Setup tab of BethINI, title="Options in the Setup tab of BethINI"]
+. Switch to the *Basic* tab and activate *Recommended Tweaks* and *Enable File Selection*. Change any other option regarding display or presets if you will.
++
+.Options in the "Basic" tab of BethINI
+image::DEFCON-01-BethINI-Basic-tab.png[Options in the Basic tab of BethINI, title="Options in the Basic tab of BethINI"]
+. The remaining tabs need no modification, unless you have a lot of time to spare following the detailed http://www.tweakguides.com/Fallout3_1.html[Fallout 3 Tweaking Guide] (look who's talking, yeah). Just click on *Save and Exit* then.
+. If you go back to the folder where the INI files are, you will find _three_ versions of each file:
+* `Fallout.ini` and `FalloutPrefs.ini`: These are the versions modified by BethINI.
+* `Fallout.ini.BethINIbackup` and `FalloutPrefs.ini.BethINIbackup`: These are the backup copies created by BethINI.
+* Whichever name you gave them: These are the backup copies we made in the first step (redundant, just to be on the safe side).
+. Open the folder `[$FO3_HOME\Mod Organizer\Profiles\DEFCON 01 (Bug Fixes and Performance)]` and create a backup of `fallout.ini` and `falloutprefs.ini` (the capitalization is a bit off, as you can see).
+. Copy `Fallout.ini` and `FalloutPrefs.ini` from `[$USERPROFILE\Documents\My Games\Fallout3]` to `[$FO3_HOME\Mod Organizer\Profiles\DEFCON 01 (Bug Fixes and Performance)]`. Our DEFCON 01 profile now has the proper INI files. Every profile from now own will inherit its settings from the previous one, thus these files will spread accordingly.
+. Open MO again. With the DEFCON 01 profile selected, click on the *Tools* button in the toolbar and then click on the *INI Editor* option.
++
+.Launching the INI editor within Mod Organizer
+image::DEFCON-01-Mod-Organizer-launching-INI-editor.png[Launching the INI editor within MO, title="Launching the INI editor within MO"]
+. The following window shows the INI editor within MO. The contents of each tab reflects the INI files regarding this specific profile, so any changes made here won't affect any other yet created profile. However, we are not going to change anything here, so close the window and move on.
++
+.Mod Organizer INI editor
+image::DEFCON-01-Mod-Organizer-INI-editor.png[Mod Organizer INI editor, title="Mod Organizer INI editor"]
+. From now on, any other change to the INI files will be performed through the INI Tweaks feature of MO. First, we need to create an empty folder named `[INI Tweaks]` within `[$FO3_HOME\Mod Organizer\override]`.
+. Back to MO, right-click in any empty area on the left pane and select *Refresh*.
++
+.Refreshing the state of Mod Organizer
+image::DEFCON-01-Mod-Organizer-refreshing-MO-state.png[Refreshing the state of MO, title="Refreshing the state of MO"]
+. Our empty folder is loaded into the overwrite special mod. Right-click on the *Overwrite* ribbon at the bottom of the plugins list and select *Create Mod...*.
++
+.Creating the _INI Tweaks_ mod
+image::DEFCON-01-Mod-Organizer-creating-INI-Tweaks-mod.png[Creating the INI Tweaks mod, title="Creating the INI Tweaks mod"]
+. In the next window, give the mod a meaningful name and click *Ok*.
++
+.Naming the _INI Tweaks_ mod
+image::DEFCON-01-Mod-Organizer-INI-Tweaks-mod-name.png[Naming the INI Tweaks mod, title="Naming the INI Tweaks mod"]
+. Oh, my, my! Look at that! Our plugins list is growing... At an excruciatingly slow pace, but no need to rush, really. You will notice a warning icon in the *Flags* column, but it's ok, because our mod is, in fact, completely empty.
++
+._INI Tweaks_ mod newly created
+image::DEFCON-01-Mod-Organizer-INI-Tweaks-mod-created.png[INI Tweaks mod newly created, title="INI Tweaks mod newly created"]
+. We are going to fill the mod with some tweaks suggested by Kelmych in his http://wiki.step-project.com/User:Kelmych/Fallout3_INIs[Fallout 3 INI Tweak Guide]. Double-click on the _INI Tweaks_ mod and switch to the *INI-Files* tab. Right-click on the *Ini Tweaks* panel and select *Create Tweak*.
++
+.Option to create a tweak for our INI files
+image::DEFCON-01-Mod-Organizer-creating-INI-tweak.png[Option to create a tweak for our INI files, title="Option to create a tweak for our INI files"]
+. In the following window, give the tweak the name "General", because we are going to group the tweaks according to their nature.
++
+.Naming the general tweaks
+image::DEFCON-01-Mod-Organizer-naming-general-tweaks.png[Naming the general tweaks, title="Naming the general tweaks"]
+. Back to the mod info window, you will see a purportedly existent INI file named `General.ini`.
++
+.Fake `General.ini` file in the INI tweaks mod
+image::DEFCON-01-Mod-Organizer-General-ini-file.png[Fake General.ini file in the INI tweaks mod, title="Fake General.ini file in the INI tweaks mod"]
+. Activate the fake `General.ini` file, copy the following options to avoid CTDs in multi-core CPUs in the rightmost pane and click on *Save*.
++
+----
+[General]
+; Avoid CTDs with multi-core CPUs.
+bUseThreadedAI=1
+iNumHWThreads=2
+bLoadFaceGenHeadEGTFiles=1
+----
++
+.General tweaking options
+image::DEFCON-01-Mod-Organizer-general-tweaking-options.png[General tweaking options, title="General tweaking options"]
+. Follow the same steps to create another fake INI file named `Controls.ini` and copy the following contents to disable mouse acceleration. Click on *Close* when finished.
++
+----
+[Controls]
+; Remove mouse acceleration.
+fForegroundMouseAccelBase=0
+fForegroundMouseAccelTop=0
+fForegroundMouseBase=0
+fForegroundMouseMult=0
+----
++
+.Control tweaking options
+image::DEFCON-01-Mod-Organizer-control-tweaking-options.png[Control tweaking options]
+. Finally, activate the _INI Tweaks_ mod, right-click on it and select *Ignore missing data* to get rid of the warning flag.
++
+.Activating the _INI Tweaks_ mod
+image::DEFCON-01-Mod-Organizer-activate-tweaks.png[Activating the INI Tweaks mod, title="Activating the INI Tweaks mod"]
+. Our shiny hand-crafted mod sits on the bottom of our stacking order, as it should be.
++
+._INI Tweaks_ mod activated
+image::DEFCON-01-Mod-Organizer-INI-Tweaks-activated.png[INI Tweaks mod activated, title="INI Tweaks mod activated"]
+
+There will be more INI tweaks along the way, but we will be adding them to the mod files they are meant to adjust.
+
 
 
 

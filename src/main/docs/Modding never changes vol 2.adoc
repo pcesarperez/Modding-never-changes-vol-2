@@ -138,7 +138,7 @@ There are several downsides too, of course, although none of them is a real deal
 * Sometimes, mods with scripted installers (aka FOMOD/BAIN installers) do have a weird behavior under MO, even not working at all. There are ways around these issues, but still.
 * MO doesn't work with 64 bits games, so we are stuck with NMM for games like _Fallout 4_ and _The Elder Scrolls 5: Skyrim Special Edition_.
 
-Once you start using MO, there's no turning back to NMM. Ever. Even though both of them http://www.nexusmods.com/fallout4/news/12905/?[are endangered species now]. The next breed of NMM will supposedly have all the features of MO, but until then, MO is our winning horse.
+Once you start using MO, there's no turning back to NMM. Ever. Even though both of them http://www.nexusmods.com/fallout4/news/12905/?[are endangered species now]. The next breed of NMM (http://www.nexusmods.com/games/news/13257/?[Vortex], that is) will supposedly have all the features of MO, but until then, MO is our winning horse.
 
 
 
@@ -197,7 +197,7 @@ Mod names::
 Any mod used in this guide is shown using an italicized link to the mod's original page. For example, http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] or http://www.nexusmods.com/fallout3/mods/2761/[_FWE - FO3 Wanderers Edition_]. The name is shown as is, with the title given by its author, no matter how many grammar or orthographic rules have been murdered in the process.
 
 Filenames and paths::
-Any filename or path, complete or partial, is shown using monospaced text, like `[%USERPROFILE%\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
+Any filename or path, complete or partial, is shown using monospaced text, like `[$USERPROFILE\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
 
 Files within Nexus::
 A mod hosted in Nexus will usually have several files (for example, the http://www.nexusmods.com/fallout3/mods/2761/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Ffallout3%2Fajax%2Fmodfiles%2F%3Fid%3D2761&pUp=1[multiple files which belong to FWE]). Sometimes is difficult to know exactly which files have to be downloaded, thus they are shown using a green, bold text, mimicking Nexus own style, like [NexusFile]*FWE 6-03a HOTFIX PATCH* or [NexusFile]*MMM-6_2-update*.
@@ -243,8 +243,8 @@ At the end of the chapter we will be ready to start with the modding, with all t
 
 I am assuming we are using the Steam edition of _Fallout 3 Game of the Year Edition_, with all 5 DLCs. This is what you have to do first and foremost.
 
-. Install Steam outside UAC-controlled space. In other words, *DO NOT* install Steam in the default location, under `[C:\Program Files]`. Install it instead in `[C:\Games]` or any other location of your choice. If you have Steam already installed in UAC-controlled space, check this guide about https://support.steampowered.com/kb_article.php?ref=7418-YUBN-8129[moving a Steam installation and games]. We will refer to the final Steam location as `[%STEAM_HOME%]`.
-. Install _Fallout 3 Game of the Year Edition_ through Steam. The game will be located at `[%STEAM_HOME%\steamapps\common\Fallout 3 goty]`, which we will refer to as `[%FO3_HOME%]` from now on.
+. Install Steam outside UAC-controlled space. In other words, *DO NOT* install Steam in the default location, under `[C:\Program Files]`. Install it instead in `[C:\Games]` or any other location of your choice. If you have Steam already installed in UAC-controlled space, check this guide about https://support.steampowered.com/kb_article.php?ref=7418-YUBN-8129[moving a Steam installation and games]. We will refer to the final Steam location as `[$STEAM_HOME]`.
+. Install _Fallout 3 Game of the Year Edition_ through Steam. The game will be located at `[$STEAM_HOME\steamapps\common\Fallout 3 goty]`, which we will refer to as `[$FO3_HOME]` from now on.
 . You *MUST* run the game at least once to create the configuration files the game needs, so double-click on the launcher icon you should have in your desktop.
 +
 ._Fallout 3_ launcher icon
@@ -283,7 +283,7 @@ To fix this, download and install the http://www.xbox.com/en-US/Live/PC/Download
 +
 .Windows 10 warning about running _Fallout 3_
 image::DEFCON-00-Windows-compatibility-warning.png[Windows 10 warning about running Fallout 3, title="Windows 10 warning about running Fallout 3"]
-. However, this is all we need, for now. Just click on *Quit* and check this files and folders under `[%USERPROFILE%\Documents\My Games\Fallout3]` (`[%USERPROFILE%\My Documents\My Games\Fallout3]`, if you are using Windows 7):
+. However, this is all we need, for now. Just click on *Quit* and check this files and folders under `[$USERPROFILE\Documents\My Games\Fallout3]` (`[$USERPROFILE\My Documents\My Games\Fallout3]`, if you are using Windows 7):
 * `[Saves]`
 * `FALLOUT3.INI`
 * `FalloutPrefs.ini`
@@ -318,7 +318,7 @@ https://loot.github.io/[Load Order Optimisation Tool] (LOOT) is a tool used to t
 If you want to have an in-depth look to LOOT and what it can do, just watch the https://www.youtube.com/watch?v=CqFCLrYn30c[Start to Finish tutorial about LOOT], by GamerPoets.
 ====
 
-. https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[%LOOT_HOME%]`.
+. https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[$LOOT_HOME]`.
 . Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
 +
 .LOOT first run
@@ -345,8 +345,8 @@ The version you have to use will always be the last one, and in this case, it is
 
 So, why the renaming? Why xEdit instead of FO4Edit? It is because we are planning for the future. We would like to use xEdit to manipulate not only _Fallout 3_ plugins, but also plugins from any other Bethesda's (or Obsidian's) game which the tool would be able to manage.
 
-. http://www.nexusmods.com/fallout4/mods/2737/[Download] and install FO4Edit outside UAC-controlled space, using the name "xEdit" (for example, `[C:\Games\Tools\xEdit]`). We will refer to the installation folder as `[%XEDIT_HOME%]`. The tool is packed in a ZIP file, so the only thing you have to do is unpack it into the desired location.
-. Rename the file `FO4Edit.exe` inside `[%XEDIT_HOME%]` to `xEdit.exe`.
+. http://www.nexusmods.com/fallout4/mods/2737/[Download] and install FO4Edit outside UAC-controlled space, using the name "xEdit" (for example, `[C:\Games\Tools\xEdit]`). We will refer to the installation folder as `[$XEDIT_HOME]`. The tool is packed in a ZIP file, so the only thing you have to do is unpack it into the desired location.
+. Rename the file `FO4Edit.exe` inside `[$XEDIT_HOME]` to `xEdit.exe`.
 . If you try to run xEdit, an error is shown because the tool has not been instructed about which game is about to fiddle with.
 +
 .xEdit error when running standalone
@@ -376,12 +376,12 @@ It is a sort of compatibility patch between mods, but it revolves around leveled
 
 . http://www.nexusmods.com/fallout3/mods/11336/[Download] Wrye Flash, using the [NexusFile]*Wrye Flash 31.6 - Standalone Executable* file, as of this writing.
 . Unzip the file in a location of your choice. The ZIP file contains two folders, `[Data]` and `[Mopy]`.
-. Copy the two folders to `[%FO3_HOME%]` (remember: your _Fallout 3_ installation folder).
+. Copy the two folders to `[$FO3_HOME]` (remember: your _Fallout 3_ installation folder).
 . A warning will appear, because we are trying to overwrite the data folder with additional content. Yeah, I know I said that we would keep our data folder clean, but this is the only way Wrye Flash would work, so you have to overwrite the game data folder when asked to. This will be the last time, I swear.
 +
 .Wrye Flash data folder replacement
 image::DEFCON-00-Wrye-Flash-data-folder-replacement.png[Wrye Flash data folder replacement, title="Wrye Flash data folder replacement"]
-. Run `Wrye Flash.exe` from `[%FO3_HOME%\Mopy]`.
+. Run `Wrye Flash.exe` from `[$FO3_HOME\Mopy]`.
 +
 .Wrye Flash executable
 image::DEFCON-00-Wrye-Flash-executable.png[Wrye Flash executable, title="Wrye Flash executable"]
@@ -397,7 +397,7 @@ image::DEFCON-00-Wrye-Flash-first-run.png[Wrye Flash first run, title="Wrye Flas
 +
 .Wrye Flash spurious template bashed patch
 image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png[Wrye Flash spurious template bashed patch, title="Wrye Flash spurious template bashed patch"]
-. Navigate to `[%FO3_HOME\Data%]` and delete the file `Bashed Patch, 0.esp`.
+. Navigate to `[$FO3_HOME\Data]` and delete the file `Bashed Patch, 0.esp`.
 
 
 
@@ -419,7 +419,7 @@ We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what
 +
 .Mod Organizer components
 image::DEFCON-00-Mod-Organizer-components.png[Mod Organizer components, title="Mod Organizer components"]
-. In the next screen, select `[%FO3_HOME%\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
+. In the next screen, select `[$FO3_HOME\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
 +
 .Mod Organizer installation folder
 image::DEFCON-00-Mod-Organizer-installation-folder.png[Mod Organizer installation folder, title="Mod Organizer installation folder"]
@@ -462,7 +462,7 @@ The setup has been divided in several parts to make it easier to follow.
 
 We need a shortcut to MO to run the tool with ease, because we are going to launch the game using MO, _with no exceptions_. It may seem a bit overkill at first, at least when you have the game fully modded, but trust me, you would like to know exactly which profile, and therefore which mods, are you going to load.
 
-. Navigate with windows Explorer to `[%FO3_HOME%\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
+. Navigate with windows Explorer to `[$FO3_HOME\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
 +
 .Creating a shortcut to Mod Organizer
 image::DEFCON-00-Mod-Organizer-create-shortcut.png[Creating a shortcut to Mod Organizer, title="Creating a shortcut to Mod Organizer"]
@@ -566,7 +566,7 @@ image::DEFCON-00-Mod-Organizer-archive-management-activated.png[Archive manageme
 image::DEFCON-00-Mod-Organizer-settings-button.png[Mod Organizer settings button, title="Mod Organizer settings button"]
 . In the *General* tab adjust at least the following settings:
   * Activate the *Advanced* option.
-  * If possible, select a download directory in an alternate location, outside your `[%FO3_HOME%]` folder.
+  * If possible, select a download directory in an alternate location, outside your `[$FO3_HOME]` folder.
   * Activate *Download Meta Information*.
 +
 .Mod Organizer general settings
@@ -681,7 +681,7 @@ image::DEFCON-00-Mod-Organizer-LOOT-shortcut.png[LOOT shortcut in Mod Organizer,
 
 You may have noticed a button named *Sort* just above the right pane in MO (image:DEFCON-00-Mod-Organizer-sort-button.png[Mod Organizer sort button, title="Mod Organizer sort button"]). This button launches a built-in feature that sorts your plugins using an outdated version of the LOOT API. We don't want to inadvertently spoil our load order using the wrong tool, because we have the full version of LOOT just to do that, so let's disable this button.
 
-. Navigate to the `[%FO3_HOME%\Mod Organizer]` folder, and rename or delete the folder `[loot]` which is under that path.
+. Navigate to the `[$FO3_HOME\Mod Organizer]` folder, and rename or delete the folder `[loot]` which is under that path.
 +
 .Mod Organizer built-in LOOT folder
 image::DEFCON-00-Mod-Organizer-built-in-LOOT-folder.png[Mod Organizer built-in LOOT folder, title="Mod Organizer built-in LOOT folder"]
@@ -707,7 +707,7 @@ xEdit will be the next tool we are going to integrate within our modding environ
 image::DEFCON-00-Mod-Organizer-executables-settings-button.png[Mod Organizer executables settings button, title="Mod Organizer executables settings button"]
 . Fill in the following fields to provide the necessary information to run xEdit and click on *Add*:
   * *Title*: "xEdit", without the quotations.
-  * *Binary*: the xEdit executable path (like `%XEDIT_HOME%\xEdit.exe`).
+  * *Binary*: the xEdit executable path (like `$XEDIT_HOME\xEdit.exe`).
   * *Arguments*: "-FO3", without the quotations (there is http://wiki.step-project.com/Guide:XEdit#Launch_Arguments[a good bunch of command-line arguments]).
 +
 .xEdit executable information in Mod Organizer
@@ -781,7 +781,7 @@ Wrye Flash is the final tool we need to integrate with Mod Organizer to have a f
 image::DEFCON-00-Mod-Organizer-executables-settings-button.png[Mod Organizer executables settings button, title="Mod Organizer executables settings button"]
 . Fill in the following fields to provide the necessary information to run Wrye Flash and click on *Add*:
   * *Title*: "Wrye Flash", without the quotations.
-  * *Binary*: the Wrye Flash executable path (like `%FO3_HOME%\Mopy\Wrye Flash.exe`).
+  * *Binary*: the Wrye Flash executable path (like `$FO3_HOME\Mopy\Wrye Flash.exe`).
 +
 .Wrye Flash executable information in Mod Organizer
 image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-executable-entry.png[Wrye Flash executable information in Mod Organizer, title="Wrye Flash executable information in Mod Organizer"]
@@ -933,7 +933,7 @@ Gopher explains the way to go with this video about https://www.youtube.com/watc
 We don't want to clutter our system with unnecessary tools, so we are sticking with http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for FO3_].
 
 . Manually download the file [NexusFile]*FO3_3GB_ENABLER* from http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for FO3_], not using MO, and extract its contents in a location of your choice.
-. Create a backup of the file `Fallout3.exe` from `[%FO3_HOME%]`, just in case everything goes South.
+. Create a backup of the file `Fallout3.exe` from `[$FO3_HOME]`, just in case everything goes South.
 . Copy the file `Fallout3.exe` to the folder where you extracted the LAA Enabler.
 . Run `START.BAT` in the aforementioned folder. A console window will appear, reporting that the patching is about to start. Press any key.
 +
@@ -951,7 +951,7 @@ image::DEFCON-01-LAA-enabler-successful.png[LAA Enabler successful, title="LAA E
 +
 .LAA Enabler finished
 image::DEFCON-01-LAA-enabler-finished.png[LAA Enabler finished, title="LAA Enabler finished"]
-. Copy back `Fallout3.exe` to its original location in `[%FO3_HOME%]`.
+. Copy back `Fallout3.exe` to its original location in `[$FO3_HOME]`.
 . Delete the folder where you extracted the LAA Enabler and its contents. Delete the ZIP file also. You won't need them anymore.
 
 And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, improving stability.
@@ -1050,7 +1050,7 @@ image::DEFCON-01-Mod-Organizer-master-files-in-overwrite.png[Missing master file
 .Original master files in the overwrite folder
 image::DEFCON-01-Mod-Organizer-original-master-files-in-overwrite.png[Original master files in the overwrite folder, title="Original master files in the overwrite folder"]
 . What we need to do now involves some tinkering _outside_ MO, so click on *Close* and then exit MO.
-. Remember that our cornerstone in modding the game is the very concept of consecration of the data folder, meaning its contents should not be altered. Thus, we are going to _restore_ the original master files, creating a special mod with the cleaned version of these master files. Open the overwrite mod folder, located in `[%FO3_HOME%\Mod Organizer\overwrite]`.
+. Remember that our cornerstone in modding the game is the very concept of consecration of the data folder, meaning its contents should not be altered. Thus, we are going to _restore_ the original master files, creating a special mod with the cleaned version of these master files. Open the overwrite mod folder, located in `[$FO3_HOME\Mod Organizer\overwrite]`.
 +
 .The contents of the overwrite mod folder
 image::DEFCON-01-Mod-Organizer-overwrite-folder-contents.png[The contents of the overwrite mod folder, title="The contents of the overwrite mod folder"]
@@ -1062,11 +1062,11 @@ image::DEFCON-01-Mod-Organizer-overwrite-folder-backups.png[The backup of the ma
 +
 .Renamed master files in the overwrite mod folder
 image::DEFCON-01-Mod-Organizer-renamed-master-files.png[Renamed master files in the overwrite mod folder, title="Renamed master files in the overwrite mod folder"]
-. _Move back_ the `.esm` files we just renamed to the `[%FO3_HOME%\Data]` folder, where they belong. Remember, we are restoring the original, dirty files in its original location.
+. _Move back_ the `.esm` files we just renamed to the `[$FO3_HOME\Data]` folder, where they belong. Remember, we are restoring the original, dirty files in its original location.
 +
 .Original master files restored in its location
 image::DEFCON-01-Mod-Organizer-original-master-files-restores.png[Original master files restored in its location, title="Original master files restored in its location"]
-. Let's go back to the overwrite mod folder (`[%FO3_HOME%\Mod Organizer\overwrite]`). We need to get rid of the backup folder. Delete it. Burn it to the ground and make sure the only contents of the folder are the cleaned master files.
+. Let's go back to the overwrite mod folder (`[$FO3_HOME\Mod Organizer\overwrite]`). We need to get rid of the backup folder. Delete it. Burn it to the ground and make sure the only contents of the folder are the cleaned master files.
 +
 .Cleaned master files, ready to be packed
 image::DEFCON-01-Mod-Organizer-master-files-ready-to-pack.png[Cleaned master files, ready to be packed, title="Cleaned master files, ready to be packed"]

@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.4, 22/01/2017
+v0.4.6, 30/05/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1251,6 +1251,29 @@ image::DEFCON-01-Mod-Organizer-activate-tweaks.png[Activating the INI Tweaks mod
 image::DEFCON-01-Mod-Organizer-INI-Tweaks-activated.png[INI Tweaks mod activated, title="INI Tweaks mod activated"]
 
 There will be more INI tweaks along the way, but we will be adding them to the mod files they are meant to adjust.
+
+
+
+
+=== You don't want the Ink Spots to stutter, do you?
+
+If you have a [line-through]#potato# old computer, like me, you may think that the Ink Spots had https://www.youtube.com/watch?v=6l6vqPUM_FE[a severe case of stuttering when it comes to singing]. It may be caused by some old sound libraries the game was bundled with.
+
+Nevertheless, that is easy to fix (don't get used to that, though).
+
+. Open the `[$FO3_HOME]` folder.
+. Create a backup copy of the following two files:
+* `libvorbis.dll`
+* `libvorbisfile.dll`
+. Download the [NexusFile]*VorbisUpdate* file from http://www.nexusmods.com/fallout3/mods/19122[_UPDATED Unofficial Fallout 3 Patch_].
+. Unzip the file `VorbisUpdate-19122-1.zip` (or whatever its name is) in a location of your choice.
+. Copy their namesakes from the unzipped file into `[$FO3_HOME]` folder.
+. Copy the remaining DLL files into `[$FO3_HOME]`:
+* `ogg.dll`
+* `vorbis.dll`
+* `vorbisenc.dll`
+
+We are ready to begin with the serious shit. Stay tuned!
 
 
 

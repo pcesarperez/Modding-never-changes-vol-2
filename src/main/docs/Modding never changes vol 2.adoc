@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.10, 04/06/2017
+v0.4.11, 07/06/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1583,7 +1583,7 @@ image::DEFCON-01-Mod-Organizer-Console-Key-Binder-activated.png[Console Key Bind
 +
 ._Console Key Binder_ load order
 image::DEFCON-01-LOOT-Console-Key-Binder-load-order.png[Console Key Binder load order, title="Console Key Binder load order"]
-. We are going to assign the kbd:[F4] key to the console. It's the default key for _Console Key Binder_, but it's interesting to know how to change the key to your gut's feelings. Launch the game (as usual, through MO and using FOSE), and fire up the console using the old key, to the left of the kbd:[1] key. When the console is activated, write the command `Set ConsoleKey to 62` and press kbd:[Enter]. You should get the response `set global >> 62`. Take into account that 62 is the decimal scancode of the kbd:[F4] key. There are http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html[a shitload of scancodes] you may use, but you should stick to http://cs.elderscrolls.com/index.php?title=HoldKey[the DirectX scancodes], just in case. For instance, whether you would like to use the kbd:[F11] key, you should replace the 62 scancode for the 87 scancode.
+. We are going to assign the kbd:[F11] key to the console because the kbd:[F4] key will be later used by http://www.nexusmods.com/fallout3/mods/3729/[_CASM_], a mod which improves the game saving. Launch the game (as usual, through MO and using FOSE), and fire up the console using the old key, to the left of the kbd:[1] key. When the console is activated, write the command `Set ConsoleKey to 87` and press kbd:[Enter]. You should get the response `set global >> 87`. Take into account that 87 is the decimal scancode of the kbd:[F11] key. There are http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html[a shitload of scancodes] you may use, but you should stick to http://cs.elderscrolls.com/index.php?title=HoldKey[the DirectX scancodes], just in case.
 +
 .Remapping the console key
 image::DEFCON-01-Fallout-3-remapping-console-key.png[Remapping the console key, title="Remapping the console key"]

@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.11, 07/06/2017
+v0.4.12, 08/06/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1594,6 +1594,77 @@ Another little step in our modding journey has ended (I guess the IPA beer I hav
 
 
 === Crash Test Dummies will have a hard time here
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/newvegas/mods/53635/[_NVAC - New Vegas Anti Crash_]
+====
+
+_Fallout 3_ crashes.
+
+A lot.
+
+It's a Fact of Life you have to deal with, unless you are eager to fill the pockets of your therapist.
+
+However, we can reduce the frequency _Fallout 3_ crashes by installing a little FOSE mod which takes care of unhandled exceptions which may ruin your day. Don't let the title fool you, because the mod serves both _Fallout 3_ and _Fallout New Vegas_.
+
+. Open MO, as usual, and switch to the *Downloads* tab in the right pane.
+. http://www.nexusmods.com/newvegas/mods/53635/[_NVAC - New Vegas Anti Crash_] is a _Fallout New Vegas_ mod, so we cannot download it with MO, because MO has been instructed to handle _Fallout 3_ mod downloads. Download the file [NexusFile]*NVAC - New Vegas Anti Crash* manually instead, in a location of your choice.
+. Download also the file [NexusFile]*DisableProcessWindowsGhosting v2*, in the *Optional files* section.
+. Now, drag & drop the file `NVAC - New Vegas Anti Crash-53635-7-5-1-0.zip` (or whatever name it has) to the *Downloads* tab in MO's right pane (yes, you can do that).
++
+.Sideloading NVAC in _Mod Organizer_
+image::DEFCON-01-Mod-Organizer-sideloading-NVAC.png[Sideloading NVAC in Mod Organizer, title="Sideloading NVAC in Mod Organizer"]
+. Double-click on the mod entry in the *Downloads* tab to install it. The mod doesn't install anything in the data folder, so the installation is straightforward, without questions. Remove the installed mod from view in the *Downloads* tab.
+. Activate the mod in the left pane, move it just below the unofficial patch, and we are good to go.
++
+.NVAC plugin activated
+image::DEFCON-01-Mod-Organizer-NVAC-activated.png[NVAC plugin activated, title="NVAC plugin activated"]
++
+[NOTE]
+====
+In prior versions of _Mod Organizer_ you should have had to rename the virtual folder where the plugin is deployed, from `[NVSE]` (_New Vegas Script Extender_) to `[FOSE]` (_Fallout Script Extender_). It seems in MO version 1.3.11 it's no longer necessary.
+====
+. Drag & drop the file `DisableProcessWindowsGhosting v2-53635-2.zip` to the *Downloads* tab in MO, like we did before.
++
+.Sideloading DisableProcessWindowsGhosting in _Mod Organizer_
+image::DEFCON-01-Mod-Organizer-sideloading-DisableProcessWindowsGhosting.png[Sideloading DisableProcessWindowsGhosting in Mod Organizer, title="Sideloading DisableProcessWindowsGhosting in Mod Organizer"]
+. Double-click on the mod entry in the *Downloads* tab. This time, the *Install Mods* window opens without asking for manual installation first, due to the fact that the mod contains a single file in its root. There is a bunch of things that need to be addressed.
+* Notice the "No game data on top level" in red, in the bottom left corner.
+* This file belongs to NVAC, so we don't want it to be installed in isolation. Rename the mod to "NVAC - New Vegas Anti Crash" in the upper right corner of the window to merge both mods.
+* We need to create a valid structure first, so right-click on the `<data>` element and select *Create directory...*.
++
+.Creating the first level directory for DisableProcessWindowsGhosting
+image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-1.png[Creating the first level directory for DisableProcessWindowsGhosting, title="Creating the first level directory for DisableProcessWindowsGhosting"]
+. Give the folder the name "FOSE" and click *Ok*.
++
+.First level folder for DisableProcessWindowsGhosting
+image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-2.png[First level folder for DisableProcessWindowsGhosting, title="First level folder for DisableProcessWindowsGhosting"]
+. MO recognizes we have a valid structure in place with the `[FOSE]` folder, but we are not done yet. Right-click on the `[FOSE]` folder this time, and select *Create directory...* again.
++
+.Creating the second level directory for DisableProcessWindowsGhosting
+image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-3.png[Creating the second level directory for DisableProcessWindowsGhosting, title="Creating the second level directory for DisableProcessWindowsGhosting"]
+. Give the new folder the name "Plugins" and click *Ok*.
++
+.Second level folder for DisableProcessWindowsGhosting
+image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-4.png[Second level folder for DisableProcessWindowsGhosting, title="Second level folder for DisableProcessWindowsGhosting"]
+. Now drag and drop the file `DisableProcessWindowsGhosting.dll` from its current place, under `[<data>]`, to `[Plugins]`. We have just virtually rearranged the contents of the mod to seamlessly deploy it into the game data folder. Click *Ok* to finish.
++
+.Place the DisableProcessWindowsGhosting file in the right folder
+image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-5.png[Place the DisableProcessWindowsGhosting file in the right folder, title="Place the DisableProcessWindowsGhosting file in the right folder"]
+. MO recognizes you are trying to merge two mods, so it shows a warning window offering several options, just in case. Click on *Merge*.
++
+.Merging NVAC and DisableProcessWindowsGhosting
+image::DEFCON-01-Mod-Organizer-merging-NVAC-DisableProcessWindowsGhosting.png[Merging NVAC and DisableProcessWindowsGhosting, title="Merging NVAC and DisableProcessWindowsGhosting"]
+. As usual, remove the mod from view in the *Downloads* pane.
+. The mod "NVAC - New Vegas Anti Crash" remains in its place, in the left pane, apparently undisturbed. Double-click on it to bring up the properties window and navigate to the *Filetree* tab, where you can verify that the file `DisableProcessWindowsGhosting.dll` is in the right place, alongside `nvac.dll`. Click *Close* when you decide to stop staring at the window.
++
+.NVAC and DisableProcessWindowsGhosting merged
+image::DEFCON-01-Mod-Organizer-NVAC-DisableProcessWindowsGhosting-merged.png[NVAC and DisableProcessWindowsGhosting merged, title="NVAC and DisableProcessWindowsGhosting merged"]
+
+We are done! There are no visible results right now, but remember, we are hardening our game, so be patient. Wonderful things lie ahead.
 
 
 

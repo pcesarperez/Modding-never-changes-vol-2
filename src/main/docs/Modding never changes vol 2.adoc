@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.12, 08/06/2017
+v0.4.13, 10/06/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1670,6 +1670,73 @@ We are done! There are no visible results right now, but remember, we are harden
 
 
 === Fake full-screen mode
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/21337/[_OneTweak for FO3_]
+====
+
+Bethesda's games have a tendency towards crashing when run in full-screen mode, as awkward as it sounds. Thus, the advantage in using what is called windowed borderless mode, or fake full-screen, which allows you to kbd:[Alt] + kbd:[Tab] your way out of the game anytime you wish, as well as increasing stability. The FOSE plugin we are about to install serves that purpose.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download with the manager the file [NexusFile]*OneTweak for Fallout 3* from http://www.nexusmods.com/fallout3/mods/21337/[_OneTweak for FO3_].
++
+.OneTweak for _Fallout 3_ downloaded
+image::DEFCON-01-Mod-Organizer-OneTweak-downloaded.png[OneTweak for Fallout 3 downloaded, title="OneTweak for Fallout 3 downloaded"]
+. Double-click on the mod entry to bring up the *Quick Install* window. As usual, click on *Manual*.
++
+.Manual installation of OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-Quick-Install.png[Manual installation of OneTweak, title="Manual installation of OneTweak"]
+. The mod inner structure is not ready to be deployed yet because the contents are inside a folder named `[OneTweak-FOSE]`. Right-click on that folder and select the option *Set data directory* to mark it as the top-level folder.
++
+.Rearranging the inner structure of OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-rearranging-structure.png[Rearranging the inner structure of OneTweak, title="Rearranging the inner structure of OneTweak"]
+. Once the virtual data folder is set, the mod becomes immediately palatable for MO. Just click on *Ok* to go on.
++
+.OneTweak ready to be installed
+image::DEFCON-01-Mod-Organizer-OneTweak-ready.png[OneTweak ready to be installed, title="OneTweak ready to be installed"]
+. However, we have not finished yet. We need to fix the version number and make sure the game runs in windowed mode first. Double-click on the mod entry in the left pane to show the properties window.
++
+.OneTweak is installed but not active yet
+image::DEFCON-01-Mod-Organizer-OneTweak-not-active-yet.png[OneTweak is installed but not active yet, title="OneTweak is installed but not active yet"]
+. In the properties window, switch to the *Nexus Info* tab and correct the version number (2.0.1.1, as of this writing).
++
+.Correcting the version number of OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-correct-version.png[Correcting the version number of OneTweak, title="Correcting the version number of OneTweak"]
+. Switch now to the *INI-Files* tab, right-click on the *Ini Tweaks* blank area and select option *Create Tweak*.
++
+.Creating INI tweak for OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-creating-INI-file.png[Creating INI tweak for OneTweak, title="Creating INI tweak for OneTweak"]
+. Give the name "WindowedMode" to the tweak in the next window.
++
+.Naming the INI tweak for OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-INI-name.png[Naming the INI tweak for OneTweak, title="Naming the INI tweak for OneTweak"]
+. Back to the *INI-Files* tab, activate the tweak `WindowedMode.ini` using the checkbox, write the following contents, click on *Save* and then *Close*.
++
+----
+[Display]
+; Runs the game in windowed mode.
+bFull Screen=0
+----
++
+.Writing the INI tweak for OneTweak
+image::DEFCON-01-Mod-Organizer-OneTweak-writing-INI-tweak.png[Writing the INI tweak for OneTweak, title="Writing the INI tweak for OneTweak"]
+. Back to the main window, activate the mod with its checkbox.
++
+.OneTweak corrected and activated
+image::DEFCON-01-Mod-Organizer-OneTweak-corrected-and-activated.png[OneTweak corrected and activated, title="OneTweak corrected and activated"]
+. Run the game now from MO, using FOSE as launcher (let's show it one more time).
++
+.Running the game through FOSE in _Mod Organizer_
+image::DEFCON-01-Mod-Organizer-running-Fallout-3-through-FOSE.png[Running the game through FOSE in Mod Organizer, title="Running the game through FOSE in Mod Organizer"]
+. You can kbd:[Alt] + kbd:[Tab] anytime you want while in game now, although there is no immediate noticeable diference with the full-screen mode.
++
+.Switching windows while in fake full-screen mode
+image::DEFCON-01-Fallout-3-Alt-Tab-switch.png[Switching windows while in fake full-screen mode, title="Switching windows while in fake full-screen mode"]
+
+This is getting better and better!
 
 
 

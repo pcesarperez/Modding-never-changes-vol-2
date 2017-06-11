@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.13, 10/06/2017
+v0.4.14, 11/06/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1742,6 +1742,137 @@ This is getting better and better!
 
 
 === Saving games the right way
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/3729/[CASM]
+====
+
+Let me tell you a story.
+
+I was once, in my faraway youth, playing the incredible _Tomb Raider_, and I mean the *original* _Tomb Raider_, with polygons like daggers (no pun intended).
+
+.Yeah, she was Lara Croft, believe it or not
+image::DEFCON-01-Original-Lara-Croft.png[Yeah, she was Lara Croft, believe it or not, title="Yeah, she was Lara Croft, believe it or not"]
+
+I was climbing a cliff, facing the vertical slope, when I heard an ominous sound.
+
+____
+FLAP! FLAP!
+____
+
+"FLAP!? FLAP!?", I though. I didn't recognize the sound, but as you learnt quickly in the game, almost anything would kill you. So, I turned around just to see a flying gargoyle hovering inches from me, right in front of my highly polygonal face.
+
+I panicked.
+
+I smashed the keyboard to... Well, I don't know what I was trying to do, honestly. The next I know is that I was falling down the cliff.
+
+But I was a cautious player, and I had one of my fingers virtually soldered to the kbd:[F5] key to quicksave the game at every step of the road.
+
+So, I hit the quickload key to get back to the cliffside and face the gargoyle, or so I thought, because I hit the *quicksave* key by mistake. In the middle of a fatal falling.
+
+When I realized what I had done, I screamed in pain, echoing Lara's screams while she was falling, for *I had no other saved games* (and you had to manually copy the files from time to time; there was no named savegames at the time, as far as I remember).
+
+I completely fucked up my playthrough, and I had been playing a good deal of hours by then.
+
+And you wonder, how could this moron hit the quicksave key instead of the quickload key? They are far apart from each other, aren't they?
+
+*NO, THEY WEREN'T.*
+
+I would like to know the genius who thought that putting the quicksave key bound to kbd:[F5] and the quickload key bound to kbd:[F6] was a good idea. I ended hitting kbd:[F5] by accident, instead of kbd:[F6].
+
+The story had a happy ending, though, because my brother, who was also playing the game, gave me his own saved game, not far from the cliff I were, and not before making a savage mockery of my poor self.
+
+However, these are the morals of the story.
+
+* Never, *NEVER* bind your quickload and quicksave keys too close from each other.
+* Never, *NEVER* rely exclusively on quicksaved games as a sort of failsafe net.
+* Use profusely named saved games. Don't be shy. Save a lot, and create meaningful saved games.
+
+Back to _Fallout 3_, as you can imagine, saved games will prevent your life to become a miserable pile of shit when the game suddenly decides it is a good idea to crash its way out to desktop (and it *WILL* happen, trust me). However, as you can also imagine, the standard saving mechanics in _Fallout 3_ are a complete and utter crap.
+
+The mod we are about to install, CASM (which stands for "Cipscis' Automatic Save Manager"), is a fine piece of work which:
+
+* Assigns the kbd:[F4] key to quicksave and the kbd:[F8] key to quick save, using *named* saves.
+* Saves the game automatically with a given frequency.
+* Saves the game automatically under certain events.
+
+Let's go, then.
+
+. Open MO and switch to the *Downloads* tab in the right pane (that should go without saying).
+. Download the file [NexusFile]*CASM_v1_2_3* with manager from http://www.nexusmods.com/fallout3/mods/3729/[CASM] page.
++
+.CASM is ready to be installed
+image::DEFCON-01-Mod-Organizer-CASM-ready-to-be-installed.png[CASM is ready to be installed, title="CASM is ready to be installed"]
+. Double-click on the mod entry in the *Downloads* tab to bring up the *Quick Install* window. Click on *Manual*, as usual.
++
+.Quick Install window for CASM
+image::DEFCON-01-Mod-Organizer-CASM-Quick-Install.png[Quick Install window for CASM, title="Quick Install window for CASM"]
+. The inner structure of CASM is ok right off the bat, so we don't need to rearrange anything. Just click on *Ok*.
++
+.The inner structure of CASM looks pretty good
+image::DEFCON-01-Mod-Organizer-CASM-structure-ok.png[The inner structure of CASM looks pretty good, title="The inner structure of CASM looks pretty good"]
+. Back to the MO main window, you can see that CASM is installed but not active in the left pane. We need to correct the version number and create an INI tweak, so double-click on the mod entry.
++
+.CASM is installed but not active yet
+image::DEFCON-01-Mod-Organizer-CASM-not-active-yet.png[CASM is installed but not active yet, title="CASM is installed but not active yet"]
+. First, we are going to correct the version number in the *Nexus Info* tab of the properties window we have just brought up. Write the corresponding version (1.2.3, as of this writing).
++
+.CASM corrected version number
+image::DEFCON-01-Mod-Organizer-CASM-corrected-version-number.png[CASM corrected version number, title="CASM corrected version number"]
+. Next, switch to the *INI-Files* tab, where we are going to create an INI tweak to disable the standard savegame mechanics to avoid meddling with CASM own mechanics. Right click on the *Ini Tweaks* pane and select the option *Create Tweak*.
++
+.Creating an INI tweak in CASM
+image::DEFCON-01-Mod-Organizer-CASM-creating-INI-tweak.png[Creating an INI tweak in CASM, title="Creating an INI tweak in CASM"]
+. The INI tweak will be named "DisableDefaultSaving", although you can use any name you want. Click on *Ok* when you have written a thoughtful name.
++
+.Naming the INI tweak in CASM
+image::DEFCON-01-Mod-Organizer-CASM-naming-INI-tweak.png[Naming the INI tweak in CASM, title="Naming the INI tweak in CASM"]
+. Now select the `DisableDefaultSaving.ini` tweak through its checkbox, write the following contents in the right pane, click on *Save* and finally click on *Close*.
++
+----
+[GamePlay]
+; Disables default saving mechanics.
+bSaveOnRest=0
+bSaveOnTravel=0
+bSaveOnWait=0
+----
++
+.Saving the contents of the INI tweak in CASM
+image::DEFCON-01-Mod-Organizer-CASM-saving-INI-tweak.png[Saving the contents of the INI tweak in CASM, title="Saving the contents of the INI tweak in CASM"]
+. Back to the MO main window, activate CASM with its checkbox in the left pane.
++
+.CASM is installed and ready to be used
+image::DEFCON-01-Mod-Organizer-CASM-installed-and-ready.png[CASM is installed and ready to be used, title="CASM is installed and ready to be used"]
+. Take a look at the contents of the *Plugins* tab in the right pane. You can see that there is a file named `CASM.esp` sitting at the bottom of your load order. Everytime a new `.esp` or `.esm` file is added to your load order, you need to run LOOT to make sure the file is in its right place.
++
+.CASM plugin sitting at the bottom of your load order
+image::DEFCON-01-Mod-Organizer-CASM-plugin.png[CASM plugin sitting at the bottom of your load order, title="CASM plugin sitting at the bottom of your load order"]
+. Run LOOT through the toolbar icon and sort your load order. No changes will be made, but this is a habit you need to develop, so humor me.
++
+.CASM doesn't move a bit in the load order
+image::DEFCON-01-LOOT-CASM-load-order.png[CASM doesn't move a bit in the load order, title="CASM doesn't move a bit in the load order"]
+. Close LOOT and run the game. In the main menu screen, select *Settings* and then *Gameplay* to verify that the three default saving options are disabled.
++
+._Fallout 3_ default saving options disabled
+image::DEFCON-01-Fallout-3-default-saving-disabled.png[Fallout 3 default saving options disabled, title="Fallout 3 default saving options disabled"]
+. CASM is fully configurable through an in-game option, using your Pip-Boy 3000 (don't worry if you don't know what the heck a Pip-Boy is yet). While in-game, press the kbd:[Tab] key to bring up your Pip-Boy, and then navigate to the *Items* button, *Aid* section. You will see an "item" called *CASM options menu*.
++
+.CASM in-game menu through your Pip-Boy
+image::DEFCON-01-Fallout-3-CASM-in-game-menu.png[CASM in-game menu through your Pip-Boy, title="CASM in-game menu through your Pip-Boy"]
+. Select the *Casm options menu* "item" and then bring down your Pip-Boy by pressing the kbd:[Tab] key (yeah, sort of counter-intuitive). An overlaid menu will appear with a lot of options for you to configure, although they are pretty self-explanatory.
++
+.CASM in-game settings
+image::DEFCON-01-Fallout-3-CASM-in-game-settings.png[CASM in-game settings, title="CASM in-game settings"]
+
+And this is it! Another piece fits in our structure.
+
+[WARNING]
+====
+Remember! You need to change the default console key used by http://www.nexusmods.com/fallout3/mods/2637[_Console Key Binder_] from kbd:[F4] to something else, like kbd:[F11], as I explained before, in order to avoid collision with the default quicksave key in CASM.
+====
 
 
 

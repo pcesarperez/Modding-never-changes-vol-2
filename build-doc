@@ -27,7 +27,7 @@ cp $ASCIIDOCTOR_STYLESHEET_FACTORY_DIR/stylesheets/Modding-never-changes-vol-2.c
 # Step 5: Invoke Maven to build the HTML5 output.
 mvn
 
-# Step 6 (optinal): Unzip the buildfile to test the results.
+# Step 6 (optional): Unzip the buildfile to test the results.
 if [ "$1" == "/t" ]; then
 	unzip build/*.zip -d build/test
 fi

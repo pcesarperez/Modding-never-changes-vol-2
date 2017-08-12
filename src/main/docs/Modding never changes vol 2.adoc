@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.14, 11/06/2017
+v0.4.15, 12/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -536,7 +536,7 @@ image::DEFCON-00-Mod-Organizer-panes.png[Mod Organizer panes, title="Mod Organiz
 +
 .Corrected priority order in Mod Organizer
 image::DEFCON-00-Mod-Organizer-corrected-priority-order.png[Corrected priority order in Mod Organizer, title="Corrected priority order in Mod Organizer"]
-. Do the same with the load order in the left pane, dragging and dropping the plugins. You should have this:
+. Do the same with the load order in the right pane, dragging and dropping the plugins. You should have this:
   * `Fallout3.esm` (you cannot move this, anyway)
   * `Anchorage.esm`
   * `ThePitt.esm`
@@ -817,7 +817,7 @@ image::DEFCON-00-Mod-Organizer-Wrye-Flash-toolbar-icon.png[Wrye Flash toolbar ic
 image::DEFCON-00-Wrye-Flash-warning-modified-dates.png[Wrye Flash warning about modified dates, title="Wrye Flash warning about modified dates"]
 . Wrye Flash shows its main window, with the plugin list somewhat scrambled. We are going to disable the feature that prevents Wrye Flash from sorting the plugins using the right load order. In the *Mods* tab, right-click on any column in the header and uncheck the *Lock Times* options.
 +
-.Disabling the "Lock Times" option in Wrye Flash
+.Disabling the 'Lock Times' option in Wrye Flash
 image::DEFCON-00-Wrye-Flash-disable-lock-times.png[Disabling the "Lock Times" option in Wrye Flash, title="Disabling the "Lock Times" option in Wrye Flash"]
 . Exit Wrye Flash to go back to the Mod Organizer main window, and then _launch Wrye Flash again_. This time no warning should arise. Notice the different load order the plugins have now.
 +
@@ -1352,7 +1352,7 @@ image::DEFCON-01-Mod-Organizer-launching-INI-editor.png[Launching the INI editor
 +
 .Mod Organizer INI editor
 image::DEFCON-01-Mod-Organizer-INI-editor.png[Mod Organizer INI editor, title="Mod Organizer INI editor"]
-. From now on, any other change to the INI files will be performed through the INI Tweaks feature of MO. First, we need to create an empty folder named `[INI Tweaks]` within `[$FO3_HOME\Mod Organizer\override]`.
+. From now on, any other change to the INI files will be performed through the INI Tweaks feature of MO. First, we need to create an empty folder named `[INI Tweaks]` within `[$FO3_HOME\Mod Organizer\overwrite]`.
 . Back to MO, right-click in any empty area on the left pane and select *Refresh*.
 +
 .Refreshing the state of Mod Organizer

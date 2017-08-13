@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.15, 12/08/2017
+v0.4.16, 12/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -817,8 +817,8 @@ image::DEFCON-00-Mod-Organizer-Wrye-Flash-toolbar-icon.png[Wrye Flash toolbar ic
 image::DEFCON-00-Wrye-Flash-warning-modified-dates.png[Wrye Flash warning about modified dates, title="Wrye Flash warning about modified dates"]
 . Wrye Flash shows its main window, with the plugin list somewhat scrambled. We are going to disable the feature that prevents Wrye Flash from sorting the plugins using the right load order. In the *Mods* tab, right-click on any column in the header and uncheck the *Lock Times* options.
 +
-.Disabling the 'Lock Times' option in Wrye Flash
-image::DEFCON-00-Wrye-Flash-disable-lock-times.png[Disabling the "Lock Times" option in Wrye Flash, title="Disabling the "Lock Times" option in Wrye Flash"]
+.Disabling the "Lock Times" option in Wrye Flash
+image::DEFCON-00-Wrye-Flash-disable-lock-times.png[Disabling the "Lock Times" option in Wrye Flash, title="Disabling the 'Lock Times' option in Wrye Flash"]
 . Exit Wrye Flash to go back to the Mod Organizer main window, and then _launch Wrye Flash again_. This time no warning should arise. Notice the different load order the plugins have now.
 +
 .Altered load order in Wrye Flash
@@ -1747,7 +1747,7 @@ This is getting better and better!
 ====
 Mods used in this chapter:
 
-* http://www.nexusmods.com/fallout3/mods/3729/[CASM]
+* http://www.nexusmods.com/fallout3/mods/3729/[_CASM_]
 ====
 
 Let me tell you a story.
@@ -1802,7 +1802,7 @@ The mod we are about to install, CASM (which stands for "Cipscis' Automatic Save
 Let's go, then.
 
 . Open MO and switch to the *Downloads* tab in the right pane (that should go without saying).
-. Download the file [NexusFile]*CASM_v1_2_3* with manager from http://www.nexusmods.com/fallout3/mods/3729/[CASM] page.
+. Download the file [NexusFile]*CASM_v1_2_3* with manager from http://www.nexusmods.com/fallout3/mods/3729/[_CASM_] page.
 +
 .CASM is ready to be installed
 image::DEFCON-01-Mod-Organizer-CASM-ready-to-be-installed.png[CASM is ready to be installed, title="CASM is ready to be installed"]
@@ -1878,6 +1878,62 @@ Remember! You need to change the default console key used by http://www.nexusmod
 
 
 === Getting rid of stutter
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/8886/[_Fallout Stutter Remover_]
+====
+
+Imagine you are playing _Fallout 3_ with your shiny new PC, burning CPU cycles like you were Donald Trump in one of his Twitter outburst sprees, and all of a sudden, something bothers you, sending chills to the bone. You don't quite know where this sensation comes from, but you are sure that something is off with your game.
+
+Let me give it a name for you: micro-stutters.
+
+Gopher explains the nature of micro-stuttering in a https://www.youtube.com/watch?v=tONiXNbwSt0[good video about the game performance], and Cal from DirtyWeasel shows us https://youtu.be/T_hJY9vaN7A?t=20m40s[how to install _Fallout Stutter Remover_ using MO] to get rid of these little annoyances. Getting right to the point, micro-stutters are little jumps perceived in the camera movement, specially when you are strafing, no matter how fluid is your game in any other regard.
+
+Let's fix that, right now.
+
+. Open MO and switch to the *Downloads* tab in the right pane, as usual.
+. Download the file [NexusFile]*FSR_4-1-36* with manager from the http://www.nexusmods.com/fallout3/mods/8886/[_Fallout Stutter Remover_] page.
++
+.Fallout Stutter Remover is ready to be installed
+image::DEFCON-01-Mod-Organizer-FSR-ready-to-be-installed.png[Fallout Stutter Remover is ready to be installed, title="Fallout Stutter Remover is ready to be installed"]
+. Double-click on the mod entry in the *Downloads* tab to bring up the *Install* window. The inner structure of the mod is not quite good, so no automatic install is offered, going for full manual installation instead. There are two folders on the top level, `[Data]` and `[src]`, being of interest only the former. Right-click on it and select *Set data directory* to make that folder the root of our data hierarchy.
++
+.Adjusting the data folder for FSR
+image::DEFCON-01-Mod-Organizer-FSR-adjusting-data-folder.png[Adjusting the data folder for FSR, title="Adjusting the data folder for FSR"]
+. Once it's done, we can see the mod inner structure is fixed, so we can just proceed by clicking on *Ok*.
++
+.FSR inner structure adjusted
+image::DEFCON-01-Mod-Organizer-FSR-data-folder-adjusted.png[FSR inner structure adjusted, title="FSR inner structure adjusted"]
+. FSR sits on the bottom in the left pane, as it should be. We need to tinker a little with the mod configuration before activating it, so double-click on its name.
++
+.FSR is installed but not ready yet
+image::DEFCON-01-Mod-Organizer-FSR-installed-but-not-active.png[FSR is installed but not ready yet, title="FSR is installed but not ready yet"]
+. The mod properties window should open in the *INI-Files* tab (if not, switch to it). In the left pane, click on the only item in the *Ini Files* box (`FOSE/Plugins/sr_Fallout_Stutter_Remover.ini`) to see its contents in the right pane.
++
+.FSR configuration file
+image::DEFCON-01-Mod-Organizer-FSR-configuration-file.png[FSR configuration file, title="FSR configuration file"]
+. Kelmych lends us a hand in his guide to show http://wiki.step-project.com/User:Kelmych/Fallout3#Fallout_Stutter_Remover[the proper configuration we need]. We only need to modify the `FPS_Management` section (the third one in the `.ini` file), as follows.
++
+----
+FPS_Management = {
+    bInject_iFPSClamp = 1
+    fMaximumFPS = 60
+    fMinimumFPS = 30
+    iFPS_Report_Period = 4000
+    fExtraSleepPercent = 0.05
+}
+----
+. With the contents modified, just click on *Save* and then *Close*.
++
+.FSR modified configuration file
+image::DEFCON-01-Mod-Organizer-FSR-modified-configuration.png[FSR modified configuration file, title="FSR modified configuration file"]
+. Finally, activate the mod in the left pane and we are good to go. This is a FOSE-only mod, so there's no need to rearrange the loar order. Lauch the game and strafe your way around for a while to see for yourself the smoothness the game has aquired.
++
+.FSR installed and active
+image::DEFCON-01-Mod-Organizer-FSR-installed-and-active.png[FSR installed and active, title="FSR installed and active"]
 
 
 

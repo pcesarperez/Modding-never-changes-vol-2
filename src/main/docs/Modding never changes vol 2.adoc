@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.17, 14/08/2017
+v0.4.18, 15/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -87,7 +87,7 @@ In the modding scene, you cannot even think about writing a guide like this with
 
 I have read and viewed a lot of resources before writing a single line of this guide. These are the authors of such resources:
 
-* *https://www.youtube.com/user/GophersVids[Gopher]* is one of my favourite modders and youtubers out there. I have been watching his videos since my interest in modding bloomed. His is the https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer video series], albeit he uses _Skyrim_ to show the tool capabilities.
+* *https://www.youtube.com/user/GophersVids[Gopher]* is one of my favorite modders and youtubers out there. I have been watching his videos since my interest in modding bloomed. His is the https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer video series], albeit he uses _Skyrim_ to show the tool capabilities.
 * *https://www.youtube.com/user/ar15nurse[Cal, from Dirty Weasel Media]* is one of my latest additions to my subscription list. He has created a fantastic https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[guide about Modding _Fallout 3_ with Mod Organizer] which has been very helpful.
 * *https://www.youtube.com/user/MrXuul[Xuul]* is a youtuber with a lot of quality and up-to-date videos about modding. His is https://www.youtube.com/playlist?list=PL4turVkHE168Yyj8g9k_s9GCCvW0f_apX[a complete guide to mod _Fallout 3_ with Mod Organizer].
 * *https://www.youtube.com/user/gamerpoets[Michael, from GamerPoets]* is a modder and youtuber that I have recently discovered through Gopher's series about Mod Organizer. He and his team has *A FUCKIN' LOT* of tutorials about modding, all of them very thorough and detailed. I have used several resources from GamerPoets, like https://www.youtube.com/watch?v=CqFCLrYn30c[a guide about LOOT] and a https://www.youtube.com/watch?v=2F19Do8HAl4[guide about xEdit].
@@ -130,7 +130,7 @@ That's what should happen with NMM, but not with MO. Have you found an oh-my-gos
 * Merging different files into a single mod is dead easy. You don't have to have a lot of different entries in your mod stack for each mod you install.
 * You have integrated tools to fiddle with the inner structure of the mods, so you will be able to fix any weirdness the mod comes with before installing it.
 * Knowing which files are overwritten and by which mod in your setup is a no-brainer.
-* Profiles! Do you need a profile for a heavy-gunner with specific mods? Done! Do you need a profile for a hard nerd whose favourite problem solving method is talking her way out of it? Done! Each profile has its individual mod configuration, which is perfect for the progressive, functional approach we are going to use throughout this guide.
+* Profiles! Do you need a profile for a heavy-gunner with specific mods? Done! Do you need a profile for a hard nerd whose favorite problem solving method is talking her way out of it? Done! Each profile has its individual mod configuration, which is perfect for the progressive, functional approach we are going to use throughout this guide.
 
 There are several downsides too, of course, although none of them is a real deal breaker:
 
@@ -329,7 +329,7 @@ If you want to have an in-depth look to LOOT and what it can do, just watch the 
 ====
 
 . https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[$LOOT_HOME]`.
-. Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *Ok* to dismiss it.
+. Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *OK* to dismiss it.
 +
 .LOOT first run
 image::DEFCON-00-LOOT-first-run.png[LOOT first run, title="LOOT first run"]
@@ -437,7 +437,7 @@ image::DEFCON-00-Mod-Organizer-installation-folder.png[Mod Organizer installatio
 +
 .Mod Organizer game version selection
 image::DEFCON-00-Mod-Organizer-game-version-selection.png[Mod Organizer game version selection, title="Mod Organizer game version selection"]
-. A window with the message of the day will appear. Just click *Ok*.
+. A window with the message of the day will appear. Just click *OK*.
 +
 .Mod Organizer message of the day
 image::DEFCON-00-Mod-Organizer-message-of-the-day.png[Mod Organizer message of the day, title="Mod Organizer message of the day"]
@@ -497,11 +497,11 @@ image::DEFCON-00-Mod-Organizer-browse-icon.png[Mod Organizer icon selection dial
 +
 .Selecting a new icon for the FO3-MO shortcut
 image::DEFCON-00-Mod-Organizer-new-icon-selection.png[Selecting a new icon for the FO3-MO shortcut, title="Selecting a new icon for the FO3-MO shortcut"]
-. Back to the icon selection dialog, just click *Ok*.
+. Back to the icon selection dialog, just click *OK*.
 +
 .Mod Organizer icon confirmation
 image::DEFCON-00-Mod-Organizer-new-icon-confirmation.png[Mod Organizer icon confirmation, title="Mod Organizer icon confirmation"]
-. Finally, click *Ok* on the shortcut properties dialog to confirm the changes.
+. Finally, click *OK* on the shortcut properties dialog to confirm the changes.
 +
 .Confirming the changes made to the FO3-MO shortcut
 image::DEFCON-00-Mod-Organizer-shortcut-properties-confirmation.png[Confirming the changes made to the FO3-MO shortcut, title="Confirming the changes made to the FO3-MO shortcut"]
@@ -554,7 +554,7 @@ image::DEFCON-00-Mod-Organizer-profiles-button.png[Mod Organizer profiles button
 +
 .Mod Organizer profiles management window
 image::DEFCON-00-Mod-Organizer-profiles-management-window.png[Mod Organizer profiles management window, title="Mod Organizer profiles management window"]
-. Rename the profile to "DEFCON 00 (Vanilla)" and click *Ok*.
+. Rename the profile to "DEFCON 00 (Vanilla)" and click *OK*.
 +
 .Renamed Vanilla profile in Mod Organizer
 image::DEFCON-00-Mod-Organizer-renamed-Vanilla-profile.png[Renamed Vanilla profile in Mod Organizer, title="Renamed Vanilla profile in Mod Organizer"]
@@ -588,11 +588,11 @@ image::DEFCON-00-Mod-Organizer-general-settings.png[Mod Organizer general settin
 +
 .Mod Organizer Nexus settings
 image::DEFCON-00-Mod-Organizer-Nexus-settings.png[Mod Organizer Nexus settings, title="Mod Organizer Nexus settings"]
-. In the *Plugins* tab, select the plugin "BSA Extractor" and, in the right pane, swith the "enabled" status from "False" to "True".
+. In the *Plugins* tab, select the plugin "BSA Extractor" and, in the right pane, switch the "enabled" status from "False" to "True".
 +
 .Mod Organizer plugins settings
 image::DEFCON-00-Mod-Organizer-plugins-settings.png[Mod Organizer plugins settings, title="Mod Organizer plugins settings"]
-. In the *Workarounds* tab, adjust at least the following settings and click *Ok*.
+. In the *Workarounds* tab, adjust at least the following settings and click *OK*.
   * Change the NMM version to the latest available (you can find out the latest version in the http://www.nexusmods.com/games/[Nexus main page], at the topmost bar, in the http://www.nexusmods.com/games/mods/modmanager/[Install NMM] link).
   * Disable the option *Force-enable game files*.
 +
@@ -654,9 +654,9 @@ image::DEFCON-00-Mod-Organizer-LOOT-executable-properties-modified.png[Mod Organ
 +
 .Select LOOT to run through Mod Organizer
 image::DEFCON-00-Mod-Organizer-select-LOOT-and-run.png[Select LOOT to run through Mod Organizer, title="Select LOOT to run through Mod Organizer"]
-. When LOOT finishes launching, notice the game tag at the top, which shoud say "Fallout 3". Also, notice the message "N/A: No masterlist present" in both *Masterlist Revision* and *Masterlist Date*, meaning we have yet to run the tool. Let's fix that by clicking on the sorting icon (image:DEFCON-00-LOOT-sorting-icon.png[LOOT sorting icon, title="LOOT sorting icon"]), at the top bar.
+. When LOOT finishes launching, notice the game tag at the top, which should say "Fallout 3". Also, notice the message "N/A: No masterlist present" in both *Masterlist Revision* and *Masterlist Date*, meaning we have yet to run the tool. Let's fix that by clicking on the sorting icon (image:DEFCON-00-LOOT-sorting-icon.png[LOOT sorting icon, title="LOOT sorting icon"]), at the top bar.
 +
-.LOOT running throug Mod Organizer
+.LOOT running through Mod Organizer
 image::DEFCON-00-Mod-Organizer-running-LOOT.png[LOOT running throug Mod Organizer, title="LOOT running throug Mod Organizer"]
 . Several things happen _very fast_.
   * A floating message appears, showing that LOOT is updating and using the masterlist to sort your plugins.
@@ -738,7 +738,7 @@ image::DEFCON-00-Mod-Organizer-creating-xEdit-shortcut.png[Creating a shortcut f
 +
 .xEdit toolbar icon in Mod Organizer
 image::DEFCON-00-Mod-Organizer-xEdit-toolbar-icon.png[xEdit toolbar icon in Mod Organizer, title="xEdit toolbar icon in Mod Organizer"]
-. xEdit will show the plugin selection window, with all official data files checked. Leave them checked and click *Ok*.
+. xEdit will show the plugin selection window, with all official data files checked. Leave them checked and click *OK*.
 +
 .xEdit plugin selection window
 image::DEFCON-00-xEdit-plugin-selection.png[xEdit plugin selection window, title="xEdit plugin selection window"]
@@ -811,7 +811,7 @@ image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-shortcut.png[Creating a short
 +
 .xEdit toolbar icon in Mod Organizer
 image::DEFCON-00-Mod-Organizer-Wrye-Flash-toolbar-icon.png[Wrye Flash toolbar icon in Mod Organizer, title="Wrye Flash toolbar icon in Mod Organizer"]
-. It is likely that a warning comes up about modified dates in the official data files. Just click *Ok*.
+. It is likely that a warning comes up about modified dates in the official data files. Just click *OK*.
 +
 .Wrye Flash warning about modified dates
 image::DEFCON-00-Wrye-Flash-warning-modified-dates.png[Wrye Flash warning about modified dates, title="Wrye Flash warning about modified dates"]
@@ -847,7 +847,7 @@ At the end of this chapter, you will have a version of _Fallout 3 Game of the Ye
 * Runs flawlessly (well, almost).
 * Is patched to the max, with most silly (and not-so-silly) errors corrected.
 * Takes advantage of your system memory.
-* Has no (or little) microstutter.
+* Has no (or little) micro-stutter.
 * Runs in windowed mode, faking full-screen.
 * Has a clean set of data files, including a merged and a bashed patch to further ensure compatibility among them.
 * Creates saved games automatically and frequently, so that you always have means to recover from a disaster.
@@ -870,7 +870,7 @@ image::DEFCON-01-Mod-Organizer-profiles-button.png[Mod Organizer profiles button
 +
 .Copying DEFCON 00 profile in Mod Organizer
 image::DEFCON-01-Mod-Organizer-copying-DEFCON-00-profile.png[Copying DEFCON 00 profile in Mod Organizer, title="Copying DEFCON 00 profile in Mod Organizer"]
-. In the following window, write "DEFCON 01 (Bug Fixes and Performance)" as the profile name and click *Ok*. We will use meaningful names to easily recognize the purpose of each profile.
+. In the following window, write "DEFCON 01 (Bug Fixes and Performance)" as the profile name and click *OK*. We will use meaningful names to easily recognize the purpose of each profile.
 +
 .Naming DEFCON 01 profile in Mod Organizer
 image::DEFCON-01-Mod-Organizer-naming-profile.png[Naming DEFCON 01 profile in Mod Organizer, title="Naming DEFCON 01 profile in Mod Organizer"]
@@ -914,7 +914,7 @@ image::DEFCON-01-Games-for-Windows-Live-disabler.png[GfWL Disabler in action, ti
 +
 .Of course, we want to remove the "LIVE" button
 image::DEFCON-01-Games-for-Windows-Live-disabler-button-removal.png[Of course, we want to remove the "LIVE" button, title="Of course, we want to remove the 'LIVE' button"]
-. The disabler informs us everything went as expected. Click on *Ok*.
+. The disabler informs us everything went as expected. Click on *OK*.
 +
 .GfWL disabler success
 image::DEFCON-01-Games-for-Windows-Live-disabler-success.png[GfWL disabler success, title="GfWL disabler success"]
@@ -971,7 +971,7 @@ Arguments=
 +
 .FalloutLauncher replacer in place
 image::DEFCON-01-FalloutLauncherReplacer-in-place.png[FalloutLauncher replacer in place, title="FalloutLauncher replacer in place"]
-. It's time to create a new shortcut to launch the game through the new launcher. Richt-click on your Steam icon in the tray bar and select *Library*.
+. It's time to create a new shortcut to launch the game through the new launcher. Right-click on your Steam icon in the tray bar and select *Library*.
 +
 .Opening your game library in Steam
 image::DEFCON-01-Steam-opening-game-library.png[Opening your game library in Steam, title="Opening your game library in Steam"]
@@ -983,7 +983,7 @@ image::DEFCON-01-Steam-Fallout-3-opening-properties.png[Opening the Fallout 3 GO
 +
 .Opening _Fallout 3 GOTY_ launch options
 image::DEFCON-01-Steam-Fallout-3-opening-launch-options.png[Opening Fallout 3 GOTY launch options, title="Opening Fallout 3 GOTY launch options"]
-. The next window warns us that we should be meddling with the options only if we are advanced users, which we are, indeed. Set the launch option `--start mo` to ensure that the new launcher goes through MO and click on *Ok*.
+. The next window warns us that we should be meddling with the options only if we are advanced users, which we are, indeed. Set the launch option `--start mo` to ensure that the new launcher goes through MO and click on *OK*.
 +
 .Making sure Mod Organizer is launched through Steam
 image::DEFCON-01-Steam-Fallout-3-launch-options.png[Making sure Mod Organizer is launched through Steam, title="Making sure Mod Organizer is launched through Steam"]
@@ -1003,7 +1003,7 @@ image::DEFCON-01-Fallout-3-Steam-Overlay-icon.png[Fallout 3 launcher icon, with 
 +
 .Renaming the icon to its former self
 image::DEFCON-01-Fallout-3-Steam-Overlay-icon-renamed.png[Renaming the icon to its former self, title="Renaming the icon to its former self"]
-. For the sake of aesthetics, if nothing else, let's change the shortcut to use the icon we downloaded in the chapter about <<Creating a proper shortcut, creating a proper shortcut>>. Richt-click on the icon and select *Properties*.
+. For the sake of aesthetics, if nothing else, let's change the shortcut to use the icon we downloaded in the chapter about <<Creating a proper shortcut, creating a proper shortcut>>. Right-click on the icon and select *Properties*.
 +
 .Launching shortcut's properties
 image::DEFCON-01-Fallout-3-Steam-Overlay-properties-option.png[Launching shortcut's properties, title="Launching shortcut's properties"]
@@ -1019,11 +1019,11 @@ image::DEFCON-01-Fallout-3-Steam-Overlay-icon-browse.png[Crappy default icons we
 +
 .Selecting a new icon for the Steam Overlay shortcut
 image::DEFCON-01-Fallout-3-Steam-Overlay-icon-selection.png[Selecting a new icon for the Steam Overlay shortcut, title="Selecting a new icon for the Steam Overlay shortcut"]
-. With the new icon selected, just click on *Ok*.
+. With the new icon selected, just click on *OK*.
 +
 .New shortcut icon selected
 image::DEFCON-01-Fallout-3-Steam-Overlay-icon-selected.png[New shortcut icon selected, title="New shortcut icon selected"]
-. Back again to the properties window, click on *Ok* again.
+. Back again to the properties window, click on *OK* again.
 +
 .Final touches to the shortcut icon
 image::DEFCON-01-Fallout-3-Steam-Overlay-icon-final.png[Final touches to the shortcut icon, title="Final touches to the shortcut icon"]
@@ -1043,7 +1043,7 @@ image::DEFCON-01-Fallout-3-through-Steam-through-FalloutLauncher-replacer.png[Em
 +
 .Launching _Fallout 3_ with Steam Overlay
 image::DEFCON-01-Fallout-3-through-Steam-through-FalloutLauncher-replacer-through-Mod-Organizer.png[Launching Fallout 3 with Steam Overlay, title="Launching Fallout 3 with Steam Overlay"]
-. Now, if you press kbd:[Shift] and kbd:[Tab] while in-game, you will see Steam Overaly in all its electronic glory.
+. Now, if you press kbd:[Shift] and kbd:[Tab] while in-game, you will see Steam Overlay in all its electronic glory.
 +
 .Steam Overlay and _Fallout 3_, finally
 image::DEFCON-01-Fallout-3-with-Steam-Overlay.png[Steam Overlay and Fallout 3, finally, title="Steam Overlay and Fallout 3, finally"]
@@ -1163,7 +1163,7 @@ image::DEFCON-01-Mod-Organizer-making-sure-correct-profile-selected.png[We need 
 +
 .Deselecting all master files in xEdit
 image::DEFCON-01-xEdit-deselecting-all-master-files.png[Deselecting all master files in xEdit, title="Deselecting all master files in xEdit"]
-. We need to select the master file every other master file depends on (`Fallout3.esm`) and the master file we are going to clean first (`Anchorage.esm`). Click *Ok* when ready:
+. We need to select the master file every other master file depends on (`Fallout3.esm`) and the master file we are going to clean first (`Anchorage.esm`). Click *OK* when ready:
 +
 .Selecting the file to clean in xEdit
 image::DEFCON-01-xEdit-selecting-file-to-clean.png[Selecting the file to clean in xEdit, title="Selecting the file to clean in xEdit"]
@@ -1199,7 +1199,7 @@ image::DEFCON-01-xEdit-undeleting-deleted-references.png[Undeleting and disablin
 +
 .Undeleted and disabled references in xEdit
 image::DEFCON-01-xEdit-undeleted-references.png[Undeleted and disabled references in xEdit, title="Undeleted and disabled references in xEdit"]
-. Job done! We just need to save the modified data file. To do that, just click on the close button of the tool window. A pop-up window should appear with _just one file_, the one you have been tinkering with (`Anchorage.esm`, in this case). If more than one file is shown, press kbd:[ESC] or click on the close button and start over again, because you surely screwed up at some point in the process. Anyway, make sure that the option *Backup plugins* is selected before clicking *Ok*.
+. Job done! We just need to save the modified data file. To do that, just click on the close button of the tool window. A pop-up window should appear with _just one file_, the one you have been tinkering with (`Anchorage.esm`, in this case). If more than one file is shown, press kbd:[ESC] or click on the close button and start over again, because you surely screwed up at some point in the process. Anyway, make sure that the option *Backup plugins* is selected before clicking *OK*.
 +
 .Saving the modified master file in xEdit
 image::DEFCON-01-xEdit-saving-master-file.png[Saving the modified master file in xEdit, title="Saving the modified master file in xEdit"]
@@ -1253,7 +1253,7 @@ image::DEFCON-01-Mod-Organizer-scrambled-stacking-order.png[Our stacking order i
 +
 .Creating a mod with the cleaned master files
 image::DEFCON-01-Mod-Organizer-creating-mod-overwrite.png[Creating a mod with the cleaned master files, title="Creating a mod with the cleaned master files"]
-. In the following dialog, write a meaningful name for the mod (for example, "Cleaned Master Files"), and click *Ok*.
+. In the following dialog, write a meaningful name for the mod (for example, "Cleaned Master Files"), and click *OK*.
 +
 .Giving a meaningful name to the cleaned master files mod
 image::DEFCON-01-Mod-Organizer-overwrite-mod-name.png[Giving a meaningful name to the cleaned master files mod, title="Giving a meaningful name to the cleaned master files mod"]
@@ -1361,7 +1361,7 @@ image::DEFCON-01-Mod-Organizer-refreshing-MO-state.png[Refreshing the state of M
 +
 .Creating the _INI Tweaks_ mod
 image::DEFCON-01-Mod-Organizer-creating-INI-Tweaks-mod.png[Creating the INI Tweaks mod, title="Creating the INI Tweaks mod"]
-. In the next window, give the mod a meaningful name and click *Ok*.
+. In the next window, give the mod a meaningful name and click *OK*.
 +
 .Naming the _INI Tweaks_ mod
 image::DEFCON-01-Mod-Organizer-INI-Tweaks-mod-name.png[Naming the INI Tweaks mod, title="Naming the INI Tweaks mod"]
@@ -1480,7 +1480,7 @@ image::DEFCON-01-Mod-Organizer-NXM-primary-handler-registered.png[NXM Handler re
 image::DEFCON-01-Mod-Organizer-empty-Downloads-tab.png[Empty Downloads tab, title="Empty Downloads tab"]
 . Open your web browser and navigate to the Nexus http://www.nexusmods.com/fallout3/mods/19122[_UPDATED Unofficial Fallout 3 Patch_] page.
 . Download the file [NexusFile]*Updated_Unofficial_Fallout3_Patch_Mod_Manager_Version* with the manager.
-. Depending on how paranoid is your web browser (mine is Mozilla Firefox, and it's top of the line in this regard), you wil be presented with a dialog to select the default application to open Nexus links, although we instructed MO to do so before. Mark *Remember my choice for nxm links*, keep `nxmhandler.exe` selected and click on *Open link*.
+. Depending on how paranoid is your web browser (mine is Mozilla Firefox, and it's top of the line in this regard), you will be presented with a dialog to select the default application to open Nexus links, although we instructed MO to do so before. Mark *Remember my choice for nxm links*, keep `nxmhandler.exe` selected and click on *Open link*.
 +
 .Selecting the application to open NXM links
 image::DEFCON-01-Mod-Organizer-selecting-NXM-links-manager.png[Selecting the application to open NXM links, title="Selecting the application to open NXM links"]
@@ -1494,9 +1494,9 @@ image::DEFCON-01-Mod-Organizer-downloading-unofficial-patch.png[Mod Organizer do
 image::DEFCON-01-Mod-Organizer-unofficial-patch-downloaded.png[Unofficial patch downloaded, title="Unofficial patch downloaded"]
 . MO tries to install the mod as quickly as possible by default, but it asks for permission first. We are *ALWAYS* going to install our mods manually, because although MO does a pretty good job figuring out the inner structure of any mod, sometimes it does some wild guesses which are not quite right. Leave the name unchanged and click on *Manual*.
 +
-.Selecting manual instalation of the unofficial patch
+.Selecting manual installation of the unofficial patch
 image::DEFCON-01-Mod-Organizer-Quick-Install-dialog.png[Selecting manual instalation of the unofficial patch, title="Selecting manual instalation of the unofficial patch"]
-. The next window is one of the most important regarding to mod installation, and you will see it a fuckin' lot, so you'd better get used to it. This window allows us to change the inner structure of the mod to comply with the expected structure of any component under `[$FO3_HOME\Data]` folder. The structure of the unofficial patch is ok, so we don't have to change it (notice the "Looks good" message in the bottom left corner). However, the contents of the folder `[Readmes]` are not really necessary, so uncheck them, and finally click on *Ok*.
+. The next window is one of the most important regarding to mod installation, and you will see it a fuckin' lot, so you'd better get used to it. This window allows us to change the inner structure of the mod to comply with the expected structure of any component under `[$FO3_HOME\Data]` folder. The structure of the unofficial patch is ok, so we don't have to change it (notice the "Looks good" message in the bottom left corner). However, the contents of the folder `[Readmes]` are not really necessary, so uncheck them, and finally click on *OK*.
 +
 .Adjusting the inner structure of the unofficial patch
 image::DEFCON-01-Mod-Organizer-unofficial-patch-structure.png[Adjusting the inner structure of the unofficial patch, title="Adjusting the inner structure of the unofficial patch"]
@@ -1563,7 +1563,7 @@ image::DEFCON-01-Mod-Organizer-Console-Key-Binder-downloaded.png[Console Key Bin
 +
 .Manual installation of _Console Key Binder_
 image::DEFCON-01-Mod-Organizer-Quick-Install-Console-Key-Binder.png[Manual installation of Console Key Binder, title="Manual installation of Console Key Binder"]
-. The mod's inner structure is pretty much fine, so we have just to unselect the `.html` file and click on *Ok*. Remember to remove the installed mod from view when finished.
+. The mod's inner structure is pretty much fine, so we have just to unselect the `.html` file and click on *OK*. Remember to remove the installed mod from view when finished.
 +
 .Inner structure of _Console Key Binder_
 image::DEFCON-01-Mod-Organizer-Console-Key-Binder-structure.png[Inner structure of Console Key Binder, title="Inner structure of Console Key Binder"]
@@ -1638,7 +1638,7 @@ image::DEFCON-01-Mod-Organizer-sideloading-DisableProcessWindowsGhosting.png[Sid
 +
 .Creating the first level directory for DisableProcessWindowsGhosting
 image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-1.png[Creating the first level directory for DisableProcessWindowsGhosting, title="Creating the first level directory for DisableProcessWindowsGhosting"]
-. Give the folder the name "FOSE" and click *Ok*.
+. Give the folder the name "FOSE" and click *OK*.
 +
 .First level folder for DisableProcessWindowsGhosting
 image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-2.png[First level folder for DisableProcessWindowsGhosting, title="First level folder for DisableProcessWindowsGhosting"]
@@ -1646,11 +1646,11 @@ image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-2.png[Fir
 +
 .Creating the second level directory for DisableProcessWindowsGhosting
 image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-3.png[Creating the second level directory for DisableProcessWindowsGhosting, title="Creating the second level directory for DisableProcessWindowsGhosting"]
-. Give the new folder the name "Plugins" and click *Ok*.
+. Give the new folder the name "Plugins" and click *OK*.
 +
 .Second level folder for DisableProcessWindowsGhosting
 image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-4.png[Second level folder for DisableProcessWindowsGhosting, title="Second level folder for DisableProcessWindowsGhosting"]
-. Now drag and drop the file `DisableProcessWindowsGhosting.dll` from its current place, under `[<data>]`, to `[Plugins]`. We have just virtually rearranged the contents of the mod to seamlessly deploy it into the game data folder. Click *Ok* to finish.
+. Now drag and drop the file `DisableProcessWindowsGhosting.dll` from its current place, under `[<data>]`, to `[Plugins]`. We have just virtually rearranged the contents of the mod to seamlessly deploy it into the game data folder. Click *OK* to finish.
 +
 .Place the DisableProcessWindowsGhosting file in the right folder
 image::DEFCON-01-Mod-Organizer-DisableProcessWindowsGhosting-structure-5.png[Place the DisableProcessWindowsGhosting file in the right folder, title="Place the DisableProcessWindowsGhosting file in the right folder"]
@@ -1693,7 +1693,7 @@ image::DEFCON-01-Mod-Organizer-OneTweak-Quick-Install.png[Manual installation of
 +
 .Rearranging the inner structure of OneTweak
 image::DEFCON-01-Mod-Organizer-OneTweak-rearranging-structure.png[Rearranging the inner structure of OneTweak, title="Rearranging the inner structure of OneTweak"]
-. Once the virtual data folder is set, the mod becomes immediately palatable for MO. Just click on *Ok* to go on.
+. Once the virtual data folder is set, the mod becomes immediately palatable for MO. Just click on *OK* to go on.
 +
 .OneTweak ready to be installed
 image::DEFCON-01-Mod-Organizer-OneTweak-ready.png[OneTweak ready to be installed, title="OneTweak ready to be installed"]
@@ -1731,7 +1731,7 @@ image::DEFCON-01-Mod-Organizer-OneTweak-corrected-and-activated.png[OneTweak cor
 +
 .Running the game through FOSE in _Mod Organizer_
 image::DEFCON-01-Mod-Organizer-running-Fallout-3-through-FOSE.png[Running the game through FOSE in Mod Organizer, title="Running the game through FOSE in Mod Organizer"]
-. You can kbd:[Alt] + kbd:[Tab] anytime you want while in game now, although there is no immediate noticeable diference with the full-screen mode.
+. You can kbd:[Alt] + kbd:[Tab] anytime you want while in game now, although there is no immediate noticeable difference with the full-screen mode.
 +
 .Switching windows while in fake full-screen mode
 image::DEFCON-01-Fallout-3-Alt-Tab-switch.png[Switching windows while in fake full-screen mode, title="Switching windows while in fake full-screen mode"]
@@ -1763,7 +1763,7 @@ ____
 FLAP! FLAP!
 ____
 
-"FLAP!? FLAP!?", I though. I didn't recognize the sound, but as you learnt quickly in the game, almost anything would kill you. So, I turned around just to see a flying gargoyle hovering inches from me, right in front of my highly polygonal face.
+"FLAP!? FLAP!?", I though. I didn't recognize the sound, but as you learned quickly in the game, almost anything would kill you. So, I turned around just to see a flying gargoyle hovering inches from me, right in front of my highly polygonal face.
 
 I panicked.
 
@@ -1810,7 +1810,7 @@ image::DEFCON-01-Mod-Organizer-CASM-ready-to-be-installed.png[CASM is ready to b
 +
 .Quick Install window for CASM
 image::DEFCON-01-Mod-Organizer-CASM-Quick-Install.png[Quick Install window for CASM, title="Quick Install window for CASM"]
-. The inner structure of CASM is ok right off the bat, so we don't need to rearrange anything. Just click on *Ok*.
+. The inner structure of CASM is ok right off the bat, so we don't need to rearrange anything. Just click on *OK*.
 +
 .The inner structure of CASM looks pretty good
 image::DEFCON-01-Mod-Organizer-CASM-structure-ok.png[The inner structure of CASM looks pretty good, title="The inner structure of CASM looks pretty good"]
@@ -1826,7 +1826,7 @@ image::DEFCON-01-Mod-Organizer-CASM-corrected-version-number.png[CASM corrected 
 +
 .Creating an INI tweak in CASM
 image::DEFCON-01-Mod-Organizer-CASM-creating-INI-tweak.png[Creating an INI tweak in CASM, title="Creating an INI tweak in CASM"]
-. The INI tweak will be named "DisableDefaultSaving", although you can use any name you want. Click on *Ok* when you have written a thoughtful name.
+. The INI tweak will be named "DisableDefaultSaving", although you can use any name you want. Click on *OK* when you have written a thoughtful name.
 +
 .Naming the INI tweak in CASM
 image::DEFCON-01-Mod-Organizer-CASM-naming-INI-tweak.png[Naming the INI tweak in CASM, title="Naming the INI tweak in CASM"]
@@ -1846,7 +1846,7 @@ image::DEFCON-01-Mod-Organizer-CASM-saving-INI-tweak.png[Saving the contents of 
 +
 .CASM is installed and ready to be used
 image::DEFCON-01-Mod-Organizer-CASM-installed-and-ready.png[CASM is installed and ready to be used, title="CASM is installed and ready to be used"]
-. Take a look at the contents of the *Plugins* tab in the right pane. You can see that there is a file named `CASM.esp` sitting at the bottom of your load order. Everytime a new `.esp` or `.esm` file is added to your load order, you need to run LOOT to make sure the file is in its right place.
+. Take a look at the contents of the *Plugins* tab in the right pane. You can see that there is a file named `CASM.esp` sitting at the bottom of your load order. Every time a new `.esp` or `.esm` file is added to your load order, you need to run LOOT to make sure the file is in its right place.
 +
 .CASM plugin sitting at the bottom of your load order
 image::DEFCON-01-Mod-Organizer-CASM-plugin.png[CASM plugin sitting at the bottom of your load order, title="CASM plugin sitting at the bottom of your load order"]
@@ -1903,7 +1903,7 @@ image::DEFCON-01-Mod-Organizer-FSR-ready-to-be-installed.png[Fallout Stutter Rem
 +
 .Adjusting the data folder for FSR
 image::DEFCON-01-Mod-Organizer-FSR-adjusting-data-folder.png[Adjusting the data folder for FSR, title="Adjusting the data folder for FSR"]
-. Once it's done, we can see the mod inner structure is fixed, so we can just proceed by clicking on *Ok*.
+. Once it's done, we can see the mod inner structure is fixed, so we can just proceed by clicking on *OK*.
 +
 .FSR inner structure adjusted
 image::DEFCON-01-Mod-Organizer-FSR-data-folder-adjusted.png[FSR inner structure adjusted, title="FSR inner structure adjusted"]
@@ -1930,7 +1930,7 @@ FPS_Management = {
 +
 .FSR modified configuration file
 image::DEFCON-01-Mod-Organizer-FSR-modified-configuration.png[FSR modified configuration file, title="FSR modified configuration file"]
-. Finally, activate the mod in the left pane and we are good to go. This is a FOSE-only mod, so there's no need to rearrange the loar order. Lauch the game and strafe your way around for a while to see for yourself the smoothness the game has aquired.
+. Finally, activate the mod in the left pane and we are good to go. This is a FOSE-only mod, so there's no need to rearrange the load order. Launch the game and strafe your way around for a while to see for yourself the smoothness the game has acquired.
 +
 .FSR installed and active
 image::DEFCON-01-Mod-Organizer-FSR-installed-and-active.png[FSR installed and active, title="FSR installed and active"]
@@ -1977,7 +1977,7 @@ image::DEFCON-01-Mod-Organizer-unrelated-fixes-downloaded.png[Unrelated fixes do
 +
 .Quick Install window for DCStreet v2
 image::DEFCON-01-Mod-Organizer-DCStreet-Quick-Install.png[Quick Install window for DCStreet v2, title="Quick Install window for DCStreet v2"]
-. In the *Install Mods* window we need to deactivate `DCStreet.esp` and nothing else, because the inner structure is fairly good. Click on *Ok* afterwards.
+. In the *Install Mods* window we need to deactivate `DCStreet.esp` and nothing else, because the inner structure is fairly good. Click on *OK* afterwards.
 +
 .Install Mods window for DCStreet v2
 image::DEFCON-01-Mod-Organizer-DCStreet-inner-structure.png[Install Mods window for DCStreet v2, title="Install Mods window for DCStreet v2"]
@@ -1985,7 +1985,7 @@ image::DEFCON-01-Mod-Organizer-DCStreet-inner-structure.png[Install Mods window 
 +
 .DCStreet v2 is installed but not active yet
 image::DEFCON-01-Mod-Organizer-DCStreet-installed-but-not-active.png[DCStreet v2 is installed but not active yet, title="DCStreet v2 is installed but not active yet"]
-. Switch to the *Categories* tab, unselect the *Magic* category and click on *Ok*.
+. Switch to the *Categories* tab, unselect the *Magic* category and click on *OK*.
 +
 .Removing the 'Magic' category from DCStreet v2
 image::DEFCON-01-Mod-Organizer-DCStreet-removing-category.png[Removing the 'Magic' category from DCStreet v2, title="Removing the 'Magic' category from DCStreet v2"]
@@ -1997,7 +1997,7 @@ image::DEFCON-01-Mod-Organizer-DCStreet-activated.png[DCStreet v2 activated and 
 +
 .Quick Install window for Rivet City Realignment
 image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-Quick-Install.png[Quick Install window for Rivet City Realignment, title="Quick Install window for Rivet City Realignment"]
-. Everything is ok with the inner structure, so we have just to click on *Ok*.
+. Everything is ok with the inner structure, so we have just to click on *OK*.
 +
 .Rivet City Realignment inner structure is just fine
 image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-inner-structure.png[Rivet City Realignment inner structure is just fine, title="Rivet City Realignment inner structure is just fine"]
@@ -2005,7 +2005,7 @@ image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-inner-structure.png[Rivet 
 +
 .Rivet City Realignment is installed but not active yet
 image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-installed-but-not-active.png[Rivet City Realignment is installed but not active yet, title="Rivet City Realignment is installed but not active yet"]
-. In the properties window switch to the *Nexus Info* tab and set the version number to 5.2. Click on *Ok* to close the window.
+. In the properties window switch to the *Nexus Info* tab and set the version number to 5.2. Click on *OK* to close the window.
 +
 .Rivet City Realignment corrected version
 image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-corrected-version.png[Rivet City Realignment corrected version, title="Rivet City Realignment corrected version"]
@@ -2017,7 +2017,7 @@ image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-activated.png[Rivet City R
 +
 .Quick Install window for Scribe Yearling
 image::DEFCON-01-Mod-Organizer-Scribe-Yearling-Quick-Install.png[Quick Install window for Scribe Yearling, title="Quick Install window for Scribe Yearling"]
-. Nothing special to do in the *Install Mods* window, so just click on *Ok*.
+. Nothing special to do in the *Install Mods* window, so just click on *OK*.
 +
 .Scribe Yearling inner structure is ok
 image::DEFCON-01-Mod-Organizer-Scribe-Yearling-inner-structure.png[Scribe Yearling inner structure is ok, title="Scribe Yearling inner structure is ok"]
@@ -2029,7 +2029,7 @@ image::DEFCON-01-Mod-Organizer-Scribe-Yearling-activated.png[Scribe Yearling act
 +
 .Quick Install window for Confessor Cromwell
 image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-Quick-Install.png[Quick Install window for Confessor Cromwell, title="Quick Install window for Confessor Cromwell"]
-. Everything is fine with the mod inner structure, so just click on *Ok*.
+. Everything is fine with the mod inner structure, so just click on *OK*.
 +
 .Confessor Cromwell inner structure is ok
 image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-inner-structure.png[Confessor Cromwell inner structure is ok, title="Confessor Cromwell inner structure is ok"]
@@ -2037,7 +2037,7 @@ image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-inner-structure.png[Confessor 
 +
 .Confessor Cromwell is installed but not active
 image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-installed-but-not-active.png[Confessor Cromwell is installed but not active, title="Confessor Cromwell is installed but not active"]
-. Switch to the *Category* tab and remove the *Stealth* category from the mod.
+. Switch to the *Categories* tab and remove the *Stealth* category from the mod.
 +
 .Removing the 'Stealth' category from Confessor Cromwell
 image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-removing-category.png[Removing the 'Stealth' category from Confessor Cromwell, title="Removing the 'Stealth' category from Confessor Cromwell"]
@@ -2053,7 +2053,7 @@ image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-activated.png[Confessor Cromwe
 +
 .Quick Install window for Big Town Missing Robots Fix
 image::DEFCON-01-Mod-Organizer-BigTown-Quick-Install.png[Quick Install window for Big Town Missing Robots Fix, title="Quick Install window for Big Town Missing Robots Fix"]
-. Everything is fine with the inner structure, so click on *Ok*.
+. Everything is fine with the inner structure, so click on *OK*.
 +
 .Big Town Missing Robots Fix inner structure is ok
 image::DEFCON-01-Mod-Organizer-BigTown-inner-structure.png[Big Town Missing Robots Fix inner structure is ok, title="Big Town Missing Robots Fix inner structure is ok"]
@@ -2079,6 +2079,80 @@ image::DEFCON-01-Mod-Organizer-unrelated-fixes-plugins.png[Unrelated fixes plugi
 
 
 === Indulging your Diogenes Syndrome
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_]
+* http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_]
+====
+
+Let's say you have a mild case of Obsessive-Compulsive Disorder, and let's say that, more often than not, "mild" is a complete understatement to describe what rushes through your blood when you enter a new place in-game and you see a zillion of small pickable objects you just *NEED* to have, whatever reason you make up for it.
+
+I have just described what I feel with this kind of games. I need to loot everything, or, at least, everything I can without stealing, unless I want my character to be a real son of a bitch (which I don't; I am a kind hearted person, after all).
+
+The problem is that small, lootable objects in _Fallout 3_ tend to have a weird behavior regarding their position or, to be precise, their stacking. Every object has a collision mesh to establish its limits, so that when two objects collide, the game uses their collision meshes to avoid the dreaded clipping effect, and the standard collision meshes tend to extend themselves _outside_ the objects they contain.
+
+This is the reason why you cannot neatly stack objects you have snatched without gaps between them.
+
+.Look, ma, I'm floating!
+image::DEFCON-01-Fallout-3-default-collision-meshes.png[Look, ma, I'm floating!, title="Look, ma, I'm floating!"]
+
+The two mods we are going to install address this problem, altering the collision meshes of a lot of objects. http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_] fixes ordinary objects, while http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_] fixes small, cluttering objects.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*DetailedCollisions* file from http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_] with the manager.
+. Download [NexusFile]*Precision Collision - Clutter V0_80* file from http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_] with the manager.
+. You will have now the two mod files downloaded and ready to be installed.
++
+.Collision fixes downloaded
+image::DEFCON-01-Mod-Organizer-collision-fixes-downloaded.png[Collision fixes downloaded, title="Collision fixes downloaded"]
+. Double-click on *DetailedCollisions* to show the Quick Install window. Change naught and go for manual install.
++
+.Quick Install window for Detailed Collisions
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-Quick-Install.png[Quick Install window for Detailed Collisions, title="Quick Install window for Detailed Collisions"]
+. There's nothing to fix in the mod's inner structure, so click on *OK*.
++
+.Detailed Collisions inner structure
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-inner-structure.png[Detailed Collisions inner structure, title="Detailed Collisions inner structure"]
+. The mod is installed but not active yet. We have to remove the category first ('Companions', really?), so double-click on the mod's name to bring up the properties window.
++
+.Detailed Collisions is installed but not active yet
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-installed-but-not-ready.png[Detailed Collisions is installed but not active yet, title="Detailed Collisions is installed but not active yet"]
+. Switch to the *Categories* tab in the properties window, unselect the *Companions* category and click on *Close*.
++
+.Removing the 'Companions' category from Detailed Collisions
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-removing-category.png[Removing the 'Companions' category from Detailed Collisions, title="Removing the 'Companions' category from Detailed Collisions"]
+. Activate the mod in the left pane. You can notice the small lightning-and-plus icon, pointing out that this mod replaces certain elements from other mods.
++
+.Detailed Collisions activated and ready
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-activated.png[Detailed Collisions activated and ready, title="Detailed Collisions activated and ready"]
+. It's time to install the second mod in the series. Double-click on *Precision Collision - Clutter V0_80* in the *Downloads* tab to show the Quick Install window, and just click on *Manual*.
++
+.Quick Install window for Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-Quick-Install.png[Quick Install window for Precision Collision - Clutter, title="Quick Install window for Precision Collision - Clutter"]
+. The mod's inner structure is a bit off, so we need to correct it. Right-click on the `[data]` folder and select *Set data directory* to set the root of the filetree.
++
+.Correcting the inner structure of Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-inner-structure.png[Correcting the inner structure of Precision Collision - Clutter, title="Correcting the inner structure of Precision Collision - Clutter"]
+. Once we set the root data folder, the inner structure becomes palatable, so we can go on. Click on *OK*.
++
+.Corrected inner structure of Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-corrected-inner-structure.png[Corrected inner structure of Precision Collision - Clutter, title="Corrected inner structure of Precision Collision - Clutter"]
+. Once again, the mod is categorized as 'Companions', the fuck knows why. Double-click on it in the left pane to show the properties window.
++
+.Precision Collision - Clutter is installed but not active yet
+image::DEFCON-01-Mod-Organizer-Precision-Collision-installed-but-not-active.png[Precision Collision - Clutter is installed but not active yet, title="Precision Collision - Clutter is installed but not active yet"]
+. Switch to the *Categories* tab and get rid of the *Companions* category, clicking on *Close* afterwards.
++
+.Removing the 'Companions' category for Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-removing-category.png[Removing the 'Companions' category for Precision Collision - Clutter, title="Removing the 'Companions' category for Precision Collision - Clutter"]
+. Activate the mod in the left pane. There are no plugins installed, so there's no need to run LOOT this time.
++
+.Precision Collision - Clutter activated and ready
+image::DEFCON-01-Mod-Organizer-Precision-Collision-activated.png[Precision Collision - Clutter activated and ready, title="Precision Collision - Clutter activated and ready"]
+
 
 
 
@@ -2232,7 +2306,7 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 
 ---
 
-=== There is no place like Metaton
+=== There is no place like Megaton
 
 === Those who cannot remember the past are condemned to repeat it
 

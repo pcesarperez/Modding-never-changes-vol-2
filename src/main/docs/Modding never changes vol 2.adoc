@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.20, 20/08/2017
+v0.4.21, 20/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2253,6 +2253,27 @@ image::DEFCON-01-Mod-Organizer-Better-Performance-plugin-relocated.png[Better Pe
 
 
 === Punxsutawney Phil is not alive anymore
+
+One of the most annoying things I have to suffer every time I start a new playthrough is the introductory part of the game, in Vault 101.
+
+The introductory chapter has its charm the first time you play it, and even the second time, if you ask me. But from the second time onwards, it gets as close as could be to a post-apocalyptic version of the https://en.wikipedia.org/wiki/Groundhog_Day_(film)[Groundhog Day].
+
+If you follow this guide long enough to install _Fallout Wanderers Edition_ (why shouldn't you?), you will have several different alternate starts for your character, but I have never liked them. I _like_ to be the lone wanderer, abruptly egressed from the dictatorial confinement of Vault 101. What I _don't like_ is repeating all the initial steps over and over again each time I want to start a new game.
+
+If you are worried about this, like me, fear not! I am offering you the perfect groundhog killer: link:saves/FO3-before-leaving-vault-101.zip[a saved game right before leaving Vault 101]. This game has been saved after installing the mods in the <<DEFCON 01 (Bug Fixes and Performance), DEFCON 01 chapter>>.
+
+.The Lone Wanderer right before leaving Vault 101
+image::DEFCON-01-Fallout-3-Lone-Wanderer-before-leaving-Vault-101.png[The Lone Wanderer right before leaving Vault 101, title="The Lone Wanderer right before leaving Vault 101"]
+
+When you open the door to the Wasteland, a menu will appear, offering you the possibility to change every aspect of your character: name, race, gender, S.P.E.C.I.A.L. attributes and skills, so you can customize the Generic Hero included in the saved game to fit your needs and dark desires.
+
+.Changing the Lone Wanderer stats and info before leaving Vault 101
+image::DEFCON-01-Fallout-3-changing-Lone-Wanderer-before-leaving-Vault-101.png[Changing the Lone Wanderer stats and info before leaving Vault 101, title="Changing the Lone Wanderer stats and info before leaving Vault 101"]
+
+If you want to use the saved game, just copy the file `FO3-before-leaving-vault-101.zip` to the folder `[%USERPROFILE%\Documents\My Games\Fallout3\Saves]` and unzip it, removing the ZIP file after. Then just run the game and load the saved game, which should run fine as long as you have the mods in this chapter installed.
+
+.Loading our customized saved game
+image::DEFCON-01-Fallout-3-loading-customized-saved-game.png[Loading our customized saved game, title="Loading our customized saved game"]
 
 
 

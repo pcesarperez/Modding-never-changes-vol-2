@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.19, 15/08/2017
+v0.4.20, 20/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -1385,7 +1385,7 @@ image::DEFCON-01-Mod-Organizer-General-ini-file.png[Fake General.ini file in the
 +
 ----
 [General]
-; Avoid CTDs with multi-core CPUs.
+; Avoids CTDs with multi-core CPUs.
 bUseThreadedAI=1
 iNumHWThreads=2
 bLoadFaceGenHeadEGTFiles=1
@@ -1397,7 +1397,7 @@ image::DEFCON-01-Mod-Organizer-general-tweaking-options.png[General tweaking opt
 +
 ----
 [Controls]
-; Remove mouse acceleration.
+; Removes mouse acceleration.
 fForegroundMouseAccelBase=0
 fForegroundMouseAccelTop=0
 fForegroundMouseBase=0
@@ -2196,8 +2196,58 @@ image::DEFCON-01-Mod-Organizer-Clean-Deluxe-plugin-relocated.png[Clean-Deluxe pl
 
 
 
-
 === Adopt an useless rock today!
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/13520/[_Better Game Performance_]
+====
+
+_Fallout 3_ developers show their love for the details in every corner of the game.
+
+In a slightly manic way.
+
+The game engine is not rock solid, to begin with (no pun intended, I swear), but when it comes to handle zillions of useless objects for the sake of just showing you have zillions of rocks around you... Well, *NO*.
+
+There is a mod which does something seemingly very simple: removing all unused objects from the game, improving performance. This mod is called http://www.nexusmods.com/fallout3/mods/13520/[_Better Game Performance_].
+
+Let's install this mod.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*V_4* file from http://www.nexusmods.com/fallout3/mods/13520/[_Better Game Performance_] with the manager.
++
+.Better Performance is downloaded and ready to be installed
+image::DEFCON-01-Mod-Organizer-Better-Performance-downloaded.png[Better Performance is downloaded and ready to be installed, title="Better Performance is downloaded and ready to be installed"]
+. Double-click on the mod entry to bring up the Quick Install window, where you just have to select *Manual*.
++
+.Quick Install window for Better Performance
+image::DEFCON-01-Mod-Organizer-Better-Performance-Quick-Install.png[Quick Install window for Better Performance, title="Quick Install window for Better Performance"]
+. This mod contains only an `.esp` file with a correct inner structure, so just click on *OK*.
++
+.Better Performance inner structure
+image::DEFCON-01-Mod-Organizer-Better-Performance-inner-structure.png[Better Performance inner structure, title="Better Performance inner structure"]
+. The mod has an incorrect number version, as you can see in the left pane.
++
+.Wrong version in Better Performance
+image::DEFCON-01-Mod-Organizer-Better-Performance-wrong-version.png[Wrong version in Better Performance, title="Wrong version in Better Performance"]
+. Double-click on the mod to open its properties and navigate to the *Nexus Info* tab. Change the *Version* entry to 1.0 and click on *Close*.
++
+.Changing Better Performance version
+image::DEFCON-01-Mod-Organizer-Better-Performance-corrected-version.png[Changing Better Performance version, title="Changing Better Performance version"]
+. Now, you can activate the mod in the left pane.
++
+.Better Performance activated and ready
+image::DEFCON-01-Mod-Organizer-Better-Performance-activated.png[Better Performance activated and ready, title="Better Performance activated and ready"]
+. If you take a look at the *Plugins* tab in the right pane, you will see that the file `BetterGamePerformance.esp` sits on the bottom of our load order.
++
+.Better Performance default plugin location
+image::DEFCON-01-Mod-Organizer-Better-Performance-default-plugin-location.png[Better Performance default plugin location, title="Better Performance default plugin location"]
+. Run LOOT and click on the *Sort Plugins* button to rearrange your link:load_order/DEFCON-01-6-load-order-after-Better-Performance.txt[load order]. Notice how the `.esp` file has been placed between `Clean-Deluxe GOTY.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
++
+.Better Performance plugin relocated
+image::DEFCON-01-Mod-Organizer-Better-Performance-plugin-relocated.png[Better Performance plugin relocated, title="Better Performance plugin relocated"]
 
 
 

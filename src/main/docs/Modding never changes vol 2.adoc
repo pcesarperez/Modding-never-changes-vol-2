@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.21, 20/08/2017
+v0.4.22, 20/08/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2279,6 +2279,150 @@ image::DEFCON-01-Fallout-3-loading-customized-saved-game.png[Loading our customi
 
 
 === Creating a merged patch
+
+You should have get a solid grasp by now of what is going to be the rest of the guide:
+
+. Download the mod you are going to install.
+. Install the mod manually.
+. Fix any inner structure inconsistencies, if any.
+. Fix mod metadata (version, category, etc.), if need be.
+. Rearrange stacking order (we have not seen any of this yet; you should take my word for it).
+. Rearrange load order, if the mod contains any plugin (e.g., any `.esp` file).
+
+There is much more than meets the eye here, because as we keep on installing mods, compatibility problems will certainly arise. Take into account that even with Bethesda’s main files, there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules.
+
+We will use two artifacts to improve compatibility throughout the different plugins loaded every time you run the game: merged patches and bashed patches. We will talk about merged patches here, and about bashed patches in the <<Bashing all together, next chapter>>.
+
+Gopher has a video (39:12) in which he explains https://youtu.be/uPK7R71zcwM?t=14m5s[what is a merged patch and why we should use it]. Cal, from Dirty Weasel, also has a video (32:06) explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_], although the process is very similar in _Fallout 3_.
+
+The creation of a merged patch is pretty much the same at the end of each DEFCON chapter which have had some plugins installed (there's no need to create a new merged patch if we are only installing assets, like textures or sounds), so I will write it just once. In the following major chapters, I will refer to this one for further explanations, although I will link to a copy of the merged patch you can use right out of the box.
+
+However, this will be true if and only if **you are following this guide to the letter**. If you decide not to install any particular mod, then you will have to generate your own merged patches from that point on, because my versions will no longer apply to your particular mod stack.
+
+
+
+
+==== Generating your own merged patch
+
+The process to create a merged patch is pretty straightforward.
+
+. Open MO in your desired profile.
+. Disable any merged or bashed patch you have previously created. This is very important because merged and bashed patches are not cumulative. You have to create a new one for each profile where applicable (no screenshots here; we have not installed any patch yet).
+. Launch xEdit using the toolbar button which creation is lost in the mists of time.
++
+.Launching xEdit through the toolbar button
+image::DEFCON-01-Mod-Organizer-xEdit-toolbar-button.png[Launching xEdit through the toolbar button, title="Launching xEdit through the toolbar button"]
+. Select all the files in your load order, **except any merged or bashed patch** (you should have disabled them first, anyway).
++
+.Selecting all the plugins to create a merged patch
+image::DEFCON-01-xEdit-selecting-all-files-to-create-merged-patch.png[Selecting all the plugins to create a merged patch, title="Selecting all the plugins to create a merged patch"]
+. xEdit takes its time to load all the plugins. In later chapters, you'd better go and fix yourself a strong-spirited beverage in the meantime. Look for a message in the right pane which says "Background Loader: finished" to know when to stop fixing yourself drinks.
++
+.xEdit has loaded all your plugins
+image::DEFCON-01-xEdit-finished-loading-all-plugins.png[xEdit has loaded all your plugins, title="xEdit has loaded all your plugins"]
+. Right-click anywhere in the left pane and select *Other* &rarr; *Create Merged Patch*.
++
+.Option to create a merged patch in xEdit
+image::DEFCON-01-xEdit-create-merged-patch-option.png[Option to create a merged patch in xEdit, title="Option to create a merged patch in xEdit"]
+. xEdit shows a window in which you can give a name to your merged patch. We are going to use the name of the DEFCON profile to easily identify our merged patches. In this case, use the name "DEFCON 01 Merged Patch" and click on *OK*.
++
+.Giving a name to your merged patch
+image::DEFCON-01-xEdit-giving-a-name-to-your-merged-patch.png[Giving a name to your merged patch, title="Giving a name to your merged patch"]
+. That's it! Our new and great-looking merged patch has been created.
++
+.Merged patch created
+image::DEFCON-01-xEdit-merged-patch-created.png[Merged patch created, title="Merged patch created"]
+. It's time to save the merged patch, so exit xEdit for it to show the window with the list of created or modified files. Make sure the patch is selected and the option *Backup plugins* is not and click on *OK*.
++
+.xEdit wants to save the merged patch
+image::DEFCON-01-xEdit-saving-merged-patch.png[xEdit wants to save the merged patch, title="xEdit wants to save the merged patch"]
+. It's time to get back to MO, but... Where is my merged patch? The only indication that something has changed is the warning icon in the toolbar.
++
+.Where the fuck is my merged patch?
+image::DEFCON-01-Mod-Organizer-where-is-my-merged-patch.png[Where the fuck is my merged patch?, title="Where the fuck is my merged patch?"]
+. Generally speaking, every time you create a file in MO, it goes to the *Overwrite* special folder. Double-click on it to show its contents, at the bottom of the left pane.
++
+.There is something lurking in our 'Overwrite' folder
+image::DEFCON-01-Mod-Organizer-there-is-something-lurking-in-overwrite.png[There is something lurking in our 'Overwrite' folder, title="There is something lurking in our 'Overwrite' folder"]
+. The overwrite folder contains two elements: our merged patch and a folder named `FO3Edit Backups`, which is created every time we exit from xEdit, although we chose not to create any backup copy (it's just a minor glitch). Get rid of the folder by right-clicking on it and selecting *Delete*.
++
+.Isolating the merged patch in the 'Overwrite' folder
+image::DEFCON-01-Mod-Organizer-isolating-merged-patch-in-overwrite.png[Isolating the merged patch in the 'Overwrite' folder, title="Isolating the merged patch in the 'Overwrite' folder"]
+. Our merged patch sits alone in the *Overwrite* folder. Time to close the window.
++
+.The merged patch is isolated in the 'Overwrite' folder
+image::DEFCON-01-Mod-Organizer-merged-patch-isolated.png[The merged patch is isolated in the 'Overwrite' folder, title="The merged patch is isolated in the 'Overwrite' folder"]
+. Back to the MO main window, right-click on the *Overwrite* entry in the left pane and select *Create Mod...*.
++
+.Option to create a new mod from the contents of the 'Overwrite' folder
+image::DEFCON-01-Mod-Organizer-creating-merged-patch-mod-option.png[Option to create a new mod from the contents of the 'Overwrite' folder, title="Option to create a new mod from the contents of the 'Overwrite' folder"]
+. In the following window, give the merged patch mod the same name we gave to the `.esp` file in xEdit (in this case, "DEFCON 01 Merged Patch"), and click on *OK*.
++
+.Giving a meaningful name to our merged patch mod
+image::DEFCON-01-Mod-Organizer-naming-the-merged-patch-mod.png[Giving a meaningful name to our merged patch mod, title="Giving a meaningful name to our merged patch mod"]
+. Now, you just have to activate the mod in the left pane. Generally speaking, any merged patch should always sit at the bottom of your load order (although above the bashed patch, as we will see).
++
+.The merged patch is activated
+image::DEFCON-01-Mod-Organizer-merged-patch-activated.png[The merged patch is activated, title="The merged patch is activated"]
+. Although the position of the mod in the left pane is not really important, the plugin should *ALWAYS* sit at the bottom of your load order (again, above the bashed patch). Take a look at the *Plugins* tab in the right pane.
++
+.The merged patch plugin sits at the bottom of your load order
+image::DEFCON-01-Mod-Organizer-merged-patch-plugin.png[The merged patch plugin sits at the bottom of your load order, title="The merged patch plugin sits at the bottom of your load order"]
+
+
+Take into account that a merged patch is not a magic fix. There could be little inconsistencies across all the plugins used to create the merged patch, inconsistencies you should address one by one, at least hypothetically. That is not the case with the merged patch we have just created (there are not heavy content mods installed, so far), but things will get serious in later chapter (for example, after installing FWE or MMM).
+
+However, you won't have to fine-tune your merged patches; I'll do it for you (to an extent). So, if you want to download the merged patches I have created, know that they are already tweaked, but if you decide to create your own merged patches, not fine tuning them won't be a problem, because the tweaks normally represent corrections to fringe cases you shouldn't worry too much about.
+
+
+
+
+==== Using a pre-generated merged patch
+
+If you prefer not to create a merged patch at the end of each major (DEFCON) chapter, you can use the merged patches I unselfishly provide.
+
+However, there's a catch: you need to install each and every mod I recommend, in the exact order pointed out in this guide. Merged patches are built to provide a compatibility layer among a certain set of installed mod, so if you decide not to install a mod (or install any other mod of your choice), moving away from the road laid out in this guide, then you must create your own merged patches from that point on.
+
+In other words: stick to the plan, or create your own merged patches, that is.
+
+This is nothing but a fair advice, although it sounds like an enraged biblical warning. There's nothing wrong in creating and fine-tuning your own merged patches, but it's good for you to know there's an alternative, although a heavily constrained one.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the pre-generated mod link:patches/DEFCON-01-Merged-Patch-1.0.zip[DEFCON 01 Merged Patch] in a location of your choice.
+. Drag and drop the file from the folder you put it into to the *Downloads* tab in the right pane of MO.
++
+.Sideloading the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-sideloading-merged-patch.png[Sideloading the DEFCON 01 Merged Patch, title="Sideloading the DEFCON 01 Merged Patch"]
+. Double-click on the mod entry to perform an automatic installation of the mod. No *Quick Install* window will appear, because the mod is configured not to do so. The mod will appear in the left pane.
++
+.The DEFCON 01 Merged Patch is installed but not active yet
+image::DEFCON-01-Mod-Organizer-merged-patch-installed-but-not-active.png[The DEFCON 01 Merged Patch is installed but not active yet, title="The DEFCON 01 Merged Patch is installed but not active yet"]
+. Double-click on the mod in the left pane to show the properties window. This is not strictly necessary, but I will like to show you what the merged patch is packing. In the *Textfiles* tab, click on the file `Required load order.txt` to show its contents, where you will see the required load order for this merged patch to work.
++
+.Required load order for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-required-load-order.png[Required load order for the DEFCON 01 Merged Patch, title="Required load order for the DEFCON 01 Merged Patch"]
+. Without leaving the *Textfiles* tab, click on the file `Required stacking order.txt` to see the stacking order of the mods.
++
+.Required stacking order for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-required-stacking-order.png[Required stacking order for the DEFCON 01 Merged Patch, title="Required stacking order for the DEFCON 01 Merged Patch"]
+. Navigate to the *Optional ESPs* tab to see the `.esp` plugin file which is core to the merged patch.
++
+.Bundled plugin file for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-bundled-plugin.png[Bundled plugin file for the DEFCON 01 Merged Patch, title="Bundled plugin file for the DEFCON 01 Merged Patch"]
+. In the *Nexus Info* tab you can check the version number (1.0.0.0, as of this writing).
++
+.DEFCON 01 Merged Patch version number
+image::DEFCON-01-Mod-Organizer-merged-patch-version-number.png[DEFCON 01 Merged Patch version numberm title="DEFCON 01 Merged Patch version number"]
+. Finally, in the *Filetree* tab, you will see the files we have just talked about, plus the well-known MO `meta.ini` file. At this point, the tour is finished, so click on *Close*.
++
+.Files bundled with the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-bundled-files.png[Files bundled with the DEFCON 01 Merged Patch, title="Files bundled with the DEFCON 01 Merged Patch"]
+. Now, simply activate the merged patch in the left pane and check that both the mod and its plugin file are at the bottom of their respective panes.
++
+.DEFCON 01 Merged Patch is active and ready
+image::DEFCON-01-Mod-Organizer-merged-patch-installed-and-ready.png[DEFCON 01 Merged Patch is active and ready, title="DEFCON 01 Merged Patch is active and ready"]
+
+Piece of radioactive cake!
 
 
 

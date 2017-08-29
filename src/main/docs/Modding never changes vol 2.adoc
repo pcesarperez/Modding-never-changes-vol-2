@@ -2278,128 +2278,42 @@ image::DEFCON-01-Fallout-3-loading-customized-saved-game.png[Loading our customi
 
 
 
-=== Creating a merged patch
+=== Patching the shit out of the game
 
-You should have get a solid grasp by now of what is going to be the rest of the guide:
+We could say that things are pretty much under control, for now. We have installed a bunch of mods, sure, but the game itself remains essentially the same.
 
-. Download the mod you are going to install.
-. Install the mod manually.
-. Fix any inner structure inconsistencies, if any.
-. Fix mod metadata (version, category, etc.), if need be.
-. Rearrange stacking order (we have not seen any of this yet; you should take my word for it).
-. Rearrange load order, if the mod contains any plugin (e.g., any `.esp` file).
+However, this is the point where we are going to introduce two concepts that will accompany us from now on: merged and bashed patches. These are special mods to ensure that no compatibility problems among the installed mods will arise. Take into account that even with Bethesda’s main files, there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules.
 
-There is much more than meets the eye here, because as we keep on installing mods, compatibility problems will certainly arise. Take into account that even with Bethesda’s main files, there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules.
+Before explaining how to install them, you should know that there will be a pair of patches for you to install at the end of each major DEFCON chapter. Nevertheless, you only need to install them in the last DEFCON chapter you decide to follow.
 
-We will use two artifacts to improve compatibility throughout the different plugins loaded every time you run the game: merged patches and bashed patches. We will talk about merged patches here, and about bashed patches in the <<Bashing all together, next chapter>>.
+Repeating myself, you don't need to follow through the entire guide. You could choose to follow it through to, say, <<DEFCON 11 (Lighting), the chapter about lighting>>, discarding the rest. In that case, you only need to install a merged and a bashed patch at the end of that chapter. Likewise, if you decide to stop here, you should install the patches at this point and forget the rest of the guide.
 
-[WARNING]
+[IMPORTANT]
 ====
-You *DON'T* need to generate a merged patch for each major DEFCON chapter. You only need to generate a merged patch at the last major DEFCON chapter you decide to use.
-
-For example, if you just want to play the fixed game with a Vanilla experience, you need to create the merged patch (or use the provided one) at the end of the DEFCON 01 chapter. If you want the user interface tweaks and nothing beyond, generate (or download) the merged patch at the end of the DEFCON 02 chapter. And so on, and so forth.
-
-Whatever you do, you need just *ONE* merged patch.
-
-That said, if you intend to continue to the <<DEFCON 02 (User Interface), user interface chapter>>, jump to it and come back when you feel you don't want to install any further mods.
+In other words, you only need to install a merged and a bashed patch in the last DEFCON chapter you decide to follow.
 ====
 
-Gopher has a video (39:12) in which he explains https://youtu.be/uPK7R71zcwM?t=14m5s[what is a merged patch and why we should use it]. Cal, from Dirty Weasel, also has a video (32:06) explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_], although the process is very similar in _Fallout 3_.
+Creating a merged patch is a no-brainer, but creating a bashed patch is like going to swim at sea everyday uttering the name of the Great Cthulhu before the water licks your balls.
 
-The creation of a merged patch is pretty much the same at the end of each DEFCON chapter which have had some plugins installed (there's no need to create a new merged patch if we are only installing assets, like textures or sounds), so I will write it just once. In the following major chapters, I will refer to this one for further explanations, although I will link to a copy of the merged patch you can use right out of the box.
+That's a recipe for disaster, hear me well.
 
-However, this will be true if and only if **you are following this guide to the letter**. If you decide not to install any particular mod, then you will have to generate your own merged patches from that point on, because my versions will no longer apply to your particular mod stack.
+This is why I will provide a merged and a bashed patch at the end of each major DEFCON chapter. As I said, ignore them until the last DEFCON chapter you decide to follow.
 
+However, if you feel suicidal or, at some point, you decide not to follow this guide to the letter (why should you?), you have two appendices, one explaining <<Appendix 1: How to create your own merged patch, how to create a merged patch>> and the other explaining <<Appendix 2: How to create your own bashed patch, how to create a bashed patch>>.
 
-
-
-==== Generating your own merged patch
-
-The process to create a merged patch is pretty straightforward.
-
-. Open MO in your desired profile.
-. Disable any merged or bashed patch you have previously created. This is very important because merged and bashed patches are not cumulative. You have to create a new one for each profile where applicable (no screenshots here; we have not installed any patch yet).
-. Launch xEdit using the toolbar button which creation is lost in the mists of time.
-+
-.Launching xEdit through the toolbar button
-image::DEFCON-01-Mod-Organizer-xEdit-toolbar-button.png[Launching xEdit through the toolbar button, title="Launching xEdit through the toolbar button"]
-. Select all the files in your load order, **except any merged or bashed patch** (you should have disabled them first, anyway).
-+
-.Selecting all the plugins to create a merged patch
-image::DEFCON-01-xEdit-selecting-all-files-to-create-merged-patch.png[Selecting all the plugins to create a merged patch, title="Selecting all the plugins to create a merged patch"]
-. xEdit takes its time to load all the plugins. In later chapters, you'd better go and fix yourself a strong-spirited beverage in the meantime. Look for a message in the right pane which says "Background Loader: finished" to know when to stop fixing yourself drinks.
-+
-.xEdit has loaded all your plugins
-image::DEFCON-01-xEdit-finished-loading-all-plugins.png[xEdit has loaded all your plugins, title="xEdit has loaded all your plugins"]
-. Right-click anywhere in the left pane and select *Other* &rarr; *Create Merged Patch*.
-+
-.Option to create a merged patch in xEdit
-image::DEFCON-01-xEdit-create-merged-patch-option.png[Option to create a merged patch in xEdit, title="Option to create a merged patch in xEdit"]
-. xEdit shows a window in which you can give a name to your merged patch. We are going to use the name of the DEFCON profile to easily identify our merged patches. In this case, use the name "DEFCON 01 Merged Patch" and click on *OK*.
-+
-.Giving a name to your merged patch
-image::DEFCON-01-xEdit-giving-a-name-to-your-merged-patch.png[Giving a name to your merged patch, title="Giving a name to your merged patch"]
-. That's it! Our new and great-looking merged patch has been created.
-+
-.Merged patch created
-image::DEFCON-01-xEdit-merged-patch-created.png[Merged patch created, title="Merged patch created"]
-. It's time to save the merged patch, so exit xEdit for it to show the window with the list of created or modified files. Make sure the patch is selected and the option *Backup plugins* is not and click on *OK*.
-+
-.xEdit wants to save the merged patch
-image::DEFCON-01-xEdit-saving-merged-patch.png[xEdit wants to save the merged patch, title="xEdit wants to save the merged patch"]
-. It's time to get back to MO, but... Where is my merged patch? The only indication that something has changed is the warning icon in the toolbar.
-+
-.Where the fuck is my merged patch?
-image::DEFCON-01-Mod-Organizer-where-is-my-merged-patch.png[Where the fuck is my merged patch?, title="Where the fuck is my merged patch?"]
-. Generally speaking, every time you create a file in MO, it goes to the *Overwrite* special folder. Double-click on it to show its contents, at the bottom of the left pane.
-+
-.There is something lurking in our 'Overwrite' folder
-image::DEFCON-01-Mod-Organizer-there-is-something-lurking-in-overwrite.png[There is something lurking in our 'Overwrite' folder, title="There is something lurking in our 'Overwrite' folder"]
-. The overwrite folder contains two elements: our merged patch and a folder named `FO3Edit Backups`, which is created every time we exit from xEdit, although we chose not to create any backup copy (it's just a minor glitch). Get rid of the folder by right-clicking on it and selecting *Delete*.
-+
-.Isolating the merged patch in the 'Overwrite' folder
-image::DEFCON-01-Mod-Organizer-isolating-merged-patch-in-overwrite.png[Isolating the merged patch in the 'Overwrite' folder, title="Isolating the merged patch in the 'Overwrite' folder"]
-. Our merged patch sits alone in the *Overwrite* folder. Time to close the window.
-+
-.The merged patch is isolated in the 'Overwrite' folder
-image::DEFCON-01-Mod-Organizer-merged-patch-isolated.png[The merged patch is isolated in the 'Overwrite' folder, title="The merged patch is isolated in the 'Overwrite' folder"]
-. Back to the MO main window, right-click on the *Overwrite* entry in the left pane and select *Create Mod...*.
-+
-.Option to create a new mod from the contents of the 'Overwrite' folder
-image::DEFCON-01-Mod-Organizer-creating-merged-patch-mod-option.png[Option to create a new mod from the contents of the 'Overwrite' folder, title="Option to create a new mod from the contents of the 'Overwrite' folder"]
-. In the following window, give the merged patch mod the same name we gave to the `.esp` file in xEdit (in this case, "DEFCON 01 Merged Patch"), and click on *OK*.
-+
-.Giving a meaningful name to our merged patch mod
-image::DEFCON-01-Mod-Organizer-naming-the-merged-patch-mod.png[Giving a meaningful name to our merged patch mod, title="Giving a meaningful name to our merged patch mod"]
-. Now, you just have to activate the mod in the left pane. Generally speaking, any merged patch should always sit at the bottom of your load order (although above the bashed patch, as we will see).
-+
-.The merged patch is activated
-image::DEFCON-01-Mod-Organizer-merged-patch-activated.png[The merged patch is activated, title="The merged patch is activated"]
-. Although the position of the mod in the left pane is not really important, the plugin should *ALWAYS* sit at the bottom of your load order (again, above the bashed patch). Take a look at the *Plugins* tab in the right pane.
-+
-.The merged patch plugin sits at the bottom of your load order
-image::DEFCON-01-Mod-Organizer-merged-patch-plugin.png[The merged patch plugin sits at the bottom of your load order, title="The merged patch plugin sits at the bottom of your load order"]
-
-
-Take into account that a merged patch is not a magic fix. There could be little inconsistencies across all the plugins used to create the merged patch, inconsistencies you should address one by one, at least hypothetically. That is not the case with the merged patch we have just created (there are not heavy content mods installed, so far), but things will get serious in later chapter (for example, after installing FWE or MMM).
-
-However, you won't have to fine-tune your merged patches; I'll do it for you (to an extent). So, if you want to download the merged patches I have created, know that they are already tweaked, but if you decide to create your own merged patches, not fine tuning them won't be a problem, because the tweaks normally represent corrections to fringe cases you shouldn't worry too much about.
+If you want to stop right here, in the DEFCON 01 profile (although I heartedly recommend following through at least to the next chapter, about <<DEFCON 02 (User Interface), user interface>>), go ahead and <<DEFCON 01 Merged Patch, install the provided merged patch>> (and then, <<DEFCON 01 Bashed Patch, install the provided bashed patch>>). Otherwise, jump to the <<DEFCON 02 (User Interface), next DEFCON chapter>>.
 
 
 
 
-==== Using a pre-generated merged patch
+==== DEFCON 01 Merged Patch
 
-If you prefer not to create a merged patch at the end of each major (DEFCON) chapter, you can use the merged patches I unselfishly provide.
+The merged patches I will provide are fine-tuned to correct any inconsistencies that the creation process may have introduced. However, remember that you need to have every mod in this DEFCON chapter installed for it to work properly.
 
-However, there's a catch: you need to install each and every mod I recommend, in the exact order pointed out in this guide. Merged patches are built to provide a compatibility layer among a certain set of installed mod, so if you decide not to install a mod (or install any other mod of your choice), moving away from the road laid out in this guide, then you must create your own merged patches from that point on.
-
-In other words: stick to the plan, or create your own merged patches, that is.
-
-This is nothing but a fair advice, although it sounds like an enraged biblical warning. There's nothing wrong in creating and fine-tuning your own merged patches, but it's good for you to know there's an alternative, although a heavily constrained one.
+Let's install the patch, then.
 
 . Open MO and switch to the *Downloads* tab in the right pane.
-. Download the pre-generated mod link:patches/DEFCON-01-Merged-Patch-1.0.zip[DEFCON 01 Merged Patch] in a location of your choice.
+. Download the pre-generated patch link:patches/DEFCON-01-Merged-Patch-1.0.zip[DEFCON 01 Merged Patch] in a location of your choice.
 . Drag and drop the file from the folder you put it into to the *Downloads* tab in the right pane of MO.
 +
 .Sideloading the DEFCON 01 Merged Patch
@@ -2408,11 +2322,11 @@ image::DEFCON-01-Mod-Organizer-sideloading-merged-patch.png[Sideloading the DEFC
 +
 .The DEFCON 01 Merged Patch is installed but not active yet
 image::DEFCON-01-Mod-Organizer-merged-patch-installed-but-not-active.png[The DEFCON 01 Merged Patch is installed but not active yet, title="The DEFCON 01 Merged Patch is installed but not active yet"]
-. Double-click on the mod in the left pane to show the properties window. This is not strictly necessary, but I will like to show you what the merged patch is packing. In the *Textfiles* tab, click on the file `Required load order.txt` to show its contents, where you will see the required load order for this merged patch to work.
+. Double-click on the mod in the left pane to show the properties window. This is not strictly necessary, but I will like to show you what the merged patch is packing. In the *Textfiles* tab, click on the file `docs/Required load order.txt` to show its contents, where you will see the required load order for this merged patch to work.
 +
 .Required load order for the DEFCON 01 Merged Patch
 image::DEFCON-01-Mod-Organizer-merged-patch-required-load-order.png[Required load order for the DEFCON 01 Merged Patch, title="Required load order for the DEFCON 01 Merged Patch"]
-. Without leaving the *Textfiles* tab, click on the file `Required stacking order.txt` to see the stacking order of the mods.
+. Without leaving the *Textfiles* tab, click on the file `docs/Required stacking order.txt` to see the stacking order of the mods.
 +
 .Required stacking order for the DEFCON 01 Merged Patch
 image::DEFCON-01-Mod-Organizer-merged-patch-required-stacking-order.png[Required stacking order for the DEFCON 01 Merged Patch, title="Required stacking order for the DEFCON 01 Merged Patch"]
@@ -2438,172 +2352,7 @@ Piece of radioactive cake!
 
 
 
-=== Bashing all together
-
-Bashed patches are to merged patches what skyrocketing in a Saturn V could be to the delicate fluttering around of a butterfly. You could say they play in different leagues, but it would be more accurate to say that they play completely fucking different sports, in fact.
-
-While a merged patch is a sort of automated merge (oh, surprise) of the differences in your mod stack, a bashed patch is a compatibility patch that takes into account, for each item added in a mod, to which https://geck.bethsoft.com/index.php?title=Leveled_Item[leveled list] it should belong. It means that vendors and containers scattered around Capital Wasteland offer items in line with your level, considering the appropriate mix of items provided by the different mods in your stack.
-
-You could play your game without a bashed patch, and you would probably didn't notice it, but for the sake of integrity, it's a good idea to have one bashed patch per profile, alongside your mod stack, including the merged patch per profile you had created/installed.
-
-[WARNING]
-====
-Like with the merged patches, you *DON'T* need to generate a bashed patch for each major DEFCON chapter. You only need to generate a bashed patch at the last major DEFCON chapter you decide to use.
-
-For example, if you just want to play the fixed game with a Vanilla experience, you need to create the bashed patch (or use the provided one) at the end of the DEFCON 01 chapter. If you want the user interface tweaks and nothing beyond, generate (or download) the bashed patch at the end of the DEFCON 02 chapter. And so on, and so forth.
-
-Whatever you do, you need just *ONE* bashed patch.
-
-That said, if you intend to continue to the <<DEFCON 02 (User Interface), user interface chapter>>, jump to it and come back when you feel you don't want to install any further mods.
-====
-
-
-Take into account that creating a bashed patch is way more complicated than creating a merged patch. Thus, I heartedly recommend using my own pre-generated bashed patches, although, again, you will be able to use them if and only if you have installed each and every one mod in this guide, and in the right order. This was of paramount importance regarding merged patches, and it's even *more* important regarding bashed patches.
-
-There is a video from Michael, of GamerPoets (10:06), explaining https://www.youtube.com/watch?v=W1Es06MtAZM[how to generate a bashed patch for _Skyrim_] with Wrye Bash, which is very similar to Wrye Flash, the tool we have previously configured. You can also watch the video created by Cal, from DirtyWeasel (32:06), explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_].
-
-I will explain how to create a bashed patch only once, in case you need to consult it. At the end of each major DEFCON chapter I will provide a pre-generated bashed patch, locked and loaded, although a link will to the manual creation procedure will be provided, should you need it.
-
-
-
-
-==== Generating your own bashed patch
-
-Part of the bashed patch creation process involves adding bash tags to certain mods in your stack. These tags are used by Wrye Flash to create the bashed patch.
-
-Right from https://forums.nexusmods.com/index.php?/topic/1009349-in-boss-what-are-bash-tags-and-what-am-i-supposed-to-do/?p=8239348[this forum post written by ripple], bash tags tell Wrye Flash that:
-
-. These mods contain edits to the default game leveled lists.
-. What sort of edits they are (add, remove, or both).
-. What Wrye Flash should do to merge these conflicting leveled lists into the bashed patch.
-
-In fact, we should have added the missing bash tags by now, but I thought it would be a little awkward to add them with no clear purpose, under the promise that they would be used in this final sub-chapter.
-
-So, we are going to add bash tags in the following procedure, but from now on, bash tags are going to be added on the go, so that you can use the pre-generated bashed patch at the end of each major DEFCON chapter.
-
-. Open MO and switch to the *Downloads* tab in the right pane.
-. We need to create a dummy bashed patch for Wrye Flash to build it. In Windows Explorer open the folder `[%FO3_HOME%\Mopy\templates]` and copy the file `Bashed Patch, 0.esp` to a location of your choice.
-. Rename the copy to `DEFCON 01 Bashed Patch.esp`.
-. Create a ZIP archive (using http://www.7-zip.org/[7-Zip], for example) with this file and name it `DEFCON-01-Bashed-Patch.zip`.
-. Delete the file `DEFCON 01 Bashed Patch.esp`. We are not going to need it anymore.
-. Drag and drop the file `DEFCON-01-Bashed-Patch.zip` to the *Downloads* tab in MO.
-+
-.Sideloading the DEFCON 01 Bashed Patch
-image::DEFCON-01-Mod-Organizer-sideloading-bashed-patch.png[Sideloading the DEFCON 01 Bashed Patch, title="Sideloading the DEFCON 01 Bashed Patch"]
-. Double-click on the mod entry to pull up the *Quick Install* window. Change the mod's name from "DEFCON" to "DEFCON 01 Bashed Patch" and click on *OK* (we are pretty sure that the inner structure is correct).
-+
-.DEFCON 01 Bashed Patch Quick Install window
-image::DEFCON-01-Mod-Organizer-bashed-patch-Quick-Install.png[DEFCON 01 Bashed Patch Quick Install window, title="DEFCON 01 Bashed Patch Quick Install window"]
-. The bashed patch appears in the left pane, just below our merged patch. MO does not know shit about our bashed patch, so we are going to give it a proper version number. Double-click on the mod name to show the properties window.
-+
-.DEFCON 01 Bashed Patch is installed but not active yet
-image::DEFCON-01-Mod-Organizer-bashed-patch-installed-but-not-active.png[DEFCON 01 Bashed Patch is installed but not active yet, title="DEFCON 01 Bashed Patch is installed but not active yet"]
-. In the properties window, navigate to the *Nexus Info* tab and change the version number to "1.0", clicking on *Close* afterwards.
-+
-.Correcting the version number of DEFCON 01 Bashed Patch
-image::DEFCON-01-Mod-Organizer-bashed-patch-corrected-version.png[Correcting the version number of DEFCON 01 Bashed Patch, title="Correcting the version number of DEFCON 01 Bashed Patch"]
-. Activate the bashed patch in the left pane. You will see that the corresponding plugin appears at the bottom of the *Plugins* tab, although it has a funny broom icon beside. It means MO has detected that the plugin does not do anything, so it could be removed with no effect. It is perfectly normal, because Wrye Flash has not rebuilt the plugin yet.
-+
-.DEFCON 01 Bashed Patch is installed and active
-image::DEFCON-01-Mod-Organizer-bashed-patch-installed-and-active.png[DEFCON 01 Bashed Patch is installed and active, title="DEFCON 01 Bashed Patch is installed and active"]
-. Now comes the tricky part. We are going to use LOOT to find out the missing bash tags we need to add in Wrye Flash. Open LOOT using the toolbar icon.
-+
-.Launching LOOT through the toolbar button
-image::DEFCON-01-Mod-Organizer-LOOT-toolbar-button.png[Launching LOOT through the toolbar button, title="Launching LOOT through the toolbar button"]
-. LOOT uses what is called a https://github.com/loot/fallout3/blob/v0.10/masterlist.yaml[masterlist] to keep track of all the integrity details of any conceivable plugin you could have in your stack, including bash tags. Take a look, for example, to what LOOT have to say about the plugins `YeralingBooks.esp`, `Confessor Cromwell has a Break_EV.esp` and `BetterGamePerformance.esp`.
-+
-.LOOT shows the bash tags of any plugin it knows of
-image::DEFCON-01-LOOT-shows-bash-tags-through-masterlist.png[LOOT shows the bash tags of any plugin it knows of, title="LOOT shows the bash tags of any plugin it knows of"]
-. You need to write down the bash tags for your entire mod stack (this is something we will do on the go in later chapters). This is the list of bash tags LOOT extracts at this point:
-* `BrokenSteel.esm`: `Actors.ACBS, Actors.AIPackages, C.Water, Delev, Factions, Stats`.
-* `Unofficial Fallout 3 Patch.esm`: `C.Music, Deflst, Delev, Factions, Invent, Names, Relations, Relev, Stats`.
-* `YearlingBooks.esp`: `Scripts`.
-* `Confessor Cromwell has a Break_EV.esp`: `Actors.AIPackages`.
-* `BetterGamePerformance.esp`: `Deflst, Delev`.
-. Close LOOT and get back to MO. Once there, use the toolbar icon to launch Wrye Flash.
-+
-.Launching Wrye Flash through the toolbar button
-image::DEFCON-01-Mod-Organizer-Wrye-Flash-toolbar-button.png[Launching Wrye Flash through the toolbar button, title="Launching Wrye Flash through the toolbar button"]
-. Wrye Flash is a strange beast, but we will try to keep the fuss to a minimum. In the *Mods* tab, which should be selected by default, select `BrokenSteel.esm` to show its data in the right column.
-+
-.Wrye Flash with 'BrokenSteel.esm' selected
-image::DEFCON-01-Wrye-Flash-with-BrokenSteel-esm-selected.png[Wrye Flash with 'BrokenSteel.esm' selected, title="Wrye Flash with 'BrokenSteel.esm' selected"]
-. At the bottom of the right column there is a pane labeled *Bash Tags*, with the tags Wrye Flash deems necessary. Wrye Flash uses an obsolete master list, so we need to adjust the values to equate them to the values we found out through LOOT. Right-click in the *Bash Tags* pane to pull up a window with all the possible bash tags you can add or remove, and unselect `Relev` (you probably have to use the small arrow at the bottom of the selection list to get there; it's a real pain in the ass, I know).
-+
-.Selecting bash tags in Wrye Flash
-image::DEFCON-01-Wrye-Flash-selecting-bash-tags.png[Selecting bash tags in Wrye Flash, title="Selecting bash tags in Wrye Flash"]
-. Repeat the process for the rest of the plugins with bash tags in our list (in fact, you will only have to add `Scripts` to `YearlingBooks.esp`; the rest is identical).
-. Right-click on the bashed patch file (`DEFCON 01 Bashed Patch.esp`), which should be at the bottom of your load order, and select the option *Rebuild Patch...*.
-+
-.Option to rebuild a bashed patch in Wrye Flash
-image::DEFCON-01-Wrye-Flash-rebuild-patch-option.png[Option to rebuild a bashed patch in Wrye Flash, title="Option to rebuild a bashed patch in Wrye Flash"]
-. Every time you rebuild a bashed patch, Wrye Flash detects if there are mods which could be deactivated because they will be, in fact, included in the bashed patch. As a rule of thumb, it is advisable to click on *Yes*, but in this stage, the only mod it suggests deactivating is our merged patch, so click on *No*.
-+
-.Wrye Flash suggests deactivating the merged patch
-image::DEFCON-01-Wrye-Flash-deactivate-suggested-mods.png[Wrye Flash suggests deactivating the merged patch, title="Wrye Flash suggests deactivating the merged patch"]
-. Wrye Flash shows a window to configure the way we want to rebuild the bashed patch. First, we need to select all the items clicking on *Select All*.
-+
-.Selecting all rebuild configuration options in Wrye Flash
-image::DEFCON-01-Wrye-Flash-selecting-all-rebuild-configuration-options.png[Selecting all rebuild configuration options in Wrye Flash, title="Selecting all rebuild configuration options in Wrye Flash"]
-. You may see a pop-up window with a weird error. Dismiss the window and don't look closely, for your sanity's sake.
-+
-.Weird error window when selecting all items in Wrye Flash
-image::DEFCON-01-Wrye-Flash-select-all-weird-error.png[Weird error window when selecting all items in Wrye Flash, title="Weird error window when selecting all items in Wrye Flash"]
-. Now, unselect the following items:
-* *Alias Mod Names*
-* *Replace Form IDs*
-* *Import Actors: Animations*
-* *Import Script Contents*
-* *Globals*
-* *Tweak Assorted*
-* *Tweak Names*
-+
-.Deselecting unwanted configuration items
-image::DEFCON-01-Wrye-Flash-unselecting-unwanted-configuration-items.png[Deselecting unwanted configuration items, title="Deselecting unwanted configuration items"]
-. We have to fine-tune certain elements. All sub-items in each category should be checked, except:
-* The file `DEFCON 01 Merged Patch.esp` in *Merge Patches*.
-* The file `Fallout3.esm` in *Import Names*.
-+
-.Merged patch not checked in 'Merge Patches' option
-image::DEFCON-01-Wrye-Flash-merge-patches-option.png[Merged patch not checked in 'Merge Patches' option, title="Merged patch not checked in 'Merge Patches' option"]
-+
-.'Fallout3.esm' not checked in 'Import Names' option
-image::DEFCON-01-Wrye-Flash-import-names-option.png['Fallout3.esm' not checked in 'Import Names' option, title="'Fallout3.esm' not checked in 'Import Names' option"]
-. Additionally, the file `YearlingBooks.esp` must be checked in the *Import Scripts* option.
-+
-.'YearlingBooks.esp' checked in 'Import Scripts' option
-image::DEFCON-01-Wrye-Flash-import-scripts-option.png['YearlingBooks.esp' checked in 'Import Scripts' option, title="'YearlingBooks.esp' checked in 'Import Scripts' option"]
-. Press the *Build Patch* button to start building your bashed patch.
-+
-.It's time to start building the actual bashed patch
-image::DEFCON-01-Wrye-Flash-build-patch-button.png[It's time to start building the actual bashed patch, title="It's time to start building the actual bashed patch"]
-. Gather your patience, for Wrye Flash will take its time to build the bashed patch.
-+
-.Wrye Flash is building the bashed patch
-image::DEFCON-01-Wrye-Flash-building-bashed-patch.png[Wrye Flash is building the bashed patch, title="Wrye Flash is building the bashed patch"]
-. When the building of the bashed patch is finished, Wrye Flash shows a window with a final report. If you don't feel like tearing your eyes out by now, you may take a look at it. Dismiss the window clicking on *OK*.
-+
-.Final report about the building of the bashed patch
-image::DEFCON-01-Wrye-Flash-bashed-patch-build-report.png[Final report about the building of the bashed patch, title="Final report about the building of the bashed patch"]
-. This is it, we have our bashed patch! Close Wrye Flash and go back to MO. You will notice that the broom icon has disappeared, although the warning sign in the toolbar is now highlighted, which means we have something in our overwrite folder. Let's see what has Wrye Flash put in there. Double-click on the *Overwrite* entry at the bottom of your mod stack.
-+
-.The bashed patch is almost ready to fly
-image::DEFCON-01-Mod-Organizer-bashed-patch-almost-ready.png[The bashed patch is almost ready to fly, title="The bashed patch is almost ready to fly"]
-. Wrye Flash has put the documentation it generated in the overwrite folder. The logical place for them to be is in the mod proper, so drag and drop the `[Docs]` folder to the entry at the bottom, with our bashed patch.
-+
-.Moving the documentation generated by Wrye Flash to the bashed patch
-image::DEFCON-01-Mod-Organizer-moving-bashed-patch-docs.png[Moving the documentation generated by Wrye Flash to the bashed patch, title="Moving the documentation generated by Wrye Flash to the bashed patch"]
-. The overwrite folder is empty now, so click on *Close*. Double-click on the bashed patch in the left pane and navigate to the *Filetree* tab in the properties window to check that the documentation we have just moved is there.
-+
-.The bashed patch documentation is in its right place
-image::DEFCON-01-Mod-Organizer-bashed-patch-documentation.png[The bashed patch documentation is in its right place, title="The bashed patch documentation is in its right place"]
-
-You do understand now why I told you it's better to stick to this guide and download the pre-generated bashed patches I provide, don't you?
-
-
-
-
-==== Using a pre-generated bashed patch
+==== DEFCON 01 Bashed Patch
 
 
 
@@ -2862,3 +2611,221 @@ This is the rundown of the chapter, pointing out the mods used in each sub-chapt
 
 === Videos
 ////
+
+////
+	Appendices.
+////
+== Appendix 1: How to create your own merged patch
+
+If you have a lot of time to spare, you feel somewhat masochist or you are giving me a big middle finger while you decide that you will install pretty much the fucking mods you like, you need to create your own merged patch.
+
+Gopher has a video (39:12) in which he explains https://youtu.be/uPK7R71zcwM?t=14m5s[what is a merged patch and why we should use it]. Cal, from Dirty Weasel, also has a video (32:06) explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_], although the process is very similar in _Fallout 3_.
+
+Take into account that a merged patch is not a magic fix. There could be little inconsistencies across all the plugins used to create the merged patch, inconsistencies you should address one by one, at least hypothetically. That is not the case with the provided merged patches at the end of each major DEFCON chapter, which are shiny, polished and full of glamour!
+
+The process to create a merged patch is pretty straightforward.
+
+. Open MO in your desired profile.
+. Disable any merged or bashed patch you have previously created. This is very important because merged and bashed patches are not cumulative. You have to create a new one for each profile where applicable.
++
+.Disabling previous merged and bashed patches
+image::Appendix-1-Mod-Organizer-disabling-patches.png[Disabling previous merged and bashed patches, title="Disabling previous merged and bashed patches"]
+. Launch xEdit using the toolbar button which creation is lost in the mists of time.
++
+.Launching xEdit through the toolbar button
+image::Appendix-1-Mod-Organizer-xEdit-toolbar-button.png[Launching xEdit through the toolbar button, title="Launching xEdit through the toolbar button"]
+. Select all the files in your load order, **except any merged or bashed patch** (you should have disabled them first, anyway).
++
+.Selecting all the plugins to create a merged patch
+image::Appendix-1-xEdit-selecting-all-files-to-create-merged-patch.png[Selecting all the plugins to create a merged patch, title="Selecting all the plugins to create a merged patch"]
+. xEdit takes its time to load all the plugins, so you'd better go and fix yourself a strong-spirited beverage in the meantime. Look for a message in the right pane which says "Background Loader: finished" to know when to stop fixing yourself drinks.
++
+.xEdit has loaded all your plugins
+image::Appendix-1-xEdit-finished-loading-all-plugins.png[xEdit has loaded all your plugins, title="xEdit has loaded all your plugins"]
+. Right-click anywhere in the left pane and select *Other* &rarr; *Create Merged Patch*.
++
+.Option to create a merged patch in xEdit
+image::Appendix-1-xEdit-create-merged-patch-option.png[Option to create a merged patch in xEdit, title="Option to create a merged patch in xEdit"]
+. xEdit shows a window in which you can give a name to your merged patch. I'd recommend using the name of the DEFCON profile you are generating the patch for to easily identify it. After giving the patch a meaningful name, click on *OK*.
++
+.Giving a name to your merged patch
+image::Appendix-1-xEdit-giving-a-name-to-your-merged-patch.png[Giving a name to your merged patch, title="Giving a name to your merged patch"]
+. That's it! Our new and great-looking merged patch has been created.
++
+.Merged patch created
+image::Appendix-1-xEdit-merged-patch-created.png[Merged patch created, title="Merged patch created"]
+. It's time to save the merged patch, so exit xEdit for it to show the window with the list of created or modified files. Make sure the patch is selected and the option *Backup plugins* is not and click on *OK*.
++
+.xEdit wants to save the merged patch
+image::Appendix-1-xEdit-saving-merged-patch.png[xEdit wants to save the merged patch, title="xEdit wants to save the merged patch"]
+. It's time to get back to MO, but... Where is my merged patch? The only indication that something has changed is the warning icon in the toolbar.
++
+.Where the fuck is my merged patch?
+image::Appendix-1-Mod-Organizer-where-is-my-merged-patch.png[Where the fuck is my merged patch?, title="Where the fuck is my merged patch?"]
+. Generally speaking, every time you create a file in MO, it goes to the *Overwrite* special folder. Double-click on it to show its contents, at the bottom of the left pane.
++
+.There is something lurking in our 'Overwrite' folder
+image::Appendix-1-Mod-Organizer-there-is-something-lurking-in-overwrite.png[There is something lurking in our 'Overwrite' folder, title="There is something lurking in our 'Overwrite' folder"]
+. The overwrite folder contains two elements: our merged patch and a folder named `FO3Edit Backups`, which is created every time we exit from xEdit, although we chose not to create any backup copy (it's just a minor glitch). Get rid of the folder by right-clicking on it and selecting *Delete*.
++
+.Isolating the merged patch in the 'Overwrite' folder
+image::Appendix-1-Mod-Organizer-isolating-merged-patch-in-overwrite.png[Isolating the merged patch in the 'Overwrite' folder, title="Isolating the merged patch in the 'Overwrite' folder"]
+. Our merged patch sits alone in the *Overwrite* folder. Time to close the window.
++
+.The merged patch is isolated in the 'Overwrite' folder
+image::Appendix-1-Mod-Organizer-merged-patch-isolated.png[The merged patch is isolated in the 'Overwrite' folder, title="The merged patch is isolated in the 'Overwrite' folder"]
+. Back to the MO main window, right-click on the *Overwrite* entry in the left pane and select *Create Mod...*.
++
+.Option to create a new mod from the contents of the 'Overwrite' folder
+image::Appendix-1-Mod-Organizer-creating-merged-patch-mod-option.png[Option to create a new mod from the contents of the 'Overwrite' folder, title="Option to create a new mod from the contents of the 'Overwrite' folder"]
+. In the following window, give the merged patch mod the same name we gave to the `.esp` file in xEdit and click on *OK*.
++
+.Giving a meaningful name to our merged patch mod
+image::Appendix-1-Mod-Organizer-naming-the-merged-patch-mod.png[Giving a meaningful name to our merged patch mod, title="Giving a meaningful name to our merged patch mod"]
+. Now, you just have to activate the mod in the left pane.
++
+.The merged patch is activated
+image::Appendix-1-Mod-Organizer-merged-patch-activated.png[The merged patch is activated, title="The merged patch is activated"]
+. Although the position of the mod in the left pane is not really important, the plugin should *ALWAYS* sit at the bottom of your load order (again, above the bashed patch). Take a look at the *Plugins* tab in the right pane.
++
+.The merged patch plugin sits at the bottom of your load order
+image::Appendix-1-Mod-Organizer-merged-patch-plugin.png[The merged patch plugin sits at the bottom of your load order, title="The merged patch plugin sits at the bottom of your load order"]
+
+
+
+
+== Appendix 2: How to create your own bashed patch
+
+Bashed patches are to merged patches what skyrocketing in a Saturn V could be to the delicate fluttering around of a butterfly. You could say they play in different leagues, but it would be more accurate to say that they play completely fucking different sports, in fact.
+
+While a merged patch is a sort of automated merge (oh, surprise) of the differences in your mod stack, a bashed patch is a compatibility patch that takes into account, for each item added in a mod, to which https://geck.bethsoft.com/index.php?title=Leveled_Item[leveled list] it should belong. It means that vendors and containers scattered around Capital Wasteland offer items in line with your level, considering the appropriate mix of items provided by the different mods in your stack.
+
+You could play your game without a bashed patch, and you would probably didn't notice it, but for the sake of integrity, it's a good idea to have one bashed patch per profile, alongside your mod stack, including the merged patch per profile you had created/installed.
+
+Take into account that creating a bashed patch is way more complicated than creating a merged patch. Thus, I heartedly recommend using the pre-generated bashed patches at the end of each major DEFCON chapter, although, again, you will be able to use them if and only if you have installed each and every one mod in this guide, and in the right order. This was of paramount importance regarding merged patches, and it's even *more* important regarding bashed patches.
+
+There is a video from Michael, of GamerPoets (10:06), explaining https://www.youtube.com/watch?v=W1Es06MtAZM[how to generate a bashed patch for _Skyrim_] with Wrye Bash, which is very similar to Wrye Flash, the tool we have previously configured. You can also watch the video created by Cal, from DirtyWeasel (32:06), explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_].
+
+Part of the bashed patch creation process involves adding bash tags to certain mods in your stack. These tags are used by Wrye Flash to create the bashed patch.
+
+Right from https://forums.nexusmods.com/index.php?/topic/1009349-in-boss-what-are-bash-tags-and-what-am-i-supposed-to-do/?p=8239348[this forum post written by ripple], bash tags tell Wrye Flash that:
+
+. These mods contain edits to the default game leveled lists.
+. What sort of edits they are (add, remove, or both).
+. What Wrye Flash should do to merge these conflicting leveled lists into the bashed patch.
+
+We are going to add bash tags in the following procedure, prior to the creation of the actual bashed patch.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. We need to create a dummy bashed patch for Wrye Flash to build it. In Windows Explorer open the folder `[%FO3_HOME%\Mopy\templates]` and copy the file `Bashed Patch, 0.esp` to a location of your choice.
+. Rename the copy to reflect the name of the profile you are working with (for example, `DEFCON 01 Bashed Patch.esp`).
+. Create a ZIP archive (using http://www.7-zip.org/[7-Zip], for example) with this file and name it `DEFCON-01-Bashed-Patch.zip`.
+. Delete the file `DEFCON 01 Bashed Patch.esp`. We are not going to need it anymore.
+. Drag and drop the file `DEFCON-01-Bashed-Patch.zip` to the *Downloads* tab in MO.
++
+.Sideloading the bashed patch
+image::Appendix-1-Mod-Organizer-sideloading-bashed-patch.png[Sideloading the bashed patch, title="Sideloading the bashed patch"]
+. Double-click on the mod entry to pull up the *Quick Install* window. Change the mod's name from "DEFCON" to "DEFCON 01 Bashed Patch" and click on *OK* (we are pretty sure that the inner structure is correct).
++
+.Bashed patch Quick Install window
+image::Appendix-1-Mod-Organizer-bashed-patch-Quick-Install.png[Bashed patch Quick Install window, title="Bashed patch Quick Install window"]
+. The bashed patch appears in the left pane, just below our merged patch. MO does not know shit about our bashed patch, so we are going to give it a proper version number. Double-click on the mod name to show the properties window.
++
+.The bashed patch is installed but not active yet
+image::Appendix-1-Mod-Organizer-bashed-patch-installed-but-not-active.png[The bashed patch is installed but not active yet, title="The bashed patch is installed but not active yet"]
+. In the properties window, navigate to the *Nexus Info* tab and change the version number to "1.0", clicking on *Close* afterwards.
++
+.Correcting the version number of the bashed patch
+image::Appendix-1-Mod-Organizer-bashed-patch-corrected-version.png[Correcting the version number of the bashed patch, title="Correcting the version number of the bashed patch"]
+. Activate the bashed patch in the left pane. You will see that the corresponding plugin appears at the bottom of the *Plugins* tab, although it has a funny broom icon beside. It means MO has detected that the plugin does not do anything, so it could be removed with no effect. It is perfectly normal, because Wrye Flash has not rebuilt the plugin yet.
++
+.The bashed patch is installed and active
+image::Appendix-1-Mod-Organizer-bashed-patch-installed-and-active.png[The bashed patch is installed and active, title="The bashed patch is installed and active"]
+. Now comes the tricky part. We are going to use LOOT to find out the missing bash tags we need to add in Wrye Flash. Open LOOT using the toolbar icon.
++
+.Launching LOOT through the toolbar button
+image::Appendix-1-Mod-Organizer-LOOT-toolbar-button.png[Launching LOOT through the toolbar button, title="Launching LOOT through the toolbar button"]
+. LOOT uses what is called a https://github.com/loot/fallout3/blob/v0.10/masterlist.yaml[masterlist] to keep track of all the integrity details of any conceivable plugin you could have in your stack, including bash tags. Take a look to what LOOT have to say about such plugins, with a list of tags under the file name.
++
+.LOOT shows the bash tags of any plugin it knows of
+image::Appendix-1-LOOT-shows-bash-tags-through-masterlist.png[LOOT shows the bash tags of any plugin it knows of, title="LOOT shows the bash tags of any plugin it knows of"]
+. You need to write down the bash tags LOOT points out for your entire mod stack.
+. Close LOOT and get back to MO. Once there, use the toolbar icon to launch Wrye Flash.
++
+.Launching Wrye Flash through the toolbar button
+image::Appendix-1-Mod-Organizer-Wrye-Flash-toolbar-button.png[Launching Wrye Flash through the toolbar button, title="Launching Wrye Flash through the toolbar button"]
+. Wrye Flash is a strange beast, but we will try to keep the fuss to a minimum. In the *Mods* tab, which should be selected by default, select, for example, `BrokenSteel.esm` to show its data in the right column.
++
+.Wrye Flash with 'BrokenSteel.esm' selected
+image::Appendix-1-Wrye-Flash-with-BrokenSteel-esm-selected.png[Wrye Flash with 'BrokenSteel.esm' selected, title="Wrye Flash with 'BrokenSteel.esm' selected"]
+. At the bottom of the right column there is a pane labeled *Bash Tags*, with the tags Wrye Flash deems necessary. Wrye Flash uses an obsolete master list, so we need to adjust the values to equate them to the values we found out through LOOT. Right-click in the *Bash Tags* pane to pull up a window with all the possible bash tags you can add or remove, and unselect `Relev` (you probably have to use the small arrow at the bottom of the selection list to get there; it's a real pain in the ass, I know).
++
+.Selecting bash tags in Wrye Flash
+image::Appendix-1-Wrye-Flash-selecting-bash-tags.png[Selecting bash tags in Wrye Flash, title="Selecting bash tags in Wrye Flash"]
+. Repeat the process for the rest of the plugins with bash tags in our list.
+. Right-click on the bashed patch file (`DEFCON 01 Bashed Patch.esp`), which should be at the bottom of your load order, and select the option *Rebuild Patch...*.
++
+.Option to rebuild a bashed patch in Wrye Flash
+image::Appendix-1-Wrye-Flash-rebuild-patch-option.png[Option to rebuild a bashed patch in Wrye Flash, title="Option to rebuild a bashed patch in Wrye Flash"]
+. Every time you rebuild a bashed patch, Wrye Flash detects if there are mods which could be deactivated because they will be, in fact, included in the bashed patch. As a rule of thumb, it is advisable to click on *Yes*.
++
+.Wrye Flash suggests deactivating the merged patch
+image::Appendix-1-Wrye-Flash-deactivate-suggested-mods.png[Wrye Flash suggests deactivating the merged patch, title="Wrye Flash suggests deactivating the merged patch"]
+. Wrye Flash shows a window to configure the way we want to rebuild the bashed patch. First, we need to select all the items clicking on *Select All*.
++
+.Selecting all rebuild configuration options in Wrye Flash
+image::Appendix-1-Wrye-Flash-selecting-all-rebuild-configuration-options.png[Selecting all rebuild configuration options in Wrye Flash, title="Selecting all rebuild configuration options in Wrye Flash"]
+. You may see a pop-up window with a weird error. Dismiss the window and don't look closely, for your sanity's sake.
++
+.Weird error window when selecting all items in Wrye Flash
+image::Appendix-1-Wrye-Flash-select-all-weird-error.png[Weird error window when selecting all items in Wrye Flash, title="Weird error window when selecting all items in Wrye Flash"]
+. Now, unselect the following items:
+* *Alias Mod Names*
+* *Replace Form IDs*
+* *Import Actors: Animations*
+* *Import Script Contents*
+* *Globals*
+* *Tweak Assorted*
+* *Tweak Names*
++
+.Deselecting unwanted configuration items
+image::Appendix-1-Wrye-Flash-unselecting-unwanted-configuration-items.png[Deselecting unwanted configuration items, title="Deselecting unwanted configuration items"]
+. We have to fine-tune certain elements. All sub-items in each category should be checked, except:
+* The file corresponding to the merged patch in *Merge Patches*.
+* The file `Fallout3.esm` in *Import Names*.
++
+.Merged patch not checked in 'Merge Patches' option
+image::Appendix-1-Wrye-Flash-merge-patches-option.png[Merged patch not checked in 'Merge Patches' option, title="Merged patch not checked in 'Merge Patches' option"]
++
+.'Fallout3.esm' not checked in 'Import Names' option
+image::Appendix-1-Wrye-Flash-import-names-option.png['Fallout3.esm' not checked in 'Import Names' option, title="'Fallout3.esm' not checked in 'Import Names' option"]
+. If you have added the bash tag `Scripts` to any plugin, they must be checked in the *Import Scripts* option.
++
+.Plugins checked in 'Import Scripts' option
+image::Appendix-1-Wrye-Flash-import-scripts-option.png[Plugins checked in 'Import Scripts' option, title="Plugins checked in 'Import Scripts' option"]
+. Press the *Build Patch* button to start building your bashed patch.
++
+.It's time to start building the actual bashed patch
+image::Appendix-1-Wrye-Flash-build-patch-button.png[It's time to start building the actual bashed patch, title="It's time to start building the actual bashed patch"]
+. Gather your patience, for Wrye Flash will take its time to build the bashed patch.
++
+.Wrye Flash is building the bashed patch
+image::Appendix-1-Wrye-Flash-building-bashed-patch.png[Wrye Flash is building the bashed patch, title="Wrye Flash is building the bashed patch"]
+. When the building of the bashed patch is finished, Wrye Flash shows a window with a final report. If you don't feel like tearing your eyes out by now, you may take a look at it. Dismiss the window clicking on *OK*.
++
+.Final report about the building of the bashed patch
+image::Appendix-1-Wrye-Flash-bashed-patch-build-report.png[Final report about the building of the bashed patch, title="Final report about the building of the bashed patch"]
+. This is it, we have our bashed patch! Close Wrye Flash and go back to MO. You will notice that the broom icon has disappeared, although the warning sign in the toolbar is now highlighted, which means we have something in our overwrite folder. Let's see what has Wrye Flash put in there. Double-click on the *Overwrite* entry at the bottom of your mod stack.
++
+.The bashed patch is almost ready to fly
+image::Appendix-1-Mod-Organizer-bashed-patch-almost-ready.png[The bashed patch is almost ready to fly, title="The bashed patch is almost ready to fly"]
+. Wrye Flash has put the documentation it generated in the overwrite folder. The logical place for them to be is in the mod proper, so drag and drop the `[Docs]` folder to the entry at the bottom, with our bashed patch.
++
+.Moving the documentation generated by Wrye Flash to the bashed patch
+image::Appendix-1-Mod-Organizer-moving-bashed-patch-docs.png[Moving the documentation generated by Wrye Flash to the bashed patch, title="Moving the documentation generated by Wrye Flash to the bashed patch"]
+. The overwrite folder is empty now, so click on *Close*. Double-click on the bashed patch in the left pane and navigate to the *Filetree* tab in the properties window to check that the documentation we have just moved is there.
++
+.The bashed patch documentation is in its right place
+image::Appendix-1-Mod-Organizer-bashed-patch-documentation.png[The bashed patch documentation is in its right place, title="The bashed patch documentation is in its right place"]
+
+You do understand now why I told you it's better to stick to this guide and download the pre-generated bashed patches I provide, don't you?

@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.4.24, 04/09/2017
+v0.5.0, 08/09/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2416,21 +2416,59 @@ You can stop here, skipping the rest of the guide, and start playing the game. T
 ////
 	DEFCON 02 (User Interface) chapter.
 ////
-////
+
 == DEFCON 02 (User Interface)
 
-=== Face-washing the HUD
+_Fallout 3_ has a way of reminding you that, no matter how hard you want to get yourself into the game, it's still a game. I mean, yeah, the game needs a HUD (Heads-Up Display), but, does it need to be so fucking huge and obstrusive?
 
-=== Deadshot would be proud of you
+This is an immersion-breaker for me. I like clean user interfaces that doesn't get in your way, allowing me to enjoy the in-game world without having it constantly pointing out where my enemies are, how much health do I have until perishing or how much ammunition I may spend in a frenzied assault.
 
-=== Rearranging your HUD
+Sure, this is a matter of personal taste, but I am the kind of person who always tries to play games in the hardest possible difficulty. Maybe I have an Spartan streak.
 
-=== A better feeling of immersion
+In this chapter we are going to install a few mods that will allow you to customize your user interface, improving the overall look of the HUD and the in-game menus.
+
+
+
+
+=== Creating the profile
+
+
+
 
 === Cooperate, or else!
 
+
+
+
+=== Face-washing the HUD
+
+
+
+
+=== Deadshot would be proud of you
+
+
+
+
+=== Rearranging your HUD
+
+
+
+
+=== A better feeling of immersion
+
+
+
+
 === Bashing and merging all together (again)
-////
+
+
+
+
+=== Chapter recap
+
+
+
 
 ////
 	DEFCON 03 (Refined User Interface) chapter.

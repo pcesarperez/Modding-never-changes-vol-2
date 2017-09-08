@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.0, 08/09/2017
+v0.5.1, 08/09/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2421,7 +2421,7 @@ You can stop here, skipping the rest of the guide, and start playing the game. T
 
 _Fallout 3_ has a way of reminding you that, no matter how hard you want to get yourself into the game, it's still a game. I mean, yeah, the game needs a HUD (Heads-Up Display), but, does it need to be so fucking huge and obstrusive?
 
-This is an immersion-breaker for me. I like clean user interfaces that doesn't get in your way, allowing me to enjoy the in-game world without having it constantly pointing out where my enemies are, how much health do I have until perishing or how much ammunition I may spend in a frenzied assault.
+This is an immersion-breaker for me. I like clean user interfaces that doesn't get in your way, allowing me to enjoy the in-game world without having it constantly pointing out where my enemies are, how much health do I have until being gang raped by a bunch of super-mutants or how much ammunition I may spend in a frenzied assault.
 
 Sure, this is a matter of personal taste, but I am the kind of person who always tries to play games in the hardest possible difficulty. Maybe I have an Spartan streak.
 
@@ -2431,6 +2431,38 @@ In this chapter we are going to install a few mods that will allow you to custom
 
 
 === Creating the profile
+
+The first thing we are going to do in each major chapter is to create a new profile on top of the previous one. The steps are pretty much the same that we saw in <<Creating the profile, the DEFCON 01 chapter>>, although with a subtle difference: we need to disable the merged and bashed patches we created in the preceding chapter. Failing in doing so would result in [line-through]#quantum anomalies# CTDs all over the place.
+
+. Launch MO.
+. Click on the MO profiles button.
++
+.Mod Organizer profiles button
+image::DEFCON-02-Mod-Organizer-profiles-button.png[Mod Organizer profiles button, title="Mod Organizer profiles button"]
+. In the profiles management window, select the *DEFCON 01 (Bug Fixes and Performance)* profile and click on *Copy*.
++
+.Copying DEFCON 01 profile in Mod Organizer
+image::DEFCON-02-Mod-Organizer-copying-DEFCON-01-profile.png[Copying DEFCON 01 profile in Mod Organizer, title="Copying DEFCON 01 profile in Mod Organizer"]
+. In the following window, write "DEFCON 02 (User Interface)" as the profile name and click *OK*.
++
+.Naming DEFCON 02 profile in Mod Organizer
+image::DEFCON-02-Mod-Organizer-naming-profile.png[Naming DEFCON 02 profile in Mod Organizer, title="Naming DEFCON 02 profile in Mod Organizer"]
+. Back to the profiles management window, check that the *DEFCON 02* profile has been created and click *Close*.
++
+.DEFCON 02 profile has been created
+image::DEFCON-02-Mod-Organizer-profile-created.png[DEFCON 02 profile has been created, title="DEFCON 02 profile has been created"]
+. MO does not automatically change the profile when it is created, so click on the *Profiles* drop-down and select the "DEFCON 02 (User Interface)" profile.
++
+.Selecting the DEFCON 02 profile
+image::DEFCON-02-Mod-Organizer-selecting-profile.png[Selecting the DEFCON 02 profile, title="Selecting the DEFCON 02 profile"]
+. From now on, every operation we perform will be related to this profile.
++
+.DEFCON 02 profile selected
+image::DEFCON-02-Mod-Organizer-profile-selected.png[DEFCON 02 profile selected, title="DEFCON 02 profile selected"]
+. With the profile selected, disable (don't delete!) the merged and bashed patches in the left pane. Notice the corresponding plugins vanishing from the right pane.
++
+.Disabling DEFCON 01 merged and bashed patches
+image::DEFCON-02-Mod-Organizer-disabling-DEFCON-01-merged-and-bashed-patches.png[Disabling DEFCON 01 merged and bashed patches, title="Disabling DEFCON 01 merged and bashed patches"]
 
 
 

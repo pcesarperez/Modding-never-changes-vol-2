@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.1, 08/09/2017
+v0.5.2, 09/09/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2468,6 +2468,62 @@ image::DEFCON-02-Mod-Organizer-disabling-DEFCON-01-merged-and-bashed-patches.png
 
 
 === Cooperate, or else!
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/20867/[_UIO - User Interface Organizer_]
+====
+
+We installed a good bunch of mods in the <<DEFCON 01 (Bug Fixes and Performance), first meaningful chapter>>, and we learned that we need to be careful about the load order, meaning the plugins (`.esp` files) should be carefully arranged to avoid conflicts. We also learned that the "install" order (which I prefer to think of as "stacking" order) is important too, although not so critical, except in certain cases.
+
+The first part of the assertion will remain constant throughout the guide. The second part will no longer applies when it comes to user interface mods.
+
+Ok, this is going to be a bit technical, but try to bear with me. From this point on, user interface mods should be carefully stacked, because they write the same HUD files. There is a special file called `hud_main_menu.xml` that is present in the most important mods of this guide, so we need to pay special attention to the way the mods stack on top of another, in MO's left pane (remember: the lower a mod is in the left pane, the higher its priority is; it's kind of an "inverted" stack).
+
+However, it won't be enough to stack the mods in a particular order. We need them to _cooperate_, adding their quirks to the HUD without deleting the specifics of any mod lower in the stack (with a lower priority index, that is). For example, you don't want a mod which adds a HUD movement detector to erase the grenade indicator added by another mod.
+
+This is where http://www.nexusmods.com/fallout3/mods/20867/[_User Interface Organizer_], or _UIO_, for short, comes. It is a FOSE plugin which ensures that all HUD-related plugins play along nicely, detecting and resolving conflicts on the fly.
+
+[WARNING]
+====
+UIO has to be the highest priority installed mod with regard to user interface mods, which means it should be the the last in the left pane, only higher than compatibility patches.
+====
+
+Cal, from Dirty Weasel has a good video about https://www.youtube.com/watch?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&v=9ilscW_GJ5I[installing user interface related mods] (43:25), although he is focused on https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/[DarnUI], which we will install in the <<Face-washing the HUD, next chapter>>. We are also going to use Kelmych's guide to set the http://wiki.step-project.com/User:Kelmych/Fallout3#The_Need_for_UIO_-_User_Interface_Organizer[correct stacking order for user interface mods].
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*UIO - User Interface Organizer* file from http://www.nexusmods.com/fallout3/mods/20867/[_UIO - User Interface Organizer_] with the manager.
++
+.UIO is downloaded and ready to be installed
+image::DEFCON-02-Mod-Organizer-UIO-downloaded-and-ready.png[UIO is downloaded and ready to be installed, title="UIO is downloaded and ready to be installed"]
+. Double-click on the mod to run the external installer. No Quick Install window here.
++
+.External installer for UIO
+image::DEFCON-02-Mod-Organizer-UIO-external-installer.png[External installer for UIO, title="External installer for UIO"]
+. UIO is silently installed at the bottom of the left pane. Move it above the two disabled DEFCON 01 patches and activate it (this should be your link:load_order/DEFCON-02-1-stacking-order-after-UIO.txt[stacking order]).
++
+.UIO installed, relocated and active
+image::DEFCON-02-Mod-Organizer-UIO-installed-relocated-and-active.png[UIO installed, relocated and active, title="UIO installed, relocated and active"]
+. You may run the game now, although there will be no noticeable differences. However, there is a thing you need to take into account: we have disabled the merged and bashed patches, so when we try to load a game which was saved with these patches active, _Fallout 3_ warns that there may be missing content. Don't worry about that, because we are going to add new patches at the end of this chapter.
++
+.'Fallout 3' gives us fair warning about the missing patches
+image::DEFCON-02-Fallout-3-loading-saved-game-with-disabled-patches.png['Fallout 3' gives us fair warning about the missing patches, title="'Fallout 3' gives us fair warning about the missing patches"]
+. Back to MO, you may notice that the warning sign in the toolbar is highlighted (you don't need a screenshot at this point, do you?). UIO creates files and folders in the overwrite mod to regenerate certain user interface files. Double-click on the overwrite special mod in the left pane to inspect them.
++
+.Empty folders created by UIO in the overwrite mod
+image::DEFCON-02-Mod-Organizer-UIO-empty-folders-in-overwrite-mod.png[Empty folders created by UIO in the overwrite mod, title="Empty folders created by UIO in the overwrite mod"]
+. You can see that there are no files, because we have not installed any user interface related mod yet. However, let's drag and drop the `[uio]` folder to the UIO entry in the left pane to get things ready.
++
+.Drag and drop the UIO generated files to the mod entry
+image::DEFCON-02-Mod-Organizer-UIO-drag-and-drop-generated-files.png[Drag and drop the UIO generated files to the mod entry, title="Drag and drop the UIO generated files to the mod entry"]
+. Double-click on the UIO entry in the left pane to show the properties window and navigate to the *Filetree* tab to check on the mod contents.
++
+.UIO generated files are in place now
+image::DEFCON-02-Mod-Organizer-UIO-generated-files-in-place.png[UIO generated files are in place now, title="UIO generated files are in place now"]
+
+We have just prepared our game to use several user interface mods without a hitch. Things are going to get interesting in the next chapters. Stay tuned!
 
 
 

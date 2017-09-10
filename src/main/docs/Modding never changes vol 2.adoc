@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.4, 10/09/2017
+v0.5.5, 10/09/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2621,6 +2621,124 @@ Your setup should comply with the following link:order_lists/DEFCON-02-1-stackin
 
 
 === Face-washing the HUD
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/[_DarNified UI F3_]
+====
+
+_Fallout 3_ has a problem regarding its user interface: its huge. I think it has to do with using the same interface in the XBox and PC versions, not taking advantage of the PC capabilities.
+
+https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] comes to the rescue, shrinking the interface to acceptable levels, and giving us more screen real-estate to play with, which is very noticeable using the Pip-Boy, for example.
+
+[TIP]
+====
+Cal, from DirtyWeasel, has a good video explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&v=9ilscW_GJ5I[how to install DarNified UI] (43:25). Gopher has a video about https://www.youtube.com/watch?v=aqCzCXEydwU[user interface mods] (25:05) which, although is aimed to Nexus Mod Manager users, it is useful to have a glimpse of the different in-game options of DarNified UI (from minute 7:00).
+====
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*https://ui.darnified.net/wip/F3/dui_f3a11.7z[Alpha^11^]* from the https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/[DUI F3] forum page to a location of your choice (the mod is not hosted on Nexus).
+. . Download the file [NexusFile]*https://ui.darnified.net/wip/F3/dui_f3a11_HF.7z[Alpha^11^ hotfix]* from the https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/[DUI F3] forum page to the same location.
+. We are going to sideload the files in a slightly different way now, without using drag and drop. Click on the button to install a mod from an archive, located in the toolbar.
++
+.Button to install a mod from an archive
+image::DEFCON-02-Mod-Organizer-install-mod-from-archive-button.png[Button to install a mod from an archive, title="Button to install a mod from an archive"]
+. Select the file `dui_f3a11.7z` to load the DUI F3 main file.
++
+.Selecting the DUI F3 main file
+image::DEFCON-02-Mod-Organizer-DUI-F3-selecting-main-file.png[Selecting DUI F3 main file, title="Selecting DUI F3 main file"]
+. MO shows the Quick Install window for DUI F3. Change the name to "DarnUI F3 Alpha 11" and click on *Manual*.
++
+.Quick Install window for DUI F3
+image::DEFCON-02-Mod-Organizer-DUI-F3-Quick-Install-window.png[Quick Install window for DUI F3, title="Quick Install window for DUI F3"]
+. The inner structure of DUI F3 is fairly good, so click on *OK*.
++
+.DUI F3 inner structure
+image::DEFCON-02-Mod-Organizer-DUI-F3-inner-structure.png[DUI F3 inner structure, title="DUI F3 inner structure"]
+. DUI F3 is installed but not active. We have to fix the version number, so double-click on the mod entry in the left pane to show the properties window.
++
+.DUI F3 is installed but not active yet
+image::DEFCON-02-Mod-Organizer-DUI-F3-installed-but-not-active-yet.png[DUI F3 is installed but not active yet, title="DUI F3 is installed but not active yet"]
+. Navigate to the *Nexus Info* tab and change the version number to 0.11.0a, clicking on *Close* afterwards.
++
+.Changing version number of DUI F3
+image::DEFCON-02-Mod-Organizer-DUI-F3-changing-version-number.png[Changing version number of DUI F3, title="Changing version number of DUI F3"]
+. Use again the button to sideload a mod and select the file `dui_f3a11_HF.7z`, which is the hotfix.
++
+.Selecting the DUI F3 hotfix file
+image::DEFCON-02-Mod-Organizer-DUI-F3-selecting-hotfix-file.png[Selecting DUI F3 hotfix file, title="Selecting DUI F3 hotfix file"]
+. When MO shows the Quick Install window, give the hotfix the same name of the main file and click on *Manual*.
++
+.Quick Install window for DUI F3 hotfix
+image::DEFCON-02-Mod-Organizer-DUI-F3-Quick-Install-window.png[Quick Install window for DUI F3, title="Quick Install window for DUI F3"]
+. We are going to leave the inner structure of the hotfix untouched, so click on *OK*.
++
+.DUI F3 hotfix inner structure
+image::DEFCON-02-Mod-Organizer-DUI-F3-hotfix-inner-structure.png[DUI F3 hotfix inner structure, title="DUI F3 hotfix inner structure"]
+. MO detects that we are trying to install a mod with the same name of an already installed mod, so it shows a warning. We actually want to merge them both, so click on *Merge*.
++
+.Merging DUI F3 main file and hotfix
+image::DEFCON-02-Mod-Organizer-merging-mods.png[Merging DUI F3 main file and hotfix, title="Merging DUI F3 main file and hotfix"]
+. Move the mod in the left pane just above UIO (this is very important!) and activate it. Notice the file `DarNifiedUIF3.esp` in the bottom of the *Plugins* tab, in the right pane. There's no need to run LOOT, by the way.
++
+.DUI F3 installed and active
+image::DEFCON-02-Mod-Organizer-DUI-F3-active-and-ready.png[DUI F3 installed and active, title="DUI F3 installed and active"]
+. We are not done yet. We are going to install a homemade mod to use https://web.archive.org/web/20160610140604/http://arwenevecom.ipage.com/Fallout/FO-mods01.htm[a bunch of tweaks from Arwen] (look for the 'Interface' section) and https://forums.bethsoft.com/topic/1077483-wipzbeta-darnified-ui-f3/#entry15697889[two elegant fonts (DecoTech and Sansation)] for the user interface. Download the link:patches/DEFCON-02-DarnUI-F3-Tweaks-1.0.zip[DarNified UI Tweaks file] to a location of your choice.
+. Use the button to sideload a mod and select the file `DEFCON-02-DarnUI-F3-Tweaks-1.0.zip`.
++
+.Selecting the DUI F3 tweaks
+image::DEFCON-02-Mod-Organizer-DUI-F3-selecting-tweaks.png[Selecting DUI F3 tweaks, title="Selecting DUI F3 tweaks"]
+. MO shows a window pointing out that the mod we are trying to sideload contains INI tweaks, giving us the chance to select which of them we want to apply. Click on *Yes*.
++
+.The mod file contains INI tweaks we should review
+image::DEFCON-02-Mod-Organizer-mod-contains-INI-tweaks.png[The mod file contains INI tweaks we should review, title="The mod file contains INI tweaks we should review"]
+. Our custom mod has two INI files: `BetterFonts.ini` and `InterfaceColors.ini`. The first changes the fonts used in the user interface, replacing them by https://www.dafont.com/decotech.font[DecoTech] and https://www.dafont.com/sansation.font[Sansation], and the second changes the color of the user interface, using a blue ink. Check them both and click on *Close*.
++
+.Activating better fonts tweak for DUI F3
+image::DEFCON-02-Mod-Organizer-DUI-F3-activating-BetterFonts-tweak.png[Activating better fonts tweak for DUI F3, title="Activating better fonts tweak for DUI F3"]
++
+.Activating new interface colors for DUI F3
+image::DEFCON-02-Mod-Organizer-DUI-F3-activating-InterfaceColors-tweak.png[Activating new interface colors for DUI F3, title="Activating new interface colors for DUI F3"]
+. Move the mod _DarNified UI Tweaks_ in the left pane just below _DarnUI F3 Alpha 11_ and activate it.
++
+.DUI F3 tweaks are active and ready
+image::DEFCON-02-Mod-Organizer-DUI-F3-tweaks-active-and-ready.png[DUI F3 tweaks are active and ready, title="DUI F3 tweaks are active and ready"]
+. Now it's a good time to run the game and see for yourself how much has changed the user interface. This is a series of screenshots showing the overall look of the game before and after using DUI F3.
++
+.Before (above) and after (below) in the main menu
+image::DEFCON-02-Fallout-3-DUI-F3-before-after-main-menu.png[Before (above) and after (below) in the main menu, title="Before (above) and after (below) in the main menu"]
++
+.Before (above) and after (below) in the game HUD
+image::DEFCON-02-Fallout-3-DUI-F3-before-after-HUD.png[Before (above) and after (below) in the game HUD, title="Before (above) and after (below) in the game HUD"]
++
+.Before (above) and after (below) in the stats screen on the Pip-Boy
+image::DEFCON-02-Fallout-3-DUI-F3-before-after-Pip-Boy-stats.png[Before (above) and after (below) in the stats screen on the Pip-Boy, title="Before (above) and after (below) in the stats screen on the Pip-Boy"]
++
+.Before (above) and after (below) in the world map on the Pip-Boy
+image::DEFCON-02-Fallout-3-DUI-F3-before-after-Pip-Boy-world-map.png[Before (above) and after (below) in the world map on the Pip-Boy, title="Before (above) and after (below) in the world map on the Pip-Boy"]
+. I think you get the idea. Just two more quick remarks... On the main menu you will see a Vault Boy head which, if hovered-over with the mouse, shows the game version, the DUI F3 version and the FOSE version.
++
+.Context info about the game, DUI F3 and FOSE
+image::DEFCON-02-Fallout-3-DUI-F3-Vault-Boy-head.png[Context info about the game, DUI F3 and FOSE, title="Context info about the game, DUI F3 and FOSE"]
+. While in game, you will see new HUD items in the uppermost right corner, which, in this case, are the in-game date and time.
++
+.In-game date and time via DUI F3
+image::DEFCON-02-Fallout-3-DUI-F3-new-HUD-items.png[In-game date and time via DUI F3, title="In-game date and time via DUI F3"]
+. If you press kbd:[ESC] while in-game, the game context menu appears, and you will see a new option *DUI F3* at the bottom.
++
+.DUI F3 in-game settings option
+image::DEFCON-02-Fallout-3-DUI-F3-in-game-settings-option.png[DUI F3 in-game settings option, title="DUI F3 in-game settings option"]
+. Click on the option and you may change a lot of settings. Play around a little to set the HUD to your heart's contents.
++
+.DUI F3 in-game settings
+image::DEFCON-02-Fallout-3-DUI-F3-settings.png[DUI F3 in-game settings, title="DUI F3 in-game settings"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-2-stacking-order-after-DUI-F3.txt[stacking order] and link:order_lists/DEFCON-02-2-load-order-after-DUI-F3.txt[load order].
+====
 
 
 

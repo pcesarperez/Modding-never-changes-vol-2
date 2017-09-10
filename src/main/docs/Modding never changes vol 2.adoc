@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.3, 10/09/2017
+v0.5.4, 10/09/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -221,6 +221,14 @@ Tip blocks are used to give hints of links to further resources which expand the
 [TIP]
 ====
 There is a complete https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[playlist about modding _Fallout 3_ with Mod Organizer], by Dirty Weasel Media.
+====
+
+Important blocks::
+Important blocks are used at the end of each chapter which involves installing mods to provide links to the expected stacking and load orders, so you can check if your setup is not sidetracking. For example:
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-1-stacking-order-after-Unofficial-Patch.txt[stacking order] and link:order_lists/DEFCON-01-1-load-order-after-Unofficial-Patch.txt[load order].
 ====
 
 
@@ -1297,6 +1305,11 @@ image::DEFCON-01-Mod-Organizer-overwritten-files-cleaned-master-files.png[Origin
 image::DEFCON-01-LOOT-cleaned-master-files.png[Our master files are spotless now, title="Our master files are spotless now"]
 . Close LOOT and let's head to the next step.
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-1-stacking-order-after-cleaning-master-files.txt[stacking order] and link:order_lists/DEFCON-01-1-load-order-after-cleaning-master-files.txt[load order].
+====
+
 
 
 
@@ -1423,6 +1436,11 @@ image::DEFCON-01-Mod-Organizer-INI-Tweaks-activated.png[INI Tweaks mod activated
 
 There will be more INI tweaks along the way, but we will be adding them to the mod files they are meant to adjust.
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-2-stacking-order-after-tweaking-ini-files.txt[stacking order] and link:order_lists/DEFCON-01-2-load-order-after-tweaking-ini-files.txt[load order].
+====
+
 
 
 
@@ -1534,7 +1552,7 @@ image::DEFCON-01-Mod-Organizer-running-LOOT-unofficial-patch.png[Running LOOT fo
 +
 .Sorting our load order with LOOT after installing the unofficial patch
 image::DEFCON-01-LOOT-unofficial-patch.png[Sorting our load order with LOOT after installing the unofficial patch, title="Sorting our load order with LOOT after installing the unofficial patch"]
-. LOOT does not actually make any changes to the link:load_order/DEFCON-01-1-load-order-after-Unofficial-Patch.txt[load order], because the unofficial patch should be at the very bottom. I knew that (really, I knew it, I swear), but it is good for you to acquire good practices. Close LOOT when your feel of awe diminishes.
+. LOOT does not actually make any changes to the load order, because the unofficial patch should be at the very bottom. I knew that (really, I knew it, I swear), but it is good for you to acquire good practices. Close LOOT when your feel of awe diminishes.
 +
 .The unofficial patch is already in the right place
 image::DEFCON-01-LOOT-unofficial-patch-sorted.png[The unofficial patch is already in the right place, title="The unofficial patch is already in the right place"]
@@ -1542,6 +1560,11 @@ image::DEFCON-01-LOOT-unofficial-patch-sorted.png[The unofficial patch is alread
 +
 ._Fallout 3_ first run!
 image::DEFCON-01-Fallout-3-first-run.png[Fallout 3 first run!, title="Fallout 3 first run!"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-3-stacking-order-after-Unofficial-Patch.txt[stacking order] and link:order_lists/DEFCON-01-3-load-order-after-Unofficial-Patch.txt[load order].
+====
 
 
 
@@ -1585,7 +1608,7 @@ image::DEFCON-01-Mod-Organizer-changing-Console-Key-Binder-version.png[Changing 
 +
 ._Console Key Binder_ activated
 image::DEFCON-01-Mod-Organizer-Console-Key-Binder-activated.png[Console Key Binder activated, title="Console Key Binder activated"]
-. Launch LOOT (you know how, don't you?) and sort your load order. The file `Console Key Binder.esp` link:load_order/DEFCON-01-2-load-order-after-Console-Key-Binder.txt[should be at the bottom]. Close LOOT when finished.
+. Launch LOOT (you know how, don't you?) and sort your load order. The file `Console Key Binder.esp` should be at the bottom. Close LOOT when finished.
 +
 ._Console Key Binder_ load order
 image::DEFCON-01-LOOT-Console-Key-Binder-load-order.png[Console Key Binder load order, title="Console Key Binder load order"]
@@ -1595,6 +1618,11 @@ image::DEFCON-01-LOOT-Console-Key-Binder-load-order.png[Console Key Binder load 
 image::DEFCON-01-Fallout-3-remapping-console-key.png[Remapping the console key, title="Remapping the console key"]
 
 Another little step in our modding journey has ended (I guess the IPA beer I have just drank may have something to do with my current deep-thinking state).
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-4-stacking-order-after-Console-Key-Binder.txt[stacking order] and link:order_lists/DEFCON-01-4-load-order-after-Console-Key-Binder.txt[load order].
+====
 
 
 
@@ -1672,6 +1700,11 @@ image::DEFCON-01-Mod-Organizer-NVAC-DisableProcessWindowsGhosting-merged.png[NVA
 
 We are done! There are no visible results right now, but remember, we are hardening our game, so be patient. Wonderful things lie ahead.
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-5-stacking-order-after-NVAC.txt[stacking order] and link:order_lists/DEFCON-01-5-load-order-after-NVAC.txt[load order].
+====
+
 
 
 
@@ -1743,6 +1776,11 @@ image::DEFCON-01-Mod-Organizer-running-Fallout-3-through-FOSE.png[Running the ga
 image::DEFCON-01-Fallout-3-Alt-Tab-switch.png[Switching windows while in fake full-screen mode, title="Switching windows while in fake full-screen mode"]
 
 This is getting better and better!
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-6-stacking-order-after-OneTweak.txt[stacking order] and link:order_lists/DEFCON-01-6-load-order-after-OneTweak.txt[load order].
+====
 
 
 
@@ -1856,7 +1894,7 @@ image::DEFCON-01-Mod-Organizer-CASM-installed-and-ready.png[CASM is installed an
 +
 .CASM plugin sitting at the bottom of your load order
 image::DEFCON-01-Mod-Organizer-CASM-plugin.png[CASM plugin sitting at the bottom of your load order, title="CASM plugin sitting at the bottom of your load order"]
-. Run LOOT through the toolbar icon and sort your load order. link:load_order/DEFCON-01-3-load-order-after-CASM.txt[No changes will be made], but this is a habit you need to develop, so humor me.
+. Run LOOT through the toolbar icon and sort your load order. No changes will be made, but this is a habit you need to develop, so humor me.
 +
 .CASM doesn't move a bit in the load order
 image::DEFCON-01-LOOT-CASM-load-order.png[CASM doesn't move a bit in the load order, title="CASM doesn't move a bit in the load order"]
@@ -1878,6 +1916,11 @@ And this is it! Another piece fits in our structure.
 [WARNING]
 ====
 Remember! You need to change the default console key used by http://www.nexusmods.com/fallout3/mods/2637[_Console Key Binder_] from kbd:[F4] to something else, like kbd:[F11], as I explained before, in order to avoid collision with the default quicksave key in CASM.
+====
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-7-stacking-order-after-CASM.txt[stacking order] and link:order_lists/DEFCON-01-7-load-order-after-CASM.txt[load order].
 ====
 
 
@@ -1943,6 +1986,11 @@ image::DEFCON-01-Mod-Organizer-FSR-modified-configuration.png[FSR modified confi
 +
 .FSR installed and active
 image::DEFCON-01-Mod-Organizer-FSR-installed-and-active.png[FSR installed and active, title="FSR installed and active"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-8-stacking-order-after-FSR.txt[stacking order] and link:order_lists/DEFCON-01-8-load-order-after-FSR.txt[load order].
+====
 
 
 
@@ -2082,7 +2130,12 @@ image::DEFCON-01-Mod-Organizer-BigTown-activated.png[Big Town Missing Robots Fix
 +
 .Unrelated fixes plugins
 image::DEFCON-01-Mod-Organizer-unrelated-fixes-plugins.png[Unrelated fixes plugins, title="Unrelated fixes plugins"]
-. We need to sort the load order, just in case, although all these mods are fairly independent from each other, but you know what they say about mixing arses and fireworks. No? Honestly, neither do I. I just made it up. Anyway, launch LOOT and hit the *Sort Plugins* button. There shouldn't be any changes to the link:load_order/DEFCON-01-4-load-order-after-unrelated-fixes.txt[load order], though. Close LOOT to finish with the installation of the unrelated fixes.
+. We need to sort the load order, just in case, although all these mods are fairly independent from each other, but you know what they say about mixing arses and fireworks. No? Honestly, neither do I. I just made it up. Anyway, launch LOOT and hit the *Sort Plugins* button. There shouldn't be any changes to the load order, though. Close LOOT to finish with the installation of the unrelated fixes.
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-9-stacking-order-after-unrelated-fixes.txt[stacking order] and link:order_lists/DEFCON-01-9-load-order-after-unrelated-fixes.txt[load order].
+====
 
 
 
@@ -2162,6 +2215,11 @@ image::DEFCON-01-Mod-Organizer-Precision-Collision-removing-category.png[Removin
 .Precision Collision - Clutter activated and ready
 image::DEFCON-01-Mod-Organizer-Precision-Collision-activated.png[Precision Collision - Clutter activated and ready, title="Precision Collision - Clutter activated and ready"]
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-10-stacking-order-after-collision-fixes.txt[stacking order] and link:order_lists/DEFCON-01-10-load-order-after-collision-fixes.txt[load order].
+====
+
 
 
 
@@ -2197,10 +2255,15 @@ image::DEFCON-01-Mod-Organizer-Clean-Deluxe-activated.png[Clean-Deluxe activated
 +
 .Clean-Deluxe default plugin location
 image::DEFCON-01-Mod-Organizer-Clean-Deluxe-default-plugin-location.png[Clean-Deluxe default plugin location, title="Clean-Deluxe default plugin location"]
-. Run LOOT and click on the *Sort Plugins* button to rearrange your link:load_order/DEFCON-01-5-load-order-after-Clean-Deluxe.txt[load order]. Notice how the `.esp` file has been placed between `Confessor Cromwell has a Break_EV.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
+. Run LOOT and click on the *Sort Plugins* button to rearrange your load order. Notice how the `.esp` file has been placed between `Confessor Cromwell has a Break_EV.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
 +
 .Clean-Deluxe plugin relocated
 image::DEFCON-01-Mod-Organizer-Clean-Deluxe-plugin-relocated.png[Clean-Deluxe plugin relocated, title="Clean-Deluxe plugin relocated"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-11-stacking-order-after-Clean-Deluxe.txt[stacking order] and link:order_lists/DEFCON-01-11-load-order-after-Clean-Deluxe.txt[load order].
+====
 
 
 
@@ -2253,10 +2316,15 @@ image::DEFCON-01-Mod-Organizer-Better-Performance-activated.png[Better Performan
 +
 .Better Performance default plugin location
 image::DEFCON-01-Mod-Organizer-Better-Performance-default-plugin-location.png[Better Performance default plugin location, title="Better Performance default plugin location"]
-. Run LOOT and click on the *Sort Plugins* button to rearrange your link:load_order/DEFCON-01-6-load-order-after-Better-Performance.txt[load order]. Notice how the `.esp` file has been placed between `Clean-Deluxe GOTY.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
+. Run LOOT and click on the *Sort Plugins* button to rearrange your load order. Notice how the `.esp` file has been placed between `Clean-Deluxe GOTY.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
 +
 .Better Performance plugin relocated
 image::DEFCON-01-Mod-Organizer-Better-Performance-plugin-relocated.png[Better Performance plugin relocated, title="Better Performance plugin relocated"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-12-stacking-order-after-Better-Performance.txt[stacking order] and link:order_lists/DEFCON-01-12-load-order-after-Better-Performance.txt[load order].
+====
 
 
 
@@ -2297,10 +2365,7 @@ Before explaining how to install them, you should know that there will be a pair
 
 Repeating myself, you don't need to follow through the entire guide. You could choose to follow it through to, say, <<DEFCON 11 (Lighting), the chapter about lighting>>, discarding the rest. In that case, you only need to install a merged and a bashed patch at the end of that chapter. Likewise, if you decide to stop here, you should install the patches at this point and forget the rest of the guide.
 
-[IMPORTANT]
-====
 In other words, you only need to install a merged and a bashed patch in the last DEFCON chapter you decide to follow.
-====
 
 Creating a merged patch is a no-brainer, but creating a bashed patch is like going to swim at sea everyday uttering the name of the Great Cthulhu before the water licks your balls.
 
@@ -2358,6 +2423,11 @@ image::DEFCON-01-Mod-Organizer-merged-patch-installed-and-ready.png[DEFCON 01 Me
 
 Piece of radioactive cake!
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-13-stacking-order-after-merged-patch.txt[stacking order] and link:order_lists/DEFCON-01-13-load-order-after-merged-patch.txt[load order].
+====
+
 
 
 
@@ -2407,6 +2477,11 @@ image::DEFCON-01-Mod-Organizer-bashed-patch-bundled-files.png[Files bundled with
 image::DEFCON-01-Mod-Organizer-bashed-patch-installed-and-ready.png[DEFCON 01 Bashed Patch is active and ready, title="DEFCON 01 Bashed Patch is active and ready"]
 
 Congratulations! Your first game patching session has met great success!
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-14-stacking-order-after-bashed-patch.txt[stacking order] and link:order_lists/DEFCON-01-14-load-order-after-bashed-patch.txt[load order].
+====
 
 
 
@@ -2514,7 +2589,7 @@ image::DEFCON-02-Mod-Organizer-UIO-downloaded-and-ready.png[UIO is downloaded an
 +
 .External installer for UIO
 image::DEFCON-02-Mod-Organizer-UIO-external-installer.png[External installer for UIO, title="External installer for UIO"]
-. UIO is silently installed at the bottom of the left pane. Move it above the two disabled DEFCON 01 patches and activate it (this should be your link:load_order/DEFCON-02-1-stacking-order-after-UIO.txt[stacking order]).
+. UIO is silently installed at the bottom of the left pane. Move it above the two disabled DEFCON 01 patches and activate it.
 +
 .UIO installed, relocated and active
 image::DEFCON-02-Mod-Organizer-UIO-installed-relocated-and-active.png[UIO installed, relocated and active, title="UIO installed, relocated and active"]
@@ -2536,6 +2611,11 @@ image::DEFCON-02-Mod-Organizer-UIO-drag-and-drop-generated-files.png[Drag and dr
 image::DEFCON-02-Mod-Organizer-UIO-generated-files-in-place.png[UIO generated files are in place now, title="UIO generated files are in place now"]
 
 We have just prepared our game to use several user interface mods without a hitch. Things are going to get interesting in the next chapters. Stay tuned!
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-1-stacking-order-after-UIO.txt[stacking order] and link:order_lists/DEFCON-02-1-load-order-after-UIO.txt[load order].
+====
 
 
 

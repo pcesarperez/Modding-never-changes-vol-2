@@ -19,8 +19,3 @@
 +MTC BigTownMissingRobots Fix
 +Detailed Collisions
 +Precision Collision - Clutter
-+Clean-Deluxe
-+Better Game Performance
-+UIO - User Interface Organizer
--DEFCON 01 Bashed Patch
--DEFCON 01 Merged Patch

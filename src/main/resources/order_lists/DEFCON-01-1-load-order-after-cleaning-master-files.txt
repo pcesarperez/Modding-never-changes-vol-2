@@ -1,0 +1,6 @@
+ 0  0 Fallout3.esm
+ 1  1 Anchorage.esm
+ 2  2 ThePitt.esm
+ 3  3 BrokenSteel.esm
+ 4  4 PointLookout.esm
+ 5  5 Zeta.esm

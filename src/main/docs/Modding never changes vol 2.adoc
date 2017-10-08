@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.7, 08/10/2017
+v0.5.8, 08/10/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2837,7 +2837,7 @@ _aHUD_ is a small although powerful mod created by Gopher which allows the rearr
 
 [TIP]
 ====
-Gopher has https://www.youtube.com/watch?v=aqCzCXEydwU[a video about user interface mods] (25:05) which explains how this mod works (from 12:35 to 15:02). Ignore the previous part about installing the mod using NMM.
+Gopher has https://www.youtube.com/watch?v=aqCzCXEydwU[a video about user interface mods] (25:05) which explains how this mod works (around https://youtu.be/aqCzCXEydwU?t=12m35s[12:35]). Ignore the previous part about installing the mod using NMM.
 ====
 
 . Open MO and switch to the *Downloads* tab in the right pane.
@@ -2904,6 +2904,57 @@ Your setup should comply with the following link:order_lists/DEFCON-02-4-stackin
 
 
 === A better feeling of immersion
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD - iHUD_]
+====
+
+I tend to play games with minimal HUD interfaces, in order to have a better feeling of immersion. It will make things a little harder, maybe, but I am the kind of person who plays _The Witcher 3_ in death march difficulty just for the sake of it.
+
+The little mod (again, little in size, that is) we are about to install takes care of the HUD elements, getting rid of them until you really need them.
+
+[TIP]
+====
+In the same https://www.youtube.com/watch?v=aqCzCXEydwU[ video about user interface mods] (25:05) Gopher explains how this mod works (around https://youtu.be/aqCzCXEydwU?t=18m20s[18:20]). Ignore the previous part about installing the mod using NMM.
+====
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]* Immersive HUD - iHUD * from https://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD - iHUD_] with the manager.
++
+.iHUD is downloaded and ready to be installed
+image::DEFCON-02-Mod-Organizer-iHUD-downloaded-and-ready.png[iHUD is downloaded and ready to be installed, title="iHUD is downloaded and ready to be installed"]
+. Double-click on the mod entry to bring up the Quick Install window (never mind the rest of the downloaded mods you see in the screenshots; we well use them later). Don't change anything and click on *Manual*.
++
+.iHUD Quick Install window
+image::DEFCON-02-Mod-Organizer-iHUD-Quick-Install-window.png[iHUD Quick Install window, title="iHUD Quick Install window"]
+. The inner structure is fine, so just click on *OK*.
++
+.iHUD inner structure
+image::DEFCON-02-Mod-Organizer-iHUD-inner-structure.png[iHUD inner structure, title="iHUD inner structure"]
+. Move the mod in the left pane between _Adjustable HUD - aHUD_ and _UIO_ and activate it. Notice that the plugin `iHUD.esm` appears in the right pane, *Plugins* tab. No need to run LOOT now either.
++
+.iHUD installed and active
+image::DEFCON-02-Mod-Organizer-iHUD-installed-and-active.png[iHUD installed and active, title="iHUD installed and active"]
+. Launch the game, _et voilà!_ Your HUD is clean as a recently scraped baby's ass after a specially abundant shit deployment.
++
+.No HUD elements thanks to iHUD
+image::DEFCON-02-Fallout-3-iHUD-no-HUD-elements.png[No HUD elements thanks to iHUD, title="No HUD elements thanks to iHUD"]
+. Press the kbd:[i] key to toggle the visibility of the HUD items.
++
+.Now you see me, now you don't
+image::DEFCON-02-Fallout-3-iHUD-after-pressing-i-key.png[Now you see me, now you don't, title="Now you see me, now you don't"]
+. There are a lot of options you can configure to fit iHUD to your need. Long-press the kbd:[i] key to show the main menu. Take a look at Gopher's video to see for yourself how to configure iHUD to your gut's desires.
++
+.iHUD menu options
+image::DEFCON-02-Fallout-3-iHUD-menu-options.png[iHUD menu options, title="iHUD menu options"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-5-stacking-order-after-iHUD.txt[stacking order] and link:order_lists/DEFCON-02-5-load-order-after-iHUD.txt[load order].
+====
 
 
 

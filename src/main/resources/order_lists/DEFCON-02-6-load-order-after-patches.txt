@@ -1,0 +1,22 @@
+ 0  0 Fallout3.esm
+ 1  1 Anchorage.esm
+ 2  2 ThePitt.esm
+ 3  3 BrokenSteel.esm
+ 4  4 PointLookout.esm
+ 5  5 Zeta.esm
+ 6  6 Unofficial Fallout 3 Patch.esm
+ 7  7 aHUD.esm
+ 8  8 iHUD.esm
+ 9  9 Console Key Binder.esp
+10  a CASM.esp
+11  b YearlingBooks.esp
+12  c Confessor Cromwell has a Break_EV.esp
+13  d Clean-Deluxe GOTY.esp
+14  e BetterGamePerformance.esp
+15  f DCStreet - BS.esp
+16 10 Rivet City Realignment.esp
+17 11 MTCBigTownRobotFix.esp
+18 12 DarNifiedUIF3.esp
+19 13 DynamicCrosshair.esp
+20 14 DEFCON 02 Merged Patch.esp
+21 15 DEFCON 02 Bashed Patch.esp

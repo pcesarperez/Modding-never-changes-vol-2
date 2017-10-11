@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.0, 11/10/2017
+v0.6.1, 11/10/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -3015,6 +3015,38 @@ In this chapter we are going to install some mods that have a not-so-subtle effe
 
 
 === Creating the profile
+
+As usual, we are going to create the profile beforehand. Remember that each profile is created on top of the previous one, and we need to deactivate the customized merged and bashed patches because we are going to create new ones at the end of the DEFCON chapter.
+
+. Launch MO.
+. Click on the MO profiles button.
++
+.Mod Organizer profiles button
+image::DEFCON-03-Mod-Organizer-profiles-button.png[Mod Organizer profiles button, title="Mod Organizer profiles button"]
+. In the profiles management window, select the *DEFCON 02 (User Interface)* profile and click on *Copy*.
++
+.Copying DEFCON 02 profile in Mod Organizer
+image::DEFCON-03-Mod-Organizer-copying-DEFCON-02-profile.png[Copying DEFCON 02 profile in Mod Organizer, title="Copying DEFCON 02 profile in Mod Organizer"]
+. In the following window, write "DEFCON 03 (Refined User Interface)" as the profile name and click *OK*.
++
+.Naming DEFCON 03 profile in Mod Organizer
+image::DEFCON-03-Mod-Organizer-naming-profile.png[Naming DEFCON 03 profile in Mod Organizer, title="Naming DEFCON 03 profile in Mod Organizer"]
+. Back to the profiles management window, check that the *DEFCON 03* profile has been created and click *Close*.
++
+.DEFCON 03 profile has been created
+image::DEFCON-03-Mod-Organizer-profile-created.png[DEFCON 03 profile has been created, title="DEFCON 03 profile has been created"]
+. MO does not automatically change the profile when it is created, so click on the *Profiles* drop-down and select the "DEFCON 03 (Refined User Interface)" profile.
++
+.Selecting the DEFCON 03 profile
+image::DEFCON-03-Mod-Organizer-selecting-profile.png[Selecting the DEFCON 03 profile, title="Selecting the DEFCON 03 profile"]
+. From now on, every operation we perform will be related to this profile.
++
+.DEFCON 03 profile selected
+image::DEFCON-03-Mod-Organizer-profile-selected.png[DEFCON 03 profile selected, title="DEFCON 03 profile selected"]
+. With the profile selected, disable the merged and bashed patches for DEFCON 02 in the left pane.
++
+.Disabling DEFCON 02 merged and bashed patches
+image::DEFCON-03-Mod-Organizer-disabling-DEFCON-02-merged-and-bashed-patches.png[Disabling DEFCON 02 merged and bashed patches, title="Disabling DEFCON 02 merged and bashed patches"]
 
 
 

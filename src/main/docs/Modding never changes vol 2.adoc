@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.5.10, 08/10/2017
+v0.6.0, 11/10/2017
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -2507,7 +2507,7 @@ _Fallout 3_ has a way of reminding you that, no matter how hard you want to get 
 
 This is an immersion-breaker for me. I like clean user interfaces that doesn't get in your way, allowing me to enjoy the in-game world without having it constantly pointing out where my enemies are, how much health do I have until being gang raped by a bunch of super-mutants or how much ammunition I may spend in a frenzied assault.
 
-Sure, this is a matter of personal taste, but I am the kind of person who always tries to play games in the hardest possible difficulty. Maybe I have an Spartan streak.
+Sure, this is a matter of personal taste, but I am the kind of person who always tries to play games in the hardest possible difficulty. Maybe I have a Spartan streak.
 
 In this chapter we are going to install a few mods that will allow you to customize your user interface, improving the overall look of the HUD and the in-game menus.
 
@@ -3004,27 +3004,65 @@ You can stop right here and have a plenty _Fallout 3_ experience with a patched 
 ////
 	DEFCON 03 (Refined User Interface) chapter.
 ////
-////
+
 == DEFCON 03 (Refined User Interface)
+
+We have installed a good bunch of mods so far, but the overall effect in the game, although undeniable, is not precisely thrilling. However, curb your enthusiasm, for there is still a lot of work to do.
+
+In this chapter we are going to install some mods that have a not-so-subtle effect on the way the game looks and behaves. These are not dramatic changes, but they are far more noticeable than the ones installed in the two previous major DEFCON chapters. Some of them are focused on the Pip-Boy, some others with the in-game camera, and finally there are some mods which will change the way the game looks, and even changing the lockpicking mechanics.
+
+
+
+
+=== Creating the profile
+
+
+
 
 === Let there be light!
 
+
+
+
 === For the achievement junkie in you
+
+
+
 
 === Everything depends on the point of view
 
+
+
+
 === Cleaning up your faithful companion
+
+
+
 
 === You don't want to ask for directions
 
+
+
+
 === If you are the kind of person who reads patient's leaflets...
+
+
+
 
 === When burglary becomes a way of life
 
+
+
+
 === Be your own Visual FX technician
 
+
+
+
 === Yeah, you guessed, bashing and merging all together
-////
+
+
+
 
 ////
 	DEFCON 04 (Sounds and Music) chapter.

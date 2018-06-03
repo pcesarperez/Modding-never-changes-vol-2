@@ -2922,7 +2922,7 @@ In the same https://www.youtube.com/watch?v=aqCzCXEydwU[ video about user interf
 ====
 
 . Open MO and switch to the *Downloads* tab in the right pane.
-. Download the file [NexusFile]* Immersive HUD - iHUD * from https://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD - iHUD_] with the manager.
+. Download the file [NexusFile]*Immersive HUD - iHUD* from https://www.nexusmods.com/fallout3/mods/15790/[_Immersive HUD - iHUD_] with the manager.
 +
 .iHUD is downloaded and ready to be installed
 image::DEFCON-02-Mod-Organizer-iHUD-downloaded-and-ready.png[iHUD is downloaded and ready to be installed, title="iHUD is downloaded and ready to be installed"]
@@ -3053,8 +3053,80 @@ image::DEFCON-03-Mod-Organizer-disabling-DEFCON-02-merged-and-bashed-patches.png
 
 === Let there be light!
 
+[NOTE]
+====
+Mods used in this chapter:
 
+* https://www.nexusmods.com/fallout3/mods/15003/[_Flashlight_]
+* https://www.nexusmods.com/fallout3/mods/18389/[_SmoothLight - Pip-Boy Light Enhancer_]
+====
 
+Nights in the Capital Wasteland can be very dark and very frightening, so... What about having a flashlight to soothe your fear of the dark. Not that this will avoid your sorry ass to be torn apart by the radiation-infused things that swarm the area, but hey, at least you will see them coming. That's a relief. Sort of.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Flashlight v1-5* from https://www.nexusmods.com/fallout3/mods/15003/[_Flashlight_] with the manager.
+. Download the file [NexusFile]*SmoothLight v1* from https://www.nexusmods.com/fallout3/mods/18389/[_SmoothLight - Pip-Boy Light Enhancer_] with the manager.
++
+.Lighting mods downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-lighting-mods-downloaded-and-ready.png[Lighting mods downloaded and ready to be installed, title="Lighting mods downloaded and ready to be installed"]
+. Double-click on [NexusFile]*Flashlight v1-5* to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.Flashlight Quick Install window
+image::DEFCON-03-Mod-Organizer-Flashlight-Quick-Install-window.png[Flashlight Quick Install window, title="Flashlight Quick Install window"]
+. The inner structure shows several files which won't be used in full. Deactivate everything except the following two files and click on *Ok*.
+* `Flashlight-LOS.esp`
+* `README-Flashlight.txt`
++
+.Flashlight inner structure
+image::DEFCON-03-Mod-Organizer-Flashlight-inner-structure.png[Flashlight inner structure, title="Flashlight inner structure"]
+. The mod is shown in the left pane, not active yet.
++
+image::DEFCON-03-Mod-Organizer-Flashlight-installed-but-not-active.png[Flashlight installed but not active, title="Flashlight installed but not active"]
+. The mod has an incorrect version number, so double-click on it to bring up the properties window and navigate to the *Nexus Info* tab. Once there, change the version number to "1.4.0.0" and click on *Close*.
++
+.Flashlight corrected version number
+image::DEFCON-03-Mod-Organizer-Flashlight-corrected-version-number.png[Flashlight corrected version number, title="Flashlight corrected version number"]
+. Back to the MO main window, move the mod in the left pane between _DarNified UI Tweaks_ and _Dynamic Crosshair_ and activate it. Notice that the plugin `Flashlight-LOS.esp` appears in the right pane, *Plugins* tab.
++
+.Flashlight installed and active
+image::DEFCON-03-Mod-Organizer-Flashlight-installed-and-active.png[Flashlight installed and active, title="Flashlight installed and active"]
+. Double-click on [NexusFile]*SmoothLight v1* to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.SmoothLight Quick Install window
+image::DEFCON-03-Mod-Organizer-SmoothLight-Quick-Install-window.png[SmoothLight Quick Install window, title="SmoothLight Quick Install window"]
+. The inner structure is already good, so click on *Ok*.
++
+.SmoothLight inner structure
+image::DEFCON-03-Mod-Organizer-SmoothLight-inner-structure.png[SmoothLight inner structure, title="SmoothLight inner structure"]
+. Back to the MO main window, move the mod in the left pane between _Immersive HUD - iHUD_ and _UIO - User Interface Organizer_ and activate it. Notice that the plugin `HZSmoothLight-FO3.esp` appears in the right pane, *Plugins* tab. There's no need to run LOOT now.
++
+.SmoothLight installed and active
+image::DEFCON-03-Mod-Organizer-SmoothLight-installed-and-active.png[SmoothLight installed and active, title="SmoothLight installed and active"]
+. We need to change the hotkey assigned to activate the flashlight (kbd:[b] by default). The default hotkey will collide with the key to change fire rate in http://www.nexusmods.com/fallout3/mods/20012/[JIP Selective-Fire], which we will install later on. Launch the game and bring up your Pip-Boy with the kbd:[Tab] key. Navigate to the *Items* button, *Apparel* section and click on the *Flashlight Options* entry.
++
+.Flashlight settings entry in the Pip-Boy
+image::DEFCON-03-Fallout-3-Flashlight-configuration-option.png[Flashlight settings entry in the Pip-Boy, title="Flashlight settings entry in the Pip-Boy"]
+. In the following menu, select *Change hotkey* to assign a new hotkey to the flashlight.
++
+.Flashlight change hotkey option
+image::DEFCON-03-Fallout-3-Flashlight-change-hotkey-option.png[Flashlight change hotkey option, title="Flashlight change hotkey option"]
+. Although apparently nothing happens, the mod is waiting for you to hit the new key (not very user friendly, I'd say). We will assign the kbd:[l] key to activate the flashlight, so hit it. When you do that, a new dialog appears, pointing out that the key has just been changed. Click on *Ok* and put back your Pip-Boy by hitting kbd:[Tab].
++
+.Flashlight hotkey has just been changed
+image::DEFCON-03-Fallout-3-Flashlight-hotkey-changed.png[Flashlight hotkey has just been changed, title="Flashlight hotkey has just been changed"]
+. Now press the kbd:[l] key to switch the flashlight on and off.
++
+.Flashlight off and on
+image::DEFCON-03-Fallout-3-Flashlight-off-and-on.png[Flashlight off and on, title="Flashlight off and on"]
+. Don't forget we have just installed two lighting mods. SmoothLight is subtler, but it improves the stock flashlight our Pip-Boy has. Long-press the kbd:[Tab] key to switch this light on and off to see its effects.
++
+.SmoothLight off and on
+image::DEFCON-03-Fallout-3-SmoothLight-off-and-on.png[SmoothLight off and on, title="SmoothLight off and on"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-1-stacking-order-after-lighting-mods.txt[stacking order] and link:order_lists/DEFCON-03-1-load-order-after-lighting-mods.txt[load order].
+====
 
 === For the achievement junkie in you
 

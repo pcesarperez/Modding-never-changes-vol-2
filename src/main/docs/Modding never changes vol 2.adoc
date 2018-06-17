@@ -3204,6 +3204,11 @@ image::DEFCON-03-Fallout-3-PAL-Pip-Boy-entry.png[PAL entry in your Pip-Boy, titl
 .PAL achievement list
 image::DEFCON-03-Fallout-3-PAL-achievements.png[PAL achievement list, title="PAL achievement list"]
 
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-2-stacking-order-after-achievement-mods.txt[stacking order] and link:order_lists/DEFCON-03-2-load-order-after-achievement-mods.txt[load order].
+====
+
 
 
 

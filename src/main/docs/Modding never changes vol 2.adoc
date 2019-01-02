@@ -31,7 +31,13 @@ endif::[]
 If we are *NOT* on GitHub, the images path points to the final product path.
 ////
 ifndef::env-github[]
+:source-highlighter: coderay
 :imagesdir: ./images
+endif::[]
+
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:imagesdir: ../resources/images
 endif::[]
 
 

@@ -54,19 +54,19 @@ endif::[]
 
 No guide would be complete without legal stuff and whatnot. I'll be brief. I promise.
 
-**What?**::
+*What?*::
 A modding guide for _Fallout 3 Game of the Year Edition_ using http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer]. This is version *{revnumber}*.
 
-**Who?**::
+*Who?*::
 Pablo César Pérez González, aka pcesarperez, aka adastra, reachable through mailto:modding.never.changes@gmail.com[modding.never.changes].
 
-**When?**::
+*When?*::
 Sometime after the completion of volume 1 and before the beginning of volume 3, I guess.
 
-**Where?**::
+*Where?*::
 Where my cat allows me to be, of course.
 
-**Why?**::
+*Why?*::
 I am still wondering about it. I'll call you back when I get a clear answer.
 
 This guide is subject to a image:https://i.creativecommons.org/l/by-sa/4.0/80x15.png[Creative Commons Attribution Share Alike 4.0] https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution Share Alike 4.0].
@@ -3445,7 +3445,7 @@ Your setup should comply with the following link:order_lists/DEFCON-03-2-stackin
 
 === Killing with style
 
-=== I know I said that the last one was the last one, but it was **NOT** the last one; this one will be **THE LAST ONE**; really; I promise
+=== I know I said that the last one was the last one, but it was *NOT* the last one; this one will be *THE LAST ONE*; really; I promise
 ////
 
 ////
@@ -3488,7 +3488,7 @@ image::Appendix-1-Mod-Organizer-disabling-patches.png[Disabling previous merged 
 +
 .Launching xEdit through the toolbar button
 image::Appendix-1-Mod-Organizer-xEdit-toolbar-button.png[Launching xEdit through the toolbar button, title="Launching xEdit through the toolbar button"]
-. Select all the files in your load order, **except any merged or bashed patch** (you should have disabled them first, anyway).
+. Select all the files in your load order, *except any merged or bashed patch* (you should have disabled them first, anyway).
 +
 .Selecting all the plugins to create a merged patch
 image::Appendix-1-xEdit-selecting-all-files-to-create-merged-patch.png[Selecting all the plugins to create a merged patch, title="Selecting all the plugins to create a merged patch"]
@@ -3496,7 +3496,7 @@ image::Appendix-1-xEdit-selecting-all-files-to-create-merged-patch.png[Selecting
 +
 .xEdit has loaded all your plugins
 image::Appendix-1-xEdit-finished-loading-all-plugins.png[xEdit has loaded all your plugins, title="xEdit has loaded all your plugins"]
-. Right-click anywhere in the left pane and select *Other* &rarr; *Create Merged Patch*.
+. Right-click anywhere in the left pane and select *Other* -> *Create Merged Patch*.
 +
 .Option to create a merged patch in xEdit
 image::Appendix-1-xEdit-create-merged-patch-option.png[Option to create a merged patch in xEdit, title="Option to create a merged patch in xEdit"]

@@ -22,4 +22,6 @@ asciidoctor {
             include '**/*.*'
         }
     }
+
+    attributes 'allow-uri-read': ''
 }

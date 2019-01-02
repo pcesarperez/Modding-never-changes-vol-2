@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.3, 17/06/2018
+v0.6.4, 02/01/2019
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -32,9 +32,12 @@ If we are *NOT* on GitHub, the images path points to the final product path.
 ////
 ifndef::env-github[]
 :source-highlighter: coderay
-:imagesdir: ./images
+:imagesdir: images
 endif::[]
 
+////
+PDF generated files need the source path to embed the images.
+////
 ifdef::backend-pdf[]
 :source-highlighter: rouge
 :imagesdir: ../resources/images
@@ -66,7 +69,7 @@ Where my cat allows me to be, of course.
 **Why?**::
 I am still wondering about it. I'll call you back when I get a clear answer.
 
-This guide is subject to a https://creativecommons.org/licenses/by-sa/4.0/[image:https://i.creativecommons.org/l/by-sa/4.0/80x15.png[Creative Commons License] Creative Commons Attribution Share Alike 4.0].
+This guide is subject to a image:https://i.creativecommons.org/l/by-sa/4.0/80x15.png[Creative Commons Attribution Share Alike 4.0] https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution Share Alike 4.0].
 
 ////
 	The next block will be uncommented at the very end, when styles are added.

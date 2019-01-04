@@ -1,0 +1,40 @@
+*Unmanaged: Fallout3
+*Unmanaged: Anchorage
+*Unmanaged: ThePitt
+*Unmanaged: BrokenSteel
+*Unmanaged: PointLookout
+*Unmanaged: Zeta
++Cleaned Master Files
++INI Tweaks
++UPDATED Unofficial Fallout 3 Patch
++NVAC - New Vegas Anti Crash
++Console Key Binder
++OneTweak for FO3
++CASM
++Fallout Stutter Remover
++Intro Street Bus and Dupont Alignment
++Rivet City Realignment
++Scribe Yearling takes all Pre-War Books
++NPC-Confessor Cromwell has a Break
++MTC BigTownMissingRobots Fix
++Detailed Collisions
++Precision Collision - Clutter
++Clean-Deluxe
++Better Game Performance
++DarnUI F3 Alpha 11
++DarNified UI Tweaks
++Flashlight
++Dynamic Crosshair
++Smaller Crosshair
++Adjustable HUD - aHUD
++Immersive HUD - iHUD
++Personal Achievements Log
++SeraphTCs Personal Achievements Log FIX
++Centered Overhead 3P Camera
++Fallout 3 - Enhanced Camera
++SmoothLight - Pip-Boy Light Enhancer
++UIO - User Interface Organizer
+-DEFCON 02 Merged Patch
+-DEFCON 02 Bashed Patch
+-DEFCON 01 Merged Patch
+-DEFCON 01 Bashed Patch

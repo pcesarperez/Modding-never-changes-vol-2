@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.5, 04/01/2019
+v0.6.6, 04/01/2019
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -3163,7 +3163,7 @@ image::DEFCON-03-Mod-Organizer-achievement-mods-downloaded-and-ready.png["Achiev
 +
 .Personal Achievements Log Quick Install window
 image::DEFCON-03-Mod-Organizer-PAL-Quick-Install-window.png["Personal Achievements Log Quick Install window", title="Personal Achievements Log Quick Install window"]
-. The inner structure shows several files which, but we just need three of them. Deactivate the following files and click on *Ok*.
+. The inner structure shows several files which we may use, but we just need three of them. Deactivate the following files and click on *Ok*.
 * `PAL - BASE File.esp`
 * `PAL - Broken Steel.esp`
 * `PAL - Mothership Zeta.esp`
@@ -3222,6 +3222,69 @@ Your setup should comply with the following link:order_lists/DEFCON-03-2-stackin
 
 
 === Everything depends on the point of view
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/20183/[_Fallout 3 - Enhanced Camera_]
+* http://www.nexusmods.com/fallout3/mods/2190/[_Centered Overhead 3P Camera_]
+====
+
+There are a lot of things a bit off in the stance of your character while roaming around the Capital Wasteland. We will fix most of them in time, but there are two subtle, yet slightly annoying things that you may have noticed.
+
+. When using first person view, you are an ethereal being, unburdened by the filthy needs of a physical body.
+. When using third person view, your body materializes, all of a sudden, clearly stating that you are right-handed by shifting the overhead camera accordingly.
+
+Mind you, none of these things are actual deal breakers, but, alas, it would be nice to have a real, centered body to wander around. Let's install two mods to fix this.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Enhanced Camera* from http://www.nexusmods.com/fallout3/mods/20183/[_Fallout 3 - Enhanced Camera_] with the manager.
+. Download the file [NexusFile]*Overhead 3P Camera* from http://www.nexusmods.com/fallout3/mods/2190/[_Centered Overhead 3P Camera_] with the manager.
++
+.Camera mods downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-camera-mods-downloaded-and-ready.png["Camera mods downloaded and ready to be installed", title="Camera mods downloaded and ready to be installed"]
+. Double-click on [NexusFile]*Enhanced Camera* to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.Enhanced Camera Quick Install window
+image::DEFCON-03-Mod-Organizer-Enhanced-Camera-Quick-Install-window.png["Enhanced Camera Quick Install window", title="Enhanced Camera Quick Install window"]
+. The inner structure is just fine, so we have just to click on *Ok*.
++
+.Enhanced Camera inner structure
+image::DEFCON-03-Mod-Organizer-Enhanced-Camera-inner-structure.png["Enhanced Camera inner structure", title="Enhanced Camera inner structure"]
+. Move the mod in the left pane just between _SeraphTCs Personal Achievements Log FIX_ and _SmoothLight - Pip-Boy Light Enhancer_. Activate it then.
++
+.Enhanced Camera installed and active
+image::DEFCON-03-Mod-Organizer-Enhanced-Camera-installed-and-active.png["Enhanced Camera installed and active", title="Enhanced Camera installed and active"]
+. Now that we have dealt with the first person view, let's fix the third person view. Double click on [NexusFile]*Overhead 3P Camera* to show the Quick Install Window. As usual, don't change anything and click on *Manual*.
++
+.Overhead 3P Camera Quick Install window
+image::DEFCON-03-Mod-Organizer-Overhead-3P-Camera-Quick-Install-window.png["Overhead 3P Camera Quick Install window", title="Overhead 3P Camera Quick Install window"]
+. Again, we have a pristine inner structure, so we don't have to correct anything. Just click on *Ok*.
++
+.Overhead 3P Camera inner structure
+image::DEFCON-03-Mod-Organizer-Overhead-3P-Camera-inner-structure.png["Overhead 3P Camera inner structure", title="Overhead 3P Camera inner structure"]
+. The mod has an incorrect version number, so double-click on it to bring up the properties window and navigate to the *Nexus Info* tab. Once there, change the version number to "1.0" and click on *Close*.
++
+.Overhead 3P Camera corrected version number
+image::DEFCON-03-Mod-Organizer-Overhead-3P-Camera-corrected-version-number.png["Overhead 3P Camera corrected version number", title="Overhead 3P Camera corrected version number"]
+. Move the mod in the left pane between _SeraphTCs Personal Achievements Log FIX_ and _Fallout 3 - Enhanced Camera_ and activate it. There's no need to run LOOT for now.
++
+.Overhead 3P Camera installed and active
+image::DEFCON-03-Mod-Organizer-Overhead-3P-Camera-installed-and-active.png["Overhead 3P Camera installed and active", title="Overhead 3P Camera installed and active"]
+. Now, let's wee what we have done here. In the third view perspective, the camera has moved to the center of our body, just over our head, and with it, the aiming circle.
++
+.Third person camera before and after
+image::DEFCON-03-Fallout-3-Third-person-camera-before-and-after.png["Third person camera before and after", title="Third person camera before and after"]
+. The first person camera is fixed as well. Rejoice, for we have real legs to kick real asses!
++
+.First person camera before and after
+image::DEFCON-03-Fallout-3-First-person-camera-before-and-after.png["First person camera before and after", title="First person camera before and after"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-3-stacking-order-after-camera-mods.txt[stacking order] and link:order_lists/DEFCON-03-3-load-order-after-camera-mods.txt[load order].
+====
 
 
 

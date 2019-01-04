@@ -1,3 +1,17 @@
+/**
+ * build.gradle
+ *
+ * Build script for "Modding never changes, vol. 2".
+ *
+ */
+
+
+defaultTasks 'asciidoctor'
+
+
+apply plugin: 'org.asciidoctor.convert'
+
+
 buildscript {
     repositories {
         jcenter ( )
@@ -9,8 +23,14 @@ buildscript {
     }
 }
 
-apply plugin: 'org.asciidoctor.convert'
 
+/**
+ * This is the main task. Use `gradlew` to run.
+ *
+ * It creates both HTML5 and PDF versions of the book.
+ * The HTML5 version will be placed in `[build/docs/html5]`.
+ * The PDF version will be placed in `[build/docs/pdf]`.
+ */
 asciidoctor {
     backends 'html5', 'pdf'
 
@@ -20,8 +40,53 @@ asciidoctor {
     resources {
         from('src/main/resources') {
             include '**/*.*'
+            exclude '**/styles'
         }
     }
 
     attributes 'allow-uri-read': ''
 }
+
+
+/**
+ * We need to compile the stylesheet with SASS using Compass before
+ * executing the main task.
+ *
+ * https://github.com/asciidoctor/asciidoctor-stylesheet-factory
+ */
+asciidoctor.doFirst {
+    // Step 1: Copy the stylesheet variables to the proper folder.
+    copy {
+        from 'src/main/sass'
+        into 'stylesheet_factory/sass/settings'
+        include '_Modding-never-changes-vol-2.scss'
+    }
+
+    // Step 2: Copy the stylesheet template to the proper folder.
+    copy {
+        from 'src/main/sass'
+        into 'stylesheet_factory/sass'
+        include 'Modding-never-changes-vol-2.scss'
+    }
+
+    // Step 3: Compile the stylesheet template + variables with Compass.
+    exec {
+        workingDir 'stylesheet_factory'
+        commandLine 'compass', 'compile'
+    }
+}
+
+
+/**
+ * The compiled stylesheet is copied back to the build folder.
+ */
+asciidoctor.doLast {
+    copy {
+        from 'stylesheet_factory/stylesheets'
+        into 'build/docs/html5/styles'
+        include 'Modding-never-changes-vol-2.css'
+    }
+}
+
+
+asciidoctor.dependsOn ('clean')

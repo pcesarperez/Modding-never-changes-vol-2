@@ -2,3 +2,9 @@
 build
 target
 *.css
+stylesheet_factory/*.html
+stylesheet_factory/.bundle/
+stylesheet_factory/.sass-cache/
+stylesheet_factory/Gemfile.lock
+stylesheet_factory/node_modules/
+stylesheet_factory/stylesheets/

@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.6, 04/01/2019
+v0.6.7, 05/01/2019
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -3290,6 +3290,95 @@ Your setup should comply with the following link:order_lists/DEFCON-03-3-stackin
 
 
 === Cleaning up your faithful companion
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/8302/[_Omnis Hi-Res Pip-Boy 3000 - FIXED_]
+* https://www.nexusmods.com/newvegas/mods/35225/[_Faster Pipboy Faster_]
+* https://www.nexusmods.com/newvegas/mods/36255/[_Shiloh DS - Clean Pipboy Screen_]
+====
+
+You know that feeling when you forget your shiny smartphone at home, right? Cold sweat, cramps, bowels going wild and free inside your tight underwear... We all have gone through them sometimes.
+
+Now, imagine that you are the Lone Wanderer in the Capital Wasteland, just leaving Vault 101, where you will never, ever be able to return, only to realize that _you have just forgotten your Pip-Boy over a crate when you were trying to scratch your ass in a particularly narrow corridor_.
+
+Bowels going wild and free? Nah, we would need a whole new lot of colorful depictions just to be able to touch the concept.
+
+All this smart-ass nonsense tries to focus on this simple idea: your Pip-Boy deserves a lot of love, and this is what we will give to it in this chapter. Mod-shaped love for our Pip-Boy.
+
+We are going to https://www.nexusmods.com/fallout3/mods/8302/[improve the textures of the Pip-Boy], https://www.nexusmods.com/newvegas/mods/35225/[reduce the time needed to show the Pip-Boy] and https://www.nexusmods.com/newvegas/mods/36255/[remove the green tint of the map screen]. Let's see how.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Omnis Hi-res Pip-Boy 3000 v1-0* from https://www.nexusmods.com/fallout3/mods/8302/[_Omnis Hi-Res Pip-Boy 3000 - FIXED_] with the manager.
+. Download the file [NexusFile]*Faster Pipboy Faster* from https://www.nexusmods.com/newvegas/mods/35225/[_Faster Pipboy Faster_], manually. We cannot use the manager here because this is a file for _Fallout New Vegas_, although it works with _Fallout 3_ like a charm.
+. Download the file [NexusFile]*Shiloh DS - Clean Pipboy Screen v1_4* from https://www.nexusmods.com/newvegas/mods/36255/[_Shiloh DS - Clean Pipboy Screen_], also manually. Same reason as the previous one.
+. We need to sideload those two last files in MO (`Faster Pipboy Faster-35225.7z` and `Shiloh DS - Clean Pipboy Screen v1_4-36255-1.rar`, dragging and dropping them onto the *Downloads* tab. You can delete the original files afterwards.
++
+.Pip-Boy mods downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-Pip-Boy-mods-downloaded-and-ready.png["Pip-Boy mods downloaded and ready to be installed", title="Pip-Boy mods downloaded and ready to be installed"]
+. Double click on [NexusFile]*Omnis Hi-res Pip-Boy 3000 v1-0*. In this case, no Quick Install window will be shown. The inner structure of the mod will be shown instead, and MO says it's not good. To fix this, right-click on the `[Data]` folder and select *Set data directory*.
++
+.Hi-res Pip-Boy inner structure needs to be fixed
+image::DEFCON-03-Mod-Organizer-Hi-res-Pip-Boy-inner-structure-incorrect.png["Hi-res Pip-Boy inner structure needs to be fixed", title="Hi-res Pip-Boy inner structure needs to be fixed"]
+. Now we have the right inner structure, so just click on *Ok*.
++
+.Hi-res Pip-Boy inner structure corrected
+image::DEFCON-03-Mod-Organizer-Hi-res-Pip-Boy-inner-structure-corrected.png["Hi-res Pip-Boy inner structure corrected", title="Hi-res Pip-Boy inner structure corrected"]
+. The mod sits on the bottom of the left pane, with an incorrect version number. Double-click on it to bring the properties window and navigate to the *Nexus Info* tab, where we will change the version to 1.0. Don't click on *Close* yet.
++
+.Hi-res Pip-Boy corrected version number
+image::DEFCON-03-Mod-Organizer-Hi-res-Pip-Boy-corrected-version-number.png["Hi-res Pip-Boy corrected version number", title="Hi-res Pip-Boy corrected version number"]
+. The mod is also classified in the category "Companions", the blue fuck knows why, so navigate to the *Categories* tab and uncheck the "Companions" item. Finally, click on *Close*.
++
+.Hi-res Pip-Boy corrected category
+image::DEFCON-03-Mod-Organizer-Hi-res-Pip-Boy-corrected-category.png["Hi-res Pip-Boy corrected category", title="Hi-res Pip-Boy corrected category"]
+. Move the mod in the left pane just below _Fallout 3 - Enhanced Camera_ and activate it.
++
+.Hi-res Pip-Boy installed and active
+image::DEFCON-03-Mod-Organizer-Hi-res-Pip-Boy-installed-and-active.png["Hi-res Pip-Boy installed and active", title="Hi-res Pip-Boy installed and active"]
+. Let's go for the second round. Double click on [NexusFile]*Faster Pipboy Faster* to pull up the Quick Install window and click on *Manual*.
++
+.Faster Pip-Boy Quick Install window
+image::DEFCON-03-Mod-Organizer-Faster-Pip-Boy-Quick-Install-window.png["Faster Pip-Boy Quick Install window", title="Faster Pip-Boy Quick Install window"]
+. The inner structure is right, so we have just to click on *Ok*.
++
+.Faster Pip-Boy inner structure
+image::DEFCON-03-Mod-Organizer-Faster-Pip-Boy-inner-structure.png["Faster Pip-Boy inner structure", title="Faster Pip-Boy inner structure"]
+. There's nothing to change in the mod, so we have just to move it in the left pane, just below _Omnis Hi-Res Pip-Boy 3000 - FIXED_. Activate it afterwards.
++
+.Faster Pip-Boy installed and active
+image::DEFCON-03-Mod-Organizer-Faster-Pip-Boy-installed-and-active.png["Faster Pip-Boy installed and active", title="Faster Pip-Boy installed and active"]
+. We are going to install the most interesting mod of the three. First, double-click on [NexusFile]*Shiloh DS - Clean Pipboy Screen v1_4*. Instead of the usual Quick Install window, we will see a dialog invoking an external installer.
++
+.Clean Pip-Boy external installer loading
+image::DEFCON-03-Mod-Organizer-Clean-Pip-Boy-external-installer-loading.png["Clean Pip-Boy external installer loading", title="Clean Pip-Boy external installer loading"]
+. After a little while, a new configuration window appears. In this window we may change several parameters regarding the visuals of the Pip-Boy. Feel free to explore the alternatives, although we are going to use just two options (click on *Install* when finished):
+  * Check *Remove Map tinting* under *Standard options*.
+  * Check *DUINV Test version 4 Compatibility* under *Advanced options*.
++
+.Clean Pip-Boy configuration window
+image::DEFCON-03-Mod-Organizer-Clean-Pip-Boy-configuration-window.png["Clean Pip-Boy configuration window", title="Clean Pip-Boy configuration window"]
+. Activate the mod, although things need a bit of rearrangement. Move _Smaller Crosshair_ below _Faster Pipboy Faster_ and move _Shiloh DS - Clean Pipboy Screen_ bellow _Smaller Crosshair_. By the way, no plugins have been installed, so there's no need to run LOOT at all.
++
+.Clean Pip-Boy installed and active
+image::DEFCON-03-Mod-Organizer-Clean-Pip-Boy-installed-and-active.png["Clean Pip-Boy installed and active", title="Clean Pip-Boy installed and active"]
+
+This is what the Pip-Boy looks like before and after using the high resolution textures.
+
+.Pip-Boy before and after retexturing
+image::DEFCON-03-Fallout-3-Pip-Boy-before-and-after-retexturing.png["Pip-Boy before and after retexturing", title="Pip-Boy before and after retexturing"]
+
+We won't be able to show the increased speed in pulling up the Pip-Boy, of course. However, the differences in the map tinting are there, albeit subtle (the tint removal will be much more noticeable in the next sub-chapter).
+
+.World map before and after removing the tint
+image::DEFCON-03-Fallout-3-World-map-before-and-after.png["World map before and after removing the tint", title="World map before and after removing the tint"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-4-stacking-order-after-Pip-Boy-mods.txt[stacking order] and link:order_lists/DEFCON-03-4-load-order-after-Pip-Boy-mods.txt[load order].
+====
 
 
 

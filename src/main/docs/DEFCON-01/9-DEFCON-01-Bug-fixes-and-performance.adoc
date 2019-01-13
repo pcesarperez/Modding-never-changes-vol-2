@@ -1,0 +1,17 @@
+== DEFCON 01 (Bug Fixes and Performance)
+
+I know all of you are biting your nails to the bone right now, consumed by impatience, waiting for the real deal to begin.
+
+Well, this is it. This is the chapter where all of the actual modding begins. We created the Vanilla profile in the <<DEFCON 00 (Vanilla), previous chapter>> to build the foundation upon the very rest of the profiles are going to lean on. Now it's time to build our first meaningful profile.
+
+At the end of this chapter, you will have a version of _Fallout 3 Game of the Year Edition_ that:
+
+* Runs flawlessly (well, almost).
+* Is patched to the max, with most silly (and not-so-silly) errors corrected.
+* Takes advantage of your system memory.
+* Has no (or little) micro-stutter.
+* Runs in windowed mode, faking full-screen.
+* Has a clean set of data files, including a merged and a bashed patch to further ensure compatibility among them.
+* Creates saved games automatically and frequently, so that you always have means to recover from a disaster.
+* Has a better performance by getting rid of zillions of unused objects (like tiny rocks) which plague the game.
+* Has a saved game just before leaving Vault 101, so that you won't have to repeat the initial story in every new playthrough.

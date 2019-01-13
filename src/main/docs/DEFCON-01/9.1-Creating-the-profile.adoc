@@ -1,0 +1,29 @@
+=== Creating the profile
+
+The very first thing we are going to do in each main chapter is to create the MO profile which will bind all the chapter mods together. Each *DEFCON* profile will be built upon the previous one, so *DEFCON 00* will be our foundation in this case.
+
+. Launch MO.
+. Click on the MO profiles button.
++
+.Mod Organizer profiles button
+image::DEFCON-01-Mod-Organizer-profiles-button.png["Mod Organizer profiles button", title="Mod Organizer profiles button"]
+. In the profiles management window, select the *DEFCON 00 (Vanilla)* profile and click on *Copy*.
++
+.Copying DEFCON 00 profile in Mod Organizer
+image::DEFCON-01-Mod-Organizer-copying-DEFCON-00-profile.png["Copying DEFCON 00 profile in Mod Organizer", title="Copying DEFCON 00 profile in Mod Organizer"]
+. In the following window, write "DEFCON 01 (Bug Fixes and Performance)" as the profile name and click *OK*. We will use meaningful names to easily recognize the purpose of each profile.
++
+.Naming DEFCON 01 profile in Mod Organizer
+image::DEFCON-01-Mod-Organizer-naming-profile.png["Naming DEFCON 01 profile in Mod Organizer", title="Naming DEFCON 01 profile in Mod Organizer"]
+. Back to the profiles management window, check that the *DEFCON 01* profile has been created and click *Close*.
++
+.DEFCON 01 profile has been created
+image::DEFCON-01-Mod-Organizer-profile-created.png["DEFCON 01 profile has been created", title="DEFCON 01 profile has been created"]
+. MO does not automatically change the profile when it is created, so click on the *Profiles* drop-down and select the "DEFCON 01 (Bug Fixes and Performance)" profile.
++
+.Selecting the DEFCON 01 profile
+image::DEFCON-01-Mod-Organizer-selecting-profile.png["Selecting the DEFCON 01 profile", title="Selecting the DEFCON 01 profile"]
+. From now on, every operation we perform will be related to this profile.
++
+.DEFCON 01 profile selected
+image::DEFCON-01-Mod-Organizer-profile-selected.png["DEFCON 01 profile selected", title="DEFCON 01 profile selected"]

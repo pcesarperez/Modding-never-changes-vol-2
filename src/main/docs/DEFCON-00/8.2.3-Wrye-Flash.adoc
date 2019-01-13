@@ -1,0 +1,38 @@
+==== Wrye Flash
+
+I'll try to keep it simple... http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash] is a modding utility roughly equivalent to Mod Organizer or Nexus Mod Manager. However, it comes out-of-the-box with a feature that makes it most valuable: the management of bash tags and, hence, the creation of bashed patches. In fact, it is the only feature we are going to use here.
+
+Besides, what is a bash tag or, for that matter, a bashed patch?
+
+Bash tag::
+It is an element that points out which http://geck.bethsoft.com/index.php?title=Category:Leveled_Lists[leveled lists] are modified by a mod. Items belonging to a leveled list are presented to the player according to her level in the game.
+
+Bashed patch::
+It is a sort of compatibility patch between mods, but it revolves around leveled lists, using the bash tags included in these mods.
+
+//^
+
+. http://www.nexusmods.com/fallout3/mods/11336/[Download] Wrye Flash, using the [NexusFile]*Wrye Flash 31.6 - Standalone Executable* file, as of this writing.
+. Unzip the file in a location of your choice. The ZIP file contains two folders, `[Data]` and `[Mopy]`.
+. Copy the two folders to `[$FO3_HOME]` (remember: your _Fallout 3_ installation folder).
+. A warning will appear, because we are trying to overwrite the data folder with additional content. Yeah, I know I said that we would keep our data folder clean, but this is the only way Wrye Flash would work, so you have to overwrite the game data folder when asked to. This will be the last time, I swear.
++
+.Wrye Flash data folder replacement
+image::DEFCON-00-Wrye-Flash-data-folder-replacement.png["Wrye Flash data folder replacement", title="Wrye Flash data folder replacement"]
+. Run `Wrye Flash.exe` from `[$FO3_HOME\Mopy]`.
++
+.Wrye Flash executable
+image::DEFCON-00-Wrye-Flash-executable.png["Wrye Flash executable", title="Wrye Flash executable"]
+. Wrye Flash will show an initial error. Just ignore it.
++
+.Wrye Flash initial error
+image::DEFCON-00-Wrye-Flash-initial-error.png["Wrye Flash initial error", title="Wrye Flash initial error"]
+. After a brief moment, Wrye Flash will be loaded, showing your actual mod list (only official DLCs for the moment). Don't worry about what you see, and *DON'T TOUCH ANYTHING!* Just exit the tool.
++
+.Wrye Flash first run
+image::DEFCON-00-Wrye-Flash-first-run.png["Wrye Flash first run", title="Wrye Flash first run"]
+. We have unintentionally left a small detritus in the data folder: a bashed patch template. This is a mock `.esp` file called `Bashed Patch, 0.esp` which Wrye Flash places in the data folder when run in standalone mode.
++
+.Wrye Flash spurious template bashed patch
+image::DEFCON-00-Wrye-Flash-spurious-template-bashed-patch.png["Wrye Flash spurious template bashed patch", title="Wrye Flash spurious template bashed patch"]
+. Navigate to `[$FO3_HOME\Data]` and delete the file `Bashed Patch, 0.esp`.

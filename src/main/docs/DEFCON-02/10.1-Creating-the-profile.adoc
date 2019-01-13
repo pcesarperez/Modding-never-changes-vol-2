@@ -1,0 +1,33 @@
+=== Creating the profile
+
+The first thing we are going to do in each major chapter is to create a new profile on top of the previous one. The steps are pretty much the same that we saw in <<Creating the profile, the DEFCON 01 chapter>>, although with a subtle difference: we need to disable the merged and bashed patches we created in the preceding chapter. Failing in doing so would result in [line-through]#quantum anomalies# CTDs all over the place.
+
+. Launch MO.
+. Click on the MO profiles button.
++
+.Mod Organizer profiles button
+image::DEFCON-02-Mod-Organizer-profiles-button.png["Mod Organizer profiles button", title="Mod Organizer profiles button"]
+. In the profiles management window, select the *DEFCON 01 (Bug Fixes and Performance)* profile and click on *Copy*.
++
+.Copying DEFCON 01 profile in Mod Organizer
+image::DEFCON-02-Mod-Organizer-copying-DEFCON-01-profile.png["Copying DEFCON 01 profile in Mod Organizer", title="Copying DEFCON 01 profile in Mod Organizer"]
+. In the following window, write "DEFCON 02 (User Interface)" as the profile name and click *OK*.
++
+.Naming DEFCON 02 profile in Mod Organizer
+image::DEFCON-02-Mod-Organizer-naming-profile.png["Naming DEFCON 02 profile in Mod Organizer", title="Naming DEFCON 02 profile in Mod Organizer"]
+. Back to the profiles management window, check that the *DEFCON 02* profile has been created and click *Close*.
++
+.DEFCON 02 profile has been created
+image::DEFCON-02-Mod-Organizer-profile-created.png["DEFCON 02 profile has been created", title="DEFCON 02 profile has been created"]
+. MO does not automatically change the profile when it is created, so click on the *Profiles* drop-down and select the "DEFCON 02 (User Interface)" profile.
++
+.Selecting the DEFCON 02 profile
+image::DEFCON-02-Mod-Organizer-selecting-profile.png["Selecting the DEFCON 02 profile", title="Selecting the DEFCON 02 profile"]
+. From now on, every operation we perform will be related to this profile.
++
+.DEFCON 02 profile selected
+image::DEFCON-02-Mod-Organizer-profile-selected.png["DEFCON 02 profile selected", title="DEFCON 02 profile selected"]
+. With the profile selected, disable (don't delete!) the merged and bashed patches in the left pane. Notice the corresponding plugins vanishing from the right pane.
++
+.Disabling DEFCON 01 merged and bashed patches
+image::DEFCON-02-Mod-Organizer-disabling-DEFCON-01-merged-and-bashed-patches.png["Disabling DEFCON 01 merged and bashed patches", title="Disabling DEFCON 01 merged and bashed patches"]

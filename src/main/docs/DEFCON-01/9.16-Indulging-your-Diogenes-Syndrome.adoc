@@ -1,0 +1,79 @@
+=== Indulging your Diogenes Syndrome
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_]
+* http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_]
+====
+
+Let's say you have a mild case of Obsessive-Compulsive Disorder, and let's say that, more often than not, "mild" is a complete understatement to describe what rushes through your blood when you enter a new place in-game and you see a zillion of small pickable objects you just *NEED* to have, whatever reason you make up for it.
+
+I have just described what I feel with this kind of games. I need to loot everything, or, at least, everything I can without stealing, unless I want my character to be a real son of a bitch (which I don't; I am a kind hearted person, after all).
+
+The problem is that small, lootable objects in _Fallout 3_ tend to have a weird behavior regarding their position or, to be precise, their stacking. Every object has a collision mesh to establish its limits, so that when two objects collide, the game uses their collision meshes to avoid the dreaded clipping effect, and the standard collision meshes tend to extend themselves _outside_ the objects they contain.
+
+This is the reason why you cannot neatly stack objects you have snatched without gaps between them.
+
+.Look, ma, I'm floating!
+image::DEFCON-01-Fallout-3-default-collision-meshes.png["Look, ma, I'm floating!", title="Look, ma, I'm floating!"]
+
+The two mods we are going to install address this problem, altering the collision meshes of a lot of objects. http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_] fixes ordinary objects, while http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_] fixes small, cluttering objects.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*DetailedCollisions* file from http://www.nexusmods.com/fallout3/mods/15704/[_Detailed Collisions_] with the manager.
+. Download [NexusFile]*Precision Collision - Clutter V0_80* file from http://www.nexusmods.com/fallout3/mods/19949/[_Precision Collision - Clutter_] with the manager.
+. You will have now the two mod files downloaded and ready to be installed.
++
+.Collision fixes downloaded
+image::DEFCON-01-Mod-Organizer-collision-fixes-downloaded.png["Collision fixes downloaded", title="Collision fixes downloaded"]
+. Double-click on *DetailedCollisions* to show the Quick Install window. Change naught and go for manual install.
++
+.Quick Install window for Detailed Collisions
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-Quick-Install.png["Quick Install window for Detailed Collisions", title="Quick Install window for Detailed Collisions"]
+. There's nothing to fix in the mod's inner structure, so click on *OK*.
++
+.Detailed Collisions inner structure
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-inner-structure.png["Detailed Collisions inner structure", title="Detailed Collisions inner structure"]
+. The mod is installed but not active yet. We have to remove the category first ('Companions', really?), so double-click on the mod's name to bring up the properties window.
++
+.Detailed Collisions is installed but not active yet
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-installed-but-not-ready.png["Detailed Collisions is installed but not active yet", title="Detailed Collisions is installed but not active yet"]
+. Switch to the *Categories* tab in the properties window, unselect the *Companions* category and click on *Close*.
++
+.Removing the 'Companions' category from Detailed Collisions
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-removing-category.png["Removing the 'Companions' category from Detailed Collisions", title="Removing the 'Companions' category from Detailed Collisions"]
+. Activate the mod in the left pane. You can notice the small lightning-and-plus icon, pointing out that this mod replaces certain elements from other mods.
++
+.Detailed Collisions activated and ready
+image::DEFCON-01-Mod-Organizer-Detailed-Collisions-activated.png["Detailed Collisions activated and ready", title="Detailed Collisions activated and ready"]
+. It's time to install the second mod in the series. Double-click on *Precision Collision - Clutter V0_80* in the *Downloads* tab to show the Quick Install window, and just click on *Manual*.
++
+.Quick Install window for Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-Quick-Install.png["Quick Install window for Precision Collision - Clutter", title="Quick Install window for Precision Collision - Clutter"]
+. The mod's inner structure is a bit off, so we need to correct it. Right-click on the `[data]` folder and select *Set data directory* to set the root of the filetree.
++
+.Correcting the inner structure of Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-inner-structure.png["Correcting the inner structure of Precision Collision - Clutter", title="Correcting the inner structure of Precision Collision - Clutter"]
+. Once we set the root data folder, the inner structure becomes palatable, so we can go on. Click on *OK*.
++
+.Corrected inner structure of Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-corrected-inner-structure.png["Corrected inner structure of Precision Collision - Clutter", title="Corrected inner structure of Precision Collision - Clutter"]
+. Once again, the mod is categorized as 'Companions', the fuck knows why. Double-click on it in the left pane to show the properties window.
++
+.Precision Collision - Clutter is installed but not active yet
+image::DEFCON-01-Mod-Organizer-Precision-Collision-installed-but-not-active.png["Precision Collision - Clutter is installed but not active yet", title="Precision Collision - Clutter is installed but not active yet"]
+. Switch to the *Categories* tab and get rid of the *Companions* category, clicking on *Close* afterwards.
++
+.Removing the 'Companions' category for Precision Collision - Clutter
+image::DEFCON-01-Mod-Organizer-Precision-Collision-removing-category.png["Removing the 'Companions' category for Precision Collision - Clutter", title="Removing the 'Companions' category for Precision Collision - Clutter"]
+. Activate the mod in the left pane. There are no plugins installed, so there's no need to run LOOT this time.
++
+.Precision Collision - Clutter activated and ready
+image::DEFCON-01-Mod-Organizer-Precision-Collision-activated.png["Precision Collision - Clutter activated and ready", title="Precision Collision - Clutter activated and ready"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-10-stacking-order-after-collision-fixes.txt[stacking order] and link:order_lists/DEFCON-01-10-load-order-after-collision-fixes.txt[load order].
+====

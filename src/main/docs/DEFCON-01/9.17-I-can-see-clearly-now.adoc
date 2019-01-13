@@ -1,0 +1,41 @@
+=== I can see clearly now
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/17115/[_Clean-Deluxe_]
+====
+
+The Capital Wasteland in _Fallout 3_ is a dark and dirty place, and rightly so, but the developers might have been a little too enthusiastic spreading dirt all around the game. In this chapter we are going to improve the performance by getting rid of clutter and atmospheric haze which, in fact, add nothing meaningful to the game.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*Clean-Deluxe GOTY Edition* file from http://www.nexusmods.com/fallout3/mods/17115/[_Clean-Deluxe_] with the manager.
++
+.Clean-Deluxe is downloaded and ready to be installed
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-downloaded.png["Clean-Deluxe is downloaded and ready to be installed", title="Clean-Deluxe is downloaded and ready to be installed"]
+. Double-click on the mod entry to bring up the Quick Install window, where you just have to select *Manual*.
++
+.Quick Install window for Clean-Deluxe
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-Quick-Install.png["Quick Install window for Clean-Deluxe", title="Quick Install window for Clean-Deluxe"]
+. This mod contains only an `.esp` file with a correct inner structure, so just click on *OK*.
++
+.Clean-Deluxe inner structure
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-inner-structure.png["Clean-Deluxe inner structure", title="Clean-Deluxe inner structure"]
+. The mod has no quirks, so activate it in the left pane.
++
+.Clean-Deluxe activated and ready
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-activated.png["Clean-Deluxe activated and ready", title="Clean-Deluxe activated and ready"]
+. If you take a look at the *Plugins* tab in the right pane, you will see that the file `Clean-Deluxe GOTY.esp` sits on the bottom of our load order.
++
+.Clean-Deluxe default plugin location
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-default-plugin-location.png["Clean-Deluxe default plugin location", title="Clean-Deluxe default plugin location"]
+. Run LOOT and click on the *Sort Plugins* button to rearrange your load order. Notice how the `.esp` file has been placed between `Confessor Cromwell has a Break_EV.esp` and `DCStreet - BS.esp`. That's it! Mod installed and ready to use.
++
+.Clean-Deluxe plugin relocated
+image::DEFCON-01-Mod-Organizer-Clean-Deluxe-plugin-relocated.png["Clean-Deluxe plugin relocated", title="Clean-Deluxe plugin relocated"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-11-stacking-order-after-Clean-Deluxe.txt[stacking order] and link:order_lists/DEFCON-01-11-load-order-after-Clean-Deluxe.txt[load order].
+====

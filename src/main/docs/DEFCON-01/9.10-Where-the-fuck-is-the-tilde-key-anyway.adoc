@@ -1,0 +1,54 @@
+=== Where the fuck is the tilde key, anyway?
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/2637[_Console Key Binder_]
+====
+
+One of the things I have always considerer very annoying is the mapping of the console key in certain games. Fortunately, _Fallout 3_ is a game where the console key is welded to the key just to the left to the kbd:[1] key (or below the kbd:[Esc] key, if you please), so we say thank ya.
+
+However, I prefer to have the console key assigned to a fixed key, present in every keyboard, no matter the language layout (for example, I have a Spanish keyboard). The mod we are about to install comes in handy. Nevertheless, bear in mind that the standard console key will not be removed, so you could still use it to fire up the console.
+
+. Open MO.
+. Using your web browser, download the file [NexusFile]*Console Key Binder* from http://www.nexusmods.com/fallout3/mods/2637[_Console Key Binder_] clicking on the button *Download with manager*.
+. Go back to MO and verify that the mod has been downloaded in the *Downloads* tab, right pane. Double-click on the mod to install it.
++
+._Console Key Binder_ has been downloaded
+image::DEFCON-01-Mod-Organizer-Console-Key-Binder-downloaded.png["Console Key Binder has been downloaded", title="Console Key Binder has been downloaded"]
+. In the *Quick Install* window, leave the name unchanged and select *Manual*, as usual.
++
+.Manual installation of _Console Key Binder_
+image::DEFCON-01-Mod-Organizer-Quick-Install-Console-Key-Binder.png["Manual installation of Console Key Binder", title="Manual installation of Console Key Binder"]
+. The mod's inner structure is pretty much fine, so we have just to unselect the `.html` file and click on *OK*. Remember to remove the installed mod from view when finished.
++
+.Inner structure of _Console Key Binder_
+image::DEFCON-01-Mod-Organizer-Console-Key-Binder-structure.png["Inner structure of Console Key Binder", title="Inner structure of Console Key Binder"]
+. However, the mod has a little identity problem and does not know its own version. MO detects that problem, warning us in the left pane.
++
+.Wrong version in _Console Key Binder_
+image::DEFCON-01-Mod-Organizer-Console-Key-Binder-wrong-version.png["Wrong version in Console Key Binder", title="Wrong version in Console Key Binder"]
+. We are going to fix that. Double click on the mod to open its properties and navigate to the *Nexus Info* tab. Change the *Version* entry to 1.0.3 (as of this writing) and click on *Close*.
++
+.Changing _Console Key Binder_ version
+image::DEFCON-01-Mod-Organizer-changing-Console-Key-Binder-version.png["Changing Console Key Binder version", title="Changing Console Key Binder version"]
+. Back to the left pane, verify that the correct version shows up and activate the mod with its checkbox.
++
+._Console Key Binder_ activated
+image::DEFCON-01-Mod-Organizer-Console-Key-Binder-activated.png["Console Key Binder activated", title="Console Key Binder activated"]
+. Launch LOOT (you know how, don't you?) and sort your load order. The file `Console Key Binder.esp` should be at the bottom. Close LOOT when finished.
++
+._Console Key Binder_ load order
+image::DEFCON-01-LOOT-Console-Key-Binder-load-order.png["Console Key Binder load order", title="Console Key Binder load order"]
+. We are going to assign the kbd:[F11] key to the console because the kbd:[F4] key will be later used by http://www.nexusmods.com/fallout3/mods/3729/[_CASM_], a mod which improves the game saving. Launch the game (as usual, through MO and using FOSE), and fire up the console using the old key, to the left of the kbd:[1] key. When the console is activated, write the command `Set ConsoleKey to 87` and press kbd:[Enter]. You should get the response `set global >> 87`. Take into account that 87 is the decimal scancode of the kbd:[F11] key. There are http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html[a shitload of scancodes] you may use, but you should stick to http://cs.elderscrolls.com/index.php?title=HoldKey[the DirectX scancodes], just in case.
++
+.Remapping the console key
+image::DEFCON-01-Fallout-3-remapping-console-key.png["Remapping the console key", title="Remapping the console key"]
+
+Another little step in our modding journey has ended (I guess the IPA beer I have just drank may have something to do with my current deep-thinking state).
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-4-stacking-order-after-Console-Key-Binder.txt[stacking order] and link:order_lists/DEFCON-01-4-load-order-after-Console-Key-Binder.txt[load order].
+====

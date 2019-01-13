@@ -1,0 +1,41 @@
+=== Enabling access to 4 GB+ of memory
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for FO3_]
+====
+
+_Fallout 3_ does not use all the available memory it could have used, due to its 32 bits nature (the game was launched in 2008, you know). However, you can modify the game executable to take advantage of all the memory it can get.
+
+[TIP]
+====
+Gopher explains the way to go with this video about https://www.youtube.com/watch?v=tONiXNbwSt0[performance and stability in _Fallout 3_] (26:38) (the video touches several topics, but the one we are focusing on spans from the beginning to 08:55, give or take).
+====
+
+We don't want to clutter our system with unnecessary tools, so we are sticking with http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for FO3_].
+
+. Manually download the file [NexusFile]*FO3_3GB_ENABLER* from http://www.nexusmods.com/fallout3/mods/6510/[_Large Address Aware Enabler for FO3_], not using MO, and extract its contents in a location of your choice.
+. Create a backup of the file `Fallout3.exe` from `[$FO3_HOME]`, just in case everything goes South.
+. Copy the file `Fallout3.exe` to the folder where you extracted the LAA Enabler.
+. Run `START.BAT` in the aforementioned folder. A console window will appear, reporting that the patching is about to start. Press any key.
++
+.LAA Enabler reminder
+image::DEFCON-01-LAA-enabler-reminder.png["LAA Enabler reminder", title="LAA Enabler reminder"]
+. Several options are shown. We want to press kbd:[A] to add the LAA feature to _Fallout 3_ executable.
++
+.LAA Enabler options
+image::DEFCON-01-LAA-enabler-options.png["LAA Enabler options", title="LAA Enabler options"]
+. LAA Enabler patches the executable and happily informs us about it. Press any key.
++
+.LAA Enabler successful
+image::DEFCON-01-LAA-enabler-successful.png["LAA Enabler successful", title="LAA Enabler successful"]
+. The program goes back to the options window. Press kbd:[E] to exit.
++
+.LAA Enabler finished
+image::DEFCON-01-LAA-enabler-finished.png["LAA Enabler finished", title="LAA Enabler finished"]
+. Copy back `Fallout3.exe` to its original location in `[$FO3_HOME]`.
+. Delete the folder where you extracted the LAA Enabler and its contents. Delete the ZIP file also. You won't need them anymore.
+
+And that's really it. Now _Fallout 3_ is ready to handle more than 2 GB of RAM, improving stability.

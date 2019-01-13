@@ -1,0 +1,53 @@
+==== Integrating LOOT with Mod Organizer
+
+We have a viable modding environment through MO so far, but we need to add the installed tools to the mix in order to have a full-fledged environment. The first piece will be LOOT.
+
+. Mod Organizer does a good job detecting the previously installed LOOT, as you can see in the executables dropdown just above the right pane.
++
+.LOOT has already been detected by Mod Organizer
+image::DEFCON-00-Mod-Organizer-detected-LOOT.png["LOOT has already been detected by Mod Organizer", title="LOOT has already been detected by Mod Organizer"]
+. However, we have installed just one copy of LOOT, so that we can use it to manage the load order in several games. We need to instruct MO to use _Fallout 3_ in this case. Click on the executables settings button in the top bar.
++
+.Mod Organizer executables settings button
+image::DEFCON-00-Mod-Organizer-executables-settings-button.png["Mod Organizer executables settings button", title="Mod Organizer executables settings button"]
+. There should be only two entries in the list, one for the game itself and the other for LOOT. Select the LOOT entry and write in the *Arguments* field "--game=Fallout3", without quotations; then, click on *Modify*.
++
+.LOOT launch arguments within Mod Organizer
+image::DEFCON-00-Mod-Organizer-LOOT-launch-arguments.png["LOOT launch arguments within Mod Organizer", title="LOOT launch arguments within Mod Organizer"]
+. The executables management window won't close, so click on *Close* to dismiss it.
++
+.Mod Organizer executables management
+image::DEFCON-00-Mod-Organizer-LOOT-executable-properties-modified.png["Mod Organizer executables management", title="Mod Organizer executables management"]
+. Back to the main window, select LOOT in the executables dropdown menu and click on *Run*.
++
+.Select LOOT to run through Mod Organizer
+image::DEFCON-00-Mod-Organizer-select-LOOT-and-run.png["Select LOOT to run through Mod Organizer", title="Select LOOT to run through Mod Organizer"]
+. When LOOT finishes launching, notice the game tag at the top, which should say "Fallout 3". Also, notice the message "N/A: No masterlist present" in both *Masterlist Revision* and *Masterlist Date*, meaning we have yet to run the tool. Let's fix that by clicking on the sorting icon (image:DEFCON-00-LOOT-sorting-icon.png["LOOT sorting icon", title="LOOT sorting icon"]), at the top bar.
++
+.LOOT running through Mod Organizer
+image::DEFCON-00-Mod-Organizer-running-LOOT.png["LOOT running throug Mod Organizer", title="LOOT running throug Mod Organizer"]
+. Several things happen _very fast_.
+  * A floating message appears, showing that LOOT is updating and using the masterlist to sort your plugins.
++
+.LOOT updating and parsing masterlist
+image::DEFCON-00-LOOT-updating-and-parsing-masterlist.png["LOOT updating and parsing masterlist", title="LOOT updating and parsing masterlist"]
+  * If you sorted the game plugins in the MO right pane like <<Mod Organizer basic setup, you have been instructed to>>, LOOT should show a message pointing out that your load order is untouched.
++
+.LOOT made no changes to your load order (as it should be)
+image::DEFCON-00-LOOT-no-changes-to-load-order.png["LOOT made no changes to your load order (as it should be)", title="LOOT made no changes to your load order (as it should be)"]
+  * In the general information pane, both entries regarding the masterlist should show updated information.
++
+.Masterlist information has been updated in LOOT
+image::DEFCON-00-LOOT-masterlist-updated.png["Masterlist information has been updated in LOOT", title="Masterlist information has been updated in LOOT"]
+  * All your plugins, except the main `Fallout3.esm` file, should show a warning message about dirty things FO3Edit has found and need to be cleaned up. Don't worry about them, for now. We are going to address that in the chapter about <<Cleaning up the master files, cleaning up the master files>>.
++
+.LOOT shows the official DLC plugins are dirty
+image::DEFCON-00-LOOT-dirty-plugin-message.png["LOOT shows the official DLC plugins are dirty", title="LOOT shows the official DLC plugins are dirty"]
+. Close LOOT to go back to the MO main window. We are going to put a shortcut in the top-right toolbar to launch LOOT effortlessly. With LOOT selected in the executables dropdown, select *Toolbar* in the *Shortcut* dropdown below the *Run* button.
++
+.Option to create a LOOT shortcut in the Mod Organizer toolbar
+image::DEFCON-00-Mod-Organizer-creating-LOOT-shortcut.png["Option to create a LOOT shortcut in the Mod Organizer toolbar", title="Option to create a LOOT shortcut in the Mod Organizer toolbar"]
+. Notice the LOOT icon we have just created in the top-right toolbar. We will use this shortcut to launch LOOT from now on, leaving the executables dropdown with the game selected.
++
+.LOOT shortcut in Mod Organizer
+image::DEFCON-00-Mod-Organizer-LOOT-shortcut.png["LOOT shortcut in Mod Organizer", title="LOOT shortcut in Mod Organizer"]

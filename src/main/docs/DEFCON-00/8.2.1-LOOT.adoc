@@ -1,0 +1,19 @@
+==== LOOT
+
+https://loot.github.io/[Load Order Optimisation Tool] (LOOT) is a tool used to take care of the load order in _The Elder Scrolls IV: Oblivion_, _The Elder Scrolls V: Skyrim_, _The Elder Scrolls V: Skyrim Special Edition_, _Fallout 3_, _Fallout New Vegas_ and _Fallout 4_. Mod Organizer comes with an integrated version of LOOT, but it is outdated, so we are going to need the standalone version installed.
+
+[TIP]
+====
+If you want to have an in-depth look to LOOT and what it can do, just watch the https://www.youtube.com/watch?v=CqFCLrYn30c[Start to Finish tutorial about LOOT], by GamerPoets.
+====
+
+. https://loot.github.io/[Download] and install LOOT outside UAC-controlled space (for example, `[C:\Games\Tools\LOOT]`). We will refer to the installation folder as `[$LOOT_HOME]`.
+. Run LOOT after installing it. When it is run for the first time, a window will appear with some tips. Just click *OK* to dismiss it.
++
+.LOOT first run
+image::DEFCON-00-LOOT-first-run.png["LOOT first run", title="LOOT first run"]
+. LOOT usually does a good job detecting the installed games which it considers manageable, so there is a good chance that _Fallout 3_ would be automatically detected.
++
+.LOOT with Vanilla game
+image::DEFCON-00-LOOT-with-Vanilla-game.png["LOOT with Vanilla game", title="LOOT with Vanilla game"]
+. *DON'T DO ANYTHING BUT EXIT LOOT!* We are going to manage the load order through Mod Organizer, so this will be the last time we run LOOT standalone.

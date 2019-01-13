@@ -1,0 +1,141 @@
+=== A bunch of unrelated fixes
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/16924/[_Intro Street Bus and Dupont Alignment_]
+* http://www.nexusmods.com/fallout3/mods/5831/[_Rivet City Realignment_]
+* http://www.nexusmods.com/fallout3/mods/20483/[_Scribe Yearling takes all Pre-War Books_]
+* http://www.nexusmods.com/fallout3/mods/4660/[_NPC-Confessor Cromwell has a Break EV _ DV_]
+* http://www.nexusmods.com/fallout3/mods/6685/[_MTC BigTownMissingRobots Fix_]
+====
+
+We are going to install several completely unrelated mods which I found... Well, I don't quite remember how, or why I cherry-picked them. They are not going to introduce huge changes in-game, so that we can still consider the game as Vanilla, at least content-wise.
+
+These are the fixes each mod introduces:
+
+* _Intro Street Bus and Dupont Alignment_: This mod adds the bus seen in the intro movie to the landscape of Washington D.C., giving a nice and lore-friendly touch to the game. Besides, it corrects some alignment mismatch in the area surrounding the GNR Radio building.
+* _Rivet City Realignment_: This is one of these things that you wouldn't notice in your life, but once you read about that, you cannot help noticing it over and over again. Rivet City interiors don't match the outer architecture of the city, so this mod fixes that.
+* _Scribe Yearling takes all Pre-War Books_: This is a small mod which enables an NPC called Scribe Yearlings to buy certain type of pre-war books you will likely have in large amounts.
+* _NPC-Confessor Cromwell has a Break EV _ DV_: This mod adds a daily routine to an NPC called Confessor Cromwell, which you will likely encounter early in the game, for he is giving a neverending speech in Megaton (unless you install this mod, this is).
+* _MTC BigTownMissingRobots Fix_: This mod fixes a bug where certain robots are missing from a junkyard in Big Town, preventing you from finishing a secondary quest
+
+Without further ado, let's get to it.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download [NexusFile]*DCStreet v2* file from http://www.nexusmods.com/fallout3/mods/16924/[_Intro Street Bus and Dupont Alignment_] with the manager.
+. Download [NexusFile]*RC_Realignment_V54* file from http://www.nexusmods.com/fallout3/mods/5831/[_Rivet City Realignment_] with the manager.
+. Download [NexusFile]*Scribe Yearling takes all Pre-War Books* file from http://www.nexusmods.com/fallout3/mods/20483/[_Scribe Yearling takes all Pre-War Books_] with the manager.
+. Download [NexusFile]*Confessor Cromwell has a Break_EV* file from http://www.nexusmods.com/fallout3/mods/4660/[_NPC-Confessor Cromwell has a Break EV _ DV_] with the manager.
+. Download [NexusFile]*MTCBigTownMissingRobotFix* file from http://www.nexusmods.com/fallout3/mods/6685/[_MTC BigTownMissingRobots Fix_] with the manager.
+. This is how the *Download* tab should look like by now.
++
+.Unrelated fixes downloaded
+image::DEFCON-01-Mod-Organizer-unrelated-fixes-downloaded.png["Unrelated fixes downloaded", title="Unrelated fixes downloaded"]
+. Double-click on *DCStreet v2* to bring up the *Quick Install* window and go for manual installation.
++
+.Quick Install window for DCStreet v2
+image::DEFCON-01-Mod-Organizer-DCStreet-Quick-Install.png["Quick Install window for DCStreet v2", title="Quick Install window for DCStreet v2"]
+. In the *Install Mods* window we need to deactivate `DCStreet.esp` and nothing else, because the inner structure is fairly good. Click on *OK* afterwards.
++
+.Install Mods window for DCStreet v2
+image::DEFCON-01-Mod-Organizer-DCStreet-inner-structure.png["Install Mods window for DCStreet v2", title="Install Mods window for DCStreet v2"]
+. The mod is added to the left pane, but I don't like MO to categorize the mods I install, so double-click on the mod name to show the mod properties.
++
+.DCStreet v2 is installed but not active yet
+image::DEFCON-01-Mod-Organizer-DCStreet-installed-but-not-active.png["DCStreet v2 is installed but not active yet", title="DCStreet v2 is installed but not active yet"]
+. Switch to the *Categories* tab, unselect the *Magic* category and click on *OK*.
++
+.Removing the 'Magic' category from DCStreet v2
+image::DEFCON-01-Mod-Organizer-DCStreet-removing-category.png["Removing the 'Magic' category from DCStreet v2", title="Removing the 'Magic' category from DCStreet v2"]
+. Now we can activate the mod in the left pane.
++
+.DCStreet v2 activated and ready
+image::DEFCON-01-Mod-Organizer-DCStreet-activated.png["DCStreet v2 activated and ready", title="DCStreet v2 activated and ready"]
+. As you can imagine, this is going to be a bit repetitive, so... Double-click on *RC_Realignment_V54* in the *Downloads* tab to show the *Quick Install* window. Select manual install, as usual.
++
+.Quick Install window for Rivet City Realignment
+image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-Quick-Install.png["Quick Install window for Rivet City Realignment", title="Quick Install window for Rivet City Realignment"]
+. Everything is ok with the inner structure, so we have just to click on *OK*.
++
+.Rivet City Realignment inner structure is just fine
+image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-inner-structure.png["Rivet City Realignment inner structure is just fine", title="Rivet City Realignment inner structure is just fine"]
+. The mod is installed and appears in the left pane, but the version number has not been correctly detected. Double-click on its name to fix that.
++
+.Rivet City Realignment is installed but not active yet
+image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-installed-but-not-active.png["Rivet City Realignment is installed but not active yet", title="Rivet City Realignment is installed but not active yet"]
+. In the properties window switch to the *Nexus Info* tab and set the version number to 5.2. Click on *OK* to close the window.
++
+.Rivet City Realignment corrected version
+image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-corrected-version.png["Rivet City Realignment corrected version", title="Rivet City Realignment corrected version"]
+. Back to the left pane, activate the mod.
++
+.Rivet City Realignment activated and ready
+image::DEFCON-01-Mod-Organizer-Rivet-City-Realignment-activated.png["Rivet City Realignment activated and ready", title="Rivet City Realignment activated and ready"]
+. Next one! Double-click on the *Scribe Yearling takes all Pre-War Books* entry in the *Downloads* tab and go for manual install in the *Quick Install* window.
++
+.Quick Install window for Scribe Yearling
+image::DEFCON-01-Mod-Organizer-Scribe-Yearling-Quick-Install.png["Quick Install window for Scribe Yearling", title="Quick Install window for Scribe Yearling"]
+. Nothing special to do in the *Install Mods* window, so just click on *OK*.
++
+.Scribe Yearling inner structure is ok
+image::DEFCON-01-Mod-Organizer-Scribe-Yearling-inner-structure.png["Scribe Yearling inner structure is ok", title="Scribe Yearling inner structure is ok"]
+. There is nothing wrong with this simple mod, so just activate it in the left pane.
++
+.Scribe Yearling activated and ready
+image::DEFCON-01-Mod-Organizer-Scribe-Yearling-activated.png["Scribe Yearling activated and ready", title="Scribe Yearling activated and ready"]
+. Next (you should be ignoring most you are reading and acting on your own by now). Double-click on the *Confessor Cromwell has a Break_EV* entry in the *Downloads* tab. Change the mod name to "NPC-Confessor Cromwell has a Break" and select manual install in the *Quick Install* window.
++
+.Quick Install window for Confessor Cromwell
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-Quick-Install.png["Quick Install window for Confessor Cromwell", title="Quick Install window for Confessor Cromwell"]
+. Everything is fine with the mod inner structure, so just click on *OK*.
++
+.Confessor Cromwell inner structure is ok
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-inner-structure.png["Confessor Cromwell inner structure is ok", title="Confessor Cromwell inner structure is ok"]
+. We have two problems with the mod internal info: it has a category ("Stealth") and it does not have a proper version number (the mod author never gave one, I think). Double-click on the mod name to show the properties window.
++
+.Confessor Cromwell is installed but not active
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-installed-but-not-active.png["Confessor Cromwell is installed but not active", title="Confessor Cromwell is installed but not active"]
+. Switch to the *Categories* tab and remove the *Stealth* category from the mod.
++
+.Removing the 'Stealth' category from Confessor Cromwell
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-removing-category.png["Removing the 'Stealth' category from Confessor Cromwell", title="Removing the 'Stealth' category from Confessor Cromwell"]
+. Next, switch to the *Nexus Info* tab and change the version number to 1.0, for the sake of correctness.
++
+.Confessor Cromwell corrected version
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-corrected-version.png["Confessor Cromwell corrected version", title="Confessor Cromwell corrected version"]
+. After the corrections, activate the mod in the left pane.
++
+.Confessor Cromwell activated and ready
+image::DEFCON-01-Mod-Organizer-Confessor-Cromwell-activated.png["Confessor Cromwell activated and ready", title="Confessor Cromwell activated and ready"]
+. Now, for the last mod of the series. Double click on the *MTCBigTownMissingRobotFix* file in the *Downloads* tab. Leave the name untouched and select manual install.
++
+.Quick Install window for Big Town Missing Robots Fix
+image::DEFCON-01-Mod-Organizer-BigTown-Quick-Install.png["Quick Install window for Big Town Missing Robots Fix", title="Quick Install window for Big Town Missing Robots Fix"]
+. Everything is fine with the inner structure, so click on *OK*.
++
+.Big Town Missing Robots Fix inner structure is ok
+image::DEFCON-01-Mod-Organizer-BigTown-inner-structure.png["Big Town Missing Robots Fix inner structure is ok", title="Big Town Missing Robots Fix inner structure is ok"]
+. Again, the version number is absent from the mod info, so double-click on the mod name in the left pane to show the properties window.
++
+.Big Town Missing Robots Fix is installed but not active
+image::DEFCON-01-Mod-Organizer-BigTown-installed-but-not-active.png["Big Town Missing Robots Fix is installed but not active", title="Big Town Missing Robots Fix is installed but not active"]
+. Switch to the *Nexus Info* tab in the properties window and change the version number to 1.0, the correct one. Click on *Close* afterwards.
++
+.Big Town Missing Robots Fix corrected version
+image::DEFCON-01-Mod-Organizer-BigTown-corrected-version.png["Big Town Missing Robots Fix corrected version", title="Big Town Missing Robots Fix corrected version"]
+. Finally! Activate the mod in the left pane.
++
+.Big Town Missing Robots Fix activated and ready
+image::DEFCON-01-Mod-Organizer-BigTown-activated.png["Big Town Missing Robots Fix activated and ready", title="Big Town Missing Robots Fix activated and ready"]
+. We have all our mod installed, but we are not finished yet. Every mod has installed an `.esp` file, as you can see in the *Plugins* tab in the right pane.
++
+.Unrelated fixes plugins
+image::DEFCON-01-Mod-Organizer-unrelated-fixes-plugins.png["Unrelated fixes plugins", title="Unrelated fixes plugins"]
+. We need to sort the load order, just in case, although all these mods are fairly independent from each other, but you know what they say about mixing arses and fireworks. No? Honestly, neither do I. I just made it up. Anyway, launch LOOT and hit the *Sort Plugins* button. There shouldn't be any changes to the load order, though. Close LOOT to finish with the installation of the unrelated fixes.
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-9-stacking-order-after-unrelated-fixes.txt[stacking order] and link:order_lists/DEFCON-01-9-load-order-after-unrelated-fixes.txt[load order].
+====

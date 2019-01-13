@@ -1,0 +1,9 @@
+== DEFCON 02 (User Interface)
+
+_Fallout 3_ has a way of reminding you that, no matter how hard you want to get yourself into the game, it's still a game. I mean, yeah, the game needs a HUD (Heads-Up Display), but, does it need to be so fucking huge and obstrusive?
+
+This is an immersion-breaker for me. I like clean user interfaces that doesn't get in your way, allowing me to enjoy the in-game world without having it constantly pointing out where my enemies are, how much health do I have until being gang raped by a bunch of super-mutants or how much ammunition I may spend in a frenzied assault.
+
+Sure, this is a matter of personal taste, but I am the kind of person who always tries to play games in the hardest possible difficulty. Maybe I have a Spartan streak.
+
+In this chapter we are going to install a few mods that will allow you to customize your user interface, improving the overall look of the HUD and the in-game menus.

@@ -1,0 +1,10 @@
+=== Setting up the environment
+
+We have installed all the tools we need so far, but they are just bits and pieces left fending for themselves. What we are going to do in this chapter is to glue them together so that they work seamlessly in a solid, stable modding environment.
+
+[TIP]
+====
+There is a great video about https://www.youtube.com/watch?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&v=GeEz564qCpc[installing and stitching together all the tools], by Dirty Weasel Media. It is part of a https://www.youtube.com/playlist?list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9[larger playlist about modding _Fallout 3_ with Mod Organizer].
+====
+
+The setup has been divided in several parts to make it easier to follow.

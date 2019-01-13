@@ -1,0 +1,91 @@
+=== Patching the game
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/19122[_UPDATED Unofficial Fallout 3 Patch_]
+====
+
+Now, this is the time! We are going to install our first mod through MO, so pay close attention to the steps involved.
+
+. First, we are going to make sure MO is the preferred application to handle Nexus links protocol (NXM). Open the folder `[$FO3_HOME\Mod Organizer]`, run the program `nxmhandler.exe` and click on *Register active* (notice the "fallout3" entry; we created that when we associated MO with "Download with manager" links).
++
+.Program to handle Nexus links
+image::DEFCON-01-Mod-Organizer-NXM-handler.png["Program to handle Nexus links", title="Program to handle Nexus links"]
+. The NXM Handler will ask a strange question about being the primary handler registered. Just click on *Yes*.
++
+.Confirming NXM Handler as the primary handler for Nexus Links
+image::DEFCON-01-Mod-Organizer-NXM-register-active.png["Confirming NXM Handler as the primary handler for Nexus Links", title="Confirming NXM Handler as the primary handler for Nexus Links"]
+. Back to the NXM Handler main window, notice that the *Primary Handler* entry has changed to "<Current>". Click on *Close* and we are done registering the download protocol.
++
+.NXM Handler registered as primary handler
+image::DEFCON-01-Mod-Organizer-NXM-primary-handler-registered.png["NXM Handler registered as primary handler", title="NXM Handler registered as primary handler"]
+. Open MO, if you have not done it yet.
+. Switch to the *Downloads* tab in the right pane. This tab should be empty, for we have not installed any mod yet.
++
+.Empty *Downloads* tab
+image::DEFCON-01-Mod-Organizer-empty-Downloads-tab.png["Empty Downloads tab", title="Empty Downloads tab"]
+. Open your web browser and navigate to the Nexus http://www.nexusmods.com/fallout3/mods/19122[_UPDATED Unofficial Fallout 3 Patch_] page.
+. Download the file [NexusFile]*Updated_Unofficial_Fallout3_Patch_Mod_Manager_Version* with the manager.
+. Depending on how paranoid is your web browser (mine is Mozilla Firefox, and it's top of the line in this regard), you will be presented with a dialog to select the default application to open Nexus links, although we instructed MO to do so before. Mark *Remember my choice for nxm links*, keep `nxmhandler.exe` selected and click on *Open link*.
++
+.Selecting the application to open NXM links
+image::DEFCON-01-Mod-Organizer-selecting-NXM-links-manager.png["Selecting the application to open NXM links", title="Selecting the application to open NXM links"]
+. MO starts downloading the file we selected. It will take a while, for its size is over 190 MB.
++
+.Mod Organizer downloading the unofficial patch
+image::DEFCON-01-Mod-Organizer-downloading-unofficial-patch.png["Mod Organizer downloading the unofficial patch", title="Mod Organizer downloading the unofficial patch"]
+. Once the download is completed, double click on the entry with the mod name, as shown in the picture.
++
+.Unofficial patch downloaded
+image::DEFCON-01-Mod-Organizer-unofficial-patch-downloaded.png["Unofficial patch downloaded", title="Unofficial patch downloaded"]
+. MO tries to install the mod as quickly as possible by default, but it asks for permission first. We are *ALWAYS* going to install our mods manually, because although MO does a pretty good job figuring out the inner structure of any mod, sometimes it does some wild guesses which are not quite right. Leave the name unchanged and click on *Manual*.
++
+.Selecting manual installation of the unofficial patch
+image::DEFCON-01-Mod-Organizer-Quick-Install-dialog.png["Selecting manual instalation of the unofficial patch", title="Selecting manual instalation of the unofficial patch"]
+. The next window is one of the most important regarding to mod installation, and you will see it a fuckin' lot, so you'd better get used to it. This window allows us to change the inner structure of the mod to comply with the expected structure of any component under `[$FO3_HOME\Data]` folder. The structure of the unofficial patch is ok, so we don't have to change it (notice the "Looks good" message in the bottom left corner). However, the contents of the folder `[Readmes]` are not really necessary, so uncheck them, and finally click on *OK*.
++
+.Adjusting the inner structure of the unofficial patch
+image::DEFCON-01-Mod-Organizer-unofficial-patch-structure.png["Adjusting the inner structure of the unofficial patch", title="Adjusting the inner structure of the unofficial patch"]
+. MO starts decompressing the files into the virtual data folder. Remember: the files are not really being copied into the actual data folder. MO combines your whole mod stack to create a virtual data folder which _Fallout 3_ uses. Don't worry about that, though.
++
+.Unofficial patch installation progress
+image::DEFCON-01-Mod-Organizer-unofficial-patch-installation-progress.png["Unofficial patch installation progress", title="Unofficial patch installation progress"]
+. Once the installation finishes, the mod is marked as installed in the *Downloads* tab. We don't want aaaaaaaaaaaaaaall our installed mods to sit there until Doomsday, so put it out of the way by right-clicking on it and selecting *Remove from View* (be careful and don't delete the mod instead). In case you wanted to see your installed mods, mark the option *Show Hidden* at the bottom of the tab.
++
+.Putting the unofficial patch out of the way
+image::DEFCON-01-Mod-Organizer-unofficial-patch-installation-finished.png["Putting the unofficial patch out of the way", title="Putting the unofficial patch out of the way"]
+. Now, take a look at the left pane. You will see a new mod in your mod stack with the highest priority number (8), which means it will win any conflict as it will be loaded the last. Activate the mod with the checkbox at its left, and we're done!
++
+.Unofficial patch activated
+image::DEFCON-01-Mod-Organizer-unofficial-patch-activated.png["Unofficial patch activated", title="Unofficial patch activated"]
+. If you double-click on the mod name and switch to the *Conflicts* tab, you will see that the unofficial patch overwrites a great deal of files from the game and its DLCs, as it is intended. There's no need to verify the conflicts in every mod, but it won't hurt to check, just in case.
++
+.Unofficial patch conflicts
+image::DEFCON-01-Mod-Organizer-unofficial-patch-conflicts.png["Unofficial patch conflicts", title="Unofficial patch conflicts"]
+. The next steps involves LOOT, because we need to make sure our mods are loaded in the right order. MO places every new mod at the bottom of your load order by default, as you can see in the *Plugins* tab at the right pane.
++
+.Unofficial patch placed at the bottom of the load order
+image::DEFCON-01-Mod-Organizer-unofficial-patch-bottom-load-order.png["Unofficial patch placed at the bottom of the load order", title="Unofficial patch placed at the bottom of the load order"]
+. Run LOOT through the toolbar to sort our plugins.
++
+.Running LOOT for the first time
+image::DEFCON-01-Mod-Organizer-running-LOOT-unofficial-patch.png["Running LOOT for the first time", title="Running LOOT for the first time"]
+. LOOT dutifully informs us that we have not sorted our plugins yet, so click on the sorting icon (image:DEFCON-00-LOOT-sorting-icon.png["LOOT sorting icon", title="LOOT sorting icon"]).
++
+.Sorting our load order with LOOT after installing the unofficial patch
+image::DEFCON-01-LOOT-unofficial-patch.png["Sorting our load order with LOOT after installing the unofficial patch", title="Sorting our load order with LOOT after installing the unofficial patch"]
+. LOOT does not actually make any changes to the load order, because the unofficial patch should be at the very bottom. I knew that (really, I knew it, I swear), but it is good for you to acquire good practices. Close LOOT when your feel of awe diminishes.
++
+.The unofficial patch is already in the right place
+image::DEFCON-01-LOOT-unofficial-patch-sorted.png["The unofficial patch is already in the right place", title="The unofficial patch is already in the right place"]
+. You should test the game right now. Yes, for the first time! Yeah, I know that sensation, when you can hardly keep the shit inside your body and out of your pants. Trust me, I've been there myself. Go on, run the game through the *Run* button and start a new game. The game is now playable on Windows 7 or higher.
++
+._Fallout 3_ first run!
+image::DEFCON-01-Fallout-3-first-run.png["Fallout 3 first run!", title="Fallout 3 first run!"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-3-stacking-order-after-Unofficial-Patch.txt[stacking order] and link:order_lists/DEFCON-01-3-load-order-after-Unofficial-Patch.txt[load order].
+====

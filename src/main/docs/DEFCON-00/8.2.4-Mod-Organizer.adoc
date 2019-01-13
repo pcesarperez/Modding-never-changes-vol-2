@@ -1,0 +1,38 @@
+==== Mod Organizer
+
+Finally, our touchstone: http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer]. We are just going to install MO in this sub-chapter, taking care about the integration between all the tools in the <<Setting up the environment, next chapter>>.
+
+[TIP]
+====
+We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what it is and how to install it in these two videos, by Gopher, both part of a https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[larger playlist about MO]:
+
+* https://www.youtube.com/watch?v=j4ZQpzf_iAE&index=1&list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer: Introduction].
+* https://www.youtube.com/watch?v=PYY1OV2_ZTk&index=2&list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer #1 - Installation and Initial Setup.]
+====
+
+. http://www.nexusmods.com/skyrim/mods/1334/[Download] the last version of Mod Organizer using the [NexusFile]*Mod Organizer v1_3_11 installer* file, as of this writing.
+. Run the installer, which shows an assistant to guide you through the installation. Advance to the screen in which you should choose the components to install. Make sure you have the *Handle Nexus Links* option checked in order to download Nexus mod files right from MO.
++
+.Mod Organizer components
+image::DEFCON-00-Mod-Organizer-components.png["Mod Organizer components", title="Mod Organizer components"]
+. In the next screen, select `[$FO3_HOME\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
++
+.Mod Organizer installation folder
+image::DEFCON-00-Mod-Organizer-installation-folder.png["Mod Organizer installation folder", title="Mod Organizer installation folder"]
+. Once the tool is in place, run Mod Organizer. The application will ask you to select the game version you have. You should choose _Game Of The Year_.
++
+.Mod Organizer game version selection
+image::DEFCON-00-Mod-Organizer-game-version-selection.png["Mod Organizer game version selection", title="Mod Organizer game version selection"]
+. A window with the message of the day will appear. Just click *OK*.
++
+.Mod Organizer message of the day
+image::DEFCON-00-Mod-Organizer-message-of-the-day.png["Mod Organizer message of the day", title="Mod Organizer message of the day"]
+. After that, MO offers to show a tutorial. It's your choice, but if you want to cut to the chase, just click *No*.
++
+.Mod Organizer show tutorial offering
+image::DEFCON-00-Mod-Organizer-show-tutorial.png["Mod Organizer show tutorial offering", title="Mod Organizer show tutorial offering"]
+. Lo and behold! Here it is, at last! Mod Organizer is loaded with the main file and official DLCs loaded.
++
+.Mod Organizer first run
+image::DEFCON-00-Mod-Organizer-first-run.png["Mod Organizer first run", title="Mod Organizer first run"]
+. Don't do anything right now, but leave MO open.

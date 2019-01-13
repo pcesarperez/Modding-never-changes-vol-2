@@ -1,0 +1,79 @@
+=== Rearranging your HUD
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/15886/[_Adjustable HUD - aHUD_]
+====
+
+I don't personally like the standard HUD layout. The compass is in the lower left corner, glued to the hitpoints (HP) bar, and the weapon condition is on the opposite side, glued to the action points (AP) bar. You can get used to it, sure, but, what if you could customize the way the HUD looks to fit your dirtiest desires?
+
+Well, this is where _aHUD_ comes to the rescue.
+
+_aHUD_ is a small although powerful mod created by Gopher which allows the rearranging of the HUD items. I will show you my HUD arrangement, but feel free to place any item wherever the fuck you want.
+
+[TIP]
+====
+Gopher has https://www.youtube.com/watch?v=aqCzCXEydwU[a video about user interface mods] (25:05) which explains how this mod works (around https://youtu.be/aqCzCXEydwU?t=12m35s[12:35]). Ignore the previous part about installing the mod using NMM.
+====
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Adjustable HUD - Darnified* from https://www.nexusmods.com/fallout3/mods/15886/[_Adjustable HUD - aHUD_] with the manager.
++
+.aHUD is downloaded and ready to be installed
+image::DEFCON-02-Mod-Organizer-aHUD-downloaded-and-ready.png["aHUD is downloaded and ready to be installed", title="aHUD is downloaded and ready to be installed"]
+. Double-click on the mod entry to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.aHUD Quick Install window
+image::DEFCON-02-Mod-Organizer-aHUD-Quick-Install-window.png["aHUD Quick Install window", title="aHUD Quick Install window"]
+. The inner structure is fine, so just click on *OK*.
++
+.aHUD inner structure
+image::DEFCON-02-Mod-Organizer-aHUD-inner-structure.png["aHUD inner structure", title="aHUD inner structure"]
+. Move the mod in the left pane between _Smaller Crosshair_ and _UIO_ and activate it. Notice that the plugin `aHUD.esm` appears in the right pane, *Plugins* tab. This is the first mod, apart from the official ones, which plugin comes with an `.esm` flavour, instead of an `.esp` one. You don't need to run LOOT this time, by the way.
++
+.aHUD installed and active
+image::DEFCON-02-Mod-Organizer-aHUD-installed-and-active.png["aHUD installed and active", title="aHUD installed and active"]
+. We need to do a bit of tinkering in order to have this mod running smoothly along the rest of user interface mods. Double-click on the mod entry in the left pane and navigate to the *Filetree* tab. Expand the folders `[menus]` and `[main]` to locate the file `hud_main_menu.xml` and right-click on it, selecting the option *Hide*.
++
+.Hiding the main menu file in aHUD
+image::DEFCON-02-Mod-Organizer-aHUD-hiding-the-main-menu-file.png["Hiding the main menu file in aHUD", title="Hiding the main menu file in aHUD"]
+. With the main menu file hidden, click on *Close* to exit the properties window.
++
+.The main menu file in aHUD is hidden now
+image::DEFCON-02-Mod-Organizer-aHUD-main-menu-file-hidden.png["The main menu file in aHUD is hidden now", title="The main menu file in aHUD is hidden now"]
+. Back to the MO main window, right-click on the mod entry in the left pane and select the option *Open in explorer*.
++
+.Opening aHUD folder in explorer
+image::DEFCON-02-Mod-Organizer-aHUD-opening-in-explorer.png["Opening aHUD folder in explorer", title="Opening aHUD folder in explorer"]
+. Navigate to the `[menus]` folder, where you can see two more folders, `[main]` and `[prefabs]`. Enter the `[prefabs]` folder and create a new folder with the name `[darn]` (there should be an `[aHUD]` folder at the same level).
+. Enter the `[aHUD]` folder and copy the file `hudtemplates_darn.xml` to the `[darn]` folder you created previously. Rename the file to `hudtemplates.xml`. If you go back to MO and show the filetree in the properties window, you will see the tweaked structure.
++
+.Tweaked structure of aHUD
+image::DEFCON-02-Mod-Organizer-aHUD-tweaked-files.png["Tweaked structure of aHUD", title="Tweaked structure of aHUD"]
+. Now, it's time to rearrange our HUD, so launch the game. To start moving things around, press the kbd:[F6] key and select the item you want to move.
++
+.aHUD actions menu
+image::DEFCON-02-Fallout-3-aHUD-actions-menu.png["aHUD actions menu", title="aHUD actions menu"]
+. Let's select the *Adjust Compass* option. aHUD shows another menu in which we can select either hiding the compass bracket or move it around. Select *Hide compass bracket* first.
++
+.Selecting the option to hide the compass bracket in aHUD
+image::DEFCON-02-Fallout-3-aHUD-compass-options.png["Selecting the option to hide the compass bracket in", title="Selecting the option to hide the compass bracket in"]
+. Now, with the compass bracket hidden, select the option *Move Compass* to rearrange the compass.
++
+.Selecting the option to move the compass around in aHUD
+image::DEFCON-02-Fallout-3-aHUD-move-compass.png["Selecting the option to move the compass around in aHUD", title="Selecting the option to move the compass around in aHUD"]
+. Using the arrow keys (kbd:[&#8592;], kbd:[&#8594;], kbd:[&#8593;] and kbd:[&#8595;]), move the compass to the desired position (be careful not to press the kbd:[R] key during the process, for it resets the current relocation operation). I like mine in the upper-middle of the HUD. Hit any key when finished.
++
+.Moving around the compass with aHUD
+image::DEFCON-02-Fallout-3-aHUD-compass-relocated.png["Moving around the compass with aHUD", title="Moving around the compass with aHUD"]
+. Repeat the process for each item in the HUD until you are satisfied with the results. Take into account that the process is a bit slow, and the higher the resolution you are running the game under, the slower the process will be. This is how my HUD looks like after rearranging all the items (notice that there are items which we cannot move, like those of DarnUI; we'll take care of them with the next mod).
++
+.My HUD final arrangement through aHUD
+image::DEFCON-02-Fallout-3-aHUD-final-arrangement.png["My HUD final arrangement through aHUD", title="My HUD final arrangement through aHUD"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-4-stacking-order-after-aHUD.txt[stacking order] and link:order_lists/DEFCON-02-4-load-order-after-aHUD.txt[load order].
+====

@@ -1,0 +1,47 @@
+==== DEFCON 01 Merged Patch
+
+The merged patches I will provide are fine-tuned to correct any inconsistencies that the creation process may have introduced. However, remember that you need to have every mod in this DEFCON chapter installed for it to work properly.
+
+Let's install the patch, then.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the pre-generated patch link:patches/DEFCON-01-Merged-Patch-1.0.zip[DEFCON 01 Merged Patch] in a location of your choice.
+. Drag and drop the file from the folder you put it into to the *Downloads* tab in the right pane of MO.
++
+.Sideloading the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-sideloading-merged-patch.png["Sideloading the DEFCON 01 Merged Patch", title="Sideloading the DEFCON 01 Merged Patch"]
+. Double-click on the mod entry to perform an automatic installation of the mod. No *Quick Install* window will appear, because the mod is configured not to do so. The mod will appear in the left pane.
++
+.The DEFCON 01 Merged Patch is installed but not active yet
+image::DEFCON-01-Mod-Organizer-merged-patch-installed-but-not-active.png["The DEFCON 01 Merged Patch is installed but not active yet", title="The DEFCON 01 Merged Patch is installed but not active yet"]
+. Double-click on the mod in the left pane to show the properties window. This is not strictly necessary, but I will like to show you what the merged patch is packing. In the *Textfiles* tab, click on the file `docs/Required load order.txt` to show its contents, where you will see the required load order for this merged patch to work.
++
+.Required load order for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-required-load-order.png["Required load order for the DEFCON 01 Merged Patch", title="Required load order for the DEFCON 01 Merged Patch"]
+. Without leaving the *Textfiles* tab, click on the file `docs/Required stacking order.txt` to see the stacking order of the mods.
++
+.Required stacking order for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-required-stacking-order.png["Required stacking order for the DEFCON 01 Merged Patch", title="Required stacking order for the DEFCON 01 Merged Patch"]
+. Navigate to the *Optional ESPs* tab to see the `.esp` plugin file which is core to the merged patch.
++
+.Bundled plugin file for the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-bundled-plugin.png["Bundled plugin file for the DEFCON 01 Merged Patch", title="Bundled plugin file for the DEFCON 01 Merged Patch"]
+. In the *Nexus Info* tab you can check the version number (1.0.0.0, as of this writing).
++
+.DEFCON 01 Merged Patch version number
+image::DEFCON-01-Mod-Organizer-merged-patch-version-number.png[DEFCON 01 Merged Patch version numberm title="DEFCON 01 Merged Patch version number"]
+. Finally, in the *Filetree* tab, you will see the files we have just talked about, plus the well-known MO `meta.ini` file. At this point, the tour is finished, so click on *Close*.
++
+.Files bundled with the DEFCON 01 Merged Patch
+image::DEFCON-01-Mod-Organizer-merged-patch-bundled-files.png["Files bundled with the DEFCON 01 Merged Patch", title="Files bundled with the DEFCON 01 Merged Patch"]
+. Now, simply activate the merged patch in the left pane and check that both the mod and its plugin file are at the bottom of their respective panes.
++
+.DEFCON 01 Merged Patch is active and ready
+image::DEFCON-01-Mod-Organizer-merged-patch-installed-and-ready.png["DEFCON 01 Merged Patch is active and ready", title="DEFCON 01 Merged Patch is active and ready"]
+
+Piece of radioactive cake!
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-01-13-stacking-order-after-merged-patch.txt[stacking order] and link:order_lists/DEFCON-01-13-load-order-after-merged-patch.txt[load order].
+====

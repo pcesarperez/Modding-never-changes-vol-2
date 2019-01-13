@@ -1,0 +1,27 @@
+=== Bashing and merging all together (again)
+
+Installing the merged and bashed patches is going to be a simple process from now on, as I will provide the patches in a bundled, ready-to-install fashion.
+
+Remember: you have to have installed all the mods in this DEFCON chapter, in the right order, to be able to use the pre-packaged patches I provide. Otherwise, you can create your own <<Appendix 1: How to create your own merged patch, merged patches>> and <<Appendix 2: How to create your own bashed patch, bashed patches>>.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the pre-packaged patch link:patches/DEFCON-02-Merged-Patch-1.0.zip[DEFCON 02 Merged Patch] to a location of your choice.
+. Download the pre-packaged patch link:patches/DEFCON-02-Bashed-Patch-1.0.zip[DEFCON 02 Bashed Patch] to a location of your choice.
+. Click on the button sideload a mod from an archive.
++
+.Button to install a mod from an archive
+image::DEFCON-02-Mod-Organizer-install-mod-from-archive-button.png["Button to install a mod from an archive", title="Button to install a mod from an archive"]
+. Select the file `DEFCON-01-Merged-Patch-1.0.zip` in the location where you downloaded it.
+. The mod is installed automatically. Move it above the deactivated DEFCON 01 patches and activate it in the left pane.
++
+.DEFCON 02 Merged Patch is installed and active
+image::DEFCON-02-Mod-Organizer-merged-patch-installed-and-active.png["DEFCON 02 Merged Patch is installed and active", title="DEFCON 02 Merged Patch is installed and active"]
+. Repeat the process for the bashed patch, selecting the file `DEFCON-02-Bashed-Patch-1.0.zip` this time. Put the bashed patch between the merged patch and the deactivated DEFCON 01 patches.
++
+.DEFCON 02 Bashed Patch is installed and active
+image::DEFCON-02-Mod-Organizer-bashed-patch-installed-and-active.png["DEFCON 02 Bashed Patch is installed and active", title="DEFCON 02 Bashed Patch is installed and active"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-6-stacking-order-after-patches.txt[stacking order] and link:order_lists/DEFCON-02-6-load-order-after-patches.txt[load order].
+====

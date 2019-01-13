@@ -1,0 +1,59 @@
+=== Installing the game
+
+I am assuming we are using the Steam edition of _Fallout 3 Game of the Year Edition_, with all 5 DLCs. This is what you have to do first and foremost.
+
+. Install Steam outside UAC-controlled space. In other words, *DO NOT* install Steam in the default location, under `[C:\Program Files]`. Install it instead in `[C:\Games]` or any other location of your choice. If you have Steam already installed in UAC-controlled space, check this guide about https://support.steampowered.com/kb_article.php?ref=7418-YUBN-8129[moving a Steam installation and games]. We will refer to the final Steam location as `[$STEAM_HOME]`.
+. Install _Fallout 3 Game of the Year Edition_ through Steam. The game will be located at `[$STEAM_HOME\steamapps\common\Fallout 3 goty]`, which we will refer to as `[$FO3_HOME]` from now on.
+. You *MUST* run the game at least once to create the configuration files the game needs, so double-click on the launcher icon you should have in your desktop.
++
+._Fallout 3_ launcher icon
+image::DEFCON-00-Fallout-3-launcher-icon.png["Fallout 3 launcher icon", title="Fallout 3 launcher icon"]
+. The launcher dutifully informs you that video hardware is about to be detected, thus setting up the configuration for you.
++
+.Video hardware detection message
+image::DEFCON-00-Video-hardware-detection-message.png["Video hardware detection message", title="Video hardware detection message"]
+. After a brief moment, the launcher shows a message with the quality settings it has detected for your box (my rig is a crap, but the game is rather old, so...).
++
+.Video hardware settings detected
+image::DEFCON-00-Video-hardware-settings-detected.png["Video hardware settings detected", title="Video hardware settings detected"]
+. And here we go! This is the launcher in all its greenish glory.
++
+._Fallout 3_ launcher
+image::DEFCON-00-Fallout-3-launcher.png["Fallout 3 launcher", title="Fallout 3 launcher"]
+. Click on *Options* to adjust the video resolution. Don't bother changing anything else right now.
++
+._Fallout 3_ settings
+image::DEFCON-00-Video-resolution-adjustment.png["Fallout 3 settings", title="Fallout 3 settings"]
+. Click on *Play* in the launcher to launch the game with the preferred settings.
++
+._Fallout 3_ launcher, ready for action
+image::DEFCON-00-Fallout-3-launcher-ready.png["Fallout 3 launcher, ready for action", title="Fallout 3 launcher, ready for action"]
+. You will probably run into an error like this one when trying to run the game for the first time, at least under Windows 10 Creators Update. To fix this, click on *Learn more* to open a browser window and download the Games for Windows Live client from Microsoft.
++
+.Error about absent Games for Windows Live
+image::DEFCON-00-Compatibility-Assistant.png["Error about absent Games for Windows Live", title="Error about absent Games for Windows Live"]
+. Install the client running the `gfwlivesetup.exe` file you just downloaded. The installation will be brief.
++
+.Games for Windows Live installation
+image::DEFCON-00-Games-for-Windows-Live-installation.png["Games for Windows Live installation", title="Games for Windows Live installation"]
+. When finished, just click on *Close*.
++
+.Games for Windows Live installation finished
+image::DEFCON-00-Games-for-Windows-Live-installation-finished.png["Games for Windows Live installation finished", title="Games for Windows Live installation finished"]
+. Try to run the game again. The dreaded compatibility assistant shows itself again. However, this time tick the option *Don't show this message again* and then click on *Close*.
++
+.The compatibility assistant, again
+image::DEFCON-00-Compatibility-Assistant-again.png["The compatibility assistant, again", title="The compatibility assistant, again"]
+. Now, click on *Play* in the launcher.
++
+._Fallout 3_ launcher, ready for action
+image::DEFCON-00-Fallout-3-launcher-ready.png["Fallout 3 launcher, ready for action", title="Fallout 3 launcher, ready for action"]
+. Success! The first step in our modding journey is over.
++
+._Fallout 3_ main menu
+image::DEFCON-00-Fallout-3-main-menu.png["Fallout 3 main menu", title="Fallout 3 main menu"]
+. This is all we need, for now. Just click on *Quit* and check this files and folders under `[$USERPROFILE\Documents\My Games\Fallout3]` (`[$USERPROFILE\My Documents\My Games\Fallout3]`, if you are using Windows 7):
+* `[Saves]`
+* `FALLOUT3.INI`
+* `FalloutPrefs.ini`
+* `RendererInfo.txt`

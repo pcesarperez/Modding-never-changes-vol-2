@@ -1,0 +1,23 @@
+== Why Mod Organizer?
+
+When I started writing https://pcesarperez.github.io/modding-never-changes/[the first volume of this guide] I didn't know of the existence of Mod Organizer. I was halfway through the writing when I seriously considered trashing out what I had done after watching https://www.youtube.com/playlist?list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Gopher's series about Mod Organizer], in one of my random video-hunting sessions.
+
+I decided not to, and I think I did right. Writing the guide using Nexus Mod Manager taught me how to mod a game, how important is the install order, what is the load order, and so on.
+
+To illustrate the main advantage of Mod Organizer (MO) over Nexus Mod Manager (NMM), let's imagine this scenario: you are halfway through your mod stack setup, and you find a new, incredible mod you cannot live without (trust me, it happens). You have two choices: either risking your setup by just adding the mod, if it is not overly aggressive (and by "not overly aggressive" I mean "does not overwrite a lot of previously installed assets"), or restarting your modding process, installing the mod in its proper place. The later will usually be the sensible choice, although tedious and frustrating.
+
+That's what should happen with NMM, but not with MO. Have you found an oh-my-gosh-I-need-this mod? Just throw it into the right profile and rearrange your mod stack, carefully controlling the assets that will be overwritten. There are other advantages, too, pointed out in the http://wiki.step-project.com/Guide:Mod_Organizer[official guide]:
+
+* Your data folder will be kept clean. No more cluttered data folders, because MO uses a virtual folder to install the mods.
+* Merging different files into a single mod is dead easy. You don't have to have a lot of different entries in your mod stack for each mod you install.
+* You have integrated tools to fiddle with the inner structure of the mods, so you will be able to fix any weirdness the mod comes with before installing it.
+* Knowing which files are overwritten and by which mod in your setup is a no-brainer.
+* Profiles! Do you need a profile for a heavy-gunner with specific mods? Done! Do you need a profile for a hard nerd whose favorite problem solving method is talking her way out of it? Done! Each profile has its individual mod configuration, which is perfect for the progressive, functional approach we are going to use throughout this guide.
+
+There are several downsides too, of course, although none of them is a real deal breaker:
+
+* MO is a bit more difficult than NMM. It's not rocket science, but you have to know what you are doing to have a correct mod stack. Installing a mod is not as simple as throwing it into your mod stack. You have to know which files from other mods it should overwrite and which of its files should be overwritten.
+* Sometimes, mods with scripted installers (aka FOMOD/BAIN installers) do have a weird behavior under MO, even not working at all. There are ways around these issues, but still.
+* MO doesn't work with 64 bits games, so we are stuck with NMM for games like _Fallout 4_ and _The Elder Scrolls 5: Skyrim Special Edition_.
+
+Once you start using MO, there's no turning back to NMM. Ever. Even though both of them http://www.nexusmods.com/fallout4/news/12905/?[are endangered species now]. The next breed of NMM (http://www.nexusmods.com/games/news/13257/?[Vortex], that is) will supposedly have all the features of MO, but until then, MO is our winning horse.

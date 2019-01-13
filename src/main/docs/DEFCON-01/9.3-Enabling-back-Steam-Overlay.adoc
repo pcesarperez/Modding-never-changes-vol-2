@@ -1,0 +1,122 @@
+=== Enabling back Steam Overlay
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/21364/[_FalloutLauncher Replacer for Steam_]
+====
+
+You may have noticed a peculiar absence launching the game through MO: there is no Steam Overlay.
+
+For those of you who have been living in a crab-infested cave to flee from the Steam Season Sales, Steam Overlay is, well, an overlay you can pull up in any Steam hosted game using the keys kbd:[Shift] and kbd:[Tab]. This overlay bundles an integrated browser, a chat, a recount of the time you have been playing the game and so on. I think you get the idea.
+
+If you are interested in getting Steam Overlay back to life, follow these steps:
+
+. Delete the icons you previously created in the desktop to launch _Fallout 3_, both of them. We are going to create a new one.
+. Download manually the file [NexusFile]*FalloutLauncher* from http://www.nexusmods.com/fallout3/mods/21364/[_FalloutLauncher Replacer for Steam_].
+. Unzip the file `FalloutLauncher-21364-1-4.zip` (or whatever its name is, depending on the version) in a location of your choice.
+. Create an empty file called `FalloutLauncher.ini` in the same folder you have just unzipped the file.
+. The zipped file contained just one file, `FalloutLauncher.exe`. Run the program once, which is a console application with three options (standard launcher, FOSE and MO), to fill the INI file with a skeleton template. Just press kbd:[ESC] to exit.
++
+.FalloutLauncher Replacer first run
+image::DEFCON-01-FalloutLauncherReplacer-first-run.png["FalloutLauncher Replacer first run", title="FalloutLauncher Replacer first run"]
+. Open the file `FalloutLauncher.ini` for edition. There are four sections within: `[Fallout Launcher]`, `[FOSE]`, `[Mod Organizer]` and `[Custom]`. We are always going to run the game through MO, so we just need to fill in the `[Mod Organizer]` section. This is how you find that section, fresh like your first morning shit:
++
+----
+[Mod Organizer]
+; Leave empty to ignore
+Path=
+Arguments=
+----
+. You just need to set the `Path` property to your `ModOrganizer.exe` location, which should be in `[$FO3_HOME\Mod Organizer]`. This is my version of the entry in `FalloutLauncher.ini`. Modify the `Path` entry as necessary.
++
+----
+[Mod Organizer]
+; Leave empty to ignore
+Path=C:\Games\Steam\steamapps\common\Fallout 3 goty\Mod Organizer\ModOrganizer.exe
+Arguments=
+----
+. Now, open the folder `[$FO3_HOME]` and create a backup copy of the file `FalloutLauncher.exe`, which is the official, original launcher.
+. Copy the files `FalloutLauncher.exe` and `FalloutLauncher.ini` from the FalloutLauncher Replacer folder to your `[$FO3_HOME]` folder. There should be a `FalloutReplacer.log` file which you can safely ignore. This is how the `[$FO3_HOME]` folder should look after copying the replacement.
++
+.FalloutLauncher replacer in place
+image::DEFCON-01-FalloutLauncherReplacer-in-place.png["FalloutLauncher replacer in place", title="FalloutLauncher replacer in place"]
+. It's time to create a new shortcut to launch the game through the new launcher. Right-click on your Steam icon in the tray bar and select *Library*.
++
+.Opening your game library in Steam
+image::DEFCON-01-Steam-opening-game-library.png["Opening your game library in Steam", title="Opening your game library in Steam"]
+. Once your game library opens, right-click on your _Fallout 3 - Game of the Year Edition_ entry and select *Properties*.
++
+.Opening the _Fallout 3 GOTY_ properties in Steam
+image::DEFCON-01-Steam-Fallout-3-opening-properties.png["Opening the Fallout 3 GOTY properties in Steam", title="Opening the Fallout 3 GOTY properties in Steam"]
+. In the *General* tab, click on the *Set launch options...* button.
++
+.Opening _Fallout 3 GOTY_ launch options
+image::DEFCON-01-Steam-Fallout-3-opening-launch-options.png["Opening Fallout 3 GOTY launch options", title="Opening Fallout 3 GOTY launch options"]
+. The next window warns us that we should be meddling with the options only if we are advanced users, which we are, indeed. Set the launch option `--start mo` to ensure that the new launcher goes through MO and click on *OK*.
++
+.Making sure Mod Organizer is launched through Steam
+image::DEFCON-01-Steam-Fallout-3-launch-options.png["Making sure Mod Organizer is launched through Steam", title="Making sure Mod Organizer is launched through Steam"]
+. Back to the game properties, still in the *General* tab, make sure the option *Enable the Steam Overlay while in-game* is checked, and click on the button *Create desktop shortcut*.
++
+.Creating a desktop shortcut for the game
+image::DEFCON-01-Steam-Fallout-3-creating-desktop-shortcut.png["Creating a desktop shortcut for the game", title="Creating a desktop shortcut for the game"]
+. Steam does its job very well, you know.
++
+.The shortcut has been created, of course
+image::DEFCON-01-Steam-Fallout-3-shortcut-created.png["The shortcut has been created, of course", title="The shortcut has been created, of course"]
+. We have now a lonely icon to launch _Fallout 3_ with Steam Overlay sitting on the desktop.
++
+._Fallout 3_ launcher icon, with Steam Overlay
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon.png["Fallout 3 launcher icon, with Steam Overlay", title="Fallout 3 launcher icon, with Steam Overlay"]
+. Let's rename the icon to "FO3-MO", to make clear we are launching the game through MO anyway.
++
+.Renaming the icon to its former self
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-renamed.png["Renaming the icon to its former self", title="Renaming the icon to its former self"]
+. For the sake of aesthetics, if nothing else, let's change the shortcut to use the icon we downloaded in the chapter about <<Creating a proper shortcut, creating a proper shortcut>>. Right-click on the icon and select *Properties*.
++
+.Launching shortcut's properties
+image::DEFCON-01-Fallout-3-Steam-Overlay-properties-option.png["Launching shortcut's properties", title="Launching shortcut's properties"]
+. The following window should open in the *Web Document* tab (it's a bit different from regular shortcuts). Click on the *Change Icon* button.
++
+._Fallout 3_ with Steam Overlay shortcut's properties
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-properties.png["Fallout 3 with Steam Overlay shortcut's properties", title="Fallout 3 with Steam Overlay shortcut's properties"]
+. As usual, a new window is shown with the crappy default system icons. Click on *Browse...*.
++
+.Crappy default icons we don't give a shit about
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-browse.png["Crappy default icons we don't give a shit about", title="Crappy default icons we don't give a shit about"]
+. Select the icon you want to use. I have renamed the `.ico` file we used before to `Fallout3.ico`, but feel free to use whatever icon you feel comfortable with.
++
+.Selecting a new icon for the Steam Overlay shortcut
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-selection.png["Selecting a new icon for the Steam Overlay shortcut", title="Selecting a new icon for the Steam Overlay shortcut"]
+. With the new icon selected, just click on *OK*.
++
+.New shortcut icon selected
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-selected.png["New shortcut icon selected", title="New shortcut icon selected"]
+. Back again to the properties window, click on *OK* again.
++
+.Final touches to the shortcut icon
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-final.png["Final touches to the shortcut icon", title="Final touches to the shortcut icon"]
+. So, we have a new brand icon to launch the game through MO with Steam Overlay.
++
+.Final icon to launch the game
+image::DEFCON-01-Fallout-3-Steam-Overlay-icon-reshaped.png["Final icon to launch the game", title="Final icon to launch the game"]
+. What happens when you double-click on the launcher icon? In the end, you will have MO open and ready, but prior to that, two things happen very fast. First, you will briefly see the usual window Steam shows when launching a game.
++
+._Fallout 3_ being launched through Steam
+image::DEFCON-01-Fallout-3-through-Steam.png["Fallout 3 being launched through Steam", title="Fallout 3 being launched through Steam"]
+. Next, you will see an empty _FalloutLauncher Replacer_ window in a flash.
++
+.Empty _FalloutLauncher Replacer_ window
+image::DEFCON-01-Fallout-3-through-Steam-through-FalloutLauncher-replacer.png["Empty FalloutLauncher Replacer window", title="Empty FalloutLauncher Replacer window"]
+. MO finally opens, with your current profile loaded. Now, launch _Fallout 3_ using the *Run* button.
++
+.Launching _Fallout 3_ with Steam Overlay
+image::DEFCON-01-Fallout-3-through-Steam-through-FalloutLauncher-replacer-through-Mod-Organizer.png["Launching Fallout 3 with Steam Overlay", title="Launching Fallout 3 with Steam Overlay"]
+. Now, if you press kbd:[Shift] and kbd:[Tab] while in-game, you will see Steam Overlay in all its electronic glory.
++
+.Steam Overlay and _Fallout 3_, finally
+image::DEFCON-01-Fallout-3-with-Steam-Overlay.png["Steam Overlay and Fallout 3, finally", title="Steam Overlay and Fallout 3, finally"]
+
+This is it! Now, we have the best of both worlds: Steam and MO. Time to move on!

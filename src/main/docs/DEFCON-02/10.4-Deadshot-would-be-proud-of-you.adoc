@@ -1,0 +1,73 @@
+=== Deadshot would be proud of you
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/15724/[_Dynamic Crosshair_]
+* https://www.nexusmods.com/fallout3/mods/240/[_Smaller Crosshair_]
+====
+
+_Fallout 3_ has a good deal of shoot-outs, where you'd better be packing solid iron to wipe out your enemies. However, you will be as good as fuck if you rely on the default aiming capabilities of the game, including the crosshair. We'll be addressing the ironsights later in chapter <<DEFCON 06 (New and Improved Weapons), DEFCON 06>>, but now is the moment to improve your chances of survival by improving the way you know where you are aiming to.
+
+We are going to install two mods for this. https://www.nexusmods.com/fallout3/mods/15724/[_Dynamic Crosshair_] resizes the crosshair to show the actual spreading area of the weapon (e.g., a sawed-off shotgun has a much larger spread that a 9 mm handgun). https://www.nexusmods.com/fallout3/mods/240/[_Smaller Crosshair_] replaces the default crosshair with a small crosshair of our choice.
+
+Let's begin with this.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Dynamic Crosshair - Darnified UI* from https://www.nexusmods.com/fallout3/mods/15724/[_Dynamic Crosshair_] with the manager.
++
+.Dynamic Crosshair is downloaded and ready to be installed
+image::DEFCON-02-Mod-Organizer-Dynamic-Crosshair-downloaded-and-ready.png["Dynamic Crosshair is downloaded and ready to be installed", title="Dynamic Crosshair is downloaded and ready to be installed"]
+. Double-click on the mod to show the Quick Install window, where you should change nothing. Just click on *Manual*.
++
+.Dynamic Crosshair Quick Install window
+image::DEFCON-02-Mod-Organizer-Dynamic-Crosshair-Quick-Install-window.png["Dynamic Crosshair Quick Install window", title="Dynamic Crosshair Quick Install window"]
+. The inner structure of the mod is correct, so just click on *OK*.
++
+.Dynamic Crosshair inner structure
+image::DEFCON-02-Mod-Organizer-Dynamic-Crosshair-inner-structure.png["Dynamic Crosshair inner structure", title="Dynamic Crosshair inner structure"]
+. Move the mod entry in the left pane just above _UIO_ and activate it. Notice the plugin `DynamicCrosshair.esp` at the bottom of your load order. There is no need to run LOOT, because the load order is good already.
++
+.Dynamic Crosshair installed and active
+image::DEFCON-02-Mod-Organizer-Dynamic-Crosshair-installed-and-active.png["Dynamic Crosshair installed and active", title="Dynamic Crosshair installed and active"]
+. It's time to shrink the size of the default crosshair, and we need to choose the crosshair that best fits your needs. There are four flavours: classic, larger dot, single pixel and small dot. I am going to choose [NexusFile]*Larger dot crosshair* from https://www.nexusmods.com/fallout3/mods/240/[_Smaller Crosshair_], but feel free to download the one you fancy most:
++
+.Smaller Crosshair downloaded and ready to be installed
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-downloaded-and-ready.png["Smaller Crosshair downloaded and ready to be installed", title="Smaller Crosshair downloaded and ready to be installed"]
+. Double-click on the downloaded mod to show the Quick Install window, where you just have to click on *Manual*.
++
+.Smaller Crosshair Quick Install window
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-Quick-Install-window.png["Smaller Crosshair Quick Install window", title="Smaller Crosshair Quick Install window"]
+. The inner structure of the mod is a bit scrambled, so right-click on the `[Data]` folder and select the option *Set data directory* to set a new top-level data directory for the mod.
++
+.Smaller Crosshair inner structure
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-inner-structure.png["Smaller Crosshair inner structure", title="Smaller Crosshair inner structure"]
+. We have now a corrected structure, so click on *OK*.
++
+.Smaller Crosshair corrected structure
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-corrected-structure.png["Smaller Crosshair corrected structure", title="Smaller Crosshair corrected structure"]
+. Move the mod in the left pane between _Dynamic Crosshair_ and _UIO_. However, the version is not correct, so double-click on the mod entry to bring up the properties window.
++
+.Smaller Crosshair is installed but not active yet
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-installed-but-not-active-yet.png["Smaller Crosshair is installed but not active yet", title="Smaller Crosshair is installed but not active yet"]
+. In the properties window, navigate to the *Nexus Info* tab and set the version number to 1.0, clicking on *Close* afterwards.
++
+.Smaller Crosshair corrected version number
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-correcting-version-number.png["Smaller Crosshair corrected version number", title="Smaller Crosshair corrected version number"]
+. Activate the mod in the left pane, and we are good to go. There are no plugins installed this time.
++
+.Smaller Crosshair installed and active
+image::DEFCON-02-Mod-Organizer-Smaller-Crosshair-installed-and-active.png["Smaller Crosshair installed and active", title="Smaller Crosshair installed and active"]
+. There are significant differences between both the normal and aiming stances before and after installing these crosshair mods, albeit normal and aiming stances are almost identical, for now.
++
+.Before and after installing crosshair mods in normal stance
+image::DEFCON-02-Mod-Organizer-normal-stance-before-new-crosshairs.png["Before and after installing crosshair mods in normal stance", title="Before and after installing crosshair mods in normal stance"]
++
+.Before and after installing crosshair mods in aiming stance
+image::DEFCON-02-Mod-Organizer-aiming-stance-before-new-crosshairs.png["Before and after installing crosshair mods in aiming stance", title="Before and after installing crosshair mods in aiming stance"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-02-3-stacking-order-after-crosshair-mods.txt[stacking order] and link:order_lists/DEFCON-02-3-load-order-after-crosshair-mods.txt[load order].
+====

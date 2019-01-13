@@ -1,0 +1,21 @@
+=== Patching the shit out of the game
+
+We could say that things are pretty much under control, for now. We have installed a bunch of mods, sure, but the game itself remains essentially the same.
+
+However, this is the point where we are going to introduce two concepts that will accompany us from now on: merged and bashed patches. These are special mods to ensure that no compatibility problems among the installed mods will arise. Take into account that even with Bethesda’s main files, there are inconsistencies across the different DLCs, let alone with a fuckload of mods installed, each one with its own set of items and rules.
+
+Before explaining how to install them, you should know that there will be a pair of patches for you to install at the end of each major DEFCON chapter. Nevertheless, you only need to install them in the last DEFCON chapter you decide to follow.
+
+Repeating myself, you don't need to follow through the entire guide. You could choose to follow it through to, say, <<DEFCON 11 (Lighting), the chapter about lighting>>, discarding the rest. In that case, you only need to install a merged and a bashed patch at the end of that chapter. Likewise, if you decide to stop here, you should install the patches at this point and forget the rest of the guide.
+
+In other words, you only need to install a merged and a bashed patch in the last DEFCON chapter you decide to follow.
+
+Creating a merged patch is a no-brainer, but creating a bashed patch is like going to swim at sea everyday uttering the name of the Great Cthulhu before the water licks your balls.
+
+That's a recipe for disaster, hear me well.
+
+This is why I will provide a merged and a bashed patch at the end of each major DEFCON chapter. As I said, ignore them until the last DEFCON chapter you decide to follow.
+
+However, if you feel suicidal or, at some point, you decide not to follow this guide to the letter (why should you?), you have two appendices, one explaining <<Appendix 1: How to create your own merged patch, how to create a merged patch>> and the other explaining <<Appendix 2: How to create your own bashed patch, how to create a bashed patch>>.
+
+If you want to stop right here, in the DEFCON 01 profile (although I heartedly recommend following through at least to the next chapter, about <<DEFCON 02 (User Interface), user interface>>), go ahead and <<DEFCON 01 Merged Patch, install the provided merged patch>> (and then, <<DEFCON 01 Bashed Patch, install the provided bashed patch>>). Otherwise, jump to the <<DEFCON 02 (User Interface), next DEFCON chapter>>.

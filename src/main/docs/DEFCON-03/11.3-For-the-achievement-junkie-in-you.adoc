@@ -1,0 +1,80 @@
+=== For the achievement junkie in you
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://www.nexusmods.com/fallout3/mods/11326/[_Personal Achievements Log_]
+* http://www.nexusmods.com/fallout3/mods/18678/[_SeraphTCs Personal Achievements Log FIX_]
+====
+
+If you have ever played _World of Warcraft_, you will know that there is a deep, ingrained part of your reptilian brain that generates a huge amount of endorphines every time you get an _Achievement unlocked_ message after fulfilling a series of tasks.
+
+I know what I am talking about. Trust me.
+
+Well, _there are_ achievements in _Fallout 3_, but they are not clearly visible after their first (and only) appearance. http://www.nexusmods.com/fallout3/mods/11326/[This mod] (and http://www.nexusmods.com/fallout3/mods/18678/[its fix]) lets you view all your achievements in the *Data*/*Notes* section of your Pip-Boy.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Personal Achievements Log v12* from http://www.nexusmods.com/fallout3/mods/11326/[_Personal Achievements Log_] with the manager.
+. Download the file [NexusFile]*SeraphTCs Personal Achievements Log FIX* from http://www.nexusmods.com/fallout3/mods/18678/[_SeraphTCs Personal Achievements Log FIX_] with the manager.
++
+.Achievement mods downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-achievement-mods-downloaded-and-ready.png["Achievement mods downloaded and ready to be installed", title="Achievement mods downloaded and ready to be installed"]
+. Double-click on [NexusFile]*Personal Achievements Log v12* to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.Personal Achievements Log Quick Install window
+image::DEFCON-03-Mod-Organizer-PAL-Quick-Install-window.png["Personal Achievements Log Quick Install window", title="Personal Achievements Log Quick Install window"]
+. The inner structure shows several files which we may use, but we just need three of them. Deactivate the following files and click on *Ok*.
+* `PAL - BASE File.esp`
+* `PAL - Broken Steel.esp`
+* `PAL - Mothership Zeta.esp`
+* `PAL - Operation Anchorage.esp`
+* `PAL - Point Lookout.esp`
+* `PAL - The Pitt.esp`
++
+.Personal Achievements Log inner structure
+image::DEFCON-03-Mod-Organizer-PAL-inner-structure.png["Personal Achievements Log inner structure", title="Personal Achievements Log inner structure"]
+. The mod is shown in the left pane, not active yet.
++
+image::DEFCON-03-Mod-Organizer-PAL-installed-but-not-active.png["Personal Achievements Log installed but not active", title="Personal Achievements Log installed but not active"]
+. The mod has an incorrect version number, so double-click on it to bring up the properties window and navigate to the *Nexus Info* tab. Once there, change the version number to "1.2" and click on *Close*.
++
+.Personal Achievements Log corrected version number
+image::DEFCON-03-Mod-Organizer-PAL-corrected-version-number.png["Personal Achievements Log corrected version number", title="Personal Achievements Log corrected version number"]
+. Back to the MO main window, move the mod in the left pane between _Immersive HUD - iHUD_ and _SmoothLight - Pip-Boy Light Enhancer_ and activate it. Notice that the plugin `PAL - MERGED.esp` appears in the right pane, *Plugins* tab.
++
+.Personal Achievements Log installed and active
+image::DEFCON-03-Mod-Organizer-PAL-installed-and-active.png["Personal Achievements Log installed and active", title="Personal Achievements Log installed and active"]
+. Double-click on [NexusFile]*SeraphTCs Personal Achievements Log FIX* to bring up the Quick Install window. Don't change anything and click on *Manual*.
++
+.SeraphTC's PAL Fix Quick Install window
+image::DEFCON-03-Mod-Organizer-PAL-Fix-Quick-Install-window.png["SeraphTC's PAL Fix Quick Install window", title="SeraphTC's PAL Fix Quick Install window"]
+. The inner structure has a top-level folder which we need to set as data directory. Right-click on `[SeraphTC's Personal Achievements Log FIX]` folder and select *Set data directory*.
++
+.Rearranging the inner structure of SeraphTC's PAL Fix
+image::DEFCON-01-Mod-Organizer-PAL-Fix-rearranging-structure.png["Rearranging the inner structure of SeraphTC's PAL Fix", title="Rearranging the inner structure of SeraphTC's PAL Fix"]
+. Once the virtual data folder is set, the mod becomes immediately palatable for MO. Just click on *OK* to go on.
++
+.SeraphTC's PAL Fix inner structure
+image::DEFCON-03-Mod-Organizer-PAL-Fix-inner-structure.png["SeraphTC's PAL Fix inner structure", title="SeraphTC's PAL Fix inner structure"]
+. Back to the MO main window, move the mod in the left pane between _Personal Achievements Log_ and _SmoothLight - Pip-Boy Light Enhancer_ and activate it. This mod contains a replacement for `PAL - MERGED.esp`, so no new plugins are added to the *Plugins* tab in the right pane. The plugins is already in its right place, so there's no need to run LOOT.
++
+.SeraphTC's PAL Fix installed and active
+image::DEFCON-03-Mod-Organizer-PAL-Fix-installed-and-active.png["SeraphTC's PAL Fix installed and active", title="SeraphTC's PAL Fix installed and active"]
+. If you start a fresh game, that's it. You will have your personal achievements log right off the bat. However, if you are following this guide to the letter, you will probably have started just outside Vault 101 using the proper saved game. In that case, look for a small data cartridge placed next to the Vault exit door beams. Take it to activate _Personal Achievements Log_.
++
+.PAL data cartridge outside Vault 101
+image::DEFCON-03-Fallout-3-PAL-cartridge-outside-Vault-101.png["PAL data cartridge outside Vault 101", title="PAL data cartridge outside Vault 101"]
+. You will find an entry to see your achievements in the *Data* button, *Notes* section of your Pip-Boy.
++
+.PAL entry in your Pip-Boy
+image::DEFCON-03-Fallout-3-PAL-Pip-Boy-entry.png["PAL entry in your Pip-Boy", title="PAL entry in your Pip-Boy"]
+. Click on the entry to see a _retroactive_ list of all the achievements you have... well, achieved so far, since you start playing towards the current savegame.
++
+.PAL achievement list
+image::DEFCON-03-Fallout-3-PAL-achievements.png["PAL achievement list", title="PAL achievement list"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-2-stacking-order-after-achievement-mods.txt[stacking order] and link:order_lists/DEFCON-03-2-load-order-after-achievement-mods.txt[load order].
+====

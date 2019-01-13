@@ -1,0 +1,38 @@
+=== Setting up the foundation for our modding
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* http://fose.silverlock.org/[_Fallout Script Extender (FOSE)_]
+====
+
+If you ever want to install a single mod in _Fallout 3_, you will need http://fose.silverlock.org/[_Fallout Script Extender_] (FOSE, for short).
+
+Well... That's not exactly true, as there may be mods that does not make use of the capabilities provided by FOSE, and we are going to use a good deal of them. But they will be a minority, and we will need this tool ahead the road.
+
+[TIP]
+====
+Cal, from DirtyWeasel, has an interesting video about https://www.youtube.com/watch?v=kdZffZnYvL4&list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&index=1[setting up MO and FOSE] (40:20) (see around minute https://youtu.be/kdZffZnYvL4?t=24m5s[24:05]).
+====
+
+. Make sure MO is closed for the time being.
+. Download the latest version of FOSE (http://fose.silverlock.org/beta/fose_v1_3_beta2.7z[1.3b2] as of this writing). It's the beta version, but it has been in that state for ages without noticeable glitches, so I guess that qualifies it as "stable", as far as we are concerned.
+. Extract the contents of the archive into a folder of your choice.
+. Copy the following files you just extracted to `[$FO3_HOME]`:
+* `fose_1_7.dll`
+* `fose_1_7ng.dll`
+* `fose_editor_1_5.dll`
+* `fose_loader.exe`
+. Delete the extracted folder and its contents. Delete the ZIP file also. We don't need them anymore.
+. One of the many wonderful things MO has is that it automatically detects FOSE when it is placed in the game folder. Run MO and check the launch pane, which should show FOSE by default. Run the game with the *Run* button.
++
+.FOSE has been automatically detected
+image::DEFCON-01-Mod-Organizer-FOSE-detected.png[FOSE has been automatically detected, title=""FOSE has been automatically detected]
+. In the menu screen, press the key to the left of the kbd:[1] key (I have a Spanish keyboard, so it's the kbd:[º] key; in US keyboards it's the kbd:[~] key) to fire up the console. Write the command `GetFOSEVersion` to get the response `FOSE Version: 1`, which means FOSE is up and running.
++
+.Testing FOSE through the game console
+image::DEFCON-01-Fallout-3-testing-FOSE.png["Testing FOSE through the game console", title="Testing FOSE through the game console"]
+. Exit the game.
+
+FOSE provides a http://fose.silverlock.org/fose_command_doc.html[whole new set of console commands] you can use, although they are not strictly necessary. We have what wee need to start modding, so let's get on with it.

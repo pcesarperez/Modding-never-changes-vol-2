@@ -1,0 +1,5 @@
+== DEFCON 00 (Vanilla)
+
+In this chapter we are going to build the foundation for the modding process, installing the game and the necessary tools. Thus, no real modding will be done here.
+
+At the end of the chapter we will be ready to start with the modding, with all the tools in place. We will have our first profile, although it will contain the Vanilla version of the game.

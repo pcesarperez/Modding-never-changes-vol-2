@@ -1,0 +1,13 @@
+=== Installing the tools
+
+[NOTE]
+====
+These are the tools installed in this chapter, in alphabetical order.
+
+* https://loot.github.io/[LOOT].
+* http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer].
+* http://www.nexusmods.com/fallout3/mods/11336/[Wrye Flash].
+* http://www.nexusmods.com/fallout4/mods/2737/[xEdit].
+====
+
+In this chapter we are going to install the tools we need to mod _Fallout 3 Game of the Year Edition_. We are going to install them, but we are not going to test them; not yet, at least. Their integration will be addressed in the next chapter.

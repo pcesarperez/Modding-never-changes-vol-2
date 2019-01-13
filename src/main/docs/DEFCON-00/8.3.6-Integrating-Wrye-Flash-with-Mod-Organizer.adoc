@@ -1,0 +1,47 @@
+==== Integrating Wrye Flash with Mod Organizer
+
+Wrye Flash is the final tool we need to integrate with Mod Organizer to have a full-fledged modding environment. Let's see how.
+
+. Click on the executables settings button.
++
+.Mod Organizer executables settings button
+image::DEFCON-00-Mod-Organizer-executables-settings-button.png["Mod Organizer executables settings button", title="Mod Organizer executables settings button"]
+. Fill in the following fields to provide the necessary information to run Wrye Flash and click on *Add*:
+  * *Title*: "Wrye Flash", without the quotations.
+  * *Binary*: the Wrye Flash executable path (like `$FO3_HOME\Mopy\Wrye Flash.exe`).
++
+.Wrye Flash executable information in Mod Organizer
+image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-executable-entry.png["Wrye Flash executable information in Mod Organizer", title="Wrye Flash executable information in Mod Organizer"]
+. The executables settings window remains open, so click on *Close* after checking that a Wrye Flash entry has been created.
++
+.Wrye Flash entry created in Mod Organizer
+image::DEFCON-00-Mod-Organizer-Wrye-Flash-entry-created.png["Wrye Flash entry created in Mod Organizer", title="Wrye Flash entry created in Mod Organizer"]
+. Back in the MO main window, head to the executables drop-down and select Wrye Flash.
++
+.Selecting Wrye Flash executable in Mod Organizer
+image::DEFCON-00-Mod-Organizer-select-Wrye-Flash-executable.png["Selecting Wrye Flash executable in Mod Organizer", title="Selecting Wrye Flash executable in Mod Organizer"]
+. With Wrye Flash selected, click on the *Shortcuts* drop-down and select *Toolbar* to create a shortcut on the top right button bar.
++
+.Creating a shortcut for Wrye Flash in Mod Organizer
+image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-shortcut.png["Creating a shortcut for Wrye Flash in Mod Organizer", title="Creating a shortcut for Wrye Flash in Mod Organizer"]
+. Launch Wrye Flash by clicking on the newly created toolbar icon.
++
+.xEdit toolbar icon in Mod Organizer
+image::DEFCON-00-Mod-Organizer-Wrye-Flash-toolbar-icon.png["Wrye Flash toolbar icon in Mod Organizer", title="Wrye Flash toolbar icon in Mod Organizer"]
+. It is likely that a warning comes up about modified dates in the official data files. Just click *OK*.
++
+.Wrye Flash warning about modified dates
+image::DEFCON-00-Wrye-Flash-warning-modified-dates.png["Wrye Flash warning about modified dates", title="Wrye Flash warning about modified dates"]
+. Wrye Flash shows its main window, with the plugin list somewhat scrambled. We are going to disable the feature that prevents Wrye Flash from sorting the plugins using the right load order. In the *Mods* tab, right-click on any column in the header and uncheck the *Lock Times* options.
++
+.Disabling the "Lock Times" option in Wrye Flash
+image::DEFCON-00-Wrye-Flash-disable-lock-times.png["Disabling the "Lock Times" option in Wrye Flash", title="Disabling the 'Lock Times' option in Wrye Flash"]
+. Exit Wrye Flash to go back to the Mod Organizer main window, and then _launch Wrye Flash again_. This time no warning should arise. Notice the different load order the plugins have now.
++
+.Altered load order in Wrye Flash
+image::DEFCON-00-Wrye-Flash-new-load-order.png["Altered load order in Wrye Flash", title="Altered load order in Wrye Flash"]
+. Move the plugins around, by way of dragging and dropping them, to have the same list as in Mod Organizer.
++
+.Corrected load order in Wrye Flash
+image::DEFCON-00-Wrye-Flash-corrected-load-order.png["Corrected load order in Wrye Flash", title="Corrected load order in Wrye Flash"]
+. Just exit Wrye Flash and go back to the Mod Organizer main window.

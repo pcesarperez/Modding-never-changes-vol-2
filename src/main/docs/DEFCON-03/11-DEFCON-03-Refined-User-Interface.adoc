@@ -1,0 +1,5 @@
+== DEFCON 03 (Refined User Interface)
+
+We have installed a good bunch of mods so far, but the overall effect in the game, although undeniable, is not precisely thrilling. However, curb your enthusiasm, for there is still a lot of work to do.
+
+In this chapter we are going to install some mods that have a not-so-subtle effect on the way the game looks and behaves. These are not dramatic changes, but they are far more noticeable than the ones installed in the two previous major DEFCON chapters. Some of them are focused on the Pip-Boy, some others with the in-game camera, and finally there are some mods which will change the way the game looks, and even changing the lockpicking mechanics.

@@ -1,0 +1,7 @@
+=== Chapter recap
+
+After installing all these mods and patches, what do we have?
+
+At this point, we have a version of _Fallout 3 Game of the Year Edition_ which is mostly Vanilla, at least content, graphics and mechanics-wise. We have applied a bunch of fixes, ensuring that the game will run smoothly in modern systems, reducing the probability of a CTD to a minimum.
+
+You can stop here, skipping the rest of the guide, and start playing the game. There is nothing reprehensible about that. However, I would like you to stay for a little while, at least until the end of the <<DEFCON 02 (User Interface), user interface chapter>>. The game will still be the same regarding to its contents, graphics and mechanics, but we are going to get rid of the ugly user interface, making for a much better experience.

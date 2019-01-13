@@ -1,0 +1,138 @@
+== Appendix 2: How to create your own bashed patch
+
+Bashed patches are to merged patches what skyrocketing in a Saturn V could be to the delicate fluttering around of a butterfly. You could say they play in different leagues, but it would be more accurate to say that they play completely fucking different sports, in fact.
+
+While a merged patch is a sort of automated merge (oh, surprise) of the differences in your mod stack, a bashed patch is a compatibility patch that takes into account, for each item added in a mod, to which https://geck.bethsoft.com/index.php?title=Leveled_Item[leveled list] it should belong. It means that vendors and containers scattered around Capital Wasteland offer items in line with your level, considering the appropriate mix of items provided by the different mods in your stack.
+
+You could play your game without a bashed patch, and you would probably didn't notice it, but for the sake of integrity, it's a good idea to have one bashed patch per profile, alongside your mod stack, including the merged patch per profile you had created/installed.
+
+Take into account that creating a bashed patch is way more complicated than creating a merged patch. Thus, I heartedly recommend using the pre-generated bashed patches at the end of each major DEFCON chapter, although, again, you will be able to use them if and only if you have installed each and every one mod in this guide, and in the right order. This was of paramount importance regarding merged patches, and it's even *more* important regarding bashed patches.
+
+[TIP]
+====
+There is a video from Michael, of GamerPoets (10:06), explaining https://www.youtube.com/watch?v=W1Es06MtAZM[how to generate a bashed patch for _Skyrim_] with Wrye Bash, which is very similar to Wrye Flash, the tool we have previously configured. You can also watch the video created by Cal, from DirtyWeasel (32:06), explaining https://www.youtube.com/watch?list=PLWMvEg2LxwXYgN9UIEFAEGxfmT5ondfIi&v=v3tPQKDStTc[how to create merged and bashed patches for _Fallout New Vegas_].
+====
+
+Part of the bashed patch creation process involves adding bash tags to certain mods in your stack. These tags are used by Wrye Flash to create the bashed patch.
+
+Right from https://forums.nexusmods.com/index.php?/topic/1009349-in-boss-what-are-bash-tags-and-what-am-i-supposed-to-do/?p=8239348[this forum post written by ripple], bash tags tell Wrye Flash that:
+
+. These mods contain edits to the default game leveled lists.
+. What sort of edits they are (add, remove, or both).
+. What Wrye Flash should do to merge these conflicting leveled lists into the bashed patch.
+
+We are going to add bash tags in the following procedure, prior to the creation of the actual bashed patch.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. We need to create a dummy bashed patch for Wrye Flash to build it. In Windows Explorer open the folder `[%FO3_HOME%\Mopy\templates]` and copy the file `Bashed Patch, 0.esp` to a location of your choice.
+. Rename the copy to reflect the name of the profile you are working with (for example, `DEFCON 01 Bashed Patch.esp`).
+. Create a ZIP archive (using http://www.7-zip.org/[7-Zip], for example) with this file and name it `DEFCON-01-Bashed-Patch.zip`.
+. Delete the file `DEFCON 01 Bashed Patch.esp`. We are not going to need it anymore.
+. Drag and drop the file `DEFCON-01-Bashed-Patch.zip` to the *Downloads* tab in MO.
++
+.Sideloading the bashed patch
+image::Appendix-1-Mod-Organizer-sideloading-bashed-patch.png["Sideloading the bashed patch", title="Sideloading the bashed patch"]
+. Double-click on the mod entry to pull up the *Quick Install* window. Change the mod's name from "DEFCON" to "DEFCON 01 Bashed Patch" and click on *OK* (we are pretty sure that the inner structure is correct).
++
+.Bashed patch Quick Install window
+image::Appendix-1-Mod-Organizer-bashed-patch-Quick-Install.png["Bashed patch Quick Install window", title="Bashed patch Quick Install window"]
+. The bashed patch appears in the left pane, just below our merged patch. MO does not know shit about our bashed patch, so we are going to give it a proper version number. Double-click on the mod name to show the properties window.
++
+.The bashed patch is installed but not active yet
+image::Appendix-1-Mod-Organizer-bashed-patch-installed-but-not-active.png["The bashed patch is installed but not active yet", title="The bashed patch is installed but not active yet"]
+. In the properties window, navigate to the *Nexus Info* tab and change the version number to "1.0", clicking on *Close* afterwards.
++
+.Correcting the version number of the bashed patch
+image::Appendix-1-Mod-Organizer-bashed-patch-corrected-version.png["Correcting the version number of the bashed patch", title="Correcting the version number of the bashed patch"]
+. Activate the bashed patch in the left pane. You will see that the corresponding plugin appears at the bottom of the *Plugins* tab, although it has a funny broom icon beside. It means MO has detected that the plugin does not do anything, so it could be removed with no effect. It is perfectly normal, because Wrye Flash has not rebuilt the plugin yet.
++
+.The bashed patch is installed and active
+image::Appendix-1-Mod-Organizer-bashed-patch-installed-and-active.png["The bashed patch is installed and active", title="The bashed patch is installed and active"]
+. Now comes the tricky part. We are going to use LOOT to find out the missing bash tags we need to add in Wrye Flash. Open LOOT using the toolbar icon.
++
+.Launching LOOT through the toolbar button
+image::Appendix-1-Mod-Organizer-LOOT-toolbar-button.png["Launching LOOT through the toolbar button", title="Launching LOOT through the toolbar button"]
+. LOOT uses what is called a https://github.com/loot/fallout3/blob/v0.10/masterlist.yaml[masterlist] to keep track of all the integrity details of any conceivable plugin you could have in your stack, including bash tags. Take a look to what LOOT have to say about such plugins, with a list of tags under the file name.
++
+.LOOT shows the bash tags of any plugin it knows of
+image::Appendix-1-LOOT-shows-bash-tags-through-masterlist.png["LOOT shows the bash tags of any plugin it knows of", title="LOOT shows the bash tags of any plugin it knows of"]
+. You need to write down the bash tags LOOT points out for your entire mod stack.
+. Close LOOT and get back to MO. Once there, use the toolbar icon to launch Wrye Flash.
++
+.Launching Wrye Flash through the toolbar button
+image::Appendix-1-Mod-Organizer-Wrye-Flash-toolbar-button.png["Launching Wrye Flash through the toolbar button", title="Launching Wrye Flash through the toolbar button"]
+. Wrye Flash is a strange beast, but we will try to keep the fuss to a minimum. In the *Mods* tab, which should be selected by default, select, for example, `BrokenSteel.esm` to show its data in the right column.
++
+.Wrye Flash with 'BrokenSteel.esm' selected
+image::Appendix-1-Wrye-Flash-with-BrokenSteel-esm-selected.png["Wrye Flash with 'BrokenSteel.esm' selected", title="Wrye Flash with 'BrokenSteel.esm' selected"]
+. At the bottom of the right column there is a pane labeled *Bash Tags*, with the tags Wrye Flash deems necessary. Wrye Flash uses an obsolete master list, so we need to adjust the values to equate them to the values we found out through LOOT. Right-click in the *Bash Tags* pane to pull up a window with all the possible bash tags you can add or remove, and unselect `Relev` (you probably have to use the small arrow at the bottom of the selection list to get there; it's a real pain in the ass, I know).
++
+.Selecting bash tags in Wrye Flash
+image::Appendix-1-Wrye-Flash-selecting-bash-tags.png["Selecting bash tags in Wrye Flash", title="Selecting bash tags in Wrye Flash"]
+. Repeat the process for the rest of the plugins with bash tags in our list.
+. Right-click on the bashed patch file (`DEFCON 01 Bashed Patch.esp`), which should be at the bottom of your load order, and select the option *Rebuild Patch...*.
++
+.Option to rebuild a bashed patch in Wrye Flash
+image::Appendix-1-Wrye-Flash-rebuild-patch-option.png["Option to rebuild a bashed patch in Wrye Flash", title="Option to rebuild a bashed patch in Wrye Flash"]
+. Every time you rebuild a bashed patch, Wrye Flash detects if there are mods which could be deactivated because they will be, in fact, included in the bashed patch. As a rule of thumb, it is advisable to click on *Yes*.
++
+.Wrye Flash suggests deactivating the merged patch
+image::Appendix-1-Wrye-Flash-deactivate-suggested-mods.png["Wrye Flash suggests deactivating the merged patch", title="Wrye Flash suggests deactivating the merged patch"]
+. Wrye Flash shows a window to configure the way we want to rebuild the bashed patch. First, we need to select all the items clicking on *Select All*.
++
+.Selecting all rebuild configuration options in Wrye Flash
+image::Appendix-1-Wrye-Flash-selecting-all-rebuild-configuration-options.png["Selecting all rebuild configuration options in Wrye Flash", title="Selecting all rebuild configuration options in Wrye Flash"]
+. You may see a pop-up window with a weird error. Dismiss the window and don't look closely, for your sanity's sake.
++
+.Weird error window when selecting all items in Wrye Flash
+image::Appendix-1-Wrye-Flash-select-all-weird-error.png["Weird error window when selecting all items in Wrye Flash", title="Weird error window when selecting all items in Wrye Flash"]
+. Now, unselect the following items:
+* *Alias Mod Names*
+* *Replace Form IDs*
+* *Import Actors: Animations*
+* *Import Script Contents*
+* *Globals*
+* *Tweak Assorted*
+* *Tweak Names*
++
+.Deselecting unwanted configuration items
+image::Appendix-1-Wrye-Flash-unselecting-unwanted-configuration-items.png["Deselecting unwanted configuration items", title="Deselecting unwanted configuration items"]
+. We have to fine-tune certain elements. All sub-items in each category should be checked, except:
+* The file corresponding to the merged patch in *Merge Patches*.
+* The file `Fallout3.esm` in *Import Names*.
++
+.Merged patch not checked in 'Merge Patches' option
+image::Appendix-1-Wrye-Flash-merge-patches-option.png["Merged patch not checked in 'Merge Patches' option", title="Merged patch not checked in 'Merge Patches' option"]
++
+.'Fallout3.esm' not checked in 'Import Names' option
+image::Appendix-1-Wrye-Flash-import-names-option.png["'Fallout3.esm' not checked in 'Import Names' option", title="'Fallout3.esm' not checked in 'Import Names' option"]
+. If you have added the bash tag `Scripts` to any plugin, they must be checked in the *Import Scripts* option.
++
+.Plugins checked in 'Import Scripts' option
+image::Appendix-1-Wrye-Flash-import-scripts-option.png["Plugins checked in 'Import Scripts' option", title="Plugins checked in 'Import Scripts' option"]
+. Press the *Build Patch* button to start building your bashed patch.
++
+.It's time to start building the actual bashed patch
+image::Appendix-1-Wrye-Flash-build-patch-button.png["It's time to start building the actual bashed patch", title="It's time to start building the actual bashed patch"]
+. Gather your patience, for Wrye Flash will take its time to build the bashed patch.
++
+.Wrye Flash is building the bashed patch
+image::Appendix-1-Wrye-Flash-building-bashed-patch.png["Wrye Flash is building the bashed patch", title="Wrye Flash is building the bashed patch"]
+. When the building of the bashed patch is finished, Wrye Flash shows a window with a final report. If you don't feel like tearing your eyes out by now, you may take a look at it. Dismiss the window clicking on *OK*.
++
+.Final report about the building of the bashed patch
+image::Appendix-1-Wrye-Flash-bashed-patch-build-report.png["Final report about the building of the bashed patch", title="Final report about the building of the bashed patch"]
+. This is it, we have our bashed patch! Close Wrye Flash and go back to MO. You will notice that the broom icon has disappeared, although the warning sign in the toolbar is now highlighted, which means we have something in our overwrite folder. Let's see what has Wrye Flash put in there. Double-click on the *Overwrite* entry at the bottom of your mod stack.
++
+.The bashed patch is almost ready to fly
+image::Appendix-1-Mod-Organizer-bashed-patch-almost-ready.png["The bashed patch is almost ready to fly", title="The bashed patch is almost ready to fly"]
+. Wrye Flash has put the documentation it generated in the overwrite folder. The logical place for them to be is in the mod proper, so drag and drop the `[Docs]` folder to the entry at the bottom, with our bashed patch.
++
+.Moving the documentation generated by Wrye Flash to the bashed patch
+image::Appendix-1-Mod-Organizer-moving-bashed-patch-docs.png["Moving the documentation generated by Wrye Flash to the bashed patch", title="Moving the documentation generated by Wrye Flash to the bashed patch"]
+. The overwrite folder is empty now, so click on *Close*. Double-click on the bashed patch in the left pane and navigate to the *Filetree* tab in the properties window to check that the documentation we have just moved is there.
++
+.The bashed patch documentation is in its right place
+image::Appendix-1-Mod-Organizer-bashed-patch-documentation.png["The bashed patch documentation is in its right place", title="The bashed patch documentation is in its right place"]
+
+You do understand now why I told you it's better to stick to this guide and download the pre-generated bashed patches I provide, don't you?

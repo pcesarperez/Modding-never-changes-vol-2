@@ -1,1 +1,69 @@
 === You don't want to ask for directions
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/16898/[_Better High Detail Map and Icons_]
+* https://www.nexusmods.com/fallout3/mods/15918/[_no more dots_]
+====
+
+Let's face it: the vanilla map in _Fallout 3_ seems to have been produced from Dora the Explorer's backpack. And you don't want to start asking directions in D.C., because super-mutants are not known for their kindness of heart with strangers.
+
+We are going to use http://www.nexusmods.com/fallout3/mods/16898/[_Better High Detail Map and Icons_] to have decent maps, along with http://www.nexusmods.com/fallout3/mods/15918/[_No more dots_] to get rid of the white dotted line that tells you the shortest path between you and a suitable http://www.darwinawards.com/[Darwin Awards] death, because in mathematics the straight line may be the shortest path between two points, but in real life, and specially in the Capital Wasteland, it's a ticket to Hell.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*Better High Detail Map and Icons* from https://www.nexusmods.com/fallout3/mods/16898/[_Better High Detail Map and Icons_] with the manager.
+. Download the file [NexusFile]*no more dots v01* from https://www.nexusmods.com/fallout3/mods/15918/[_no more dots_] with the manager.
++
+.Map mods downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-Map-mods-downloaded-and-ready.png["Map mods downloaded and ready to be installed", title="Map mods downloaded and ready to be installed"]
+. Double click on [NexusFile]*Better High Detail Map and Icons*. In this case, no Quick Install window will be shown. The mod comes with a FOMOD installer which needs to be unpacked first.
++
+.Better map unpacking
+image::DEFCON-03-Mod-Organizer-Better-map-unpacking.png["Better map unpacking", title="Better map unpacking"]
+. The mod comes with two Pip-Boy flavors in the chamber: Pip-Boy 2500 and Pip-Boy 3000 (the default one). The first screen belongs to the Pip-Boy 2500 version, so we are going to select *None* for the map and *None* for the brightness, clicking on *Next*. By the way, don't change anything in the dropdown menu on the top (Nyarlathotep knows why is it there).
++
+.Better map installer options (Pip-Boy 2500)
+image::DEFCON-03-Mod-Organizer-Better-map-installer-2500-options.png["Better map installer options (Pip-Boy 2500)", title="Better map installer options (Pip-Boy 2500)"]
+. We are going full throttle in the Pip-Boy 3000 options window, choosing 8K map with roads and a 50% brightness correction. Click on *Next* afterwards.
++
+.Better map installer options (Pip-Boy 3000)
+image::DEFCON-03-Mod-Organizer-Better-map-installer-3000-options.png["Better map installer options (Pip-Boy 3000)", title="Better map installer options (Pip-Boy 3000)"]
+. The next window contains the customization options for the mod. Select custom icons and blue markers. Click on *Install*.
++
+.Better map customization options
+image::DEFCON-03-Mod-Organizer-Better-map-customization-options.png["Better map customization options", title="Better map customization options"]
+. The FOMOD installer will deploy the files according to the selected options and the mod will sit on the bottom of the left pane. Move it just under _Faster Pipboy Faster_ and activate it.
++
+.Better map installed and active
+image::DEFCON-03-Mod-Organizer-Better-map-installed-and-active.png["Better map installed and active", title="Better map installed and active"]
+. Now, let's get rid of the asinine dots in the map. Double click on [NexusFile]*no more dots v01*. Mod Organizer shows the inner structure without Quick Install window. The inner structure is a bit off, so right click on the `[Data]` folder and select *Set data directory*.
++
+.No more dots inner structure correction
+image::DEFCON-03-Mod-Organizer-No-more-dots-inner-structure-correction.png["No more dots inner structure correction", title="No more dots inner structure correction"]
+. The structure is now palatable, so click on *Ok*.
++
+.No more dots corrected inner structure
+image::DEFCON-03-Mod-Organizer-No-more-dots-corrected-inner-structure.png["No more dots corrected inner structure", title="No more dots corrected inner structure"]
+. As usual, move the mod in the left pane to the right position, below _Shiloh DS - Clean Pipboy Screen_ and activate it. There are no plugins installed, so there's no need to run LOOT.
++
+.No more dots installed and active
+image::DEFCON-03-Mod-Organizer-No-more-dots-installed-and-active.png["No more dots installed and active", title="No more dots installed and active"]
+
+Let's see the look of the new map, before and after the retexturing.
+
+.World map before and after retexturing
+image::DEFCON-03-Fallout-3-World-map-before-and-after-retexturing.png["World map before and after retexturing", title="World map before and after retexturing"]
+
+You may think that the change is not so good after all. The old map was schematic, yes, but at least it showed the roads, right?
+
+Well, zoom-in and think again.
+
+.World map before and after retexturing (with zoom)
+image::DEFCON-03-Fallout-3-World-map-before-and-after-retexturing-with-zoom.png["World map before and after retexturing (with zoom)", title="World map before and after retexturing (with zoom)"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-5-stacking-order-after-map-mods.txt[stacking order] and link:order_lists/DEFCON-03-5-load-order-after-map-mods.txt[load order].
+====

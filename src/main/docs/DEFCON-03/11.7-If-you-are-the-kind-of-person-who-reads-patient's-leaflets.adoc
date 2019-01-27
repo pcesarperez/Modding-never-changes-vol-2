@@ -1,1 +1,51 @@
 === If you are the kind of person who reads patient's leaflets...
+
+[NOTE]
+====
+Mods used in this chapter:
+
+* https://www.nexusmods.com/fallout3/mods/21148/[_Descriptive Icons for Fallout 3_]
+====
+
+There's certain beauty in having OCD, you know? Well, there are some downsides, too, but let's not ruin the moment.
+
+If you are anything like me, you will be collecting each and every bit of scrap you find during your wanderings in Capital Wasteland. The problem is that the game doesn't keep track very nicely of the differences between the shit you find. There is junk and there is _junk_.
+
+The mod we are about to install fixes this admirably, because it adds a lot of descriptions and pictures to hundreds of items which are not easily identifiable. Let's get to it.
+
+. Open MO and switch to the *Downloads* tab in the right pane.
+. Download the file [NexusFile]*DIFF - Descriptive Icons for Fallout 3* from https://www.nexusmods.com/fallout3/mods/21148/[_Descriptive Icons for Fallout 3_] with the manager.
++
+.Descriptive icons mod downloaded and ready to be installed
+image::DEFCON-03-Mod-Organizer-Descriptive-icons-mod-downloaded-and-ready.png["Descriptive icons mod downloaded and ready to be installed", title="Descriptive icons mod downloaded and ready to be installed"]
+. Double click on [NexusFile]*DIFF - Descriptive Icons for Fallout 3* to show the Quick Install window and click on *Manual*.
++
+.Descriptive icons mod Quick Install window
+image::DEFCON-03-Mod-Organizer-Descriptive-icons-mod-Quick-Install-window.png["Descriptive icons mod Quick Install window", title="Descriptive icons mod Quick Install window"]
+. The inner structure of the mod is fine, so just click on *Ok*.
++
+.Descriptive icons mod inner structure
+image::DEFCON-03-Mod-Organizer-Descriptive-icons-mod-inner-structure.png["Descriptive icons mod inner structure", title="Descriptive icons mod inner structure"]
+. The mod is classified under the category "Companions" (DAFUQ?), so double-click on it in the left pane and navigate to the *Categories* tab, and then deselect *Companions*. Click on *Ok*.
++
+.Descriptive icons mod incorrect category
+image::DEFCON-03-Mod-Organizer-Descriptive-icons-mod-incorrect-category.png["Descriptive icons mod incorrect category", title="Descriptive icons mod incorrect category"]
+. Move the installed mod in the left pane under _SmoothLight - Pip-Boy Light Enhancer_ and activate it. The mod installs a plugin, but it is already in place, so there's no need to run LOOT.
++
+.Descriptive icons mod installed and active
+image::DEFCON-03-Mod-Organizer-Descriptive-icons-mod-installed-and-active.png["Descriptive icons mod installed and active", title="Descriptive icons mod installed and active"]
+
+Now, launch the game to see what we have done. If you open your Pip-Boy in the *Items* section, *Misc* tab, you will find all the junk you have collected. For example, could you say for sure what is a "Sensor Module"? You have just a generic icon and no describing text.
+
+.Sad and lonely junk
+image::DEFCON-03-Fallout-3-Junk-without-descriptions.png["Sad and lonely junk", title="Sad and lonely junk"]
+
+However, with the mod activated, we have a meaningful description and icon, as advertised.
+
+.The junk is not sad and lonely anymore
+image::DEFCON-03-Fallout-3-Junk-with-descriptions.png["The junk is not sad and lonely anymore", title="The junk is not sad and lonely anymore"]
+
+[IMPORTANT]
+====
+Your setup should comply with the following link:order_lists/DEFCON-03-6-stacking-order-after-descriptive-icons-mod.txt[stacking order] and link:order_lists/DEFCON-03-6-load-order-after-descriptive-icons-mod.txt[load order].
+====

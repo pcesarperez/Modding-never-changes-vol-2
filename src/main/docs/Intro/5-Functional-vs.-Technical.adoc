@@ -1,6 +1,6 @@
 == Functional vs. Technical
 
-There are a lot of _Fallout 3_ modding guides out there. This is just another one, but I'd like to think that my approach to the matter is slightly different, because it's a functional one.
+There are a lot of _Fallout 3_ modding guides out there (and I have been using two of them in search of inspiration, in fact). This is just another one, but I'd like to think that my approach to the matter is slightly different, because it's a functional one.
 
 What the hell do I mean by "functional"? Well, at the end of each main chapter (called *DEFCON*), you will have a version of the game with certain features: bugfixes, new sounds, new animations, etc. Chapters are cumulative, this is, each chapter is built on top of the previous one. Thus, this guide is intended to be followed from cover to cover, although you can skip any chapter you wish, taking into account that, from that point on, you are in _Terra Incognita_, all by yourself.
 
@@ -13,6 +13,6 @@ However, there is something you need to understand besides load order, and it is
 * One or more data files, which may be `.esm` (master) or `.esp` (ancillary) files.
 * A number of assets, like textures, sounds, meshes, menu files, etc.
 
-Data files are bound by load order, whereas assets are bound by stacking order. Gopher has a very good video explaining everything about https://www.youtube.com/watch?v=jVSy_5M3NTc[conflicts and priorities] in MO, and the Official Guide has http://wiki.step-project.com/Guide:Mod_Organizer#Priorities[an entire chapter devoted to priorities].
+Data files are bound by load order, whereas assets are bound by stacking order. Gopher has a very good video explaining everything about https://www.youtube.com/watch?v=jVSy_5M3NTc[conflicts and priorities] in MO, and the Official Guide has https://wiki.step-project.com/Guide:Mod_Organizer#Priorities[an entire chapter devoted to priorities].
 
 To keep this short and straight, we are going to carefully place each mod in its proper place, taking into account the priorities. This is, if you install mod "A" with a certain asset "foo", and later you install mod "B" with an equally named asset "foo" down in the priority list (with a higher priority), "B" version of "foo" will overwrite "A" version of "foo", although you can easily rearrange the stacking order if you find out it's not correct. But that's something I have to worry about, not you, at least regarding this guide.

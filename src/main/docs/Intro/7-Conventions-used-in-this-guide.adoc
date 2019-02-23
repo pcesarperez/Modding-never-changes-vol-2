@@ -6,13 +6,13 @@ Game titles::
 Game titles are shown in italicized text, like _Fallout 3_ or _The Elder Scrolls V: Skyrim_.
 
 Mod names::
-Any mod used in this guide is shown using an italicized link to the mod's original page. For example, http://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] or http://www.nexusmods.com/fallout3/mods/2761/[_FWE - FO3 Wanderers Edition_]. The name is shown as is, with the title given by its author, no matter how many grammar or orthographic rules have been murdered in the process.
+Any mod used in this guide is shown using an italicized link to the mod's original page. For example, https://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] or https://www.nexusmods.com/fallout3/mods/2761/[_FWE - FO3 Wanderers Edition_]. The name is shown as is, with the title given by its author, no matter how many grammar or orthographic rules have been murdered in the process.
 
 Filenames and paths::
 Any filename or path, complete or partial, is shown using monospaced text, like `[$USERPROFILE\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
 
 Files within Nexus::
-A mod hosted in Nexus will usually have several files (for example, the http://www.nexusmods.com/fallout3/mods/2761/?tab=2&navtag=http%3A%2F%2Fwww.nexusmods.com%2Ffallout3%2Fajax%2Fmodfiles%2F%3Fid%3D2761&pUp=1[multiple files which belong to FWE]). Sometimes is difficult to know exactly which files have to be downloaded, thus they are shown using a green, bold text, mimicking Nexus own style, like [NexusFile]*FWE 6-03a HOTFIX PATCH* or [NexusFile]*MMM-6_2-update*.
+A mod hosted in Nexus will usually have several files (for example, the https://www.nexusmods.com/fallout3/mods/2761?tab=files[multiple files which belong to FWE]). Sometimes is difficult to know exactly which files have to be downloaded, thus they are shown using a green, bold text, mimicking Nexus own style, like [NexusFile]*FWE 6-03a HOTFIX PATCH* or [NexusFile]*MMM-6_2-update*.
 
 Info blocks::
 Info blocks are used at the beginning of each chapter to show the list of mods which are going to be installed. For example:
@@ -21,10 +21,10 @@ Info blocks are used at the beginning of each chapter to show the list of mods w
 ====
 Mods used in this chapter:
 
-* http://www.nexusmods.com/fallout3/mods/3388/[_Weapon Mod Kits_]
-* http://www.nexusmods.com/fallout3/mods/8340/[_EVE - Energy Visuals Enhanced_]
-* http://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights - FOSE_]
-* http://www.nexusmods.com/fallout3/mods/16787/[_Paradox Ignition presents The Mergers_]
+* https://www.nexusmods.com/fallout3/mods/3388/[_Weapon Mod Kits_]
+* https://www.nexusmods.com/fallout3/mods/8340/[_EVE - Energy Visuals Enhanced_]
+* https://www.nexusmods.com/fallout3/mods/6938/[_RH_IronSights - FOSE_]
+* https://www.nexusmods.com/fallout3/mods/16787/[_Paradox Ignition presents The Mergers_]
 ====
 
 Tip blocks::

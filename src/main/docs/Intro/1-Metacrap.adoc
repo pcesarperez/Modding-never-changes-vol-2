@@ -3,7 +3,7 @@
 No guide would be complete without legal stuff and whatnot. I'll be brief. I promise.
 
 *What?*::
-A modding guide for _Fallout 3 Game of the Year Edition_ using http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer]. This is version *{revnumber}*.
+A modding guide for _Fallout 3 Game of the Year Edition_ using https://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer] (take into account that the final version is labeled "legacy version" in the https://www.nexusmods.com/skyrimspecialedition/mods/6194[Mod Organizer 2 page]). This is version *{revnumber}* of the guide.
 
 *Who?*::
 Pablo César Pérez González, aka pcesarperez, aka adastra, reachable through mailto:modding.never.changes@gmail.com[modding.never.changes].
@@ -26,11 +26,11 @@ This guide is subject to a image:https://i.creativecommons.org/l/by-sa/4.0/80x15
 ////
 I have used several additional resources, like:
 
-* Header image http://meduzarts.com/?portfolio=fallout-3[_Washington D.C. Destroyed_] (c) Bethesda Softworks LLC, by Daniel Kvasznicza for Meduzarts.
+* Header image https://meduzarts.com/?portfolio=fallout-3[_Washington D.C. Destroyed_] (c) Bethesda Softworks LLC, by Daniel Kvasznicza for Meduzarts.
 * Font https://fonts.google.com/specimen/Lora[Lora], by Cyreal, used in the document body.
 * Font https://fonts.google.com/specimen/Ubuntu+Mono[Ubuntu Mono], by Dalton Maag, used in monospaced texts.
-* Font http://www.fontspace.com/kenny-redman/321-impact[321 Impact], by Kenny Redman, used in the document headings.
-* http://snapyourcolors.com/Chip/wiYPie[Custom palette] created with ColorSnap.
+* Font https://www.fontspace.com/kenny-redman/321-impact[321 Impact], by Kenny Redman, used in the document headings.
+* https://snapyourcolors.com/Chip/wiYPie[Custom palette] created with ColorSnap.
 ////
 
 Finally, you will find the source for this book in https://github.com/pcesarperez/Modding-never-changes-vol-2[its GitHub repo]. You can even https://github.com/pcesarperez/Modding-never-changes-vol-2/issues[create an issue] if you think there is something I should improve in the guide (and trust me, there is a shitload of room for improvement).

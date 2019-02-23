@@ -6,7 +6,7 @@ I decided not to, and I think I did right. Writing the guide using Nexus Mod Man
 
 To illustrate the main advantage of Mod Organizer (MO) over Nexus Mod Manager (NMM), let's imagine this scenario: you are halfway through your mod stack setup, and you find a new, incredible mod you cannot live without (trust me, it happens). You have two choices: either risking your setup by just adding the mod, if it is not overly aggressive (and by "not overly aggressive" I mean "does not overwrite a lot of previously installed assets"), or restarting your modding process, installing the mod in its proper place. The later will usually be the sensible choice, although tedious and frustrating.
 
-That's what should happen with NMM, but not with MO. Have you found an oh-my-gosh-I-need-this mod? Just throw it into the right profile and rearrange your mod stack, carefully controlling the assets that will be overwritten. There are other advantages, too, pointed out in the http://wiki.step-project.com/Guide:Mod_Organizer[official guide]:
+That's what should happen with NMM, but not with MO. Have you found an oh-my-gosh-I-need-this mod? Just throw it into the right profile and rearrange your mod stack, carefully controlling the assets that will be overwritten. There are other advantages, too, pointed out in the https://wiki.step-project.com/Guide:Mod_Organizer[official guide]:
 
 * Your data folder will be kept clean. No more cluttered data folders, because MO uses a virtual folder to install the mods.
 * Merging different files into a single mod is dead easy. You don't have to have a lot of different entries in your mod stack for each mod you install.
@@ -18,6 +18,5 @@ There are several downsides too, of course, although none of them is a real deal
 
 * MO is a bit more difficult than NMM. It's not rocket science, but you have to know what you are doing to have a correct mod stack. Installing a mod is not as simple as throwing it into your mod stack. You have to know which files from other mods it should overwrite and which of its files should be overwritten.
 * Sometimes, mods with scripted installers (aka FOMOD/BAIN installers) do have a weird behavior under MO, even not working at all. There are ways around these issues, but still.
-* MO doesn't work with 64 bits games, so we are stuck with NMM for games like _Fallout 4_ and _The Elder Scrolls 5: Skyrim Special Edition_.
 
-Once you start using MO, there's no turning back to NMM. Ever. Even though both of them http://www.nexusmods.com/fallout4/news/12905/?[are endangered species now]. The next breed of NMM (http://www.nexusmods.com/games/news/13257/?[Vortex], that is) will supposedly have all the features of MO, but until then, MO is our winning horse.
+Once you start using MO, there's no turning back to NMM. Ever. Even though both of them are endangered species now with the arrival of the next breed of NMM (https://www.nexusmods.com/site/mods/1/[Vortex], that is). However, as I see it, Vortex is more like an entry-level tool, whereas MO is a heavy technical workhorse. I am putting my money on MO, then.

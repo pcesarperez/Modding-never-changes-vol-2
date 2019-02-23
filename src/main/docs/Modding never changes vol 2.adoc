@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.11, 27/01/2019
+v0.6.12, 16/02/2019
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:
@@ -15,7 +15,7 @@ v0.6.11, 27/01/2019
 The following block ensures that GitHub shows proper icons in admonition blocks.
 It also points the images path to the repo, instead of using the build.
 
-@see http://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/
+@see https://blog.jdriven.com/2016/06/awesome-asciidoctor-using-admonition-icons-github/
 ////
 ifdef::env-github[]
 :tip-caption: :bulb:

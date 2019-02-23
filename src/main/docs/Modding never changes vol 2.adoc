@@ -1,6 +1,6 @@
 = Modding\... Modding never changes, vol. 2
 Pablo César Pérez González (aka "pcesarperez", aka "adastra") <modding.never.changes@gmail.com>
-v0.6.12, 16/02/2019
+v0.6.13, 23/02/2019
 //:stylesheet: Modding-never-changes-vol-2.css
 :icons: font
 //:linkcss:

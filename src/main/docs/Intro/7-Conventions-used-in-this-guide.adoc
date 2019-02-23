@@ -40,5 +40,5 @@ Important blocks are used at the end of each chapter which involves installing m
 
 [IMPORTANT]
 ====
-Your setup should comply with the following link:order_lists/DEFCON-01-1-stacking-order-after-Unofficial-Patch.txt[stacking order] and link:order_lists/DEFCON-01-1-load-order-after-Unofficial-Patch.txt[load order].
+Your setup should comply with the following link:order_lists/DEFCON-01-3-stacking-order-after-Unofficial-Patch.txt[stacking order] and link:order_lists/DEFCON-01-3-load-order-after-Unofficial-Patch.txt[load order].
 ====

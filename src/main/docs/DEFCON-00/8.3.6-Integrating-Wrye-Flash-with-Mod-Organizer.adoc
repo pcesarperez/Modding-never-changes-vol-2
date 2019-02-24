@@ -8,7 +8,7 @@ Wrye Flash is the final tool we need to integrate with Mod Organizer to have a f
 image::DEFCON-00-Mod-Organizer-executables-settings-button.png["Mod Organizer executables settings button", title="Mod Organizer executables settings button"]
 . Fill in the following fields to provide the necessary information to run Wrye Flash and click on *Add*:
   * *Title*: "Wrye Flash", without the quotations.
-  * *Binary*: the Wrye Flash executable path (like `$FO3_HOME\Mopy\Wrye Flash.exe`).
+  * *Binary*: the Wrye Flash executable path (like `%FO3_HOME%\Mopy\Wrye Flash.exe`).
 +
 .Wrye Flash executable information in Mod Organizer
 image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-executable-entry.png["Wrye Flash executable information in Mod Organizer", title="Wrye Flash executable information in Mod Organizer"]
@@ -28,6 +28,26 @@ image::DEFCON-00-Mod-Organizer-creating-Wrye-Flash-shortcut.png["Creating a shor
 +
 .xEdit toolbar icon in Mod Organizer
 image::DEFCON-00-Mod-Organizer-Wrye-Flash-toolbar-icon.png["Wrye Flash toolbar icon in Mod Organizer", title="Wrye Flash toolbar icon in Mod Organizer"]
+. It is possible that you get an obscure error message about Wrye Flash not being able to start at all. It that happens, just click on *Ok*. Otherwise, jump ahead to the warning about modified dates.
++
+.Wrye Flash is not able to start at all
+image::DEFCON-00-Wrye-Flash-unable-to-start.png["Wrye Flash is not able to start at all", title="Wrye Flash is not able to start at all"]
+. The problem is not strictly related to Wrye Flash... Well, it actually is, because the program is not prepared to handle certain code pages. However, the problem arose in one of the Windows 10 updates, so the easiest solution goes through https://stackoverflow.com/a/54311750[modifying certaing locale options in Windows 10]. Perform the following steps to fix the problem.
++
+.. Go to the Control Panel.
+.. Select the *Region* option.
++
+.Region option in the Control Panel
+image::DEFCON-00-Wrye-Flash-Region-settings-in-Control-Panel.png["Region option in the Control Panel", title="Region option in the Control Panel"]
+.. Navigate to the *Administrative* tab. In the pane "Language for non-Unicode programs" click on the button *Change system locale...*.
++
+.Where to change system locale in Region administrative options
+image::DEFCON-00-Wrye-Flash-where-to-change-system-locale.png["Where to change system locale in Region administrative options", title="Where to change system locale in Region administrative options"]
+.. In the pop-up window "Region Settings", unselect *Beta: Use Unicode UTF-8 for worldwide language support*.
++
+.Deselecting widespread Unicode support in Windows 10
+image::DEFCON-00-Wrye-Flash-deselecting-widespread-Unicode-support.png["Deselecting widespread Unicode support in Windows 10", title="Deselecting widespread Unicode support in Windows 10"]
+.. Restart the system, as requested. Wrye Flash should start now without a hitch.
 . It is likely that a warning comes up about modified dates in the official data files. Just click *OK*.
 +
 .Wrye Flash warning about modified dates

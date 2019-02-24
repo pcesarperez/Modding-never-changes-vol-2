@@ -35,7 +35,7 @@ image::DEFCON-00-LOOT-updating-and-parsing-masterlist.png["LOOT updating and par
 +
 .LOOT made no changes to your load order (as it should be)
 image::DEFCON-00-LOOT-no-changes-to-load-order.png["LOOT made no changes to your load order (as it should be)", title="LOOT made no changes to your load order (as it should be)"]
-  * In the general information pane, both entries regarding the masterlist should show updated information.
+  * In the general information pane, both entries regarding the masterlist should show updated information (remember: your contents may differ).
 +
 .Masterlist information has been updated in LOOT
 image::DEFCON-00-LOOT-masterlist-updated.png["Masterlist information has been updated in LOOT", title="Masterlist information has been updated in LOOT"]

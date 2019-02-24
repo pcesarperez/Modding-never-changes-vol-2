@@ -8,8 +8,8 @@ xEdit will be the next tool we are going to integrate within our modding environ
 image::DEFCON-00-Mod-Organizer-executables-settings-button.png["Mod Organizer executables settings button", title="Mod Organizer executables settings button"]
 . Fill in the following fields to provide the necessary information to run xEdit and click on *Add*:
   * *Title*: "xEdit", without the quotations.
-  * *Binary*: the xEdit executable path (like `$XEDIT_HOME\xEdit.exe`).
-  * *Arguments*: "-FO3", without the quotations (there is http://wiki.step-project.com/Guide:XEdit#Launch_Arguments[a good bunch of command-line arguments]).
+  * *Binary*: the xEdit executable path (where `xEdit.exe` is installed).
+  * *Arguments*: "-FO3", without the quotations (there is https://wiki.step-project.com/Guide:XEdit#Launch_Arguments[a good bunch of command-line arguments]).
 +
 .xEdit executable information in Mod Organizer
 image::DEFCON-00-Mod-Organizer-creating-xEdit-executable-entry.png["xEdit executable information in Mod Organizer", title="xEdit executable information in Mod Organizer"]
@@ -29,6 +29,7 @@ image::DEFCON-00-Mod-Organizer-creating-xEdit-shortcut.png["Creating a shortcut 
 +
 .xEdit toolbar icon in Mod Organizer
 image::DEFCON-00-Mod-Organizer-xEdit-toolbar-icon.png["xEdit toolbar icon in Mod Organizer", title="xEdit toolbar icon in Mod Organizer"]
+. xEdit may show one or more windows about the changes from the last version and a plea from ElminsterAU to give support for his efforts https://www.patreon.com/ElminsterAU[through Patreon]. It would be a good time to become a patron and show the support he deserves.
 . xEdit will show the plugin selection window, with all official data files checked. Leave them checked and click *OK*.
 +
 .xEdit plugin selection window
@@ -44,7 +45,7 @@ image::DEFCON-00-xEdit-first-time-run-under-Mod-Organizer.png["xEdit first run u
 +
 .Warning sign after exiting xEdit in Mod Organizer
 image::DEFCON-00-Mod-Organizer-warning-after-exiting-xEdit.png["Warning sign after exiting xEdit in Mod Organizer", title="Warning sign after exiting xEdit in Mod Organizer"]
-. If you click on the warning icon, a window will appear. In that window MO informs us that there are files in your http://wiki.step-project.com/Guide:Mod_Organizer#Overwrite[overwrite mod]. Click on the line showing the issue to get a full text describing what is happening. Click *Close* when you are ready to take action.
+. If you click on the warning icon, a window will appear. In that window MO informs us that there are files in your https://wiki.step-project.com/Guide:Mod_Organizer#Overwrite[overwrite mod]. Click on the line showing the issue to get a full text describing what is happening. Click *Close* when you are ready to take action.
 +
 .Mod Organizer full warning contents after exiting xEdit
 image::DEFCON-00-Mod-Organizer-overwrite-mod-after-xEdit.png["Mod Organizer full warning contents after exiting xEdit", title="Mod Organizer full warning contents after exiting xEdit"]
@@ -52,7 +53,7 @@ image::DEFCON-00-Mod-Organizer-overwrite-mod-after-xEdit.png["Mod Organizer full
 +
 .Overwrite mod access in Mod Organizer
 image::DEFCON-00-Mod-Organizer-overwrite-mod-access.png["Overwrite mod access in Mod Organizer", title="Overwrite mod access in Mod Organizer"]
-. MO shows a window with the contents of the overwrite mod. It should have only an empty folder named `[FO3Edit Backups]` (if the folder has contents, you touched something you shouldn't in xEdit). Right-click on the folder name and select *Delete*. We don't need this folder, for now, although we are going to use the contents of this special mod in the future.
+. MO shows a window with the contents of the overwrite mod. It should have only a folder `[FO3Edit Cache]`. Right-click on the folder name and select *Delete*. We don't need this folder, for now, although we are going to use the contents of this special mod in the future.
 +
 .Deleting the overwrite mod after running xEdit
 image::DEFCON-00-Mod-Organizer-overwrite-mod-contents-after-xEdit.png["Deleting the overwrite mod after running xEdit", title="Deleting the overwrite mod after running xEdit"]

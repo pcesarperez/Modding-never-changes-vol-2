@@ -2,11 +2,11 @@
 
 We need a shortcut to MO to run the tool with ease, because we are going to launch the game using MO, _with no exceptions_. It may seem a bit overkill at first, at least when you have the game fully modded, but trust me, you would like to know exactly which profile, and therefore which mods, are you going to load.
 
-. Navigate with windows Explorer to `[$FO3_HOME\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
+. Navigate with windows Explorer to `[%FO3_HOME%\Mod Organizer]` and grab `Mod Organizer.exe` with the right mouse button, dropping it in your desktop, then selecting *Create shortcuts here*.
 +
 .Creating a shortcut to Mod Organizer
 image::DEFCON-00-Mod-Organizer-create-shortcut.png["Creating a shortcut to Mod Organizer", title="Creating a shortcut to Mod Organizer"]
-. Rename the shortcut to something meaningful, like "FO3-MO", for example. We are planning for the future again, because we are going to use Mod Organizer for _Fallout New Vegas_ and _The Elder Scrolls IV: Oblivion_.
+. Rename the shortcut to something meaningful, like "FO3-MO", for example. We are planning for the future again, because we could be using Mod Organizer for _Fallout New Vegas_ and _The Elder Scrolls IV: Oblivion_, among others.
 +
 .Mod Organizer renamed shortcut
 image::DEFCON-00-Mod-Organizer-renamed-shortcut.png["Mod Organizer renamed shortcut", title="Mod Organizer renamed shortcut"]

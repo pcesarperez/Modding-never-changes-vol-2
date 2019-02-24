@@ -1,6 +1,6 @@
 ==== Mod Organizer
 
-Finally, our touchstone: http://www.nexusmods.com/skyrim/mods/1334/[Mod Organizer]. We are just going to install MO in this sub-chapter, taking care about the integration between all the tools in the <<Setting up the environment, next chapter>>.
+Finally, our touchstone: https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files[Mod Organizer]. We are just going to install MO in this sub-chapter, taking care about the integration between all the tools in the <<Setting up the environment, next chapter>>.
 
 [TIP]
 ====
@@ -10,12 +10,22 @@ We are going to use and abuse MO _ad nauseam_, but you can get a feeling of what
 * https://www.youtube.com/watch?v=PYY1OV2_ZTk&index=2&list=PLE7DlYarj-DcLS9LyjEqOJwFUQIIQewcK[Mod Organizer #1 - Installation and Initial Setup.]
 ====
 
-. http://www.nexusmods.com/skyrim/mods/1334/[Download] the last version of Mod Organizer using the [NexusFile]*Mod Organizer v1_3_11 installer* file, as of this writing.
+[TIP]
+====
+Michael, from Gamer Poets, have an excellent four-series list about installing and using MO:
+
+* https://www.youtube.com/watch?v=OHgULB431Os[Installation & Setup]
+* https://www.youtube.com/watch?v=us0RHovSguQ[Downloading Mods & Management]
+* https://www.youtube.com/watch?v=8Ov9b1Gr6Ho[Profiles, .INI Files, Third Party Applications]
+* https://www.youtube.com/watch?v=ooOrSVkhgHc[Toolbar & Customization]
+====
+
+. https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files[Download] the last version of Mod Organizer using the [NexusFile]*Mod Organizer 1 Legacy* file in the miscellaneous files section (Mod Organizer is outdated, so it is hosted in the Mod Organizer 2 page).
 . Run the installer, which shows an assistant to guide you through the installation. Advance to the screen in which you should choose the components to install. Make sure you have the *Handle Nexus Links* option checked in order to download Nexus mod files right from MO.
 +
 .Mod Organizer components
 image::DEFCON-00-Mod-Organizer-components.png["Mod Organizer components", title="Mod Organizer components"]
-. In the next screen, select `[$FO3_HOME\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
+. In the next screen, select `[%FO3_HOME%\Mod Organizer]` as the installation folder. Yes, we are going to install MO *inside* the _Fallout 3_ main folder, and it is the best way to do it.
 +
 .Mod Organizer installation folder
 image::DEFCON-00-Mod-Organizer-installation-folder.png["Mod Organizer installation folder", title="Mod Organizer installation folder"]

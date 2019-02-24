@@ -9,7 +9,7 @@ Mod names::
 Any mod used in this guide is shown using an italicized link to the mod's original page. For example, https://forums.bethsoft.com/topic/1121454-wipzbeta-darnified-ui-f3/[_DarNified UI F3_] or https://www.nexusmods.com/fallout3/mods/2761/[_FWE - FO3 Wanderers Edition_]. The name is shown as is, with the title given by its author, no matter how many grammar or orthographic rules have been murdered in the process.
 
 Filenames and paths::
-Any filename or path, complete or partial, is shown using monospaced text, like `[$USERPROFILE\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
+Any filename or path, complete or partial, is shown using monospaced text, like `[%USERPROFILE%\Documents\My Games\Fallout3]`, `Fallout.ini` or `.esp`.
 
 Files within Nexus::
 A mod hosted in Nexus will usually have several files (for example, the https://www.nexusmods.com/fallout3/mods/2761?tab=files[multiple files which belong to FWE]). Sometimes is difficult to know exactly which files have to be downloaded, thus they are shown using a green, bold text, mimicking Nexus own style, like [NexusFile]*FWE 6-03a HOTFIX PATCH* or [NexusFile]*MMM-6_2-update*.

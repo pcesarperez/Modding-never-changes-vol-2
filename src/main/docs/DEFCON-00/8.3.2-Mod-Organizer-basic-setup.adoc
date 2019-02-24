@@ -7,7 +7,7 @@ By now, we have everything in place, but we have not started with the real deal 
 Check this video about https://www.youtube.com/watch?v=kdZffZnYvL4&list=PLWMvEg2LxwXbtc-mZT_H9pOwhIdOcMcn9&index=1[installing and setting up Mod Organizer], by Dirty Weasel Media.
 ====
 
-. Launch MO with the shortcut we have just created. You can see the http://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[left pane] and the http://wiki.step-project.com/Guide:Mod_Organizer#Right_Pane[right pane]. The left pane contains our mod stack, sorted by priority (the higher the number, the higher the priority), while the right pane contains our load order, also sorted by priority, with just the `.esm` and `.esp` files.
+. Launch MO with the shortcut we have just created. You can see the https://wiki.step-project.com/Guide:Mod_Organizer#Left_Pane[left pane] and the https://wiki.step-project.com/Guide:Mod_Organizer#Right_Pane[right pane]. The left pane contains our mod stack, sorted by priority (the higher the number, the higher the priority), while the right pane contains our load order, also sorted by priority, with just the `.esm` and `.esp` files (the Vanilla version comes with no `.esp` files, though).
 +
 .Mod Organizer panes
 image::DEFCON-00-Mod-Organizer-panes.png["Mod Organizer panes", title="Mod Organizer panes"]
@@ -61,7 +61,7 @@ image::DEFCON-00-Mod-Organizer-archive-management-activated.png["Archive managem
 image::DEFCON-00-Mod-Organizer-settings-button.png["Mod Organizer settings button", title="Mod Organizer settings button"]
 . In the *General* tab adjust at least the following settings:
   * Activate the *Advanced* option.
-  * If possible, select a download directory in an alternate location, outside your `[$FO3_HOME]` folder.
+  * If possible, select a download directory in an alternate location, outside your `[%FO3_HOME%]` folder.
   * Activate *Download Meta Information*.
 +
 .Mod Organizer general settings
@@ -77,12 +77,7 @@ image::DEFCON-00-Mod-Organizer-Nexus-settings.png["Mod Organizer Nexus settings"
 +
 .Mod Organizer plugins settings
 image::DEFCON-00-Mod-Organizer-plugins-settings.png["Mod Organizer plugins settings", title="Mod Organizer plugins settings"]
-. In the *Workarounds* tab, adjust at least the following settings and click *OK*.
-  * Change the NMM version to the latest available (you can find out the latest version in the http://www.nexusmods.com/games/[Nexus main page], at the topmost bar, in the http://www.nexusmods.com/games/mods/modmanager/[Install NMM] link).
-  * Disable the option *Force-enable game files*.
-+
-.Nexus Mod Manager latest version
-image::DEFCON-00-NMM-version.png["Nexus Mod Manager latest version", title="Nexus Mod Manager latest version"]
+. In the *Workarounds* tab, disable the option *Force-enable game files*.
 +
 .Mod Organizer workarounds settings
 image::DEFCON-00-Mod-Organizer-workarounds-settings.png["Mod Organizer workarounds settings", title="Mod Organizer workarounds settings"]

@@ -1,24 +1,19 @@
 ==== xEdit
 
-http://www.nexusmods.com/fallout4/mods/2737/[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There are versions of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
+https://www.nexusmods.com/fallout3/mods/637[xEdit] is not really a single tool, but a set of tools with different names and equivalent purpose. There are versions of xEdit for several games (FO3Edit for _Fallout 3_, TES5Edit for _The Elder Scrolls V: Skyrim_, and son on), but they all do the same thing: manipulate game plugins (`.esm` and `.esp` files).
 
 [TIP]
 ====
-Although we are going to use a limited set of features in xEdit, it's worth checking the https://www.youtube.com/watch?v=2F19Do8HAl4[Start to Finish tutorial about xEdit], by GamerPoets.
+We are going to use a limited set of features in xEdit. However, it's worth checking the https://www.youtube.com/playlist?list=PLlN8weLk86XiGXJI4DaRa1QIq1zhDpD8V[playlist about using xEdit], by GamerPoets.
 ====
 
-The version you have to use will always be the last one, and in this case, it is the _Fallout 4_ version, called FO4Edit, of course.
+[TIP]
+====
+Although there is a specific page for each flavour of xEdit, they all have the same last version of the tool, just renaming the `.exe` files. However, for the sake of clarity, we are going to download the tool from the https://www.nexusmods.com/fallout3/mods/637[FO3Edit] page.
+====
 
-So, why the renaming? Why xEdit instead of FO4Edit? It is because we are planning for the future. We would like to use xEdit to manipulate not only _Fallout 3_ plugins, but also plugins from any other Bethesda's (or Obsidian's) game which the tool would be able to manage.
+Notice that we are talking about xEdit, not FO3Edit. So, why the renaming? It is because we are planning for the future. We would like to use xEdit to manipulate not only _Fallout 3_ plugins, but also plugins from any other Bethesda's (or Obsidian's) game which the tool would be able to manage.
 
-. http://www.nexusmods.com/fallout4/mods/2737/[Download] and install FO4Edit outside UAC-controlled space, using the name "xEdit" (for example, `[C:\Games\Tools\xEdit]`). We will refer to the installation folder as `[$XEDIT_HOME]`. The tool is packed in a ZIP file, so the only thing you have to do is unpack it into the desired location.
-. Rename the file `FO4Edit.exe` inside `[$XEDIT_HOME]` to `xEdit.exe`.
-. If you try to run xEdit, an error is shown because the tool has not been instructed about which game is about to fiddle with.
-+
-.xEdit error when running standalone
-image::DEFCON-00-xEdit-first-time-run-error.png["xEdit error when running standalone", title="xEdit error when running standalone"]
-. However, the tool launches with no plugins loaded.
-+
-.xEdit with no plugins loaded
-image::DEFCON-00-xEdit-first-time-run.png["xEdit with no plugins loaded", title="xEdit with no plugins loaded"]
-. Just exit xEdit. We are going to use this tool through Mod Organizer also.
+. https://www.nexusmods.com/fallout3/mods/637[Download] and install the last available version of FO3Edit outside UAC-controlled space, using the name "xEdit" (for example, `[C:\Games\Tools\xEdit]`). We will refer to the installation folder as `[%XEDIT_HOME%]`. The tool is packed in a ZIP file, so the only thing you have to do is unpack it into the desired location.
+. Rename the file `FO3Edit.exe` inside `[%XEDIT_HOME%]` to `xEdit.exe`.
+. *DON'T RUN THE PROGRAM YET.* If you try to run xEdit, it will try to load whichever game it's aimed to for the last version (for example, _Fallout 4_). We are going to use this tool through Mod Organizer also, never in standalone mode.
